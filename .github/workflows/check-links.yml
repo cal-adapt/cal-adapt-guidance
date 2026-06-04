@@ -1,0 +1,33 @@
+name: Check Links
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 8 * * 1'  # every Monday at 8am
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install TinyTeX
+        run: quarto install tinytex --no-prompt
+
+      - name: Render site
+        run: quarto render
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --base _site
+            --exclude-loopback
+            --exclude 'localhost'
+            --exclude 'analytics.cal-adapt.org'
+            _site/**/*.html
+          fail: true

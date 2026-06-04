@@ -1,0 +1,11 @@
+---
+title: "The Cal Adapt guidance has been improved"
+author:
+  - "Justine Bui"
+  - "Nicole Keeney"
+date: "2026-05-21"
+description: "We've improved our guidance website to be easier to navigate."
+categories: [Announcement]
+---
+
+We've improved our guidance website to be easier to navigate.

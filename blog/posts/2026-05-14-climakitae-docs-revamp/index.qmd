@@ -1,0 +1,18 @@
+---
+title: "climakitae documentation revamp"
+author: "Neil Schroeder"
+date: "2026-05-14"
+description: "The Analytics Engine team has launched a complete revamp of the climakitae documentation."
+categories: [Announcement]
+citation: false
+---
+
+The Analytics Engine team has launched a complete revamp of the climakitae documentation. The updated docs introduce the new `ClimateData` interface and its associated processors, replacing the legacy `DataParameters` and `get_data()` workflow.
+
+New additions include:
+
+- **Notebook Gallery** showcasing cae-notebooks
+- **How-To guides** covering common tasks like clipping, exporting, and bias correction
+- **Migration Guide** to help users transition from the old interface to `ClimateData`
+
+Explore the new documentation [here](https://cal-adapt.github.io/climakitae/dev/).

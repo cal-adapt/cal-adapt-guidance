@@ -1,0 +1,35 @@
+---
+title: "Uncertainty Overview"
+author: "Cal-Adapt Analytics Engine Team"
+date: "2026-05-21"
+date-modified: "2026-05-21"
+---
+
+The following sections explain what are the sources of uncertainty in climate projections, how it appears in CMIP6 climate projections for California, and how to interpret and communicate it responsibly in planning and decision-making contexts. The analyses presented here use near-surface air temperature (*tas*) and precipitation (*pr*) from the CMIP6 archive, subsetted to California under the SSP3-7.0 scenario, and accessed through the Cal-Adapt Analytics Engine.
+
+For background on climate projections and models more broadly, see [About Climate Projections and Models](https://analytics.cal-adapt.org/guidance/about_climate_projections_and_models). For guidance on how to apply uncertainty information to decisions, see [Using Climate Data in Decision-Making](https://analytics.cal-adapt.org/guidance/using_in_decision_making).
+
+---
+
+## What are sources of uncertainty in climate projections?
+
+Climate projections come from ensembles of models, not from a single simulation. When multiple models are run under the same emissions scenario, they produce a range of outcomes — and that range is not a flaw. It is a quantified expression of genuine scientific uncertainty about how the climate system works.
+
+The IPCC distinguishes three principal sources of uncertainty in climate projections:
+
+- [**Model uncertainty**](model_uncertainty.qmd) (also called *inter-model spread* or *structural uncertainty*): differences in how modeling groups represent physical processes such as cloud feedbacks, ocean heat uptake, and land-surface exchanges.
+- [**Scenario uncertainty**](scenario_uncertainty.qmd): future greenhouse gas emissions depend on societal choices that have not yet been made.
+- [**Internal variability**](internal_variability.qmd): the climate system's own unforced fluctuations, independent of any external forcing.
+
+Which source dominates depends on the time horizon. Internal variability is most important at scales of less than a decade. Model uncertainty dominates over the 10–40 year planning horizon that is most relevant for infrastructure and resource decisions. Scenario uncertainty becomes the largest source of spread only at multi-decadal to centennial scales.
+
+Despite the uncertainties inherent in modeling future climate, they do not invalidate climate data; rather, they represent the complexity and range of potential future outcomes, and ultimately illustrate the critical importance of policy decisions made today and how they will determine the magnitude of future climate changes. 
+
+Climate modelers actively work to reduce model errors through improved model physics, increased computational power, and ensemble modeling techniques that aggregate results across multiple models. For additional information on how to examine uncertainties when conducting climate data analyses, see the question "How can users examine uncertainties in climate data?", in the [Guidance on Using Climate Data in Decision Making section](https://analytics.cal-adapt.org/guidance/using_in_decision_making).
+
+---
+
+## References
+
+- Cal-Adapt Analytics Engine. *About Climate Projections and Models.* <https://analytics.cal-adapt.org/guidance/about_climate_projections_and_models>
+- Cal-Adapt Analytics Engine. *Using Climate Data in Decision-Making.* <https://analytics.cal-adapt.org/guidance/using_in_decision_making>

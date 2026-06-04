@@ -1,0 +1,12 @@
+---
+title: "Climate change impacts in Joshua Tree National Park"
+author:
+  - "Vanessa Machuca"
+  - "Victoria Ford"
+date: "2026-05-21"
+description: "Some cool sciency article by Vanessa"
+categories: [Science]
+citation: true
+---
+
+Some cool sciency article by Vanessa.

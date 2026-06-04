@@ -1,0 +1,13 @@
+---
+title: "Blog"
+citation: false
+format:
+  html: default
+listing:
+  contents: posts
+  sort: "date desc"
+  type: table
+  categories: true
+  filter-ui: false
+  fields: [date, title, categories]
+---

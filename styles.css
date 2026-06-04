@@ -1,0 +1,44 @@
+/* Warm tone overrides inspired by hero image */
+:root {
+  --bs-primary: #e8621a;
+  --bs-primary-rgb: 232, 98, 26;
+  --bs-link-color: #e8621a;
+  --bs-link-hover-color: #7b3fa0;
+}
+
+
+body {
+  color: #222;
+}
+
+/* Lift on hover for listing cards */
+.quarto-grid-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quarto-grid-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* TOC: hide nested items by default, expand when parent section is active */
+nav#TOC ul ul {
+  display: none;
+}
+
+nav#TOC li:has(> a.active) > ul,
+nav#TOC li:has(ul a.active) > ul {
+  display: block;
+}
+
+/* Constrain embedded Bokeh/Panel figures to content column */
+.figure-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+div[id^="fig-"] {
+  max-width: 100%;
+  overflow-x: hidden;
+}

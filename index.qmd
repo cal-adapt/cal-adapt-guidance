@@ -1,0 +1,59 @@
+---
+title: "Cal-Adapt Scientific Guidance for working with Climate Data"
+citation: false
+format:
+  html:
+    toc: false
+listing:
+  - id: announcements
+    contents: blog/posts
+    sort: "date desc"
+    type: grid
+    max-items: 3
+    fields: [date, title, description]
+    include:
+      categories: [Announcement]
+---
+
+Cal-Adapt features tools to explore climate projections, historical data, global warming levels, and vetted methodologies, all geared toward supporting informed decision making across sectors and utilizing the best available climate science.
+
+## Recent Announcements
+
+:::{#announcements}
+:::
+
+## About the Analytics Engine
+
+```{=html}
+<div style="display: flex; flex-direction: column; gap: 1.5rem; margin: 1.5rem 0;">
+
+  <div style="display: flex; align-items: flex-start; gap: 1rem;">
+    <i class="bi bi-cloud-fill" style="font-size: 1.8rem; color: #4a90d9; flex-shrink: 0; margin-top: 0.2rem;"></i>
+    <div>
+      <h4 style="margin-top: 0;">Cloud Analytics</h4>
+      <p style="color: #222;">Cal-Adapt: Analytics Engine brings data and computational resources together in the cloud, allowing users to work with Petabytes of stored data supported by scientific guidance. These data and code facilitate informed decision-making for climate resilience and investments.</p>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: flex-start; gap: 1rem;">
+    <i class="bi bi-people-fill" style="font-size: 1.8rem; color: #4a90d9; flex-shrink: 0; margin-top: 0.2rem;"></i>
+    <div>
+      <h4 style="margin-top: 0;">Co-Production and Collaboration</h4>
+      <p style="color: #222;">The Analytics Engine is co-produced. Data producers (scientists and modelers), technical staff (programmers and developers) and users collaborate on the content and format of Analytics Engine outputs. The Analytics Engine design allows it to evolve based on user contributions and feedback.</p>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: flex-start; gap: 1rem;">
+    <i class="bi bi-database-fill" style="font-size: 1.8rem; color: #4a90d9; flex-shrink: 0; margin-top: 0.2rem;"></i>
+    <div>
+      <h4 style="margin-top: 0;">California Climate Data</h4>
+      <p style="color: #222;">The Analytics Engine Data Catalog houses data that characterizes the climate and environmental responses expected in response to climate change, in a way that is accessible and actionable to users. Spatial datasets cover the energy and water nexus of the Western United States, with high-spatial resolution (~3km grid spacing) hourly projections for the 21st century.</p>
+    </div>
+  </div>
+
+</div>
+```
+
+## Support and Partners
+
+Amazon Sustainability and the California Energy Commission (EPC-20-007) support the Cal-Adapt: Analytics Engine. The project team includes staff from Eagle Rock Analytics, Energy and Environmental Economics, Inc., Lawrence Berkeley National Lab, Spatial Informatics Group, UC Berkeley Geospatial Innovation Facility, and UCLA Center for Climate Science. Staff of the California Energy Commission direct the project.

@@ -1,0 +1,172 @@
+project:
+  type: website
+
+website:
+  title: "Cal-Adapt Scientific Guidance"
+  search: true
+  page-navigation: true
+  bread-crumbs: true
+  open-graph: true
+  navbar:
+    left:
+      - text: General Resources
+        menu:
+          - text: Getting Started
+            href: general-resources/getting-started.qmd
+          - text: "  Introduction to the Analytics Engine"
+            href: general-resources/intro-to-ae.qmd
+          - text: "  Example Use Cases"
+            href: general-resources/example-use-cases.qmd
+          - text: Glossary
+            href: glossary.qmd
+          - text: Reference Library
+            href: general-resources/reference-library.qmd
+          - text: "  Cal-Adapt Work"
+            href: general-resources/white-papers.qmd
+          - text: "  External References"
+            href: general-resources/external-references.qmd
+          - text: Media
+            href: general-resources/media/index.qmd
+          - text: "  Video Tutorials"
+            href: general-resources/media/video-tutorials.qmd
+          - text: "  Webinars"
+            href: general-resources/media/webinars.qmd
+          - text: "  Presentations"
+            href: general-resources/media/presentations.qmd
+          - text: FAQs
+            href: general-resources/faqs.qmd
+      - text: Scientific Guidance
+        menu:
+          - href: scientific-guidance/about-climate-projections.qmd
+            text: About Climate Projections & Models
+          - href: scientific-guidance/using-climate-projections.qmd
+            text: Using Climate Projections in the Analytics Engine
+          - href: scientific-guidance/climate-profiles.qmd
+            text: Climate Profiles
+          - href: uncertainty/index.qmd
+            text: Uncertainty
+          - href: scientific-guidance/heat-metrics.qmd
+            text: Heat Metrics
+          - href: scientific-guidance/census-tracts.qmd
+            text: Census Tracts
+          - href: scientific-guidance/global-warming-levels.qmd
+            text: Global Warming Levels
+          - href: scientific-guidance/extreme-value-analysis.qmd
+            text: Extreme Value Analysis
+      - text: Data & Tools
+        menu:
+          - href: data-tools/explore-data.qmd
+            text: Explore Data
+          - href: data-tools/data-catalog.qmd
+            text: "  Data Catalog"
+          - href: data-tools/analytics-engine-hub.qmd
+            text: "  Analytics Engine JupyterHub"
+          - href: data-tools/access-methods.qmd
+            text: Access Methods
+          - href: data-tools/data-documentation/index.qmd
+            text: Data Documentation
+          - href: data-tools/data-documentation/metadata-standards.qmd
+            text: "  Metadata Standards"
+          - href: data-tools/data-documentation/more-datasets.qmd
+            text: "  More Datasets"
+          - href: data-tools/notebooks.qmd
+            text: Notebooks & Development
+      - text: News
+        menu:
+          - href: blog/index.qmd
+            text: Blog
+          - href: news/announcements.qmd
+            text: Announcements
+      - text: About
+        menu:
+          - href: about/our-project.qmd
+            text: Our Project
+          - href: about/connection-to-caladapt.qmd
+            text: "  Connection to Cal-Adapt"
+          - href: about/co-production.qmd
+            text: Our Co-Production Process
+          - href: about/our-users.qmd
+            text: Our Users
+          - href: about/our-team.qmd
+            text: Our Team
+  sidebar:
+    - id: general-resources
+      title: "General Resources"
+      style: docked
+      contents:
+        - section: "Getting Started"
+          contents:
+            - general-resources/getting-started.qmd
+            - general-resources/intro-to-ae.qmd
+            - general-resources/example-use-cases.qmd
+        - glossary.qmd
+        - section: "Reference Library"
+          contents:
+            - general-resources/reference-library.qmd
+            - general-resources/white-papers.qmd
+            - general-resources/external-references.qmd
+        - section: "Media"
+          contents:
+            - general-resources/media/index.qmd
+            - general-resources/media/video-tutorials.qmd
+            - general-resources/media/webinars.qmd
+            - general-resources/media/presentations.qmd
+        - general-resources/faqs.qmd
+    - id: scientific-guidance
+      title: "Scientific Guidance"
+      style: docked
+      contents:
+        - scientific-guidance/about-climate-projections.qmd
+        - scientific-guidance/using-climate-projections.qmd
+        - scientific-guidance/climate-profiles.qmd
+        - section: "Uncertainty"
+          contents:
+            - uncertainty/index.qmd
+            - uncertainty/model_uncertainty.qmd
+            - uncertainty/scenario_uncertainty.qmd
+            - uncertainty/internal_variability.qmd
+        - scientific-guidance/heat-metrics.qmd
+        - text: Census Tracts
+          href: scientific-guidance/census-tracts.qmd
+        - scientific-guidance/global-warming-levels.qmd
+        - scientific-guidance/extreme-value-analysis.qmd
+    - id: data-tools
+      title: "Data & Tools"
+      style: docked
+      contents:
+        - section: "Explore Data"
+          contents:
+            - data-tools/explore-data.qmd
+            - data-tools/data-catalog.qmd
+            - data-tools/analytics-engine-hub.qmd
+        - data-tools/access-methods.qmd
+        - section: "Data Documentation"
+          contents:
+            - data-tools/data-documentation/index.qmd
+            - data-tools/data-documentation/metadata-standards.qmd
+            - data-tools/data-documentation/more-datasets.qmd
+        - data-tools/notebooks.qmd
+    - id: news
+      title: "News"
+      style: docked
+      contents:
+        - blog/index.qmd
+        - news/announcements.qmd
+    - id: about
+      title: "About"
+      style: docked
+      contents:
+        - section: "Our Project"
+          contents:
+            - about/our-project.qmd
+            - about/connection-to-caladapt.qmd
+        - about/co-production.qmd
+        - about/our-users.qmd
+        - about/our-team.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    citation: true

@@ -28,7 +28,7 @@ Climate models do not produce data at census tract resolution. Most datasets use
 
 In dense urban areas, multiple census tracts may fall entirely within a single model grid cell. In these cases, the same climate variable value (e.g. temperature) will be assigned to several census tracts, even though real-world conditions may vary meaningfully across neighborhoods due to the built environment, land cover, or proximity to water (@fig-sf-tracts). For dynamically downscaled datasets such as WRF, each grid cell value represents conditions at the grid cell's center point and is assumed to be representative of the broader grid area (3km x 3km). Sub-grid variability (such as sharp elevation changes, coastal gradients, or urban features) is not explicitly resolved. As a result, when census tracts are smaller than a grid cell, or intersect only a portion of one, users should keep in mind that the climate value reflects a modeled approximation rather than conditions everywhere within that area. These tract-level differences are not resolved by the climate model and should not be inferred from the data.
 
-::: {#fig-sf-tracts}
+::: {#fig-sf-tracts fig-cap="Example of spatial mismatch between a single model grid cell and multiple census tracts within the city of San Francisco, CA. If extracting air temperature for these seven census tracts, each tract would result in the same value, despite actual microclimatic differences within these neighborhoods. Census tracts shown here are: 161.02, 202.02, 167.00, 168.01, 168.02, 162.00, 163.00, San Francisco, CA."}
 ::: {.content-visible when-format="html"}
 ```{=html}
 <div class="figure-container">
@@ -39,14 +39,13 @@ In dense urban areas, multiple census tracts may fall entirely within a single m
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/census_tract_fig1.png)
 :::
-Example of spatial mismatch between a single model grid cell and multiple census tracts within the city of San Francisco, CA. If extracting air temperature for these seven census tracts, each tract would result in the same value, despite actual microclimatic differences within these neighborhoods. Census tracts shown here are: 161.02, 202.02, 167.00, 168.01, 168.02, 162.00, 163.00, San Francisco, CA.
 :::
 
 ### Aggregation Issues
 
 Census tracts and grid cells are not a perfect one-to-one match. In rural areas, a single census tract may span many grid cells that differ substantially in elevation, land cover, or climate. Any value summarized across the tract (such as a mean or percentile) will smooth this variability. As a result, a tract-wide average may not be representative of the conditions experienced by most locations within that tract (@fig-rural-tract).
 
-::: {#fig-rural-tract}
+::: {#fig-rural-tract fig-cap="Example of a large rural census tract in eastern Fresno County spanning Sierra Nevada foothills into higher elevation terrain, covering multiple climate model grid cells. If extracting a single representative air temperature value for this census tract, the variability of temperatures would be substantially smoothed, and may not accurately represent realistic conditions. The census tract shown here is Census Tract 64.08, Fresno County, CA."}
 ::: {.content-visible when-format="html"}
 ```{=html}
 <div class="figure-container">
@@ -57,7 +56,6 @@ Census tracts and grid cells are not a perfect one-to-one match. In rural areas,
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/census_tract_fig2.png)
 :::
-Example of a large rural census tract in eastern Fresno County spanning Sierra Nevada foothills into higher elevation terrain, covering multiple climate model grid cells. If extracting a single representative air temperature value for this census tract, the variability of temperatures would be substantially smoothed, and may not accurately represent realistic conditions. The census tract shown here is Census Tract 64.08, Fresno County, CA.
 :::
 
 ### Coastal Census Tracts

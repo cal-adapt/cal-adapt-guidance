@@ -11,24 +11,21 @@ website:
     left:
       - text: General Resources
         menu:
-          - text: Getting Started
-          - text: "  Introduction to the Analytics Engine"
+          - text: Introduction to the Analytics Engine
             href: general-resources/intro-to-ae.qmd
-          - text: "  Example Use Cases"
+          - text: Example Use Cases
             href: general-resources/example-use-cases.qmd
           - text: Glossary
             href: glossary.qmd
-          - text: Reference Library
-          - text: "  Cal-Adapt Work"
+          - text: Cal-Adapt Work
             href: general-resources/white-papers.qmd
-          - text: "  External References"
+          - text: External References
             href: general-resources/external-references.qmd
-          - text: Media
-          - text: "  Video Tutorials"
+          - text: Video Tutorials
             href: general-resources/media/video-tutorials.qmd
-          - text: "  Webinars"
+          - text: Webinars
             href: general-resources/media/webinars.qmd
-          - text: "  Presentations"
+          - text: Presentations
             href: general-resources/media/presentations.qmd
           - text: FAQs
             href: general-resources/faqs.qmd
@@ -36,7 +33,7 @@ website:
         menu:
           - href: scientific-guidance/about-climate-projections.qmd
             text: About Climate Projections & Models
-          - href: scientific-guidance/using-climate-projections.qmd
+          - href: scientific-guidance/using_climate_projections/index.qmd
             text: Using Climate Projections in the Analytics Engine
           - href: scientific-guidance/climate-profiles.qmd
             text: Climate Profiles
@@ -105,7 +102,10 @@ website:
       style: docked
       contents:
         - scientific-guidance/about-climate-projections.qmd
-        - scientific-guidance/using-climate-projections.qmd
+        - section: "Using Climate Projections"
+          contents:
+            - scientific-guidance/using_climate_projections/index.qmd
+            - scientific-guidance/using_climate_projections/using-climate-projections.qmd
         - scientific-guidance/climate-profiles.qmd
         - section: "Uncertainty"
           contents:

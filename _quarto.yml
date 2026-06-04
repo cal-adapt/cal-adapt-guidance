@@ -12,7 +12,6 @@ website:
       - text: General Resources
         menu:
           - text: Getting Started
-            href: general-resources/getting-started.qmd
           - text: "  Introduction to the Analytics Engine"
             href: general-resources/intro-to-ae.qmd
           - text: "  Example Use Cases"
@@ -20,13 +19,11 @@ website:
           - text: Glossary
             href: glossary.qmd
           - text: Reference Library
-            href: general-resources/reference-library.qmd
           - text: "  Cal-Adapt Work"
             href: general-resources/white-papers.qmd
           - text: "  External References"
             href: general-resources/external-references.qmd
           - text: Media
-            href: general-resources/media/index.qmd
           - text: "  Video Tutorials"
             href: general-resources/media/video-tutorials.qmd
           - text: "  Webinars"
@@ -71,18 +68,12 @@ website:
             text: "  More Datasets"
           - href: data-tools/notebooks.qmd
             text: Notebooks & Development
-      - text: News
-        menu:
-          - href: blog/index.qmd
-            text: Blog
-          - href: news/announcements.qmd
-            text: Announcements
+      - href: blog/index.qmd
+        text: News
       - text: About
         menu:
-          - href: about/our-project.qmd
-            text: Our Project
           - href: about/connection-to-caladapt.qmd
-            text: "  Connection to Cal-Adapt"
+            text: About Cal-Adapt
           - href: about/co-production.qmd
             text: Our Co-Production Process
           - href: about/our-users.qmd
@@ -96,18 +87,15 @@ website:
       contents:
         - section: "Getting Started"
           contents:
-            - general-resources/getting-started.qmd
             - general-resources/intro-to-ae.qmd
             - general-resources/example-use-cases.qmd
         - glossary.qmd
         - section: "Reference Library"
           contents:
-            - general-resources/reference-library.qmd
             - general-resources/white-papers.qmd
             - general-resources/external-references.qmd
         - section: "Media"
           contents:
-            - general-resources/media/index.qmd
             - general-resources/media/video-tutorials.qmd
             - general-resources/media/webinars.qmd
             - general-resources/media/presentations.qmd
@@ -146,20 +134,11 @@ website:
             - data-tools/data-documentation/metadata-standards.qmd
             - data-tools/data-documentation/more-datasets.qmd
         - data-tools/notebooks.qmd
-    - id: news
-      title: "News"
-      style: docked
-      contents:
-        - blog/index.qmd
-        - news/announcements.qmd
     - id: about
       title: "About"
       style: docked
       contents:
-        - section: "Our Project"
-          contents:
-            - about/our-project.qmd
-            - about/connection-to-caladapt.qmd
+        - about/connection-to-caladapt.qmd
         - about/co-production.qmd
         - about/our-users.qmd
         - about/our-team.qmd

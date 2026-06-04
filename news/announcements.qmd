@@ -1,7 +1,0 @@
----
-title: "Announcements"
----
-
-::: {.callout-note}
-This page is under development.
-:::

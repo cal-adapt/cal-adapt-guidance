@@ -3,6 +3,9 @@ title: "Analyses at the Census Tract"
 author: "Cal-Adapt Analytics Engine Team"
 date: "2026-06-02"
 date-modified: "2026-06-02"
+format:
+  html: default
+  pdf: default
 ---
 
 Many planners, agencies, and community organizations use census tract data because it can enable targeted planning, policy, and programmatic decision making at a local level. It is therefore common for practitioners to ask whether climate model projections can be translated to census tracts to support their analyses, particularly those that may require overlays with demographic information. However, climate models do not produce data at census tract resolution. This introduces important risks and limitations when attempting to map gridded climate data onto these boundaries.

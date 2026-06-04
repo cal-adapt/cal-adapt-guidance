@@ -1,5 +1,5 @@
 ---
-title: "Connection to Cal-Adapt"
+title: "About Cal-Adapt"
 ---
 
 ::: {.callout-note}

@@ -4,3 +4,8 @@ _site/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.tex

@@ -1,5 +1,6 @@
 project:
   type: website
+  pre-render: glossary/generate-glossary.py
 
 website:
   title: "Cal-Adapt Scientific Guidance"
@@ -16,17 +17,11 @@ website:
           - text: Example Use Cases
             href: general-resources/example-use-cases.qmd
           - text: Glossary
-            href: glossary.qmd
+            href: glossary/index.qmd
           - text: Cal-Adapt Work
             href: general-resources/white-papers.qmd
           - text: External References
             href: general-resources/external-references.qmd
-          - text: Video Tutorials
-            href: general-resources/media/video-tutorials.qmd
-          - text: Webinars
-            href: general-resources/media/webinars.qmd
-          - text: Presentations
-            href: general-resources/media/presentations.qmd
           - text: FAQs
             href: general-resources/faqs.qmd
       - text: Scientific Guidance
@@ -34,7 +29,7 @@ website:
           - href: scientific-guidance/about-climate-projections.qmd
             text: About Climate Projections & Models
           - href: scientific-guidance/using_climate_projections/index.qmd
-            text: Using Climate Projections in the Analytics Engine
+            text: Guidance on Using Climate Data in Decision Making
           - href: scientific-guidance/climate-profiles.qmd
             text: Climate Profiles
           - href: uncertainty/index.qmd
@@ -51,18 +46,10 @@ website:
         menu:
           - href: data-tools/explore-data.qmd
             text: Explore Data
-          - href: data-tools/data-catalog.qmd
-            text: "  Data Catalog"
-          - href: data-tools/analytics-engine-hub.qmd
-            text: "  Analytics Engine JupyterHub"
           - href: data-tools/access-methods.qmd
             text: Access Methods
           - href: data-tools/data-documentation/index.qmd
             text: Data Documentation
-          - href: data-tools/data-documentation/metadata-standards.qmd
-            text: "  Metadata Standards"
-          - href: data-tools/data-documentation/more-datasets.qmd
-            text: "  More Datasets"
           - href: data-tools/notebooks.qmd
             text: Notebooks & Development
       - href: blog/index.qmd
@@ -86,7 +73,7 @@ website:
           contents:
             - general-resources/intro-to-ae.qmd
             - general-resources/example-use-cases.qmd
-        - glossary.qmd
+        - glossary/index.qmd
         - section: "Reference Library"
           contents:
             - general-resources/white-papers.qmd
@@ -102,7 +89,7 @@ website:
       style: docked
       contents:
         - scientific-guidance/about-climate-projections.qmd
-        - section: "Using Climate Projections"
+        - section: "Guidance on Using Climate Data in Decision Making"
           contents:
             - scientific-guidance/using_climate_projections/index.qmd
             - scientific-guidance/using_climate_projections/using-climate-projections.qmd
@@ -149,3 +136,4 @@ format:
     css: styles.css
     toc: true
     citation: true
+    include-after-body: glossary/_glossary-tooltip-inline.html

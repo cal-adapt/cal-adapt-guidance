@@ -42,3 +42,19 @@ div[id^="fig-"] {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.tooltip {
+  --bs-tooltip-opacity: 1;
+}
+
+.tooltip .tooltip-inner {
+  max-width: 320px;
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.tooltip .tooltip-arrow::before {
+  border-top-color: #ddd;
+}

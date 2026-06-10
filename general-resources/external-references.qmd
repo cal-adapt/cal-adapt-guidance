@@ -9,6 +9,23 @@ For the latest memorandums on the datasets and methodology behind the Analytics 
 
 ```{=html}
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css">
+<style>
+  table.dataTable thead th.sorting,
+  table.dataTable thead th.sorting_asc,
+  table.dataTable thead th.sorting_desc {
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+  }
+  table.dataTable thead th.sorting:before,
+  table.dataTable thead th.sorting:after,
+  table.dataTable thead th.sorting_asc:before,
+  table.dataTable thead th.sorting_asc:after,
+  table.dataTable thead th.sorting_desc:before,
+  table.dataTable thead th.sorting_desc:after {
+    right: auto;
+    left: 0.25rem;
+  }
+</style>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js"></script>

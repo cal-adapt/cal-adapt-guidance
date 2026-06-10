@@ -1,0 +1,250 @@
+[
+  {
+    "topic": "Bias Correction",
+    "date": "2024-05",
+    "date_display": "May 2024",
+    "description": "Comparative study on the impacts of applying a-priori bias correction vs no bias correction to GCMs. Bias correction improves dynamically downscaled climate projections across the western United States.",
+    "citation": "Rahimi, S., Huang, L., Norris, J., Hall, A., Goldenson, N., Risser, M., et al. (2024). Understanding the cascade: Removing GCM biases improves dynamically downscaled climate projections. Geophysical Research Letters, 51, e2023GL106264.",
+    "link": "https://doi.org/10.1029/2023GL106264"
+  },
+  {
+    "topic": "Bias Correction",
+    "date": "2024-05",
+    "date_display": "May 2024",
+    "description": "Explanation of when, where, and for which variables a-priori bias correction introduces variance into downscaled projections across the western United States.",
+    "citation": "Risser, M. D., Rahimi, S., Goldenson, N., Hall, A., Lebo, Z. J., & Feldman, D. R. (2024). Is bias correction in dynamical downscaling defensible? Geophysical Research Letters, 51, e2023GL105979.",
+    "link": "https://doi.org/10.1029/2023GL105979"
+  },
+  {
+    "topic": "Bias Correction",
+    "date": "2023-12",
+    "date_display": "December 2023",
+    "description": "Methods, QA/QC, and guidance/caveats for the bias correction approaches used for LOCA2-Hybrid and WRF downscaled projections.",
+    "citation": "Pierce, D., S. Rahimi, D. Cayan, J. Kalansky, 2023: Bias Correction in the WRF and LOCA Version 2 Projections. Data Justification Memo for EPC-20-006 Development of Climate Projections for California and Identification of General Use Projections.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2024-03/01_BiasCorrectioninWRF_and_LOCA2Projections_DataJustificationMemo_Pierce_Adopted_ada.pdf"
+  },
+  {
+    "topic": "Bias Correction",
+    "date": "2023-12",
+    "date_display": "December 2023",
+    "description": "Methods, QA/QC, and guidance/caveats for the different bias correction approaches (no bias correction, and a-priori bias correction) used for WRF downscaled projections.",
+    "citation": "Rahimi, S., 2023: Dynamically Downscaled Datasets. Data Justification Memo for EPC-20-006 Development of Climate Projections for California and Identification of General Use Projections.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2024-06/02_DynamicalDownscaling_DataJustificationMemo_Rahimi_Adopted_v2May2024_ada.pdf"
+  },
+  {
+    "topic": "GCM Selection",
+    "date": "2021-11",
+    "date_display": "November 2021",
+    "description": "Methods, QA/QC, and guidance/caveats regarding the approach to selection and evaluation of CMIP6 GCMs that best capture the characteristics of California's climate.",
+    "citation": "Krantz, W., D. W. Pierce, N. Goldenson, and D. R. Cayan, 2021: Memorandum on Evaluating Global Climate Models for Studying Regional Climate Change in California. Interim deliverable for EPC-020-006, 24 pp.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2022-09/20220907_CDAWG_MemoEvaluating_GCMs_EPC-20-006_Nov2021-ADA.pdf"
+  },
+  {
+    "topic": "General Use Projections",
+    "date": "2024-08",
+    "date_display": "August 2024",
+    "description": "Description of criteria, process, selection, and limitations of models for general use projections.",
+    "citation": "Kalansky, J., Yao, P., Pierce D., and Cayan, D. (August 2024). Memorandum on General Use Projects, Memo to California Energy Commission as part of EPC-20-006.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2024-09/a_General_Use_Projections_Selection_Process_sept2024.pdf"
+  },
+  {
+    "topic": "General Use Projections",
+    "date": "2023-12",
+    "date_display": "December 2023",
+    "description": "Description of process and selection of models for general use projections. Additional information included on Hourly Sea Level Rise projections and the Cal-Adapt Enterprise.",
+    "citation": "Kalansky, J., et al. (2023, December 6). Meetings and Documents – Climate Data and Analysis Working Group (C-DAWG). California Energy Commission: Energy-Related Environmental Research Energy Research & Development Division.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2023-12/C-DAWG_Presentation_120623_ADA.pdf"
+  },
+  {
+    "topic": "Hydrology",
+    "date": "2023-11",
+    "date_display": "November 2023",
+    "description": "Methods, QA/QC, and guidance/caveats for the use of the hydrology projections.",
+    "citation": "Bass, B., 2023: Hydrology Projections. Data Justification Memo for EPC-20-006 Development of Climate Projections for California and Identification of General Use Projections.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2025-04/05_HydrologyProjections_DataJustificationMemo_BassEtAl_Adopted_v3_ada.pdf"
+  },
+  {
+    "topic": "Hydrology",
+    "date": "2023-02",
+    "date_display": "February 2023",
+    "description": "Calibration approach used for regionalization of hydrology parameters (study covers its application on the 9 km grid, but the same approach was used for the 3km grid for Noah-MP, VIC).",
+    "citation": "Bass, B., S. Rahimi, N. Goldenson, A. Hall, J. Norris, and Z. J. Lebow, 2023: Achieving Realistic Runoff in the Western United States with a Land Surface Model Forced by Dynamically Downscaled Meteorology. J. Hydrometeor., 24, 269–283.",
+    "link": "https://doi.org/10.1175/JHM-D-22-0047.1"
+  },
+  {
+    "topic": "LOCA2-Hybrid",
+    "date": "2023-12",
+    "date_display": "December 2023",
+    "description": "Methods, QA/QC, and guidance/caveats for the use of the LOCA2-Hybrid downscaling products.",
+    "citation": "Pierce, D. W., D. R. Cayan, S. Rahimi, and J. Kalansky, 2023: LOCA version 2 Hybrid Downscaling. Data Justification Memo for EPC-20-006 Development of Climate Projections for California and Identification of General Use Projections.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2024-03/04_HybridDownscaling_DataJustificationMemo_Pierce_Adopted_ada.pdf"
+  },
+  {
+    "topic": "LOCA2-Hybrid",
+    "date": "2023-12",
+    "date_display": "December 2023",
+    "description": "Methods, QA/QC, and guidance/caveats for the development of the LOCA2 training data.",
+    "citation": "Pierce, D. W., S. Rahimi, D. R. Cayan, and J. Kalansky, 2023: Bias Correction in the WRF and LOCA2 Projections. Data Justification Memo for EPC-20-006 Development of Climate Projections for California and Identification of General Use Projections.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2024-03/03_LOCA2-forCA-TrainingData_DataJustificationMemo_Pierce_Adopted_ada.pdf"
+  },
+  {
+    "topic": "LOCA2-Hybrid",
+    "date": "2023-05",
+    "date_display": "May 2023",
+    "description": "Development and availability of LOCA2 projections (with ensemble bias correction).",
+    "citation": "Pierce, D. W., D. R. Cayan, D. R. Feldman, and M. D. Risser, 2023: Future Increases in North American Extreme Precipitation in CMIP6 Downscaled with LOCA. J. Hydrometeor, 24, 951–975.",
+    "link": "https://doi.org/10.1175/JHM-D-22-0194.1"
+  },
+  {
+    "topic": "Sea Level",
+    "date": "2023-11",
+    "date_display": "November 2023",
+    "description": "Methods, QA/QC, and guidance/caveats for the development of the hourly sea level rise projections.",
+    "citation": "Cayan, D., S. Iacobellis, J. Kalansky, 2023: Hourly Sea Level Projections from CMIP6 Climate and Weather. Data Justification Memo for EPC-20-006 Development of Climate Projections for California and Identification of General Use Projections.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2024-09/06_HourlySeaLevelProjections_DataJustificationMemo_Iacobellis_Adopted_v2_ada.pdf"
+  },
+  {
+    "topic": "Sea Level",
+    "date": "2008-01",
+    "date_display": "January 2008",
+    "description": "Hourly sea level rise projections – modeling technique.",
+    "citation": "Cayan, D.R., Bromirski, P.D., Hayhoe, K. et al. Climate change projections of sea level extremes along the California coast. Climatic Change 87 (Suppl 1), 57–73 (2008).",
+    "link": "https://link.springer.com/article/10.1007/s10584-007-9376-7"
+  },
+  {
+    "topic": "WRF",
+    "date": "2024-05",
+    "date_display": "May 2024",
+    "description": "Recommendations for use of specific, dynamically downscaled models (with a-priori bias correction). Also includes information on LOCA2-Hybrid downscaling and targeted case studies for extreme events.",
+    "citation": "Kalansky, J., et al. (2024, May 17). Meetings and Documents – Climate Data and Analysis Working Group (C-DAWG). California Energy Commission: Energy-Related Environmental Research Energy Research & Development Division.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2022-12/3_ERA_Analytics_Engine_CDAWG_ADA.pptx"
+  },
+  {
+    "topic": "WRF",
+    "date": "2024-03",
+    "date_display": "March 2024",
+    "description": "Dynamical downscaling evaluation – results from 16 dynamically downscaled CMIP6 simulations over the Western United States (WUS-D3), including the whole of the Western Electricity Coordinating Council (WECC) region.",
+    "citation": "Rahimi, S., Huang, L., Norris, J., Hall, A., Goldenson, N., Krantz, W., Bass, B., et al. An overview of the Western United States Dynamically Downscaled Dataset (WUS-D3), Geosci. Model Dev., 17, 2265–2286, 2024.",
+    "link": "https://gmd.copernicus.org/articles/17/2265/2024/"
+  },
+  {
+    "topic": "WRF",
+    "date": "2022-10",
+    "date_display": "October 2022",
+    "description": "Dynamical downscaling evaluation – evaluation of the performance of four dynamically downscaled projections using WRF (no bias correction).",
+    "citation": "Rahimi-Esfarjan, S., 2022: Memorandum on the evaluation of downscaled GCM using WRF (deliverable for EPC-20-006). Memo for EPC-20-006 Development of Climate Projections for California and Identification of General Use Projections.",
+    "link": "https://cal-adapt.org/files/01_Memo_Evaluation_of_Downscaled_GCMs_Using_WRF_CEC_final.pdf"
+  },
+  {
+    "topic": "WRF",
+    "date": "2022-04",
+    "date_display": "April 2022",
+    "description": "Dynamical downscaling technique – development and availability of four dynamically downscaled projections using WRF (no bias correction).",
+    "citation": "Rahimi-Esfarjan, S., 2022: Memorandum on the development and availability of dynamically downscaled projections using WRF. Memo for EPC-20-006 Development of Climate Projections for California and Identification of General Use Projections.",
+    "link": "https://www.energy.ca.gov/sites/default/files/2022-09/20220907_CDAWG_MemoDynamicalDownscaling_EPC-20-006_May2022-ADA.pdf"
+  },
+  {
+    "topic": "WRF",
+    "date": "2022-01",
+    "date_display": "January 2022",
+    "description": "Dynamical downscaling evaluation – method and results from dynamical downscaling of the historical record across the Western United States using ERA5.",
+    "citation": "Rahimi, S., Krantz, W., Lin, Y.-H., Bass, B., Goldenson, N., Hall, A., et al. (2022). Evaluation of a reanalysis-driven configuration of WRF4 over the western United States from 1980 to 2020. Journal of Geophysical Research: Atmospheres, 127, e2021JD035699.",
+    "link": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021JD035699"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2024-08",
+    "date_display": "August 2024",
+    "description": "Guidance on how to incorporate the best available information on climate variability and change into emergency management planning.",
+    "citation": "Albano, C., McCarthy, M., McAfee, S., Wein, A., Dettinger, M. Incorporating Climate Data into Emergency Planning and Exercises – A Primer for Emergency Management Practitioners and Data Developers. August 2024. Prepared by the Desert Research Institution and the U.S. Geological Survey for the California Department of Water Resources.",
+    "link": "https://s3-us-west-2.amazonaws.com/webfiles.dri.edu/Projects/ARkStormTahoe2/Albanoetal2024_DRITechReport41303v2.pdf"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2024-01",
+    "date_display": "2024",
+    "description": "Guide to the selection of suitable climate data for physical climate risk assessment. Includes a brief review of the climate modeling science and statistics used in climate science, as well as specific descriptions of sources of past and future data.",
+    "citation": "Electric Power Research Institute (EPRI). Climate Data Users Guide. EPRI, Palo Alto, CA: 2024. 3002028078.",
+    "link": "https://apps.epri.com/climate-data-user-guide/en/"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2023-03",
+    "date_display": "2023",
+    "description": "A high-level, federal guide for selecting resources (data, tools, reports, case studies, etc.) for understanding climate vulnerabilities. Focuses on exposure to climate-related hazards and their potential impacts.",
+    "citation": "OSTP (2023). Selecting Climate Information to Use in Climate Risk and Impact Assessments: Guide for Federal Agency Climate Adaptation Planners. White House Office of Science and Technology Policy. Washington, D.C.",
+    "link": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/03/Guide-on-Selecting-Climate-Information-to-Use-in-Climate-Risk-and-Impact-Assessments.pdf"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2023-01",
+    "date_display": "2023",
+    "description": "The U.S. Government's report on climate change impacts, risks, and responses. Provides the scientific foundation to support informed decision-making across the U.S.",
+    "citation": "U.S. Global Change Research Program (USGCRP). Fifth National Climate Assessment. 2023.",
+    "link": "https://globalchange.gov/our-work/fifth-national-climate-assessment"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2023-01",
+    "date_display": "2021–2023",
+    "description": "Comprehensive report developed as part of the United Nations to assess the science related to climate change and provide the scientific basis for governments to develop climate related policies.",
+    "citation": "Intergovernmental Panel on Climate Change (IPCC). Sixth Assessment Report. 2021–2023.",
+    "link": "https://www.ipcc.ch/assessment-report/ar6/"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2022-01",
+    "date_display": "2022",
+    "description": "Online guide collating various climate data portals and resources. Helps users effectively identify, acquire, and interpret climate change information appropriate for their specific context.",
+    "citation": "Vano, JA and JJ Lukas. (2022). A User Guide to Climate Change Portals. Prepared by the Aspen Global Change Institute.",
+    "link": "https://www.agci.org/projects/climate-portal-guide"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2022-01",
+    "date_display": "2022",
+    "description": "Guidance on how to consider different methods for vulnerability and risk assessment, decision making, measuring and evaluating project components, and reporting on adaptation planning and implementation.",
+    "citation": "Gardiner, N., ed., Hutchins, M., Fox, J., Patel, A., and Rhodes, K. Implementing the Steps to Resilience: a Practitioner's Guide. Climate-Smart Communities Series, Vol. 6. NOAA Climate Program Office, 2022.",
+    "link": "https://repository.library.noaa.gov/view/noaa/46456"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2021-01",
+    "date_display": "2021",
+    "description": "A compilation of resources from the U.S. federal government for planning and deploying climate adaptation and resilience-building efforts at state and local levels.",
+    "citation": "U.S. Global Change Research Program (USGCRP) and the National Oceanic and Atmospheric Administration (NOAA) Climate Program Office. U.S. Climate Resilience Toolkit.",
+    "link": "https://toolkit.climate.gov/"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2021-01",
+    "date_display": "2021",
+    "description": "Guidance on how to select, apply, and interpret downscaled climate information for use in planning.",
+    "citation": "Kotamarthi R, Hayhoe K, Mearns LO, Wuebbles D, Jacobs J, Jurado J. Guidance and Recommendations for Use of (Downscaled) Climate Information. In: Downscaling Techniques for High-Resolution Climate Projections: From Global Change to Local Impacts. Cambridge University Press; 2021:139-156.",
+    "link": "https://www-cambridge-org.libproxy.berkeley.edu/core/books/downscaling-techniques-for-highresolution-climate-projections/guidance-and-recommendations-for-use-of-downscaled-climate-information/E7858E9C5DA85065DD463EE5052EA2E6"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2020-01",
+    "date_display": "2020",
+    "description": "Guidance on local adaptation and resilience planning in California. Includes a summary of statewide guidance, resources and tools, as well as links to federal resources.",
+    "citation": "The California Governor's Office of Planning and Research. California Adaptation Planning Guide. Developed in response to Senate Bill 246.",
+    "link": "https://resilientca.org/apg/"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2018-01",
+    "date_display": "2018",
+    "description": "Highlights better practices for incorporating climate change information within planning and management. Includes strategies, guidelines, and frequently asked questions.",
+    "citation": "Vano, J. A., Arnold, J. R., Nijssen, B., Clark, M. P., Wood, A. W., Gutmann, E. D., Addor, N., Hamman, J., & Lehner, F. DOs and DON'Ts for using climate change information for water resource planning and management: guidelines for study design. Climate Services, 12, 1–13, 2018.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2405880717301176"
+  },
+  {
+    "topic": "Adaptation Planning",
+    "date": "2018-01",
+    "date_display": "2018",
+    "description": "Guidance on climate risks and how to consider them in planning and investment.",
+    "citation": "The California Governor's Office of Planning and Research. Planning and Investing for a Resilient California: A Guidebook for State Agencies. Developed by the Technical Advisory Group (TAG), formed under EO B-30-15. 2018.",
+    "link": "http://opr.ca.gov/docs/20180313-Building_a_Resilient_CA.pdf"
+  }
+]

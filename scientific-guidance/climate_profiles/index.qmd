@@ -1,0 +1,31 @@
+---
+title: "Overview"
+author: "Cal-Adapt Analytics Engine Team"
+date: "2024-03-24"
+date-modified: "2026-06-08"
+format:
+  html: default
+  pdf: default
+---
+
+Many energy system modeling and other planning processes are designed to intake hourly information to capture short term fluctuations in conditions that affect power supply and demand ([NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020); [Smith et al. 2025](https://ieeexplore.ieee.org/document/10990270)). An annualized hourly climate profile is a dataset that contains hourly weather conditions at a given location for an entire year. Because it represents every hour of a 1-year period, a climate profile is also commonly referred to as an "[8760](/glossary/index.qmd#8760)"  (the number of hours in one year). Although climate profiles have previously been generated using historical observation-based datasets, planners are increasingly interested in using annualized climate profiles that are constructed with future climate data. Annualized hourly climate profiles are able to represent future weather conditions due to a changing climate and can thus better inform design and planning processes for a wide range of future needs.
+
+There are multiple kinds of climate profiles, including:
+
+- **Synthetically** generated climate profiles, in which the climate profile is not selected from a single continuous model year; rather, each component (e.g., hour or month) is selected across the statistical distribution and then concatenated together to build a full year profile.
+- **Actual** or **realistic** climate profiles, in which a single continuous year of either historical or future weather conditions is used as a representative of annual hourly conditions.
+
+The Cal-Adapt: Analytics Engine currently provides two kinds of **synthetic** climate profiles:
+
+1. **Standard Year 8760**: One year of hourly data that represents any desired statistical percentile of weather conditions for a location over a 30-year climatological period. A Standard Year builds a climate profile for each climate model on a single variable and can be used to evaluate either median or extreme conditions by selecting appropriate percentiles. Both historical and future Standard Year 8760s are available.
+2. Typical Meteorological Year 8760 (TMY): One year of hourly data that represents the median weather conditions for a location over a climatological period. A TMY file is built from ten specific weather variables that are weighted in compliance with international standards ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf)). TMY files statistically assess the median conditions from 30 years of model data and select the most “typical” month for each month during a year. The resulting TMY file includes multiple variables and has very specific formatting requirements. Both historical and future TMY (FTMY) 8760s are available.
+
+*Coming onto the Analytics Engine in summer 2026!* 
+
+3. **Extreme 8760s**: One year of hourly data that represents extreme weather conditions for a location over a climatological period. These profiles will include extreme TMYs (XMY), Stress Test 8760s, and other kinds of extreme climate profiles.
+
+## References
+
+- New York State Energy Research and Development Authority (NYSERDA). (2020). *Future TMY Methodology.* Resource Refocus. <https://www.resourcerefocus.com/ftmy-2020>
+- Smith, E. T., Diaz, D. B., & Mardian, J. (2025). *A Climate-Informed Approach to Create Hourly Future Weather Timeseries for Power System Planning.* IEEE Access, 13, 82796–82806. <https://ieeexplore.ieee.org/document/10990270>
+- Wilcox, S., & Marion, W. (2008). *Users Manual for TMY3 Data Sets.* National Renewable Energy Laboratory. <https://docs.nrel.gov/docs/fy08osti/43156.pdf>

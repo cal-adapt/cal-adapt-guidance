@@ -1,0 +1,63 @@
+---
+title: "Standard Year 8760s"
+author: "Cal-Adapt Analytics Engine Team"
+date: "2024-03-24"
+date-modified: "2026-06-08"
+format:
+  html: default
+  pdf: default
+---
+
+## Methodology 
+A Standard Year is one year of hourly data that represents a statistical percentile of meteorological conditions for a location over a set amount of time (30 years). For example, for each hour of the year, the 90th percentile is taken across the same hour of the year from each of the 30 years of data. A Standard Year can be generated for any climate variable (temperature, solar radiation, etc.), any desired percentile (median and extremes), and for any location of interest.
+
+On the Analytics Engine, Standard Years can be generated for **gridded areas** and **point locations** across WECC. The Standard Year profile is built by selecting the real simulation value closest to the selected percentile for each hour of the year. The Standard Year profile is a synthetic profile, and thus differs from using a single continuous year of climate model data. Functionality to generate a “delta Standard Year” is also provided, in which a difference between the timeframe of interest and the historical reference period is returned. This can be used to evaluate climate change impacts on energy systems over time (see our guidance on [reference periods](/scientific-guidance/using_climate_projections/using-climate-projections.qmd#how-should-i-use-reference-periods)).
+
+### Step 1: User selects desired information
+A user will first select four primary settings, with additional options:
+
+1. The **variable** of interest to build the Standard Year. A user can optionally select alternative units, if so desired.
+2. The **percentile** of interest, at which the variable is evaluated against the statistical distribution. The default percentile is the 50th percentile.
+3. The **location** of interest, including both gridded areas (e.g., county, service territory) and point-locations (e.g., weather station, utility asset).
+4. The **timeframe** of interest. On the Analytics Engine, Standard Years are currently calculated using [global warming levels](/scientific-guidance/about-climate-projections.qmd#what-are-global-warming-levels). A user can generate a Standard Year with any desired warming level, including custom levels (e.g., 1.37°C). A user can also optionally elect to calculate a delta Standard Year or an absolute Standard Year. An absolute Standard Year represents the values at the designated warming level, while a delta Standard Year calculates the difference between the selected warming level and a 1.2°C historical reference warming level.
+
+### Step 2: Compute distribution and select candidate hour for each hour
+At this stage, the data corresponding to the user selections (Step 1) are retrieved, and the statistical distribution is computed. The closest value from the distribution of simulation values at a given hour is then identified and returned for each hour of the year. This process is repeated for all 8 available dynamically-downscaled models on AE, including the 4 bias-adjusted models.
+
+The bias-adjusted and non-bias adjusted models are not collectively evaluated on the same distribution. Rather, the distribution is developed per model, and a separate profile for each model is returned. If a delta Standard Year is requested, the process is repeated for the selected warming level and the historical reference warming level (1.2°C) and the difference calculated for each model.
+
+### Step 3: Generate the Standard Year 8760 file
+Once each representative hour is selected, each model’s climate profile information is compiled into a single Standard Year file, with clear designations for each model’s profile. Standard Year files are provided in .csv format for ease of use. On the Analytics Engine Jupyter Hub, an absolute Standard Year for a point location takes approximately 5 minutes to generate, and 20 minutes for a gridded area (based on LA County).
+
+::: {.callout-note title="Note"}
+A Standard Year can be generated for all of California, but it will
+take over an hour to complete.
+:::
+
+## Applications 
+After generating Standard Year files, users may ask what steps to take next. When generating Standard Year files on the Analytics Engine, the Analytics Engine intentionally returns a separate climate profile for each model, all contained within one Standard Year file. No further aggregation or downsampling is performed, as the appropriate approach depends on the user’s specific application and need for the Standard Year information. The following guidance is provided to support next steps in using these data.
+
+### When to evaluate the range of results
+The differences between profiles from each climate model represents a sample of uncertainty from model differences and the natural variability of the climate. Examining these differences can provide valuable information about the possible range of future climate conditions. When an application requires understanding a range of future climate impacts using climate profiles, it is recommended to generate profiles at multiple percentiles for comparison. From there, users should evaluate the differences between models to determine how they inform the analysis. At this stage, users may elect to aggregate the model climate profiles within the Standard Year file and conduct an uncertainty analysis across the results.
+
+### When to aggregate results
+If an application requires a single climate profile, users may elect to aggregate results across climate models. It is recommended to first evaluate climate profiles from all of the available models to understand the spread of results and how that may affect the aggregated result.
+
+- **Multi-model median**: Computing a multi-model median across all model climate profiles is recommended when the application is sensitive to outliers or extreme values within the model range.
+- **Multi-model mean**: Computing a multi-model mean across all model climate profiles is recommended when the application is not sensitive to outliers or extreme values within the model range.
+- **Multi-model range**: Consider calculating the multi-model difference for each hour between the “max” and “min” model spread of conditions as a measure of uncertainty in addition to the multi-model aggregation.
+
+### When to select a single model
+If an aggregated Standard Year (e.g., multi-model median) is not appropriate or desired (e.g. when it is necessary to retain a single model’s synthetic record rather than aggregate), users may elect to pick a climate profile from a particular model. It is recommended to first evaluate all of the available models to understand where each falls in the spread of “median” conditions. Additionally, it is strongly recommended to document *which* model was selected and *why*.
+
+- Based on whether the application is sensitive to outliers and extreme values, select either the median model (application is sensitive) or the most average model (application is not sensitive).
+- If the range between models is very small, or not critical for the application or location, any model can serve as a representation of the ensemble.
+
+### When to weight results
+Weighting may be appropriate when an application involves multiple locations in the analysis of Standard Year data. Weighting options can include:
+
+- **Population weighting**: for building capacity, or in comparison across different locations
+- **Location-based weighting**: if your area of interest falls between several different weather stations
+- **Load weighting**: for generation and demand forecasting capacity across a service territory
+- **Building design weighting**: for comparison amongst different building types (e.g., commercial vs. residential)
+- **Weighting amongst different variables** for a given location (e.g., temperature, humidity)

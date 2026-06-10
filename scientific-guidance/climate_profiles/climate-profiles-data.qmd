@@ -1,0 +1,20 @@
+---
+title: "Accessing the Data"
+author: "Cal-Adapt Analytics Engine Team"
+date: "2024-03-24"
+date-modified: "2026-06-08"
+format:
+  html: default
+citation: false
+---
+
+Climate Profiles are accessible on the Analytics Engine in several locations, depending on your needs. 
+
+## Pregenerated files
+An extensive set of pre-generated Standard Years and FTMYs for weather station locations in California are available for direct download in two different locations: 
+
+1. Direct download and/or command line access via the [Cal-Adapt AWS catalog](https://cadcat.s3.amazonaws.com/index.html#climate-profiles/)
+2. Direct download using the [Cal-Adapt Data Download Tool](https://cal-adapt.org/dashboard/data-download-tool)
+
+## Custom climate profiles 
+To generate a custom climate profile using Python, including a custom GWL-based or time-based FTMY, check out the Jupyter Notebook [`custom_climate_profiles.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/custom_climate_profiles.ipynb), available on the Analytics Engine JupyterHub and in our public GitHub repository. Standard Year 8760s are not available via a time-based approach.

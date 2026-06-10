@@ -4,7 +4,7 @@ title: "Our Users"
 
 A variety of groups use climate information and data products, each with distinct needs and technical capabilities. These categories of users, called "User Personas", were derived from a series of workshops and user engagement conversations led by the Cal-Adapt engagement team. Cal-Adapt's tools, functionalities, and applications meet the unique needs of each User Persona.
 
-These User Personas include:
+## User personas 
 
 | User Persona | Description |
 |---|---|

@@ -12,16 +12,14 @@ website:
     left:
       - text: General Resources
         menu:
-          - text: Introduction to the Analytics Engine
+          - text: Getting Started
             href: general-resources/intro-to-ae.qmd
-          - text: Example Use Cases
-            href: general-resources/example-use-cases.qmd
           - text: Glossary
             href: glossary/index.qmd
-          - text: Cal-Adapt Work
+          - text: Reference Library
             href: general-resources/white-papers.qmd
-          - text: External References
-            href: general-resources/external-references.qmd
+          - text: Media
+            href: general-resources/media/video-tutorials.qmd
           - text: FAQs
             href: general-resources/faqs.qmd
       - text: Scientific Guidance

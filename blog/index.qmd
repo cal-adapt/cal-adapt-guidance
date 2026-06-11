@@ -1,8 +1,6 @@
 ---
 title: "Blog"
 citation: false
-format:
-  html: default
 listing:
   contents: posts
   sort: "date desc"

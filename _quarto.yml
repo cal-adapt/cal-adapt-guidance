@@ -30,7 +30,7 @@ website:
             text: About Climate Projections & Models
           - href: scientific-guidance/using_climate_projections/index.qmd
             text: Guidance on Using Climate Data in Decision Making
-          - href: scientific-guidance/climate-profiles.qmd
+          - href: scientific-guidance/climate_profiles/index.qmd
             text: Climate Profiles
           - href: uncertainty/index.qmd
             text: Uncertainty
@@ -93,7 +93,12 @@ website:
           contents:
             - scientific-guidance/using_climate_projections/index.qmd
             - scientific-guidance/using_climate_projections/using-climate-projections.qmd
-        - scientific-guidance/climate-profiles.qmd
+        - section: "Climate Profiles"
+          contents:
+            - scientific-guidance/climate_profiles/index.qmd
+            - scientific-guidance/climate_profiles/climate-profiles-data.qmd
+            - scientific-guidance/climate_profiles/standard-year.qmd
+            - scientific-guidance/climate_profiles/typical-met-year.qmd
         - section: "Uncertainty"
           contents:
             - uncertainty/index.qmd

@@ -1,4 +1,4 @@
 [build]
-  command = "wget -qO- https://github.com/quarto-dev/quarto-cli/releases/download/v1.7.31/quarto-1.7.31-linux-amd64.tar.gz | tar -xz && export PATH=$PATH:$PWD/quarto-1.7.31/bin && quarto render"
+  command = "wget -qO- https://github.com/quarto-dev/quarto-cli/releases/download/v1.7.31/quarto-1.7.31-linux-amd64.tar.gz | tar -xz -C /tmp && export PATH=$PATH:/tmp/quarto-1.7.31/bin && quarto render"
   publish = "_site"
   ignore = "exit 0"

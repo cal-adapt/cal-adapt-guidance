@@ -2,6 +2,22 @@
 title: "Our Users"
 ---
 
-::: {.callout-note}
-This page is under development.
-:::
+A variety of groups use climate information and data products, each with distinct needs and technical capabilities. These categories of users, called "User Personas", were derived from a series of workshops and user engagement conversations led by the Cal-Adapt engagement team. Cal-Adapt's tools, functionalities, and applications meet the unique needs of each User Persona.
+
+## User personas 
+
+| User Persona | Description |
+|---|---|
+| Technical User | A non-academic technical user who works hands-on with climate tools and data to conduct detailed analyses and meet specific technical and decision-making needs. |
+| Semi-Technical User | A semi-technical user operates between technical users and decision-makers, and seeks broader examinations of climate data and analytics, sufficient to communicate high-level information to decision-makers. |
+| Policy User | A policy user is a decision-maker who seeks high-level climate information, and has authority to influence behavior and outcomes within the energy sector. |
+| Academic / Researcher | An academic or researcher is engaged in accessing and examining climate data for scholarly or research purposes. |
+| Public Consumer / Learner | A public consumer or learner is an individual interested in climate change, seeking to gain a better understanding of climate-related issues. |
+
+Some users deploy Cal-Adapt tools and data for discrete, detailed analyses, while others only require broader knowledge on climate related issues. A user's technical capacity and climate information needs may evolve over time and with use of climate data. Cal-Adapt seeks to be a valuable resource for climate data across all of these user groups. While the Analytics Engine caters specifically to technical, semi-technical, or research users in the energy sector, the Data Explorer caters to policy users, educators, and public consumers of climate information.
+
+## Access to the Analytics Engine JupyterHub
+
+All of the data and tools developed by the Analytics Engine are openly and publicly available. However, access to the [Analytics Engine JupyterHub](https://analytics.cal-adapt.org/sign-in/), the cloud-based computing environment that allows users to run analyses without installing software, is currently limited to a select group of energy sector users who have been invited to alpha test the platform.
+
+If you are interested in being notified when the Analytics Engine JupyterHub becomes available to the general public, or if you would like to join our group of early testers, please send us an email at analytics@cal-adapt.org.

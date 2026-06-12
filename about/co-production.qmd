@@ -2,6 +2,16 @@
 title: "Our Co-Production Process"
 ---
 
-::: {.callout-note}
-This page is under development.
-:::
+One of the Analytics Engine's (AE) unique aspects is the use of a "co-production" process to build and grow the platform. In co-production, data and tool developers, users, scientists, decision-makers, and other key energy sector experts work collaboratively and iteratively to develop AE's tools, functionalities, and guidance. This approach draws from best practices and lessons learned in academic literature and practical case studies on developing actionable climate data and services.
+
+AE's intensive co-production engagements began in 2021 through interviews with key energy sector climate data users, to understand how they used climate data, the challenges they faced, and how to design AE to best support their needs. This was followed by a workshop (September 28-30, 2021) that included a broader set of California climate data users and decision-makers. During the workshop, participants collaboratively finalized a set of [use cases](../general-resources/example-use-cases.qmd) for the AE. These use cases continue to anchor the data, analytics, and guidance being developed within the project. Based on interest from workshop participants, a core "working group" was also identified to continue engaging with the [AE project team](our-team.qmd) in an iterative manner. The working group comprises energy sector data users representing utilities, state agencies, and energy consulting firms.
+
+Since 2021, the AE team has held regular working group meetings to continue user engagement, present work-in-progress, and seek feedback to improve the usability of AE's products. These meetings also provide an avenue for the project team and users to jointly discuss overall project priorities and propose alternatives where desired. In addition to the working group meetings, select energy sector users are engaged on a 1:1 basis. This focused engagement enables technical deliberations on specific topics and usability testing of newly developed data and tools. The team also offers occasional webinars and written update reports to reach broader audiences. Overall, the goal of this co-production approach is to ensure that the AE platform not only helps energy sector data users analyze climate data effectively (through the AE's data and analytics), but also guides them on the most appropriate ways to use climate data for planning and decisions (through the AE's guidance and other learning-oriented products).
+
+Energy sector climate data users in California interested in joining structured working group discussions are encouraged to contact analytics@cal-adapt.org to learn more about the mutual responsibilities, expectations, and timelines for participation.
+
+## References
+
+Jagannathan, K., et al. (2021). [It's Not Too Complex: How Story-Driven Engagement Can Make Scientific Assessments More Actionable.](https://doi.org/10.1175/BAMS-D-19-0296.1) *Bulletin of the American Meteorological Society*, 102(3), E606–E624.
+
+Kolstad, E. W., et al. (2019). [Trials, Errors, and Improvements in Coproduction of Climate Services.](https://doi.org/10.1175/BAMS-D-18-0201.1) *Bulletin of the American Meteorological Society*, 100(9), 1741–1751.

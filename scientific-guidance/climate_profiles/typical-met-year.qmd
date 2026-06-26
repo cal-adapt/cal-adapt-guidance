@@ -50,7 +50,7 @@ Although TMYs may reduce simulation workload associated with evaluating every ye
 - **AMY: Actual Meteorological Year** - The observed historical weather conditions from a specific year, which is used as a comparison to the synthetically-generated composite TMY year.
 
 ::: {.callout-note title="Note"}
-Cal-Adapt previously had functinoality to produce an “average meteorological year” for single-variable 8760s, which was also referred to as “AMY”. This terminology has been removed to avoid confusion with *actual meteorological years*.
+Cal-Adapt previously had fuctionality to produce an “average meteorological year” for single-variable 8760s, which was also referred to as “AMY”. This terminology has been removed to avoid confusion with *actual meteorological years*.
 :::
 
 ## Future TMYs

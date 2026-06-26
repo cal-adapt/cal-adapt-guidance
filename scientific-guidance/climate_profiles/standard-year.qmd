@@ -22,7 +22,7 @@ The differences between profiles from each climate model represents a sample of 
 ::: {.callout-note title="Fast-Access Standard Year Profiles"}
 Cal-Adapt has pre-generated Standard Year profiles for 5 common-use variables 
 (air temperature, relative humidity, heat index, wind speed, solar radiation)
-and multiple percentiles (5, 10, 40, 50, 60, 90, 95). These profiles are 
+and multiple percentiles (p5, 10, 40, 50, 60, 90, 95). These profiles are 
 available via the Cal-Adapt Data Download Tool.
 :::
 

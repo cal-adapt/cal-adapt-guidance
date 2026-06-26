@@ -5,6 +5,7 @@ date: "2024-03-24"
 date-modified: "2026-06-26"
 format:
   html: default
+  pdf: default
 citation: false
 ---
 

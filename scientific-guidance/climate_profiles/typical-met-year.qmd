@@ -10,7 +10,7 @@ resources:
   - figures/html/
 ---
 
-## Methodology 
+## Overview 
 A [typical meteorological year](/glossary/index.qmd#typical-meteorological-year) (TMY) profile is one year of hourly data that represents median meteorological conditions for a point location over a set amount of time (at least 15 years required). Cal-Adapt recommends and utilizes a 30-year period for TMY calculation, which adheres to compliance with [global warming level](/glossary/index.qmd#global-warming-level) (GWL) calculations.
 
 A TMY profile is built from ten specific weather variables that are weighted based on TMY standards ([NSRDB](https://nsrdb.nrel.gov/data-sets/tmy), [Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf)). Median conditions are statistically determined for those variables and the most “typical” month is selected for each month during a year. "Typical" months are then compiled into a single climate profile. For example, the most “typical” January within the 30 year period could be from 2010, while the most “typical” February could be from 2022, and so on. The end result is an hourly climate profile for an entire year with each month spliced together from multiple input years. TMY profiles are widely used as critical inputs for energy modeling, simulating solar energy conversion systems, and evaluating building standards and energy efficiency ([NSRDB](https://nsrdb.nrel.gov/data-sets/tmy), [Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf); [Laxo 2023](https://hga.com/climate-forward/)).
@@ -20,6 +20,73 @@ Cal-Adapt utilizes the NSRDB method and weighting schema (NSRDB, Wilcox and Mari
 Alternative weighting schemas may be appropriate dependent on use case.  
 :::
 
+## Applications
+A TMY dataset is a specific kind of annualized hourly climate profile. They represent the most typical conditions for multiple variables during a designated climatological period and include the natural diurnal and seasonal variations that occur within a 1-year period (NSRDB). Because TMYs are specifically developed for long-term planning of solar energy and to inform the design of buildings, the variables and weights that they use are therefore also specific to these applications.
+
+::: {.callout-note title="Note"}
+Although TMYs may reduce simulation workload associated with evaluating every year of data for different variables ([Qian et al. 2023](https://link.springer.com/article/10.1007/s12273-022-0967-z)), misapplication of TMY data into planning processes can propagate misfitted assumptions about “median conditions” into risk assessments, infrastructure planning, and policy design.
+:::
+
+### Example appropriate applications of TMYs
+
+- Average annual building energy consumption and design simulations ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf); [NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020); [Sobie and Curry 2025](https://www.sciencedirect.com/science/article/pii/S235234092500397X)), especially heating and cooling loads
+- Production estimates and performance comparisons of different energy systems types, especially solar systems ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf); [Crawley and Lawrie 2015](https://publications.ibpsa.org/proceedings/bs/2015/papers/bs2015_2707.pdf); [Chowdhury 2023](https://www.ornl.gov/publication/multi-model-future-typical-meteorological-ftmy-weather-files-nearly-every-us-county); [Li et al. 2023](https://www.sciencedirect.com/science/article/abs/pii/S0378778823005303); [Zeng et al. 2025](https://www.sciencedirect.com/science/article/abs/pii/S1364032124009390?via%3Dihub))
+- Energy asset and equipment sizing ([NYSERDA 2020](Energy asset and equipment sizing (NYSERDA 2020)))
+
+### Example inappropriate applications of TMY
+
+- Extreme event analysis, including high-impact hazards such as extreme heat, cold spells, wildfire ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf); [Peltier et al. 2024](https://www.aceee.org/sites/default/files/proceedings/ssb24/assets/attachments/20240722160818203_c563a22d-adf2-42fa-9e31-789b98700ad6.pdf); [NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020)) and power outages ([NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020)) (see XMYs below for extreme event analysis)
+- Capturing compounding and cascading events (see XMYs for extreme event analysis)
+- Historical TMYs should not be used for future building design ([Li et al. 2023](https://www.sciencedirect.com/science/article/abs/pii/S0378778823005303); [Zeng et al. 2025](https://www.sciencedirect.com/science/article/abs/pii/S1364032124009390?via%3Dihub); [Laxo 2023](https://hga.com/climate-forward/)) (see FTMYs below)
+- Evaluation of actual system performance ([NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020))
+- Near-real time forecasting ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf))
+- Custom weighting of variables; although alternative approaches may be appropriate based on specific use cases (e.g., specific building applications; [Qian et al. 2023](https://link.springer.com/article/10.1007/s12273-022-0967-z))
+
+## Common Acronyms & Shorthand for TMYs
+- **TMY: Typical Meteorological Year** - A TMY that provides the median conditions. TMYs can be computed for historical periods of time (a Historical TMY) or a future period of time (a Future TMY). The TMYs generated on the Analytics Engine are model-based TMYs.
+- **Historical TMY** - A TMY profile that provides median weather conditions for a historical period, which can be derived from historical observations or historical climate model data.
+- **FTMY: Future Typical Meteorological Year** - A TMY that provides median weather conditions for a future period, which can only be derived from future climate model data.
+- **XMY: Extreme Typical Meteorological Year** - A TMY that provides extreme weather conditions, either for a historical or future period, which can only be derived from model data. XMYs may also be referred to as “EMY”.
+- **AMY: Actual Meteorological Year** - The observed historical weather conditions from a specific year, which is used as a comparison to the synthetically-generated composite TMY year.
+
+::: {.callout-note title="Note"}
+Cal-Adapt previously had functinoality to produce an “average meteorological year” for single-variable 8760s, which was also referred to as “AMY”. This terminology has been removed to avoid confusion with *actual meteorological years*.
+:::
+
+## Future TMYs
+Future TMYs (FTMYs) incorporate future climate model data into a TMY framework using the same variables and weighting scheme. Given the multi-decadal lifespan of buildings and potential changes to energy system performance under climate conditions, FMTYs enable more forward-looking assessments of expected changes in their performance than TMYs constructed using historical data ([Laxo 2023](https://hga.com/climate-forward/); [NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020); [Chowdhury 2023](https://www.ornl.gov/publication/multi-model-future-typical-meteorological-ftmy-weather-files-nearly-every-us-county); [Bass and New 2020](https://www.osti.gov/servlets/purl/1735419); [Smith et al. 2025](https://ieeexplore.ieee.org/document/10990270); [Sobie and Curry 2025](https://www.sciencedirect.com/science/article/pii/S235234092500397X); [Rady et al. 2025](https://www.tandfonline.com/doi/abs/10.1080/17512549.2025.2457649); [Peltier et al. 2024](https://www.aceee.org/sites/default/files/proceedings/ssb24/assets/attachments/20240722160818203_c563a22d-adf2-42fa-9e31-789b98700ad6.pdf)).
+
+### Recommendations for FTMYs
+- Carefully consider whether a global warming level or a time-based approach for calculating a FTMY, especially with regards to projected climatic change over several decades ([Laxo 2023](https://hga.com/climate-forward/); [Sobie and Curry 2025](https://www.sciencedirect.com/science/article/pii/S235234092500397X)). Cal-Adapt recommends TMYs calculated using a [global warming levels](/scientific-guidance/about-climate-projections.qmd#what-are-global-warming-levels) approach which ensures consistency between future climate projections and reduces uncertainties resulting from the wide range of climate sensitivity in climate models. 
+- Select the location of interest as needed by the analysis, rather than relying on weather station locations. Historical observation-based TMYs are historically based on weather station locations which may be far away from urban areas and not accurately reflect the actual highly localized microclimatic environment, especially for phenomena such as the urban heat island effect ([Li et al. 2023](https://www.sciencedirect.com/science/article/abs/pii/S0378778823005303)). Cal-Adapt TMYs and FTMYs can be calculated at **any location** within the WECC area, given latitude and longitude coordinates.
+
+## Working with TMY files
+After generating model-based TMY files, users may ask what steps to take next. Cal-Adapt TMY files are kept model-independent (one profile per model). No further aggregation or downsampling is performed, as the appropriate approach depends on the user’s specific application and need for the TMY information. The following guidance is provided to support next steps in using these data.
+
+### When to evaluate the range of results
+When the application requires an understanding of the range of future, or even extreme, options using a TMY data format, it is first recommended to evaluate whether a TMY, FTMY, or XMY is the most appropriate dataset to use. If a TMY or FTMY is needed, it is **recommended to use a GWL-based TMY or FTMY, instead of a time-based climatological reference period**. The GWL method reduces uncertainties between models and alleviates the [hot model problem](https://analytics.cal-adapt.org/guidance/about_climate_projections_and_models/), so that the user can more directly compare model-based FTMYs at a specific planning horizon. From there, evaluate the differences between models and how they can inform the analysis. At this stage, users may elect to aggregate the FTMYs and conduct an uncertainty analysis across the results.
+
+### When to aggregate results
+If an application requires a single TMY, users may elect to aggregate results. It is recommended to evaluate TMYs from all of the available models to understand where each falls in the spread of conditions as well as the need for physically consistent results.
+
+- **Multi-model median**: A TMY itself is designed to capture median conditions, therefore calculating a multi-model median may be the most appropriate aggregation approach. A multi-model median is recommended over a multi-model mean, because the mean is sensitive to outliers (extreme values) whereas a median is not, even with a “typical” TMY. Different considerations should be made for XMYs.
+- **Multi-model range**: Consider calculating the multi-model difference for each hour between the “max” and “min” model spread of conditions as a measure of uncertainty in addition to the multi-model median.
+
+### When to select a single model
+If an aggregated TMY (e.g., multi-model median) is not appropriate or desired (e.g. when it is necessary to retain a single model’s synthetic record rather than aggregate), users may elect to select a TMY from a single model. It is recommended that users first evaluate all of the available models to understand where each falls in the spread of “median” conditions. Additionally, it is strongly recommended that users document *which* model was selected and *why*.
+
+- **Selecting the median model**: A TMY itself is designed to capture median conditions, therefore the median model may be the most appropriate selection.
+- **Selecting any model**: If the range between models is very small, or not critical for the application or location, any model can serve as a representation of the ensemble.
+
+### When to weight results
+Weighting may be appropriate for the user’s application if the user needs to consider multiple locations in their analysis using TMY data. For example, weighting TMY profiles for a gridded area assessment is a common application, especially in adhering to building standards. Weighting options may include:
+
+- **Population weighting**: for building capacity, or in comparison across different locations
+- **Location-based weighting**: if your area of interest falls between several different weather stations
+- **Load weighting**: for generation and demand forecasting capacity across a service territory
+- **Building design weighting**: for comparison amongst different building types (e.g., commercial vs. residential)
+
+## Methodology
 ### Step 1: User selects location of interest and timeframe of interest (Historical TMY or Future TMY)
 Cal-Adapt historical or future TMYs (FTMY) are currently for point-based locations, meaning that a user will first select a specific location of interest (e.g., a power plant or an airport weather station). At this point, the user will also select a period of time, such as a historical period or future planning horizon. At least 15 years of daily data is required; Cal-Adapt uses a default 30-year period in line with best-practices for climate data. Cal-Adapt TMYs can be generated either via global warming level or time-based periods.
 
@@ -108,72 +175,6 @@ Once the “typical” months are selected for the entire year, a TMY profile is
 :::
 An example historical TMY hourly profile for Los Angeles International Airport (LAX) for the 2038–2068 period, from MPI-ESM1-2-HR.
 :::
-
-## Applications
-A TMY dataset is a specific kind of annualized hourly climate profile. They represent the most typical conditions for multiple variables during a designated climatological period and include the natural diurnal and seasonal variations that occur within a 1-year period (NSRDB). Because TMYs are specifically developed for long-term planning of solar energy and to inform the design of buildings, the variables and weights that they use are therefore also specific to these applications.
-
-::: {.callout-note title="Note"}
-Although TMYs may reduce simulation workload associated with evaluating every year of data for different variables ([Qian et al. 2023](https://link.springer.com/article/10.1007/s12273-022-0967-z)), misapplication of TMY data into planning processes can propagate misfitted assumptions about “median conditions” into risk assessments, infrastructure planning, and policy design.
-:::
-
-### Example appropriate applications of TMYs
-
-- Average annual building energy consumption and design simulations ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf); [NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020); [Sobie and Curry 2025](https://www.sciencedirect.com/science/article/pii/S235234092500397X)), especially heating and cooling loads
-- Production estimates and performance comparisons of different energy systems types, especially solar systems ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf); [Crawley and Lawrie 2015](https://publications.ibpsa.org/proceedings/bs/2015/papers/bs2015_2707.pdf); [Chowdhury 2023](https://www.ornl.gov/publication/multi-model-future-typical-meteorological-ftmy-weather-files-nearly-every-us-county); [Li et al. 2023](https://www.sciencedirect.com/science/article/abs/pii/S0378778823005303); [Zeng et al. 2025](https://www.sciencedirect.com/science/article/abs/pii/S1364032124009390?via%3Dihub))
-- Energy asset and equipment sizing ([NYSERDA 2020](Energy asset and equipment sizing (NYSERDA 2020)))
-
-### Example inappropriate applications of TMY
-
-- Extreme event analysis, including high-impact hazards such as extreme heat, cold spells, wildfire ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf); [Peltier et al. 2024](https://www.aceee.org/sites/default/files/proceedings/ssb24/assets/attachments/20240722160818203_c563a22d-adf2-42fa-9e31-789b98700ad6.pdf); [NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020)) and power outages ([NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020)) (see XMYs below for extreme event analysis)
-- Capturing compounding and cascading events (see XMYs for extreme event analysis)
-- Historical TMYs should not be used for future building design ([Li et al. 2023](https://www.sciencedirect.com/science/article/abs/pii/S0378778823005303); [Zeng et al. 2025](https://www.sciencedirect.com/science/article/abs/pii/S1364032124009390?via%3Dihub); [Laxo 2023](https://hga.com/climate-forward/)) (see FTMYs below)
-- Evaluation of actual system performance ([NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020))
-- Near-real time forecasting ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf))
-- Custom weighting of variables; although alternative approaches may be appropriate based on specific use cases (e.g., specific building applications; [Qian et al. 2023](https://link.springer.com/article/10.1007/s12273-022-0967-z))
-
-## Common Acronyms & Shorthand for TMYs
-- **TMY: Typical Meteorological Year** - A TMY that provides the median conditions. TMYs can be computed for historical periods of time (a Historical TMY) or a future period of time (a Future TMY). The TMYs generated on the Analytics Engine are model-based TMYs.
-- **Historical TMY** - A TMY profile that provides median weather conditions for a historical period, which can be derived from historical observations or historical climate model data.
-- **FTMY: Future Typical Meteorological Year** - A TMY that provides median weather conditions for a future period, which can only be derived from future climate model data.
-- **XMY: Extreme Typical Meteorological Year** - A TMY that provides extreme weather conditions, either for a historical or future period, which can only be derived from model data. XMYs may also be referred to as “EMY”.
-- **AMY: Actual Meteorological Year** - The observed historical weather conditions from a specific year, which is used as a comparison to the synthetically-generated composite TMY year.
-
-::: {.callout-note title="Note"}
-Cal-Adapt previously had functinoality to produce an “average meteorological year” for single-variable 8760s, which was also referred to as “AMY”. This terminology has been removed to avoid confusion with *actual meteorological years*.
-:::
-
-## Future TMYs
-Future TMYs (FTMYs) incorporate future climate model data into a TMY framework using the same variables and weighting scheme. Given the multi-decadal lifespan of buildings and potential changes to energy system performance under climate conditions, FMTYs enable more forward-looking assessments of expected changes in their performance than TMYs constructed using historical data ([Laxo 2023](https://hga.com/climate-forward/); [NYSERDA 2020](https://www.resourcerefocus.com/ftmy-2020); [Chowdhury 2023](https://www.ornl.gov/publication/multi-model-future-typical-meteorological-ftmy-weather-files-nearly-every-us-county); [Bass and New 2020](https://www.osti.gov/servlets/purl/1735419); [Smith et al. 2025](https://ieeexplore.ieee.org/document/10990270); [Sobie and Curry 2025](https://www.sciencedirect.com/science/article/pii/S235234092500397X); [Rady et al. 2025](https://www.tandfonline.com/doi/abs/10.1080/17512549.2025.2457649); [Peltier et al. 2024](https://www.aceee.org/sites/default/files/proceedings/ssb24/assets/attachments/20240722160818203_c563a22d-adf2-42fa-9e31-789b98700ad6.pdf)).
-
-### Recommendations for FTMYs
-- Carefully consider whether a global warming level or a time-based approach for calculating a FTMY, especially with regards to projected climatic change over several decades ([Laxo 2023](https://hga.com/climate-forward/); [Sobie and Curry 2025](https://www.sciencedirect.com/science/article/pii/S235234092500397X)). Cal-Adapt recommends TMYs calculated using a [global warming levels](/scientific-guidance/about-climate-projections.qmd#what-are-global-warming-levels) approach which ensures consistency between future climate projections and reduces uncertainties resulting from the wide range of climate sensitivity in climate models. 
-- Select the location of interest as needed by the analysis, rather than relying on weather station locations. Historical observation-based TMYs are historically based on weather station locations which may be far away from urban areas and not accurately reflect the actual highly localized microclimatic environment, especially for phenomena such as the urban heat island effect ([Li et al. 2023](https://www.sciencedirect.com/science/article/abs/pii/S0378778823005303)). Cal-Adapt TMYs and FTMYs can be calculated at **any location** within the WECC area, given latitude and longitude coordinates.
-
-## Working with TMY files
-After generating model-based TMY files, users may ask what steps to take next. Cal-Adapt TMY files are kept model-independent (one profile per model). No further aggregation or downsampling is performed, as the appropriate approach depends on the user’s specific application and need for the TMY information. The following guidance is provided to support next steps in using these data.
-
-### When to evaluate the range of results
-When the application requires an understanding of the range of future, or even extreme, options using a TMY data format, it is first recommended to evaluate whether a TMY, FTMY, or XMY is the most appropriate dataset to use. If a TMY or FTMY is needed, it is **recommended to use a GWL-based TMY or FTMY, instead of a time-based climatological reference period**. The GWL method reduces uncertainties between models and alleviates the [hot model problem](https://analytics.cal-adapt.org/guidance/about_climate_projections_and_models/), so that the user can more directly compare model-based FTMYs at a specific planning horizon. From there, evaluate the differences between models and how they can inform the analysis. At this stage, users may elect to aggregate the FTMYs and conduct an uncertainty analysis across the results.
-
-### When to aggregate results
-If an application requires a single TMY, users may elect to aggregate results. It is recommended to evaluate TMYs from all of the available models to understand where each falls in the spread of conditions as well as the need for physically consistent results.
-
-- **Multi-model median**: A TMY itself is designed to capture median conditions, therefore calculating a multi-model median may be the most appropriate aggregation approach. A multi-model median is recommended over a multi-model mean, because the mean is sensitive to outliers (extreme values) whereas a median is not, even with a “typical” TMY. Different considerations should be made for XMYs.
-- **Multi-model range**: Consider calculating the multi-model difference for each hour between the “max” and “min” model spread of conditions as a measure of uncertainty in addition to the multi-model median.
-
-### When to select a single model
-If an aggregated TMY (e.g., multi-model median) is not appropriate or desired (e.g. when it is necessary to retain a single model’s synthetic record rather than aggregate), users may elect to select a TMY from a single model. It is recommended that users first evaluate all of the available models to understand where each falls in the spread of “median” conditions. Additionally, it is strongly recommended that users document *which* model was selected and *why*.
-
-- **Selecting the median model**: A TMY itself is designed to capture median conditions, therefore the median model may be the most appropriate selection.
-- **Selecting any model**: If the range between models is very small, or not critical for the application or location, any model can serve as a representation of the ensemble.
-
-### When to weight results
-Weighting may be appropriate for the user’s application if the user needs to consider multiple locations in their analysis using TMY data. For example, weighting TMY profiles for a gridded area assessment is a common application, especially in adhering to building standards. Weighting options may include:
-
-- **Population weighting**: for building capacity, or in comparison across different locations
-- **Location-based weighting**: if your area of interest falls between several different weather stations
-- **Load weighting**: for generation and demand forecasting capacity across a service territory
-- **Building design weighting**: for comparison amongst different building types (e.g., commercial vs. residential)
 
 # References
 

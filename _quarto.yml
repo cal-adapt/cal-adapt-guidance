@@ -145,5 +145,8 @@ format:
     theme: cosmo
     css: styles.css
     toc: false
+    format-links: [pdf]
     citation: true
     include-after-body: glossary/_glossary-tooltip-inline.html
+  pdf:
+    toc: false

@@ -13,13 +13,13 @@ website:
       - text: General Resources
         menu:
           - text: Getting Started
-            href: general-resources/intro-to-ae.qmd
+            href: general-resources/getting-started/index.qmd
           - text: Glossary
             href: glossary/index.qmd
           - text: Reference Library
-            href: general-resources/white-papers.qmd
+            href: general-resources/reference-library/index.qmd
           - text: Media
-            href: general-resources/media/video-tutorials.qmd
+            href: general-resources/media/index.qmd
           - text: FAQs
             href: general-resources/faqs.qmd
       - text: Scientific Guidance
@@ -70,15 +70,15 @@ website:
       contents:
         - section: "Getting Started"
           contents:
-            - general-resources/getting-started.qmd
-            - general-resources/intro-to-ae.qmd
-            - general-resources/example-use-cases.qmd
+            - general-resources/getting-started/index.qmd
+            - general-resources/getting-started/intro-to-ae.qmd
+            - general-resources/getting-started/example-use-cases.qmd
         - glossary/index.qmd
         - section: "Reference Library"
           contents:
-            - general-resources/reference-library.qmd
-            - general-resources/white-papers.qmd
-            - general-resources/external-references.qmd
+            - general-resources/reference-library/index.qmd
+            - general-resources/reference-library/white-papers.qmd
+            - general-resources/reference-library/external-references.qmd
         - section: "Media"
           contents:
             - general-resources/media/index.qmd
@@ -144,9 +144,11 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: false
+    toc: true
     format-links: [pdf]
     citation: true
-    include-after-body: glossary/_glossary-tooltip-inline.html
+    include-after-body:
+      - glossary/_glossary-tooltip-inline.html
+      - _format-links-top.html
   pdf:
     toc: false

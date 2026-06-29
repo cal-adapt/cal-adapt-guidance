@@ -66,18 +66,22 @@ website:
     - id: general-resources
       title: "General Resources"
       style: docked
+      collapse-level: 1
       contents:
         - section: "Getting Started"
           contents:
+            - general-resources/getting-started.qmd
             - general-resources/intro-to-ae.qmd
             - general-resources/example-use-cases.qmd
         - glossary/index.qmd
         - section: "Reference Library"
           contents:
+            - general-resources/reference-library.qmd
             - general-resources/white-papers.qmd
             - general-resources/external-references.qmd
         - section: "Media"
           contents:
+            - general-resources/media/index.qmd
             - general-resources/media/video-tutorials.qmd
             - general-resources/media/webinars.qmd
             - general-resources/media/presentations.qmd
@@ -85,6 +89,7 @@ website:
     - id: scientific-guidance
       title: "Scientific Guidance"
       style: docked
+      collapse-level: 1
       contents:
         - scientific-guidance/about-climate-projections.qmd
         - section: "Guidance on Using Climate Data in Decision Making"
@@ -111,6 +116,7 @@ website:
     - id: data-tools
       title: "Data & Tools"
       style: docked
+      collapse-level: 1
       contents:
         - section: "Explore Data"
           contents:
@@ -127,6 +133,7 @@ website:
     - id: about
       title: "About"
       style: docked
+      collapse-level: 1
       contents:
         - about/connection-to-caladapt.qmd
         - about/co-production.qmd
@@ -137,6 +144,6 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
     citation: true
     include-after-body: glossary/_glossary-tooltip-inline.html

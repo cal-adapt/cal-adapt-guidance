@@ -179,7 +179,7 @@ Weighting may be appropriate for the user’s application if the user needs to c
 - **Load weighting**: for generation and demand forecasting capacity across a service territory
 - **Building design weighting**: for comparison amongst different building types (e.g., commercial vs. residential)
 
-# References
+## References
 
 - Bass, B., and New, J. (2020). *Future Typical Meteorological Year.* Oak Ridge National Laboratory. <https://www.osti.gov/servlets/purl/1735419>
 - Big Ladder Software. *EnergyPlus Weather File (EPW) Data Dictionary.* <https://bigladdersoftware.com/epx/docs/8-3/auxiliary-programs/energyplus-weather-file-epw-data-dictionary.html>

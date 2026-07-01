@@ -40,7 +40,7 @@ For seven Cal-Adapt models, raw CMIP6 provides multiple ensemble members. Becaus
 ::: {#fig-members}
 ::: {.content-visible when-format="html"}
 <!-- Wrapped in a scrollable div container -->
-<div style="width: 100%; overflow-x: auto; display: block;">
+<div class="figure-container">
 ```{=html}
 {{< include figures/html/members_variability.html >}}
 ```

@@ -31,12 +31,7 @@ nav#TOC li:has(ul a.active) > ul {
   display: block;
 }
 
-/* Constrain embedded Bokeh/Panel figures to content column */
-.figure-container {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
+
 
 div[id^="fig-"] {
   max-width: 100%;
@@ -57,4 +52,21 @@ div[id^="fig-"] {
 
 .tooltip .tooltip-arrow::before {
   border-top-color: #ddd;
+}
+
+/*
+# Constrain embedded Bokeh/Panel figures to content column 
+.figure-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+*/
+
+/* Use scroll bar for overflown figures */
+.figure-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
 }

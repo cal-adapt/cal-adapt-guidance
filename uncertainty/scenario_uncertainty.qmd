@@ -80,7 +80,7 @@ As shown in @fig-spread, the spread is near zero through 2035, rises gradually t
 
 # How does scenario choice compare across planning horizons?
 
-The plume chart shows trends; this bar chart makes the comparison between planning horizons concrete and numerical. For each of three standard planning windows, the scenario MMMs are shown side by side with the model spread overlaid as error bars.
+The plume chart shows trends; this bar chart makes the comparison between planning horizons concrete and numerical. For each of three standard planning windows, the scenario MMMs are shown side by side with the model spread overlaid as bars.
 
 ::: {#fig-bars}
 ::: {.content-visible when-format="html"}
@@ -93,10 +93,10 @@ The plume chart shows trends; this bar chart makes the comparison between planni
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/scenario_period_bars.png)
 :::
-**Period-mean California temperature anomaly by scenario.** Bars are the multi-model means for each scenario over three planning horizons (near-term 2020–2040, mid-century 2041–2070, end-of-century 2071–2100); error bars span the full model spread (min–max across the LOCA2 models).
+**Period-mean California temperature anomaly by scenario.** Dots are the multi-model means for each scenario over three planning horizons (near-term 2020–2040, mid-century 2041–2070, end-of-century 2071–2100); bars span the full model spread (±1 standard deviation across the LOCA2 models).
 :::
 
-Reading @fig-bars, the bars are the multi-model means and the error bars span the full range across the LOCA2 models within each scenario. In the near-term panel, the three bars are nearly identical, and the scenario choice is irrelevant at that horizon. In the end-of-century panel, the bars are well-separated and each error bar (model spread) is smaller than the gap between adjacent bars (scenario spread), the scenario choice is the dominant source of uncertainty.
+Reading @fig-bars, the dots are the multi-model means and the bars span the full range across the LOCA2 models within each scenario. In the near-term panel, the three dots very close, making the scenario choice less relevant than the model uncertainty at that horizon. By the end-of-century, the dots are well-separated, making the scenario choice comparable and/or more relevant to the model spread; the scenario choice is the dominant source of uncertainty as shown in figure @fig-variance.
 
 
 # When does scenario uncertainty overtake model uncertainty?
@@ -147,13 +147,10 @@ The timeseries above is a California-wide average. Scenario uncertainty is not s
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/scenario_spatial_maps.png)
 :::
-**California temperature anomaly at end-of-century, scenario sensitivity.** Left and centre: multi-model mean temperature anomaly (relative to 1981–2010) under SSP2-4.5 and SSP5-8.5 over 2071–2100. Right: the difference (SSP5-8.5 − SSP2-4.5), the spatial field of scenario uncertainty, where it is darkest, the choice of emissions pathway matters most for that grid cell.
+**California temperature anomaly at end-of-century, scenario sensitivity.** Left and centre: multi-model mean temperature anomaly (relative to 1981–2010) under SSP2-4.5 and SSP5-8.5 over 2071–2100. Right: the difference (SSP5-8.5 − SSP2-4.5) shows the local temperature change (SSP5-8.5 − SSP2-4.5) expressed as a fraction of the domain-mean temperature change; positive values indicate above-average warming, negative values indicate below-average warming, relative to the spatial mean.
 :::
 
-Reading @fig-spatial, the left and centre panels show the multi-model mean temperature change under the two bookend scenarios. Both show broadly similar spatial patterns, with more warming inland than on the coast, amplified warming at elevation, but with the SSP5-8.5 values uniformly larger.
-
-The right panel is the most informative: the **difference map is the spatial field of scenario uncertainty**. Where it is darkest, the choice of emissions pathway matters most for that location's projected warming. Geographic regions that are projected to warm the fastest also have the largest sensitivity to emissions scenario. In California those regions are the interior valleys and Sierra Nevada
-
+Reading @fig-spatial, the left and centre panels show the multi-model mean temperature change under the two bookend scenarios. Both show broadly similar spatial patterns, with more warming inland than on the coast, amplified warming at elevation, with the SSP5-8.5 values uniformly larger. The right panel shows the **difference map is the spatial field of scenario uncertainty**. The choice of emissions pathway matters most for some locations than others. Geographic regions that are projected to warm the fastest also have the largest sensitivity to emissions scenario. In California those regions are the interior valleys and Sierra Nevada.
 
 
 # When does scenario choice matter?

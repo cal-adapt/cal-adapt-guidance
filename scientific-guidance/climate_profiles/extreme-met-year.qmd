@@ -85,7 +85,44 @@ obscure critical vulnerabilities and lead to incomplete assessment.
 ## Methodology: Shock XMY
 The Shock Event XMY represents localized weather conditions that strain peak demand by emphasizing the range of variability within a distribution. This method identifies the weather year distribution that differs the greatest from long-term climatology. 
 
-*placeholder figure: xmy-shock-workflow.png*
+::: {#fig-xmy-shock-workflow}
+::: {.content-visible when-format="html"}
+```{mermaid}
+flowchart TD
+    A["<i>Inputs</i>: Select <b>Location</b> + <b>Planning Horizon</b>"]
+    B["Select Shock Extreme <b>Type</b>"]
+    C["<b><span style='color:#0000cc'>Cold</span></b><br><span style='color:#000000'>Extreme</span>"]
+    D["<b><span style='color:#cc0000'>Hot</span></b><br><span style='color:#000000'>Extreme</span>"]
+    E["<span style='color:#000000'>Daily </span><b><span style='color:#0000cc'>Min</span></b><br><span style='color:#000000'>Temperature</span>"]
+    F["<span style='color:#000000'>Daily </span><b><span style='color:#cc0000'>Max</span></b><br><span style='color:#000000'>Temperature</span>"]
+    G["<b><span style='color:#0000cc'>Max Negative<br>Error</span></b>"]
+    H["<b><span style='color:#cc0000'>Max Positive<br>Error</span></b>"]
+    I["Compile Extreme Months into Annual Timeseries"]
+    J["<i>Outputs</i>: <b>Shock XMY Profile</b>"]
+
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    D --> F
+    E --> G
+    F --> H
+    G --> I
+    H --> I
+    I --> J
+
+    classDef default fill:#e0e0e0,stroke:#000000
+    style A color:#000000
+    style B color:#000000
+    style I color:#000000
+    style J color:#000000
+```
+:::
+::: {.content-visible when-format="pdf"}
+![](figures/static/xmy_shock_workflow.png)
+:::
+Shock XMY climate profile workflow.
+:::
 
 ### Step 1: Select Location and Planning Horizon
 Cal-Adapt Shock XMYs are for point-based locations, meaning that a user will first select a specific location of interest, such as a power plant or an airport weather station. The user will also select a climatological period of time, such as a global warming level planning horizon centered around 30 years of data, or a time-based 30-year period. Cal-Adapt recommends a GWL-based approach to reduce multi-model uncertainty when using global climate models. 
@@ -108,7 +145,39 @@ Once the most extreme months are selected, the standard meteorological informati
 ## Methodology: Persistence XMY
 The Persistence XMY represents localized weather conditions that stress an energy system by selecting hours associated with specific percentile-based extremes within the climatological distribution, prioritizing sustained statistical deviation from typical conditions. This method allows precise tuning for exact conditions in order to stress test systems, such as “turning a dial” on the intensity of the desired extreme. 
 
-*placeholder figure: xmy-persistence-workflow.png*
+::: {#fig-xmy-persistence-workflow}
+::: {.content-visible when-format="html"}
+```{mermaid}
+flowchart TD
+    A["<i>Inputs</i>: Select <b>Location</b> + <b>Planning Horizon</b>"]
+    B["Select <b>Extreme Percentile</b>"]
+    C["<i><span style='color:#000000'>Lower Percentiles</span></i><br><b><span style='color:#0000cc'>Cold</span></b><span style='color:#000000'> Extreme</span>"]
+    D["<i><span style='color:#000000'>Upper Percentiles</span></i><br><b><span style='color:#cc0000'>Hot</span></b><span style='color:#000000'> Extreme</span>"]
+    E["Hourly Temperature Distribution"]
+    F["Compile Extreme Hours into Annual Timeseries"]
+    G["<i>Outputs</i>: <b>Persistence XMY Profile</b>"]
+
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    D --> E
+    E --> F
+    F --> G
+
+    classDef default fill:#e0e0e0,stroke:#000000
+    style A color:#000000
+    style B color:#000000
+    style E color:#000000
+    style F color:#000000
+    style G color:#000000
+```
+:::
+::: {.content-visible when-format="pdf"}
+![](figures/static/xmy_persistence_workflow.png)
+:::
+Persistence XMY climate profile workflow.
+:::
 
 ### Step 1: Select Location and Planning Horizon
 Cal-Adapt Persistence XMYs are for point-based locations, meaning that a user will first select a specific location of interest, such as a power plant or an airport weather station. The user will also select a climatological period of time, such as a global warming level centered around 30 years of data, or a time-based 30-year period. Cal-Adapt recommends a GWL-based approach to reduce multi-model uncertainty when using global climate models. 

@@ -3,6 +3,9 @@ title: "Model Uncertainty"
 author: "Cal-Adapt Analytics Engine Team"
 date: "2026-05-21"
 date-modified: "2026-05-21"
+format:
+  html: default
+  pdf: default
 ---
 
 # What is model uncertainty?

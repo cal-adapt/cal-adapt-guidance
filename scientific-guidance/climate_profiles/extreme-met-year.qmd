@@ -43,7 +43,10 @@ However, the timing, duration, and sequencing of extreme events, or “shocks”
 For example, peak temperature events may occur during periods of relatively low system demand or may not coincide with other compounding stressors to the grid. 
 Additionally, the error-based selection method provides limited flexibility for tailoring events to specific return periods, dates, or desired intensity levels. 
 
-*placeholder figure: shock-timeseries.png*
+::: {#fig-shock-timeseries}
+![](figures/static/shock_timeseries.png)
+Shock XMY 8760 hourly timeseries.
+:::
 
 
 ### Persistence Extreme XMY: Sustained Stress
@@ -59,7 +62,10 @@ such as “turning a dial” on grid stress testing thresholding scenarios for s
 The hourly chronology is not representative of a “real” year of data because it is not chronologically consistent: each hour is defined by the extreme percentile. 
 A Persistence XMY is limited in its suitability for analyses that require realistic weather evolution or event chronology, but can provide key insights for extreme threshold tuning in resource adequacy planning. 
 
-*placeholder figure: persistent-timeseries.png*
+::: {#fig-persistence-timeseries}
+![](figures/static/persistence_timeseries.png)
+Persistence XMY 8760 hourly timeseries.
+:::
 
 
 ## Use Cases
@@ -80,13 +86,15 @@ obscure critical vulnerabilities and lead to incomplete assessment.
 - If you require an extreme profile that **preserves temporal consistency** of day-to-day variability and natural diurnal cycles, the **Shock XMY** climate profile is recommended. 
 - If you require a **fully customizable intensity level**, such as "turning a dial" on stress testing, consider a **Persistence XMY** climate profile. Be aware that each hour is defined by the desired extreme percentile.
 
-*placeholder figure: labor-day-heatwave.png*
+::: {#fig-labor-day-heatwave}
+![](figures/static/use_case_labor-day-heatwave.png)
+Labor Day 2022 heatwave use case.
+:::
 
 ## Methodology: Shock XMY
 The Shock Event XMY represents localized weather conditions that strain peak demand by emphasizing the range of variability within a distribution. This method identifies the weather year distribution that differs the greatest from long-term climatology. 
 
 ::: {#fig-xmy-shock-workflow}
-::: {.content-visible when-format="html"}
 ```{mermaid}
 flowchart TD
     A["<i>Inputs</i>: Select <b>Location</b> + <b>Planning Horizon</b>"]
@@ -117,10 +125,6 @@ flowchart TD
     style I color:#000000
     style J color:#000000
 ```
-:::
-::: {.content-visible when-format="pdf"}
-![](figures/static/xmy_shock_workflow.png)
-:::
 Shock XMY climate profile workflow.
 :::
 
@@ -136,7 +140,7 @@ Hourly air temperature is retrieved for the location and climatology selections 
 ### Step 4: Calculate the Maximized Error between Climatology and Extreme Months
 For each month, two sets of cumulative distribution functions (CDF) are calculated: one for the long-term median climatology across all candidate years, and one for each year within the climatology (i.e., a candidate year). The candidate year is compared against climatology to quantitatively select the month that is furthest from the long-term median conditions, maximizing the error. For cold extremes, this translates to the lowest-value month or maximized negative error relative to climatology. For hot extremes, the highest-value month or maximized positive error relative to climatology is selected (Figure 7). This process is repeated for all months, per simulation. Doing so ensures that model data is kept intact within a single physically-consistent climate profile, rather than pooling across models which introduces multi-model uncertainty. Following TMY methodological best practice, years of abnormal volcanic activity are excluded from consideration due to the impact of aerosols on air temperatures. 
 
-*figure placeholder: cold and hot month selection*
+*ADD FIGURE: cold_shock_cdf.png and hot_shock_cdf.png*
 
 ### Step 5: Compile Extreme Months and Generate XMY Profile
 Once the most extreme months are selected, the standard meteorological information included in a TMY profile are retrieved for contemporaneous months. XMY profiles therefore include: air temperature, dewpoint temperature, relative humidity, global irradiance, direct irradiance, diffuse irradiance, downwelling radiation, wind speed and direction, and surface air pressure for each of the designated months as determined by the extreme air temperature profile. In other words, if February 2005 is the most extreme month for a cold Shock XMY, all other variables are explicitly extracted for February 2005 to maintain a physically consistent profile. Smoothing at the monthly interface between months is performed via second-degree polynomial curve fit to prevent discontinuities at the month interface ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf)). 
@@ -146,7 +150,6 @@ Once the most extreme months are selected, the standard meteorological informati
 The Persistence XMY represents localized weather conditions that stress an energy system by selecting hours associated with specific percentile-based extremes within the climatological distribution, prioritizing sustained statistical deviation from typical conditions. This method allows precise tuning for exact conditions in order to stress test systems, such as “turning a dial” on the intensity of the desired extreme. 
 
 ::: {#fig-xmy-persistence-workflow}
-::: {.content-visible when-format="html"}
 ```{mermaid}
 flowchart TD
     A["<i>Inputs</i>: Select <b>Location</b> + <b>Planning Horizon</b>"]
@@ -172,10 +175,6 @@ flowchart TD
     style F color:#000000
     style G color:#000000
 ```
-:::
-::: {.content-visible when-format="pdf"}
-![](figures/static/xmy_persistence_workflow.png)
-:::
 Persistence XMY climate profile workflow.
 :::
 

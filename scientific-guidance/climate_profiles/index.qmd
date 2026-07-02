@@ -23,6 +23,7 @@ The Cal-Adapt: Analytics Engine currently provides three kinds of **synthetic** 
 
 ## References
 
+- Ford, V., Roman, J., Machuca, V., Ordonez, A., Keeney, N., Schroeder, N., & Doherty, O. (2026) *Planning for the Exceptional: Extreme Meteorological Years in Energy System Planning.* Cal-Adapt. <https://doi.org/10.5281/zenodo.FINISH_LINK>
 - New York State Energy Research and Development Authority (NYSERDA). (2020). *Future TMY Methodology.* Resource Refocus. <https://www.resourcerefocus.com/ftmy-2020>
 - Smith, E. T., Diaz, D. B., & Mardian, J. (2025). *A Climate-Informed Approach to Create Hourly Future Weather Timeseries for Power System Planning.* IEEE Access, 13, 82796–82806. <https://ieeexplore.ieee.org/document/10990270>
 - Wilcox, S., & Marion, W. (2008). *Users Manual for TMY3 Data Sets.* National Renewable Energy Laboratory. <https://docs.nrel.gov/docs/fy08osti/43156.pdf>

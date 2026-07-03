@@ -97,6 +97,7 @@ website:
             - scientific-guidance/climate_profiles/climate-profiles-data.qmd
             - scientific-guidance/climate_profiles/standard-year.qmd
             - scientific-guidance/climate_profiles/typical-met-year.qmd
+            - scientific-guidance/climate_profiles/extreme-met-year.qmd
         - section: "Uncertainty"
           contents:
             - uncertainty/index.qmd

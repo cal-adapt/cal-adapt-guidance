@@ -9,7 +9,7 @@ format:
 ---
 ## Overview 
 
-The [*climakitae* package](https://github.com/cal-adapt/climakitae/tree/main) available on the Analytics Engine (AE) provides numerous tools to assist with [Extreme Value Analysis](/glossary/index.qmd#extreme-value-analysis). This includes the calculation of [return probabilities](/glossary/index.qmd#return-probability), [return periods](/glossary/index.qmd#return-period), and [return values](/glossary/index.qmd#return-value). These terms are defined below within the context of meteorology and hydrology.
+The [*climakitae*](https://github.com/cal-adapt/climakitae/tree/main) Python package available on the Analytics Engine provides numerous tools to assist with [Extreme Value Analysis](/glossary/index.qmd#extreme-value-analysis). This includes the calculation of [return probabilities](/glossary/index.qmd#return-probability), [return periods](/glossary/index.qmd#return-period), and [return values](/glossary/index.qmd#return-value). These terms are defined below within the context of meteorology and hydrology.
 
 **Return probability:** The probability that a climate or weather event will exceed a specified magnitude in any given year [@wilksStatistical2011].
 

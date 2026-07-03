@@ -1,0 +1,18 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var formatLinks = document.querySelector('.quarto-alternate-formats');
+  var titleMeta = document.querySelector('.quarto-title-meta');
+  if (!formatLinks || !titleMeta) return;
+
+  var link = formatLinks.querySelector('a');
+  if (!link) return;
+
+  var metaItem = document.createElement('div');
+  metaItem.innerHTML =
+    '<div class="quarto-title-meta-heading">Download</div>' +
+    '<div class="quarto-title-meta-contents"><p>' + link.outerHTML + '</p></div>';
+
+  titleMeta.appendChild(metaItem);
+  formatLinks.parentNode.removeChild(formatLinks);
+});
+</script>

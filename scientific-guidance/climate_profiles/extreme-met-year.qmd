@@ -30,6 +30,11 @@ Recognizing that no single “extreme year” can satisfy all planning needs, Ca
 The Labor Day 2022 Heatwaves was one of the hottest on record for California, with Sacramento reaching 116°F (46.7°C), it's highest temperature ever, alongside record-breaking electricity demand of more than 52,000 MW.  
 :::
 
+::: {#fig-exec-summary-boxplots}
+![](figures/static/exec-summary-boxplots.png){width=60%}
+
+The Labor Day 2022 Heatwave produced record-breaking electricity demand of more than 52,000 MW, but current design standards use “typical” conditions. Boxplot distribution of temperatures for Sacramento comparing typical standards (TMY) to extreme heat tailored (XMY) future conditions at sector-relevant planning horizons.
+:::
 
 ## Applications
 ### Shock Event XMY: Extreme Event-Based Stress
@@ -45,9 +50,9 @@ Additionally, the error-based selection method provides limited flexibility for 
 
 ::: {#fig-shock-timeseries}
 ![](figures/static/shock_timeseries.png)
-Shock XMY 8760 hourly timeseries.
-:::
 
+(Top) Hot Shock XMY profile compared to the TMY for the Sacramento Executive Airport (Sacramento, CA), with simulated heatwaves and associated impacts highlighted via arrows as examples for stress testing at mid-century (2.0°C GWL). (Bottom) Cold Shock XMY profile compared to the TMY profile for Sacramento, CA, with simulated coldsnaps and associated impacts highlighted as arrows at mid-century (2.0°C GWL).
+:::
 
 ### Persistence Extreme XMY: Sustained Stress
 
@@ -64,7 +69,8 @@ A Persistence XMY is limited in its suitability for analyses that require realis
 
 ::: {#fig-persistence-timeseries}
 ![](figures/static/persistence_timeseries.png)
-Persistence XMY 8760 hourly timeseries.
+
+(Top) Hot Persistence XMY profile compared to the TMY profile for Sacramento Executive Airport (Sacramento, CA) at the 90th percentile extreme at mid-century (2.0°C GWL). (Bottom) Cold Persistence XMY profile compared to TMY for Sacramento, at the 10th percentile extreme at mid-century (2.0°C).
 :::
 
 
@@ -76,7 +82,13 @@ Preparing for extreme events that increase system strain requires climate-driven
 - Risk and hazard assessment
 - Grid resilience
 - Financial analysis of asset investments
-- Specific stress testing of peak demand windows for infrastructure planning (e.g., grid hardening).  
+- Specific stress testing of peak demand windows for infrastructure planning (e.g., grid hardening). 
+
+::: {#fig-xmy-degree-day-comparison}
+![](figures/static/xmy_degree_day_comparison.png){width=70%}
+
+Projected change in cooling and heating degree days between present-day (1.2°C GWL, open-faced circles) and mid-century (2.0°C, solid circles) across Extreme Meteorological Year climate profiles compared to Typical Meteorological Year median conditions for Sacramento, CA. Dashed cross-hatch lines intersect at the multi-model mean present-day TMY CDD/HDD point (CDD: 1721 degree days, HDD: 1850 degree days). All 4 a priori bias-adjusted dynamically-downscaled WRF models are provided for each profile.
+:::
 
 ## Recommendations for XMYs
 
@@ -86,9 +98,10 @@ obscure critical vulnerabilities and lead to incomplete assessment.
 - If you require an extreme profile that **preserves temporal consistency** of day-to-day variability and natural diurnal cycles, the **Shock XMY** climate profile is recommended. 
 - If you require a **fully customizable intensity level**, such as "turning a dial" on stress testing, consider a **Persistence XMY** climate profile. Be aware that each hour is defined by the desired extreme percentile.
 
-::: {#fig-labor-day-heatwave}
+::: {#fig-use-case-labor-day-heatwave}
 ![](figures/static/use_case_labor-day-heatwave.png)
-Labor Day 2022 heatwave use case.
+
+Comparison of Typical Meteorological Year conditions to a Shock Extreme Meteorological Year profile for Sacramento, CA during heatwave conditions at mid-century (2.0°C). As a reference, the Labor Day 2022 Heatwave maximum temperature is provided as motivating context for preparing for realistic extreme conditions. The Labor Day 2022 Heatwave was one of the hottest on record for California, with Sacramento reaching 116°F (46.7°C) and record-breaking electricity demand of more than 52,000 MW. The Labor Day 2022 Heatwave is estimated to be a 1-in-450 year extreme heat event. 
 :::
 
 ## Methodology: Shock XMY
@@ -96,6 +109,7 @@ The Shock Event XMY represents localized weather conditions that strain peak dem
 
 ::: {#fig-xmy-shock-workflow}
 ```{mermaid}
+%%{init: {'flowchart': {'rankSpacing': 20}}}%%
 flowchart TD
     A["<i>Inputs</i>: Select <b>Location</b> + <b>Planning Horizon</b>"]
     B["Select Shock Extreme <b>Type</b>"]
@@ -140,17 +154,23 @@ Hourly air temperature is retrieved for the location and climatology selections 
 ### Step 4: Calculate the Maximized Error between Climatology and Extreme Months
 For each month, two sets of cumulative distribution functions (CDF) are calculated: one for the long-term median climatology across all candidate years, and one for each year within the climatology (i.e., a candidate year). The candidate year is compared against climatology to quantitatively select the month that is furthest from the long-term median conditions, maximizing the error. For cold extremes, this translates to the lowest-value month or maximized negative error relative to climatology. For hot extremes, the highest-value month or maximized positive error relative to climatology is selected (Figure 7). This process is repeated for all months, per simulation. Doing so ensures that model data is kept intact within a single physically-consistent climate profile, rather than pooling across models which introduces multi-model uncertainty. Following TMY methodological best practice, years of abnormal volcanic activity are excluded from consideration due to the impact of aerosols on air temperatures. 
 
-*ADD FIGURE: cold_shock_cdf.png and hot_shock_cdf.png*
+::: {#fig-shock-cdfs layout-ncol=2}
+![](figures/static/cold_shock_cdf.png)
+
+![](figures/static/hot_shock_cdf.png)
+
+(Left) Cumulative distributions of January climatological conditions and the maximized error month for a Cold Shock XMY. (Right) Cumulative distributions of the July climatological conditions and the maximized error month for a Hot Shock XMY. For illustrative purposes, only one model is shown (MPI-ESM1-2-HR).
+:::
 
 ### Step 5: Compile Extreme Months and Generate XMY Profile
 Once the most extreme months are selected, the standard meteorological information included in a TMY profile are retrieved for contemporaneous months. XMY profiles therefore include: air temperature, dewpoint temperature, relative humidity, global irradiance, direct irradiance, diffuse irradiance, downwelling radiation, wind speed and direction, and surface air pressure for each of the designated months as determined by the extreme air temperature profile. In other words, if February 2005 is the most extreme month for a cold Shock XMY, all other variables are explicitly extracted for February 2005 to maintain a physically consistent profile. Smoothing at the monthly interface between months is performed via second-degree polynomial curve fit to prevent discontinuities at the month interface ([Wilcox and Marion 2008](https://docs.nrel.gov/docs/fy08osti/43156.pdf)). 
-
 
 ## Methodology: Persistence XMY
 The Persistence XMY represents localized weather conditions that stress an energy system by selecting hours associated with specific percentile-based extremes within the climatological distribution, prioritizing sustained statistical deviation from typical conditions. This method allows precise tuning for exact conditions in order to stress test systems, such as “turning a dial” on the intensity of the desired extreme. 
 
 ::: {#fig-xmy-persistence-workflow}
 ```{mermaid}
+%%{init: {'flowchart': {'rankSpacing': 20}}}%%
 flowchart TD
     A["<i>Inputs</i>: Select <b>Location</b> + <b>Planning Horizon</b>"]
     B["Select <b>Extreme Percentile</b>"]

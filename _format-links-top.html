@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var titleMeta = document.querySelector('.quarto-title-meta');
   if (!formatLinks || !titleMeta) return;
 
+  // Hide immediately to prevent flash in navbar; the link is re-injected into the title block below
+  formatLinks.style.visibility = 'hidden';
+
   var link = formatLinks.querySelector('a');
   if (!link) return;
 

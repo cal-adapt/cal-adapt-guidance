@@ -152,3 +152,20 @@ format:
       - _format-links-top.html
   pdf:
     toc: false
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \usepackage{graphicx}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \fancyfoot[R]{\includegraphics[height=1cm]{assets/bear.eps}}
+        \fancyfoot[C]{\thepage}
+        \renewcommand{\headrulewidth}{0pt}
+        \renewcommand{\footrulewidth}{0pt}
+        \fancypagestyle{plain}{
+          \fancyhf{}
+          \fancyfoot[R]{\includegraphics[height=1cm]{assets/bear.eps}}
+          \fancyfoot[C]{\thepage}
+          \renewcommand{\headrulewidth}{0pt}
+          \renewcommand{\footrulewidth}{0pt}
+        }

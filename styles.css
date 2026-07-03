@@ -61,11 +61,6 @@ div[id^="fig-"] {
 
 /* ===== Homepage hero ===== */
 /* ===== Homepage hero ===== */
-#title-block-header,
-.quarto-title-block {
-  margin: 0 !important;
-  padding: 0 !important;
-}
 
 .quarto-title-banner {
   min-height: 600px !important;
@@ -210,3 +205,17 @@ div[id^="fig-"] {
   margin-top: 1rem;
   border-top: 1px solid #e4e4e4;
 }
+
+#title-block-header {
+  padding-bottom: 2rem;
+}
+
+#quarto-citation > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#quarto-citation > div > :nth-child(1) { order: 3; }
+#quarto-citation > div > :nth-child(2) { order: 4; }
+#quarto-citation > div > :nth-child(3) { order: 1; }
+#quarto-citation > div > :nth-child(4) { order: 2; }

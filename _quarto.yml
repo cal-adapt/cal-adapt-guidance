@@ -13,13 +13,13 @@ website:
       - text: General Resources
         menu:
           - text: Getting Started
-            href: general-resources/intro-to-ae.qmd
+            href: general-resources/getting-started/index.qmd
           - text: Glossary
             href: glossary/index.qmd
           - text: Reference Library
-            href: general-resources/white-papers.qmd
+            href: general-resources/reference-library/index.qmd
           - text: Media
-            href: general-resources/media/video-tutorials.qmd
+            href: general-resources/media/index.qmd
           - text: FAQs
             href: general-resources/faqs.qmd
       - text: Scientific Guidance
@@ -51,7 +51,7 @@ website:
           - href: data-tools/notebooks.qmd
             text: Notebooks & Development
       - href: blog/index.qmd
-        text: News
+        text: Blog
       - text: About
         menu:
           - href: about/connection-to-caladapt.qmd
@@ -66,18 +66,22 @@ website:
     - id: general-resources
       title: "General Resources"
       style: docked
+      collapse-level: 1
       contents:
         - section: "Getting Started"
           contents:
-            - general-resources/intro-to-ae.qmd
-            - general-resources/example-use-cases.qmd
+            - general-resources/getting-started/index.qmd
+            - general-resources/getting-started/intro-to-ae.qmd
+            - general-resources/getting-started/example-use-cases.qmd
         - glossary/index.qmd
         - section: "Reference Library"
           contents:
-            - general-resources/white-papers.qmd
-            - general-resources/external-references.qmd
+            - general-resources/reference-library/index.qmd
+            - general-resources/reference-library/white-papers.qmd
+            - general-resources/reference-library/external-references.qmd
         - section: "Media"
           contents:
+            - general-resources/media/index.qmd
             - general-resources/media/video-tutorials.qmd
             - general-resources/media/webinars.qmd
             - general-resources/media/presentations.qmd
@@ -85,6 +89,7 @@ website:
     - id: scientific-guidance
       title: "Scientific Guidance"
       style: docked
+      collapse-level: 1
       contents:
         - scientific-guidance/about-climate-projections.qmd
         - section: "Guidance on Using Climate Data in Decision Making"
@@ -112,6 +117,7 @@ website:
     - id: data-tools
       title: "Data & Tools"
       style: docked
+      collapse-level: 1
       contents:
         - section: "Explore Data"
           contents:
@@ -128,6 +134,7 @@ website:
     - id: about
       title: "About"
       style: docked
+      collapse-level: 1
       contents:
         - about/connection-to-caladapt.qmd
         - about/co-production.qmd
@@ -139,5 +146,29 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    format-links: [pdf]
     citation: true
-    include-after-body: glossary/_glossary-tooltip-inline.html
+    include-after-body:
+      - glossary/_glossary-tooltip-inline.html
+      - _format-links-top.html
+  pdf:
+    toc: false
+    citation: true
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \usepackage{graphicx}
+        \graphicspath{{./assets/}{../assets/}{../../assets/}{../../../assets/}}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \fancyfoot[R]{\includegraphics[height=0.8cm]{bear.png}}
+        \fancyfoot[C]{\thepage}
+        \renewcommand{\headrulewidth}{0pt}
+        \renewcommand{\footrulewidth}{0pt}
+        \fancypagestyle{plain}{
+          \fancyhf{}
+          \fancyfoot[R]{\includegraphics[height=0.8cm]{bear.png}}
+          \fancyfoot[C]{\thepage}
+          \renewcommand{\headrulewidth}{0pt}
+          \renewcommand{\footrulewidth}{0pt}
+        }

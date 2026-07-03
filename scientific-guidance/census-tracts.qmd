@@ -93,7 +93,7 @@ A census tract approach is generally not appropriate when:
 - The analysis depends on values that change significantly within individual grid cells (for example, coastal versus inland differences).
 - Infrastructure, sizing, or engineering decisions that require higher-resolution information than climate models can reliably provide.
 
-# References
+## References
 
 - Szagri, D., Nagy, B., & Szalay, Z. (2023). How can we predict where heatwaves will have an impact? – A literature review on heat vulnerability indexes. *Urban Climate*, 52. <https://doi.org/10.1016/j.uclim.2023.101711>
 - McCullagh, D., Cámaro-García, W., Dunne, D., Nowbakht, P., Cumiskey, L., Gannon, C., & Phillips, C. (2025). Development of a social vulnerability index: Enhancing approaches to support climate justice. *MethodsX*, 14. <https://doi.org/10.1016/j.mex.2025.103290>

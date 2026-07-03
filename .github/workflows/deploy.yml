@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -20,8 +21,17 @@ jobs:
       - name: Install TinyTeX
         run: quarto install tinytex --no-prompt
 
+      - name: Install Chrome (PDF/Mermaid rendering)
+        if: github.event_name != 'pull_request'
+        run: quarto install chrome-headless-shell --no-prompt
+
       - name: Render site
-        run: quarto render
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            quarto render --to html
+          else
+            quarto render
+          fi
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3

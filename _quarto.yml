@@ -3,12 +3,14 @@ project:
   pre-render: glossary/generate-glossary.py
 
 website:
-  title: "Cal-Adapt Scientific Guidance"
+  title: "Cal-Adapt: Analytics Engine"
   search: true
   page-navigation: true
   bread-crumbs: true
   open-graph: true
   navbar:
+    logo: assets/bear.png
+    logo-alt: "Cal-Adapt Analytics Engine"
     left:
       - text: General Resources
         menu:
@@ -140,6 +142,9 @@ website:
         - about/co-production.qmd
         - about/our-users.qmd
         - about/our-team.qmd
+
+bibliography: references.bib
+csl: citation-style.csl
 
 format:
   html:

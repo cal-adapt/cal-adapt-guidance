@@ -1,59 +1,177 @@
 ---
-title: "Cal-Adapt Scientific Guidance for working with Climate Data"
+title: "Climate Science & Data for California"
+subtitle: "Access authoritative climate projections grounded in California's Fifth Climate Change Assessment, with expert guidance built in to support informed decisions about resilience and planning."
+title-block-banner: assets/hero.jpg
+title-block-banner-color: "#222"
 citation: false
 format:
   html:
     toc: false
+    page-layout: full
 listing:
-  - id: announcements
+  - id: latest-updates
     contents: blog/posts
     sort: "date desc"
     type: grid
     max-items: 3
     fields: [date, title, description]
-    include:
-      categories: [Announcement]
 ---
 
-Cal-Adapt features tools to explore climate projections, historical data, global warming levels, and vetted methodologies, all geared toward supporting informed decision making across sectors and utilizing the best available climate science.
+## Science-backed guidance you can trust
 
-## Recent Announcements
+Climate projections are powerful, but they need interpretation. Our guidance bridges the gap between raw data and real-world decisions.
 
-:::{#announcements}
+:::: {.grid .mt-3}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+<i class="bi bi-patch-check-fill"></i>
+
+**Grounded in peer review**
+
+Derived from California's Fifth Climate Change Assessment and validated by leading climate scientists.
 :::
 
-## About the Analytics Engine
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+<i class="bi bi-people-fill"></i>
+
+**Co-produced with users**
+
+Developed alongside practitioners, planners, and decision makers.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+<i class="bi bi-signpost-fill"></i>
+
+**Actionable, not prescriptive**
+
+Presents options and frameworks to help you make the decisions.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+<i class="bi bi-unlock-fill"></i>
+
+**Free and public**
+
+Part of California's commitment to climate transparency.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+<i class="bi bi-arrow-repeat"></i>
+
+**Continuously evolving**
+
+Updated with new research, user feedback, and emerging climate impacts.
+:::
+
+::::
+
+## Latest Updates
+
+Stay informed about new data, guidance, and features.
+
+:::{#latest-updates}
+:::
+
+## Explore our resources
+
+Choose the right topic for your needs.
 
 ```{=html}
-<div style="display: flex; flex-direction: column; gap: 1.5rem; margin: 1.5rem 0;">
-
-  <div style="display: flex; align-items: flex-start; gap: 1rem;">
-    <i class="bi bi-cloud-fill" style="font-size: 1.8rem; color: #4a90d9; flex-shrink: 0; margin-top: 0.2rem;"></i>
-    <div>
-      <h4 style="margin-top: 0;">Cloud Analytics</h4>
-      <p style="color: #222;">Cal-Adapt: Analytics Engine brings data and computational resources together in the cloud, allowing users to work with Petabytes of stored data supported by scientific guidance. These data and code facilitate informed decision-making for climate resilience and investments.</p>
-    </div>
+<div class="grid mt-3">
+  <div class="g-col-12 g-col-md-6 g-col-lg-4">
+    <a href="https://analytics.cal-adapt.org" class="topic-card">
+      <i class="bi bi-cloud-fill"></i>
+      <h4>Analytics Engine</h4>
+      <p>Cloud-based tools and petabytes of high-resolution climate and environmental data. Perform custom analysis without downloading massive files.</p>
+    </a>
   </div>
-
-  <div style="display: flex; align-items: flex-start; gap: 1rem;">
-    <i class="bi bi-people-fill" style="font-size: 1.8rem; color: #4a90d9; flex-shrink: 0; margin-top: 0.2rem;"></i>
-    <div>
-      <h4 style="margin-top: 0;">Co-Production and Collaboration</h4>
-      <p style="color: #222;">The Analytics Engine is co-produced. Data producers (scientists and modelers), technical staff (programmers and developers) and users collaborate on the content and format of Analytics Engine outputs. The Analytics Engine design allows it to evolve based on user contributions and feedback.</p>
-    </div>
+  <div class="g-col-12 g-col-md-6 g-col-lg-4">
+    <a href="scientific-guidance/climate_profiles/" class="topic-card">
+      <i class="bi bi-bar-chart-fill"></i>
+      <h4>Climate Profiles</h4>
+      <p>Ready-to-use regional summaries with climate data, visualizations, and guidance for California regions and watersheds.</p>
+    </a>
   </div>
-
-  <div style="display: flex; align-items: flex-start; gap: 1rem;">
-    <i class="bi bi-database-fill" style="font-size: 1.8rem; color: #4a90d9; flex-shrink: 0; margin-top: 0.2rem;"></i>
-    <div>
-      <h4 style="margin-top: 0;">California Climate Data</h4>
-      <p style="color: #222;">The Analytics Engine Data Catalog houses data that characterizes the climate and environmental responses expected in response to climate change, in a way that is accessible and actionable to users. Spatial datasets cover the energy and water nexus of the Western United States, with high-spatial resolution (~3km grid spacing) hourly projections for the 21st century.</p>
-    </div>
+  <div class="g-col-12 g-col-md-6 g-col-lg-4">
+    <a href="data-tools/explore-data.html" class="topic-card">
+      <i class="bi bi-database-fill"></i>
+      <h4>Data Catalog</h4>
+      <p>Access the complete dataset: hourly projections, 3km grid resolution, 21st century timescale. Download, integrate, or analyze.</p>
+    </a>
   </div>
-
+  <div class="g-col-12 g-col-md-6 g-col-lg-4">
+    <a href="general-resources/reference-library/" class="topic-card">
+      <i class="bi bi-book-fill"></i>
+      <h4>Reference Library</h4>
+      <p>Curated scientific references and documentation supporting the Analytics Engine methodologies.</p>
+    </a>
+  </div>
+  <div class="g-col-12 g-col-md-6 g-col-lg-4">
+    <a href="data-tools/notebooks.html" class="topic-card">
+      <i class="bi bi-code-slash"></i>
+      <h4>Jupyter Notebooks</h4>
+      <p>Reproducible code examples and workflows on GitHub. Learn how to work with climate data and adapt tools to your needs.</p>
+    </a>
+  </div>
 </div>
 ```
 
-## Support and Partners
+## Built on trust and collaboration
 
-Amazon Sustainability and the California Energy Commission (EPC-20-007) support the Cal-Adapt: Analytics Engine. The project team includes staff from Eagle Rock Analytics, Energy and Environmental Economics, Inc., Lawrence Berkeley National Lab, Spatial Informatics Group, UC Berkeley Geospatial Innovation Facility, and UCLA Center for Climate Science. Staff of the California Energy Commission direct the project.
+Led by Eagle Rock Analytics and funded by the California Energy Commission, supported by partners across research, analytics, and state agencies.
+
+:::: {.grid .mt-3}
+
+::: {.g-col-12 .g-col-md-6 .trust-card}
+<i class="bi bi-geo-alt-fill"></i>
+
+**California Commitment**
+
+Part of California's Fifth Climate Change Assessment. Represents state-of-the-art climate science for decision making.
+:::
+
+::: {.g-col-12 .g-col-md-6 .trust-card}
+<i class="bi bi-people-fill"></i>
+
+**Multi-Sector Team**
+
+Scientists, modelers, software engineers, and domain experts from Eagle Rock Analytics, Energy and Environmental Economics, Inc., Lawrence Berkeley National Lab, Spatial Informatics Group, UC Berkeley Geospatial Innovation Facility, and UCLA Center for Climate Science.
+:::
+
+::: {.g-col-12 .g-col-md-6 .trust-card}
+<i class="bi bi-bank2"></i>
+
+**Sustained Funding**
+
+Supported by the California Energy Commission (EPC-20-007 and EPC-##-###) and Amazon Sustainability, ensuring long-term availability.
+:::
+
+::: {.g-col-12 .g-col-md-6 .trust-card}
+<i class="bi bi-arrows-angle-contract"></i>
+
+**Co-Production**
+
+Data producers, technical staff, and decision makers collaborate to ensure outputs are accessible and actionable.
+:::
+
+::::
+
+:::: {.grid .homepage-links}
+
+::: {.g-col-12 .g-col-md-6}
+#### Learn More
+
+- [California Climate Change Assessment](#)
+- [California Energy Commission](#)
+- [Amazon Sustainability](#)
+:::
+
+::: {.g-col-12 .g-col-md-6}
+#### Connect
+
+- [Contact Us](mailto:caladaptae@ucop.edu)
+- [GitHub](#)
+- [LinkedIn](#)
+:::
+
+::::

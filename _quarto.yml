@@ -157,15 +157,16 @@ format:
       text: |
         \usepackage{fancyhdr}
         \usepackage{graphicx}
+        \graphicspath{{./assets/}{../assets/}{../../assets/}{../../../assets/}}
         \pagestyle{fancy}
         \fancyhf{}
-        \fancyfoot[R]{\includegraphics[height=1cm]{assets/bear.eps}}
+        \fancyfoot[R]{\includegraphics[height=0.8cm]{bear.png}}
         \fancyfoot[C]{\thepage}
         \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0pt}
         \fancypagestyle{plain}{
           \fancyhf{}
-          \fancyfoot[R]{\includegraphics[height=1cm]{assets/bear.eps}}
+          \fancyfoot[R]{\includegraphics[height=0.8cm]{bear.png}}
           \fancyfoot[C]{\thepage}
           \renewcommand{\headrulewidth}{0pt}
           \renewcommand{\footrulewidth}{0pt}

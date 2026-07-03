@@ -153,6 +153,7 @@ format:
       - _format-links-top.html
   pdf:
     toc: false
+    citation: true
     include-in-header:
       text: |
         \usepackage{fancyhdr}

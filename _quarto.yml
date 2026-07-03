@@ -145,6 +145,7 @@ website:
 
 bibliography: references.bib
 csl: citation-style.csl
+reference-section-title: "References"
 
 format:
   html:

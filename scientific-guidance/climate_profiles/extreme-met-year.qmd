@@ -31,7 +31,7 @@ The Labor Day 2022 Heatwaves was one of the hottest on record for California, wi
 :::
 
 ::: {#fig-exec-summary-boxplots}
-![](figures/static/exec-summary-boxplots.png){width=60%}
+![](figures/static/exec-summary-boxplots.png){width=55%}
 
 The Labor Day 2022 Heatwave produced record-breaking electricity demand of more than 52,000 MW, but current design standards use “typical” conditions. Boxplot distribution of temperatures for Sacramento comparing typical standards (TMY) to extreme heat tailored (XMY) future conditions at sector-relevant planning horizons.
 :::
@@ -49,7 +49,7 @@ For example, peak temperature events may occur during periods of relatively low 
 Additionally, the error-based selection method provides limited flexibility for tailoring events to specific return periods, dates, or desired intensity levels. 
 
 ::: {#fig-shock-timeseries}
-![](figures/static/shock_timeseries.png)
+![](figures/static/shock_timeseries.png){width=85%}
 
 (Top) Hot Shock XMY profile compared to the TMY for the Sacramento Executive Airport (Sacramento, CA), with simulated heatwaves and associated impacts highlighted via arrows as examples for stress testing at mid-century (2.0°C GWL). (Bottom) Cold Shock XMY profile compared to the TMY profile for Sacramento, CA, with simulated coldsnaps and associated impacts highlighted as arrows at mid-century (2.0°C GWL).
 :::
@@ -68,7 +68,7 @@ The hourly chronology is not representative of a “real” year of data because
 A Persistence XMY is limited in its suitability for analyses that require realistic weather evolution or event chronology, but can provide key insights for extreme threshold tuning in resource adequacy planning. 
 
 ::: {#fig-persistence-timeseries}
-![](figures/static/persistence_timeseries.png)
+![](figures/static/persistence_timeseries.png){width=85%}
 
 (Top) Hot Persistence XMY profile compared to the TMY profile for Sacramento Executive Airport (Sacramento, CA) at the 90th percentile extreme at mid-century (2.0°C GWL). (Bottom) Cold Persistence XMY profile compared to TMY for Sacramento, at the 10th percentile extreme at mid-century (2.0°C).
 :::
@@ -85,7 +85,7 @@ Preparing for extreme events that increase system strain requires climate-driven
 - Specific stress testing of peak demand windows for infrastructure planning (e.g., grid hardening). 
 
 ::: {#fig-xmy-degree-day-comparison}
-![](figures/static/xmy_degree_day_comparison.png){width=70%}
+![](figures/static/xmy_degree_day_comparison.png){width=60%}
 
 Projected change in cooling and heating degree days between present-day (1.2°C GWL, open-faced circles) and mid-century (2.0°C, solid circles) across Extreme Meteorological Year climate profiles compared to Typical Meteorological Year median conditions for Sacramento, CA. Dashed cross-hatch lines intersect at the multi-model mean present-day TMY CDD/HDD point (CDD: 1721 degree days, HDD: 1850 degree days). All 4 a priori bias-adjusted dynamically-downscaled WRF models are provided for each profile.
 :::
@@ -99,7 +99,7 @@ obscure critical vulnerabilities and lead to incomplete assessment.
 - If you require a **fully customizable intensity level**, such as "turning a dial" on stress testing, consider a **Persistence XMY** climate profile. Be aware that each hour is defined by the desired extreme percentile.
 
 ::: {#fig-use-case-labor-day-heatwave}
-![](figures/static/use_case_labor-day-heatwave.png)
+![](figures/static/use_case_labor-day-heatwave.png){width=85%}
 
 Comparison of Typical Meteorological Year conditions to a Shock Extreme Meteorological Year profile for Sacramento, CA during heatwave conditions at mid-century (2.0°C). As a reference, the Labor Day 2022 Heatwave maximum temperature is provided as motivating context for preparing for realistic extreme conditions. The Labor Day 2022 Heatwave was one of the hottest on record for California, with Sacramento reaching 116°F (46.7°C) and record-breaking electricity demand of more than 52,000 MW. The Labor Day 2022 Heatwave is estimated to be a 1-in-450 year extreme heat event. 
 :::

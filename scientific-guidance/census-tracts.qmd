@@ -20,7 +20,7 @@ The Analytics Engine team's goal is not to deliver authoritative "census tract c
 
 ## Census Tract Analyses Present Unique Challenges
 
-The climate models used in the Analytics Engine produce data on regular grid cells of a fixed 3 x 3 kilometer size. US census tracts, by contrast, are irregularly shaped statistical areas within a county whose size varies widely depending on population density; they are generally designed to represent 1,200 to 8,000 people ([U.S. Census Bureau, 2022](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13)). In population-dense areas like downtowns, census tracts can be very small (such as a few city blocks), while in rural areas, a single census tract can occupy a large portion of the county. This difference in census tract size can make translating gridded data onto a census tract-level tricky.
+The climate models used in the Analytics Engine produce data on regular grid cells of a fixed 3 x 3 kilometer size. US census tracts, by contrast, are irregularly shaped statistical areas within a county whose size varies widely depending on population density; they are generally designed to represent 1,200 to 8,000 people [@uscensus-glossary-2026]. In population-dense areas like downtowns, census tracts can be very small (such as a few city blocks), while in rural areas, a single census tract can occupy a large portion of the county. This difference in census tract size can make translating gridded data onto a census tract-level tricky.
 
 Climate models do not produce data at census tract resolution. Most datasets used in the Analytics Engine are produced on [equal-area grid cells](https://climateestimate.net/content/gridded-data.html#:~:text=Gridded%20data%20products%20are%20a%20combination%20of,the%20entire%20globe%20or%20a%20specific%20region.) that are much larger than many urban census tracts, and much smaller than rural area census tracts. This fundamental mismatch creates several technical challenges that users should carefully consider:
 
@@ -78,8 +78,8 @@ Therefore, climate model data that is extracted at the census-tract level should
 
 Using climate data at a census tract-level can be useful for certain types of exploratory or screening-level analyses, particularly when the goal is to understand broad spatial patterns rather than precise local values. For example:
 
-- When identifying general "hotter" or "colder" parts of a region to support high-level prioritization ([Szagri et al., 2023](https://doi.org/10.1016/j.uclim.2023.101711)); e.g. cooling demand may be higher for inland census tracts that are relatively warmer than nearby coastal tracts, even if exact temperatures cannot be resolved at the neighborhood scale.
-- Overlaying climate indicators with demographic or vulnerability datasets to understand regional patterns or disparities ([McCullagh et al., 2025](https://doi.org/10.1016/j.mex.2025.103290)); e.g. identifying census tracts with both higher projected extreme heat exposure and higher proportions of elderly residents to flag areas where heat-related health risks may be elevated at a regional scale, without interpreting the values as precise-neighborhood-level temperatures.
+- When identifying general "hotter" or "colder" parts of a region to support high-level prioritization [@szagriHow2023]; e.g. cooling demand may be higher for inland census tracts that are relatively warmer than nearby coastal tracts, even if exact temperatures cannot be resolved at the neighborhood scale.
+- Overlaying climate indicators with demographic or vulnerability datasets to understand regional patterns or disparities [@mccullaghDevelopment2025]; e.g. identifying census tracts with both higher projected extreme heat exposure and higher proportions of elderly residents to flag areas where heat-related health risks may be elevated at a regional scale, without interpreting the values as precise-neighborhood-level temperatures.
 - Supporting qualitative or comparative assessments where relative differences matter more than precise magnitudes; e.g. comparing whether one group of census tracts is generally warmer or experiences more extreme heat days than another group (such as inland versus coastal tracts) to inform discussion, screening, or prioritization (rather than to calculate exact thresholds or design specifications).
 
 In these contexts, tract-level climate estimates can help frame questions and guide further analysis, provided their limitations are clearly acknowledged.
@@ -88,14 +88,8 @@ In these contexts, tract-level climate estimates can help frame questions and gu
 
 A census tract approach is generally not appropriate when:
 
-- The decision requires accurate representation of neighborhood-scale temperatures, extremes, or microclimates ([Fuhrmann et al., 2024](https://doi.org/10.1175/BAMS-D-24-0230.1)).
+- The decision requires accurate representation of neighborhood-scale temperatures, extremes, or microclimates [@fuhrmannData2024].
 - Results will be interpreted as precise predictions for a specific tract, for example, counting the number of days above a critical threshold.
 - The analysis depends on values that change significantly within individual grid cells (for example, coastal versus inland differences).
 - Infrastructure, sizing, or engineering decisions that require higher-resolution information than climate models can reliably provide.
 
-## References
-
-- Szagri, D., Nagy, B., & Szalay, Z. (2023). How can we predict where heatwaves will have an impact? – A literature review on heat vulnerability indexes. *Urban Climate*, 52. <https://doi.org/10.1016/j.uclim.2023.101711>
-- McCullagh, D., Cámaro-García, W., Dunne, D., Nowbakht, P., Cumiskey, L., Gannon, C., & Phillips, C. (2025). Development of a social vulnerability index: Enhancing approaches to support climate justice. *MethodsX*, 14. <https://doi.org/10.1016/j.mex.2025.103290>
-- Fuhrmann, C., Robinson, A., Konrad, C., & Bhatia, A. (2024). From Data to Action: How Urban Heat Mapping Campaigns Can Expose Vulnerabilities and Inform Local Heat Policy. *Bulletin of the American Meteorological Society*, 105(11), E2078–E2084. <https://doi.org/10.1175/BAMS-D-24-0230.1>
-- U.S. Census Bureau. (2022). Census Tracts. <https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13>

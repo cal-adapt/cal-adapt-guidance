@@ -97,7 +97,7 @@ Choose the right topic for your needs.
   </div>
 
   <div class="resource-carousel">
-    <a id="resource-analytics" href="https://analytics.cal-adapt.org/sign-in/" class="resource-card">
+    <a id="resource-analytics" href="https://hub.cal-adapt.org/user-redirect/doc/tree/cae-notebooks/AE_navigation_guide.ipynb" class="resource-card">
       <div class="resource-card-thumb"><img src="assets/resources/jupyter_hub.png" alt=""></div>
       <div class="resource-card-body">
         <h4>Analytics Engine Jupyter Hub</h4>
@@ -111,7 +111,7 @@ Choose the right topic for your needs.
         <p>Pre-built hourly climate-year datasets—Standard Year, Typical Meteorological Year, and Extreme Year—for engineering and planning, built from future climate projections at California locations.</p>
       </div>
     </a>
-    <a id="resource-catalog" href="data-tools/explore-data.html" class="resource-card">
+    <a id="resource-catalog" href="https://stac-browser.cal-adapt.org" class="resource-card">
       <div class="resource-card-thumb"><img src="assets/resources/data_catalog.gif" alt=""></div>
       <div class="resource-card-body">
         <h4>Data Catalog</h4>

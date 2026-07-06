@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Cal-Adapt: Analytics Engine"
+  favicon: assets/favicon.ico
   search: true
   page-navigation: true
   bread-crumbs: true

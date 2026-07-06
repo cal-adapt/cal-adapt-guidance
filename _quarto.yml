@@ -64,6 +64,15 @@ website:
             text: Our Users
           - href: about/our-team.qmd
             text: Our Team
+  page-footer:
+    left: |
+      ![](assets/bear.png){width="24px"} &nbsp;&copy; 2026 Cal-Adapt Analytics Engine
+    right:
+      - text: "Contact Us"
+        href: "mailto:analytics@cal-adapt.org"
+      - icon: github
+        href: "https://github.com/cal-adapt"
+        aria-label: GitHub
   sidebar:
     - id: general-resources
       title: "General Resources"

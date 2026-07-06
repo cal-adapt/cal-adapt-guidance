@@ -26,7 +26,7 @@ Two key properties of scenario uncertainty distinguish it from the other two sou
 - It **grows with time:** in the near term (< ~2040), all three pathways produce nearly identical projections because atmospheric GHG concentrations have not yet diverged enough to matter. By end-of-century, scenario choice dominates total uncertainty for temperature.
 
 ::: {.callout-note title="IPCC AR6 Synthesis Report"}
-Scenario uncertainty is fundamentally a statement about human choices, not about the limits of climate science. The range between pathways is not a flaw to be narrowed by better model, it is a quantified expression of how much today's emissions decisions will shape the climate of the future. For deeper treatment, see the [IPCC AR6 Synthesis Report](https://www.ipcc.ch/report/ar6/syr/) and [Tebaldi et al. (2024)](https://www.nature.com/articles/s44168-023-00082-1).
+Scenario uncertainty is fundamentally a statement about human choices, not about the limits of climate science. The range between pathways is not a flaw to be narrowed by better model, it is a quantified expression of how much today's emissions decisions will shape the climate of the future. For deeper treatment, see the IPCC AR6 Synthesis Report [@calvinIPCC2023] and Pirani et al. [@piraniScenarios2024].
 :::
 
 
@@ -178,11 +178,3 @@ The analyses above consistently show the same pattern. In the near term (< 2040)
 - Scenario sensitivity is spatially variable. The difference map between high and low scenarios reveals where projected warming is most sensitive to emissions pathway, typically the interior valleys and Sierra Nevada.
 - When planning for the worst-case scenario, always include the high scenario (SSP5-8.5). Reporting only the middle scenario or the multi-model mean underestimates the upper tail of plausible outcomes.
 
-
-# References
-
-- Intergovernmental Panel on Climate Change (IPCC). *AR6 Synthesis Report.* <https://www.ipcc.ch/report/ar6/syr/>
-- Tebaldi, C., et al. (2024). *Lessons from AR6 on integrating scenarios across working groups.* npj Climate Action. <https://www.nature.com/articles/s44168-023-00082-1>
-- Intergovernmental Panel on Climate Change (IPCC). *Uncertainty Guidance Note.* <https://www.ipcc.ch/site/assets/uploads/2018/05/uncertainty-guidance-note.pdf>
-- Climate West. *Uncertainty 101: Understanding Climate Models.* <https://climatewest.ca/2022/09/27/uncertainty-101-understanding-climate-models/>
-- PARC. *Uncertainty Primer.* <https://data.parc.ca/uncertainty-primer/>

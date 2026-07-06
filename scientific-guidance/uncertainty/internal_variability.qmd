@@ -22,7 +22,7 @@ Internal variability matters most for:
 - Variables with naturally **high year-to-year variance**, like precipitation, more so than temperature
 
 ::: {.callout-note title="IPCC AR5 Uncertainty Guidance"}
-Internal variability is an irreducible component of climate uncertainty — it cannot be narrowed by improving models or constraining emissions. The appropriate response is to sample it explicitly, through multiple ensemble members, and to communicate the resulting range honestly. For a deeper scientific treatment, see the [IPCC AR5 uncertainty guidance](https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf) and [Hawkins & Sutton (2009)](https://journals.ametsoc.org/view/journals/bams/90/8/2009bams2607_1.xml).
+Internal variability is an irreducible component of climate uncertainty — it cannot be narrowed by improving models or constraining emissions. The appropriate response is to sample it explicitly, through multiple ensemble members, and to communicate the resulting range honestly. For a deeper scientific treatment, see the IPCC AR5 uncertainty guidance [@ipcc-uncertainty-guidance-2010] and Hawkins & Sutton [@hawkinsPotential2009].
 :::
 
 
@@ -183,11 +183,3 @@ Internal variability is not equally important for all variables, regions, or tim
 - Precipitation must be deseasonalized before any distribution-based significance test; otherwise the seasonal cycle is mistaken for a climate-change signal.
 - Significance reported from a multi-model mean overstates confidence where internal variability is high. The pooled result is the more defensible primary output.
 
-
-# References
-
-- Hawkins, E. & Sutton, R. (2009). *The Potential to Narrow Uncertainty in Regional Climate Predictions.* Bulletin of the American Meteorological Society. <https://journals.ametsoc.org/view/journals/bams/90/8/2009bams2607_1.xml>
-- Intergovernmental Panel on Climate Change (IPCC). *AR5 Uncertainty Guidance Note.* <https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf>
-- Climate West. *Uncertainty 101: Understanding Climate Models.* <https://climatewest.ca/2022/09/27/uncertainty-101-understanding-climate-models/>
-- ClimateData.ca. *Uncertainty in Climate Projections.* <https://climatedata.ca/resource/uncertainty-in-climate-projections/>
-- Cal-Adapt Analytics Engine. *About Climate Projections and Models — Global Warming Levels.* <https://analytics.cal-adapt.org/guidance/about_climate_projections_and_models#what-are-global-warming-levels>

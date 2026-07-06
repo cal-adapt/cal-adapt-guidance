@@ -108,7 +108,7 @@ Choose the right topic for your needs.
       <div class="resource-card-thumb"><img src="assets/resources/climate_profiles.png" alt=""></div>
       <div class="resource-card-body">
         <h4>Climate Profiles</h4>
-        <p>Pre-built hourly climate-year datasets—Standard Year, Typical Meteorological Year, and Extreme Year—for engineering and planning, built from future climate projections at California locations.</p>
+        <p>Pre-built hourly climate-year datasets for engineering and planning, built from future climate projections at California locations.</p>
       </div>
     </a>
     <a id="resource-catalog" href="https://stac-browser.cal-adapt.org" class="resource-card">

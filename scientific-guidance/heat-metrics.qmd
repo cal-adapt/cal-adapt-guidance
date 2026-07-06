@@ -20,7 +20,7 @@ Heat index is a metric that combines air temperature and relative humidity to qu
 
 ### Calculating Heat Index
 
-The modern approach to calculating heat index relies on a multiple regression analysis developed by Rothfusz in 1990 to capture the complex relationship between temperature, humidity, and perceived temperature [@nws-heat-index-equation]. The Cal-Adapt Analytics Engine utilized NOAA's implementation of the Rothfusz regression formulas for heat index, which uses additional adjustments for days with particularly high or low relative humidity. Because these heat index formulas are only well defined for days above 80°F, the Cal-Adapt calculation returns the original temperature below this threshold.
+The modern approach to calculating heat index relies on a multiple regression analysis developed by Rothfusz in 1990 to capture the complex relationship between temperature, humidity, and perceived temperature [@rothfusz-heat-index-1990; @nws-heat-index-equation]. The Cal-Adapt Analytics Engine utilized NOAA's implementation of the Rothfusz regression formulas for heat index, which uses additional adjustments for days with particularly high or low relative humidity. Because these heat index formulas are only well defined for days above 80°F, the Cal-Adapt calculation returns the original temperature below this threshold.
 
 For days that do not need an additional correction, the heat index is calculated as:
 

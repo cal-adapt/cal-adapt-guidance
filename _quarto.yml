@@ -32,7 +32,7 @@ website:
             text: Guidance on Using Climate Data in Decision Making
           - href: scientific-guidance/climate_profiles/index.qmd
             text: Climate Profiles
-          - href: uncertainty/index.qmd
+          - href: scientific-guidance/uncertainty/index.qmd
             text: Uncertainty
           - href: scientific-guidance/heat-metrics.qmd
             text: Heat Metrics
@@ -107,10 +107,10 @@ website:
             - scientific-guidance/climate_profiles/extreme-met-year.qmd
         - section: "Uncertainty"
           contents:
-            - uncertainty/index.qmd
-            - uncertainty/model_uncertainty.qmd
-            - uncertainty/scenario_uncertainty.qmd
-            - uncertainty/internal_variability.qmd
+            - scientific-guidance/uncertainty/index.qmd
+            - scientific-guidance/uncertainty/model_uncertainty.qmd
+            - scientific-guidance/uncertainty/scenario_uncertainty.qmd
+            - scientific-guidance/uncertainty/internal_variability.qmd
         - scientific-guidance/heat-metrics.qmd
         - text: Census Tracts
           href: scientific-guidance/census-tracts.qmd

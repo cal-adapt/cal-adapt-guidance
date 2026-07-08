@@ -1,6 +1,8 @@
 ---
 title: "Extreme Meteorological Year 8760s"
-author: "Cal-Adapt Analytics Engine Team"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
 date: "2024-06-26"
 date-modified: "2026-06-26"
 format:

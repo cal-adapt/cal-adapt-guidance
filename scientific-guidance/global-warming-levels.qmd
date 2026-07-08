@@ -1,7 +1,169 @@
 ---
 title: "Global Warming Levels"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
+date: "2024-01-01"
+date-modified: "2026-07-02"
+format:
+  html: default
+  pdf: default
+resources:
+  - figures/html/
 ---
 
-::: {.callout-note}
-This page is under development.
+## Overview 
+This section outlines the steps a user takes to access data on global warming levels (GWLs) using `climakitae`. The tools in the Analytics Engine platform can calculate global warming levels for dynamically downscaled (WRF) or statistically downscaled (LOCA) data using the same methods. For more information on how to select a dataset for an application of interest, refer to the [Guidance on Using Climate Data in Decision Making](/scientific-guidance/using_climate_projections/using-climate-projections.qmd) page. The specific methodology and calculations underlying the generation of GWL data are covered in the next section.
+
+## Retrieving GWL data using climakitae
+
+The method is described in the following section. Supplementary resources include the `climakitae` [technical documentation](https://cal-adapt.github.io/climakitae/dev/climate-data-interface/howto/warming-levels/), which covers performing GWL analyses with the library, and the notebook `warming_level_methods.ipynb` on [GitHub](https://github.com/cal-adapt/cae-notebooks/blob/main/warming_level_methods.ipynb) and the Analytics Engine JupyterHub.
+
+```python 
+# Initalize a ClimateData object 
+from climakitae.new_core.user_interface import ClimateData
+cd = ClimateData()
+
+# Set the arguments to retrieve warming levels data
+# You can use this method for either LOCA or WRF data 
+tasmax_gwl_data = (
+    cd.catalog("cadcat")
+    .activity_id("LOCA2")
+    .table_id("mon")
+    .grid_label("d03")
+    .variable("tasmax")
+    .processes(
+        {
+            "warming_level": {
+                "warming_levels": [0.8, 1.0, 2.0, 3.0, 4.0],
+                "warming_level_window": 15,
+            },
+        }
+    )
+    .get()
+)
+```
+
+The object returned by `.get()` for GWL-processed data looks like this once printed. Expand the sections below to explore the coordinates and attributes, just like in a Jupyter notebook:
+
+{{< include figures/html/gwl-dummy-object.html >}}
+
+::: {.content-visible when-format="pdf"}
+```
+<xarray.Dataset> Size: 257GB
+Dimensions:        (sim: 129, warming_level: 5, time_delta: 360, lat: 495,
+                    lon: 559)
+Coordinates:
+  * sim            (sim) object 1kB 'LOCA2_UCSD_INM-CM5-0_ssp245_mon_d03_r1i1...
+  * warming_level  (warming_level) float64 40B 0.8 1.5 2.0 3.0 4.0
+  * time_delta     (time_delta) int64 3kB -180 -179 -178 -177 ... 177 178 179
+  * lat            (lat) float32 2kB 29.58 29.61 29.64 ... 44.95 44.98 45.02
+  * lon            (lon) float32 2kB -128.4 -128.4 -128.4 ... -111.0 -111.0
+    centered_year  (sim, warming_level) float64 5kB 2.057e+03 ... 2.079e+03
+    spatial_ref    int64 8B 0
+Data variables:
+    tasmax         (sim, warming_level, time_delta, lat, lon) float32 257GB dask.array<chunksize=(1, 1, 4, 290, 327), meta=np.ndarray>
+```
 :::
+
+The above example is loading data at two specific warming levels (0.8 and 2.0) with a 15-year window for the variable maximum air temperature.
+
+A [SSP](/glossary/index.qmd#shared-socioeconomic-pathways) was not specified to load the data because simulations from any SSP can be used to measure climate impacts at a given GWL. This ability to utilize data from all SSPs equivalently is one of the benefits of the GWL approach.
+
+## How GWLs are calculated 
+This section outlines the methodology for calculating GWL data used by `climakitae`. These are the calculations that take place "under the hood" (via internal `climakitae` methods) when you retrieve GWL data as described in the previous section. The methods described here follow the approach used by the IPCC AR6 report as closely as possible [@ipcc-2023].
+
+::: {.callout-note title="Note"}
+The lookup tables described here are used for selecting data from each model, but are not an accurate way to estimate what year a GWL is most likely to be reached. To estimate the timing of GWLs, the Analytics Engine uses the IPCC's warming trajectories, as described on the [About the Data](DEAD LINK) page.
+::: 
+
+Calculating GWLs on the Analytics Engine is a two-step process, described below. 
+
+### Step 1: Generate GWL lookup tables by model 
+
+For each global climate model ([GCM](/glossary/index.qmd#global-climate-model)) simulation in the [CMIP6](/glossary/index.qmd#cmip6) archive, the average global temperature increase relative to pre-industrial conditions (1850-1900) is measured for each year. This time-series of global warming is smoothed with a 20-year running average and used to create a lookup table to determine when each simulation reaches a given global warming level.
+
+The GWL lookup table captures what year each global climate simulation reaches each warming level. This table is pre-generated in the climakitae repository, and is only updated if changes are made to the methodology or new warming levels are added to the platform. *No actions are required by the user for this step*, but the section is provided as technical documentation and outlines the method used to generate this table for transparency.
+
+#### 1a. Select CMIP6 models and ensemble members
+
+From the CMIP6 catalog, all CMIP6 models and their ensemble members are selected via the [Pangeo CMIP6 table](https://cmip6-pds.s3.amazonaws.com/pangeo-cmip6.csv).
+
+#### 1b. Calculate global average surface temperature
+
+Global average surface air temperature for each ensemble member is then calculated by a spatially weighted average of the tas (or appropriate surface air temperature) variable using this formula (which is essentially a weighted average of all grid cells around the world, which accounts for the fact that grid cells towards the poles are smaller than grid cells near the equator):
+
+```python
+weightlat = np.sqrt(np.cos(np.deg2rad(ensemble_mem[lat])))
+weightlat = weightlat / np.sum(weightlat)
+timeseries = (ensemble_mem * weightlat).sum(lat).mean(lon)
+```
+
+#### 1c. Smooth time series and identify GWL crossing years
+
+Each time series is smoothed with a 20-year running average window. Then, the month/year that each time-series first exceeds a certain degree of warming (1.5, 2.0, 2.5, 3.0, 4.0) relative to the average temperature from a given reference period is computed and then saved per model into a lookup table of GWL, with the model as the index.
+
+#### 1d. Save GWL lookup tables
+
+The lookup tables are saved in the [data directory](https://github.com/cal-adapt/climakitae/tree/main/climakitae/data) of the `climakitae` repository.
+
+- `gwl_1850-1900ref.csv` uses the reference period 1850-1900, consistent with the IPCC warming level definitions. This reference period can not be used to calculate anomalies (different from historical), because the downscaled data only extends back to 1950.
+
+    | GCM | run | scenario | 0.8 | 1.0 | 1.2 | 1.5 | 2.0 | 2.5 | 3.0 | 4.0 |
+    |---|---|---|---|---|---|---|---|---|---|---|
+    | ACCESS-CM2 | r3i1p1f1 | ssp585 | 2005-09-16 | 2012-01-16 | 2017-05-16 | 2024-04-16 | 2037-08-16 | 2046-06-16 | 2053-12-16 | 2068-05-16 |
+    | ACCESS-CM2 | r3i1p1f1 | ssp370 | 2005-10-16 | 2012-11-16 | 2020-02-15 | 2028-09-16 | 2039-06-16 | 2049-01-16 | 2058-11-16 | 2079-01-16 |
+    | ACCESS-CM2 | r3i1p1f1 | ssp245 | 2005-09-16 | 2013-09-16 | 2020-03-16 | 2029-08-16 | 2040-07-16 | 2051-02-15 | 2066-03-16 | — |
+
+    : Example excerpt from `gwl_1850-1900ref.csv`, showing the year each GCM/run/scenario combination crosses each warming level. {#tbl-gwl-lookup .striped}
+
+- `gwl_1980-2010ref.csv` uses the reference period 1980-2010, and is only used when calculating anomalies.
+
+-  A 20-year running average window is used to determine the "crossing year" for each GWL by the center of the window. This ensures that any one particularly high value year does not skew the results when the overall average temperature trend has not yet reached the warming level.
+
+#### 1e. Save time-indexed GWL translation tables
+
+Additionally, the GWL at each month is saved for each ensemble member from 1860-2090 into `gwl_1850-1900ref_timeidx.csv` and `gwl_1980-2010ref_timeidx.csv`. These act as translations between time and GWLs.
+
+| time | ACCESS-CM2_r3i1p1f1_ssp585 | ACCESS-ESM1-5_r3i1p1f1_ssp585 | AWI-CM-1-1-MR_r1i1p1f1_ssp585 | CESM2_r11i1p1f1_ssp585 |
+|---|---|---|---|---|
+| 2000-1 | 0.6006125647093152 | 0.45405188235651056 | 1.0232514633514898 | 0.6213813987637752 |
+| 2020-1 | 1.3108536939844477 | 1.142057817584557 | 1.6253960100043647 | 1.3088474841003275 |
+| 2050-1 | 2.7253699553814195 | 2.4850610309728554 | 2.712248957754721 | 2.7661379693234354 |
+| 2080-1 | 4.855009532684353 | 4.31016555630567 | 4.365879658891602 | 4.791641459896719 |
+
+: Example excerpt from `gwl_1850-1900ref_timeidx.csv`, showing the GWL (°C above the 1850-1900 baseline) reached by each GCM/run/scenario combination at a given time. The full file has one column per GCM/run/scenario combination (490+ columns). {#tbl-gwl-timeidx .striped}
+
+- These files have time as the index, whereas the files generated in Step 4 have the model as the index.
+
+- The time range of these files is 1860-2090 because the 20-year running average window clips the first and last 10 years.
+
+The above steps are calculated for all CMIP6 models. The CESM2-LENS data is processed separately due to a slightly different data structure, but follows the same methodology.
+
+### Step 2: Retrieve model data at each GWL
+
+When data on warming levels is retrieved using `get_data()` or the Select GUI, the following procedure is run for each warming level, and for each simulation within our Analytics Engine WRF/LOCA2-Hybrid catalog (depending on downscaling method):
+
+#### 2a. Find the centered year
+
+Find the centered year that the simulation passes this global warming level, using the table generated in step 1d (`gwl_1850-1900ref.csv`).
+
+#### 2b. Slice the time window
+
+Slice the window (i.e. +/- 15 years) around the centered year found in the previous step, for the current simulation.
+
+#### 2c. Filter months and remove leap days
+
+Filter for desired months and remove leap days.
+
+#### 2d. Reset the time index
+
+Reset the time index so that all simulations can be stacked on top of each other.
+
+- Change timestamps to timedeltas with `centered_year` coordinates.
+
+- For example, a 30-year simulation with monthly frequency data from 2010-2040 is transformed into a dataset with time-deltas from -180 to 179 (360 months in 30 years) with an added `centered_year` coordinate of 2025.
+
+- The time dimension is now called `time_delta` because it represents the time distance from the central year.
+
+#### 2e. Simulations that don’t reach this given warming level are set to NaN.

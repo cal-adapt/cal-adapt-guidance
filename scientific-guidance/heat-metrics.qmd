@@ -1,7 +1,9 @@
 ---
 title: "Heat Metrics"
-author: "Cal-Adapt Analytics Engine Team"
-date: "2026-07-06"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
+date: "2024-01-01"
 date-modified: "2026-07-06"
 format:
   html: default

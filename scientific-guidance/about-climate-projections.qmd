@@ -1,6 +1,8 @@
 ---
 title: "About Climate Projections & Models"
-author: "Cal-Adapt Analytics Engine Team"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
 date: "2024-01-01"
 date-modified: "2026-05-21"
 format:

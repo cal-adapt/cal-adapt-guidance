@@ -1,6 +1,8 @@
 ---
 title: "Typical Meteorological Year 8760s"
-author: "Cal-Adapt Analytics Engine Team"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
 date: "2024-03-24"
 date-modified: "2026-06-08"
 format:

@@ -1,6 +1,8 @@
 ---
 title: "Overview"
-author: "Cal-Adapt Analytics Engine Team"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
 date: "2026-05-21"
 date-modified: "2026-05-21"
 citation: false
@@ -19,7 +21,7 @@ For background on climate projections and models more broadly, see [About Climat
 
 Climate projections come from ensembles of models, not from a single simulation. When multiple models are run under the same emissions scenario, they produce a range of outcomes — and that range is not a flaw. It is a quantified expression of genuine scientific uncertainty about how the climate system works.
 
-The IPCC distinguishes three principal sources of uncertainty in climate projections:
+The IPCC distinguishes three principal sources of uncertainty in climate projections [@ipcc-2023]:
 
 - [**Model uncertainty**](model_uncertainty.qmd) (also called *inter-model spread* or *structural uncertainty*): differences in how modeling groups represent physical processes such as cloud feedbacks, ocean heat uptake, and land-surface exchanges.
 - [**Scenario uncertainty**](scenario_uncertainty.qmd): future greenhouse gas emissions depend on societal choices that have not yet been made.

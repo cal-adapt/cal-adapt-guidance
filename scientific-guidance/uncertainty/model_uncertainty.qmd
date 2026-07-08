@@ -1,6 +1,8 @@
 ---
 title: "Model Uncertainty"
-author: "Cal-Adapt Analytics Engine Team"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
 date: "2026-05-21"
 date-modified: "2026-05-21"
 format:

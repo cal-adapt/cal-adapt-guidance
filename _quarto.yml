@@ -67,7 +67,7 @@ website:
             text: Our Team
   page-footer:
     left: |
-      ![](assets/bear.png){width="24px"} &nbsp;&copy; 2026 Cal-Adapt Analytics Engine
+      ![](/assets/bear.png){width="24px"} &nbsp;&copy; 2026 Cal-Adapt Analytics Engine
     right:
       - text: "Contact Us"
         href: "mailto:analytics@cal-adapt.org"

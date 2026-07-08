@@ -1,6 +1,8 @@
 ---
 title: "Analyses at the Census Tract"
-author: "Cal-Adapt Analytics Engine Team"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
 date: "2026-06-02"
 date-modified: "2026-06-02"
 format:

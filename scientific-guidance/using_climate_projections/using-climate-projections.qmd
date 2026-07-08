@@ -1,6 +1,8 @@
 ---
 title: "Guidance on Using Climate Data in Decision Making"
-author: "Cal-Adapt Analytics Engine Team"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
 date: "2024-01-01"
 date-modified: "2026-05-21"
 format:

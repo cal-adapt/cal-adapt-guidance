@@ -46,7 +46,11 @@ tasmax_gwl_data = (
 
 The object returned by `.get()` for GWL-processed data looks like this once printed. Expand the sections below to explore the coordinates and attributes, just like in a Jupyter notebook:
 
+::: {.content-visible when-format="html"}
+```{=html}
 {{< include figures/html/gwl-dummy-object.html >}}
+```
+:::
 
 ::: {.content-visible when-format="pdf"}
 ```
@@ -62,7 +66,7 @@ Coordinates:
     centered_year  (sim, warming_level) float64 5kB 2.057e+03 ... 2.079e+03
     spatial_ref    int64 8B 0
 Data variables:
-    tasmax         (sim, warming_level, time_delta, lat, lon) float32 257GB dask.array<chunksize=(1, 1, 4, 290, 327), meta=np.ndarray>
+    tasmax         (sim, warming_level, time_delta, lat, lon) float32 257GB ...
 ```
 :::
 

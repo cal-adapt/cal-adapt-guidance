@@ -137,18 +137,18 @@ This team is led by Dr. Owen Doherty (Eagle Rock Analytics, Inc.) and organized 
 
 We are also grateful to the following past team members for their contributions to the project:
 
-- Nancy Thomas: Executive Director, Geospatial Innovation Facility, U.C. Berkeley
-- Smitha Buddhavarapu: Stakeholder Engagement, Energy and Resources Group, U.C. Berkeley
-- Nabig Chaudhry: PhD Student, Energy and Resources Group, U.C. Berkeley
-- Grace Di Cecco: Postdoctoral Researcher, Eagle Rock Analytics
-- Brian Galey: Software Engineer, Geospatial Innovation Facility, U.C. Berkeley
-- Naomi Goldenson: Analytics Lead, Center for Climate Science, and Dept. of Atmospheric and Oceanic Sciences, UCLA
-- Chris Henrick: Web Developer, Geospatial Innovation Facility, U.C. Berkeley
-- Cora Kingdon: Summer Research Associate, Eagle Rock Analytics
-- Jessie Knapstein: Energy and Environmental Economics, Inc.
-- Eric Lehmer: Senior Python Developer/Web Developer, Geospatial Innovation Facility, U.C. Berkeley
-- Tianchi Liu: Data Scientist, Spatial Informatics Group
-- Julia Longmate: Summer Research Associate, Eagle Rock Analytics
-- Amber Mahone: Energy and Environmental Economics, Inc.
-- Shruti Mukhtyar: Web Developer, Geospatial Innovation Facility, U.C. Berkeley
-- John O'Brien: Atmospheric Scientist, Eagle Rock Analytics
+- **Nancy Thomas**: Executive Director, Geospatial Innovation Facility, U.C. Berkeley
+- **Smitha Buddhavarapu**: Stakeholder Engagement, Energy and Resources Group, U.C. Berkeley
+- **Nabig Chaudhry**: PhD Student, Energy and Resources Group, U.C. Berkeley
+- **Grace Di Cecco**: Postdoctoral Researcher, Eagle Rock Analytics
+- **Brian Galey**: Software Engineer, Geospatial Innovation Facility, U.C. Berkeley
+- **Naomi Goldenson**: Analytics Lead, Center for Climate Science, and Dept. of Atmospheric and Oceanic Sciences, UCLA
+- **Chris Henrick**: Web Developer, Geospatial Innovation Facility, U.C. Berkeley
+- **Cora Kingdon**: Summer Research Associate, Eagle Rock Analytics
+- **Jessie Knapstein**: Energy and Environmental Economics, Inc.
+- **Eric Lehmer**: Senior Python Developer/Web Developer, Geospatial Innovation Facility, U.C. Berkeley
+- **Tianchi Liu**: Data Scientist, Spatial Informatics Group
+- **Julia Longmate**: Summer Research Associate, Eagle Rock Analytics
+- **Amber Mahone**: Energy and Environmental Economics, Inc.
+- **Shruti Mukhtyar**: Web Developer, Geospatial Innovation Facility, U.C. Berkeley
+- **John O'Brien**: Atmospheric Scientist, Eagle Rock Analytics

@@ -10,6 +10,7 @@ website:
   bread-crumbs: true
   open-graph: true
   navbar:
+    pinned: true
     logo: assets/bear.png
     logo-alt: "Cal-Adapt Analytics Engine"
     left:

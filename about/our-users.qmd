@@ -23,6 +23,6 @@ Some users deploy Cal-Adapt tools and data for discrete, detailed analyses, whil
 
 ## Access to the Analytics Engine JupyterHub
 
-All of the data and tools developed by the Analytics Engine are openly and publicly available. However, access to the [Analytics Engine JupyterHub](https://analytics.cal-adapt.org/sign-in/), the cloud-based computing environment that allows users to run analyses without installing software, is currently limited to a select group of energy sector users who have been invited to alpha test the platform.
+All of the data and tools developed by the Analytics Engine are openly and publicly available. However, access to the [Analytics Engine JupyterHub](DEAD LINK), the cloud-based computing environment that allows users to run analyses without installing software, is currently limited to a select group of energy sector users who have been invited to alpha test the platform.
 
 If you are interested in being notified when the Analytics Engine JupyterHub becomes available to the general public, or if you would like to join our group of early testers, please send us an email at analytics@cal-adapt.org.

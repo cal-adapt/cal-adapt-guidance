@@ -17,18 +17,15 @@ website:
         menu:
           - text: Getting Started
             href: general-resources/getting-started/index.qmd
-          - text: Glossary
-            href: glossary/index.qmd
+          - href: glossary/index.qmd
           - text: Reference Library
             href: general-resources/reference-library/index.qmd
           - text: Media
             href: general-resources/media/index.qmd
-          - text: FAQs
-            href: general-resources/faqs.qmd
+          - href: general-resources/faqs.qmd
       - text: Scientific Guidance
         menu:
           - href: scientific-guidance/about-climate-projections.qmd
-            text: About Climate Projections & Models
           - href: scientific-guidance/using_climate_projections/index.qmd
             text: Guidance on Using Climate Data in Decision Making
           - href: scientific-guidance/climate_profiles/index.qmd
@@ -36,35 +33,23 @@ website:
           - href: scientific-guidance/uncertainty/index.qmd
             text: Uncertainty
           - href: scientific-guidance/heat-metrics.qmd
-            text: Heat Metrics
           - href: scientific-guidance/census-tracts.qmd
             text: Census Tracts
           - href: scientific-guidance/global-warming-levels.qmd
-            text: Global Warming Levels
           - href: scientific-guidance/extreme-value-analysis.qmd
-            text: Extreme Value Analysis
       - text: Data & Tools
         menu:
           - href: data-tools/explore-data.qmd
-            text: Explore Data
           - href: data-tools/access-methods.qmd
-            text: Access Methods
           - href: data-tools/data-documentation/index.qmd
-            text: Data Documentation
           - href: data-tools/notebooks.qmd
-            text: Notebooks & Development
       - href: blog/index.qmd
-        text: Blog
       - text: About
         menu:
-          - href: about/connection-to-caladapt.qmd
-            text: About Cal-Adapt
+          - href: about/our-project.qmd
           - href: about/co-production.qmd
-            text: Our Co-Production Process
           - href: about/our-users.qmd
-            text: Our Users
           - href: about/our-team.qmd
-            text: Our Team
   page-footer:
     left: |
       ![](/assets/bear.png){width="24px"} &nbsp;&copy; 2026 Cal-Adapt Analytics Engine
@@ -148,7 +133,7 @@ website:
       style: docked
       collapse-level: 1
       contents:
-        - about/connection-to-caladapt.qmd
+        - about/our-project.qmd
         - about/co-production.qmd
         - about/our-users.qmd
         - about/our-team.qmd

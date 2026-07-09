@@ -228,6 +228,49 @@ div[id^="fig-"] {
   margin-bottom: 0;
 }
 
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+.team-card .team-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.team-card .team-name a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.team-card .team-name a:hover {
+  text-decoration: underline;
+}
+
+.team-card .team-title {
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.team-card .team-association {
+  font-size: 0.85rem;
+  color: #555;
+}
+
 .resource-explorer {
   display: flex;
   gap: 2.5rem;

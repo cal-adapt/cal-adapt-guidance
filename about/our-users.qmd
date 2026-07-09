@@ -1,10 +1,13 @@
 ---
 title: "Our Users"
+citation: false
+format:
+  html: default
 ---
 
 A variety of groups use climate information and data products, each with distinct needs and technical capabilities. These categories of users, called "User Personas", were derived from a series of workshops and user engagement conversations led by the Cal-Adapt engagement team. Cal-Adapt's tools, functionalities, and applications meet the unique needs of each User Persona.
 
-## User personas 
+## User Personas 
 
 | User Persona | Description |
 |---|---|
@@ -13,6 +16,8 @@ A variety of groups use climate information and data products, each with distinc
 | Policy User | A policy user is a decision-maker who seeks high-level climate information, and has authority to influence behavior and outcomes within the energy sector. |
 | Academic / Researcher | An academic or researcher is engaged in accessing and examining climate data for scholarly or research purposes. |
 | Public Consumer / Learner | A public consumer or learner is an individual interested in climate change, seeking to gain a better understanding of climate-related issues. |
+
+: {.striped}
 
 Some users deploy Cal-Adapt tools and data for discrete, detailed analyses, while others only require broader knowledge on climate related issues. A user's technical capacity and climate information needs may evolve over time and with use of climate data. Cal-Adapt seeks to be a valuable resource for climate data across all of these user groups. While the Analytics Engine caters specifically to technical, semi-technical, or research users in the energy sector, the Data Explorer caters to policy users, educators, and public consumers of climate information.
 

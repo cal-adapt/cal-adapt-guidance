@@ -1,7 +1,0 @@
----
-title: "About Cal-Adapt"
----
-
-::: {.callout-note}
-This page is under development.
-:::

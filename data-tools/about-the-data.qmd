@@ -16,7 +16,7 @@ The Analytics Engine hosts downscaled climate change projections and related dat
 
 California academic institutions implement dynamical and hybrid-statistical downscaling methods in support of California Energy Commission (CEC) initiatives. The dynamical downscaling data developed at UCLA utilized the Weather Research & Forecasting Model (WRF). This method created several physically-based projections that are available for public use and Analytics Engine use. This dynamically downscaled data was then used to train the Localized Construct Analogs (LOCA2-Hybrid) at Scripps Institution of Oceanography. The LOCA2-Hybrid hybrid-statistical datasets are bias-corrected GCM outputs that are adjusted to be consistent with station observations. WRF and LOCA2-Hybrid downscaled datasets differ in the number of GCMs, variables, temporal resolution, and [Shared Socioeconomic Pathways](/glossary/index.qmd#shared-socioeconomic-pathways) (SSPs) that are included. Depending on the analysis desired, one data set might be preferred; for more information on climate projections and models, check out our [Guidance](/scientific-guidance/about-climate-projections.qmd) page.
 
-A summary of the datasets hosted on the Analytics Engine is listed in the [Data Catalog](https://stac-browser.cal-adapt.org/); for more information on how to access these datasets, see the [Accessing Data](access-methods.qmd) section. For additional details on Dynamical versus Statistical downscaling approaches, see the California Climate Change Assessment Justification Memos, as well as our forthcoming About Climate Models and Data and [Glossary](/glossary/index.qmd) of Terms sections. To understand how to use WRF and LOCA2-Hybrid data to answer application-specific questions for decision-making and planning purposes, refer to our [Guidance on Using Climate Data in Decision Making](/scientific-guidance/using_climate_projections/using-climate-projections.qmd) section. For further information on these introductory comments, refer to:
+A summary of the datasets hosted on the Analytics Engine is listed in the [Data Catalog](https://stac-browser.cal-adapt.org/); for more information on how to access these datasets, see the [Accessing Data](access-methods.qmd) section. For additional details on Dynamical versus Statistical downscaling approaches, see the California Climate Change Assessment Justification Memos, as well as our forthcoming About Climate Models and Data and [Glossary](/glossary/index.qmd) of Terms sections. To understand how to use WRF and LOCA2-Hybrid data to answer application-specific questions for decision-making and planning purposes, refer to our [Guidance on Using Climate Data in Decision-Making](/scientific-guidance/using_climate_projections/using-climate-projections.qmd) section. For further information on these introductory comments, refer to:
 
 - Carbon Brief's Q&A: How do climate models work? [@carbonbrief-climate-models-2018]
 - Climate Data and Analytics Working Group ([C-DAWG](https://www.energy.ca.gov/programs-and-topics/topics/research-and-development/climate-data-and-analysis-working-group-c-dawg))
@@ -213,21 +213,14 @@ All of the downscaled data available on the Analytics Engine comes from models t
 
 Although all the models on the Analytics Engine are skilled at representing California's climate, not all models perform equally well for any specific sub-region within California or for any given metric - particularly ones that the models were not specifically evaluated for. Therefore, the Analytics Engine also provides tools and guidance (see the forthcoming Guidance section) to help a user conduct additional, context-specific credibility analyses, such as examining the skill of the data or models for their specific region, metric, and/or application.
 
-## Known Data Challenges
 
-The Analytics Engine team is aware of the following data issues and will provide updates when available.
-
-### LOCA2-Hybrid precipitation output is too low
-
-More information on this issue is in development. 
-
-### Relative humidity bias
+## Known Data Issue: Relative humidity bias
 
 The downscaled climate models (both WRF and LOCA2-Hybrid) produced for California's Fifth Climate Change Assessment, which is available through the Cal-Adapt: Analytics Engine, originates from an international scientific endeavor called CMIP6. The GCMs comprising CMIP6 are projecting more near surface moisture than has previously been observed and measured. In essence, this higher near surface moisture may be translating to higher relative humidity and water vapor in the downscaled climate information for the Fifth Climate Change Assessment. 
 
 Given this systematic issue, it is believed that future predictions of climate will likely also predict more near surface moisture than is likely to occur. Here, we briefly describe the key problems with the models, provide user guidance as to how to use the information as is, and discuss how the Cal-Adapt team will be responding to this issue.
 
-#### Key Scientific Issues
+### Key Scientific Issues
 
 - In recent years as the climate has warmed, measurements of water vapor and relative humidity across the Southwestern United States have held relatively constant or even slightly declined over time. Climate models run over the recent past have however projected that water vapor content would have increased instead. This suggests that models are failing to properly resolve the historical hydroclimate of the Southwestern United States, including the inland area of California.
 - Climate models project a continued increase in the amount of atmospheric water vapor in coming decades as the Earth warms. It's unclear if this will actually happen. Scientists are concerned that climate models are over-estimating the amount of water vapor in future years.
@@ -236,20 +229,20 @@ Given this systematic issue, it is believed that future predictions of climate w
 
 **Key Citation:** Simpson et al. 2024 [@simpsonObserved2024]
 
-#### User Guidance
+### User Guidance
 
 - Downscaled GCM data contained in the Fifth Climate Change Assessment should not be used for wildfire modeling efforts.
 - Bias adjustment of data is suggested before use for quantitative assessments conducting a climatology evaluation using historical data is a crucial first step to characterize potential issues with water vapor in projections.
 - Downscaled GCM data can continue to be used for evaluations of extreme heat, given that the heat index calculation response curve is relatively insensitive to a 4% offset of humidity in typical heat events in California.
 
-#### How Cal-Adapt is Responding
+### How Cal-Adapt is Responding
 
 - We will perform an evaluation of the impact of this modeling issue, specifically on evaluations of extreme heat.
 - The role of bias adjustment on potential bias will be quantified and described.
 - We will make recommendations for how this information should be used, and potentially provide approaches to correct the issues.
 - We will publicly share our findings, recommendations, and potential approaches by listing them on the Cal-Adapt: Analytics Engine Website, Guidance Materials, and where appropriate, incorporate into the Jupyter Notebooks and `climakitae` package.
 
-#### How To Get Further Help
+### How To Get Further Help
 Energy sector partners may contact analytics@cal-adapt.org for further information and support in using these projections. Non-energy sector users should contact the Governor's Office of Land Use and Climate Innovation for climate services.
 
 

@@ -27,8 +27,8 @@ website:
       - text: Scientific Guidance
         menu:
           - href: scientific-guidance/about-climate-projections.qmd
-          - href: scientific-guidance/using_climate_projections/index.qmd
-            text: Guidance on Using Climate Data in Decision Making
+          - href: scientific-guidance/using_climate_projections/using-climate-projections.qmd
+            text: Guidance on Using Climate Data in Decision-Making
           - href: scientific-guidance/climate_profiles/index.qmd
             text: Climate Profiles
           - href: scientific-guidance/uncertainty/index.qmd
@@ -91,10 +91,7 @@ website:
       collapse-level: 1
       contents:
         - scientific-guidance/about-climate-projections.qmd
-        - section: "Guidance on Using Climate Data in Decision Making"
-          contents:
-            - scientific-guidance/using_climate_projections/index.qmd
-            - scientific-guidance/using_climate_projections/using-climate-projections.qmd
+        - scientific-guidance/using_climate_projections/using-climate-projections.qmd
         - section: "Climate Profiles"
           contents:
             - scientific-guidance/climate_profiles/index.qmd

@@ -42,6 +42,7 @@ website:
         menu:
           - href: data-tools/explore-data.qmd
           - href: data-tools/access-methods.qmd
+          - href: data-tools/about-the-data.qmd
           - href: data-tools/data-documentation/index.qmd
           - href: data-tools/notebooks.qmd
       - href: blog/index.qmd
@@ -126,6 +127,8 @@ website:
         - section: "Data Documentation"
           contents:
             - data-tools/data-documentation/index.qmd
+            - data-tools/about-the-data.qmd
+            - data-tools/data-documentation/data-structure-and-format.qmd
             - data-tools/data-documentation/metadata-standards.qmd
             - data-tools/data-documentation/more-datasets.qmd
         - data-tools/notebooks.qmd

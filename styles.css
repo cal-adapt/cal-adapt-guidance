@@ -417,3 +417,29 @@ div[id^="fig-"] {
 #quarto-citation > div > :nth-child(2) { order: 4; }
 #quarto-citation > div > :nth-child(3) { order: 1; }
 #quarto-citation > div > :nth-child(4) { order: 2; }
+
+/* Unified table styling (navy header, bordered cells) for all tables site-wide */
+table.table {
+  border-collapse: collapse;
+}
+
+table.table > thead > tr > th {
+  background-color: #1d3557;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 16px;
+  border: 1px solid #1d3557;
+}
+
+table.table > tbody > tr > td {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+}
+
+/* Neutralize Bootstrap's zebra striping so every table matches, striped or not */
+table.table-striped > tbody > tr:nth-of-type(odd) > td,
+table.table-striped > tbody > tr:nth-of-type(even) > td {
+  background-color: #ffffff;
+}

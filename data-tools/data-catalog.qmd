@@ -1,7 +1,15 @@
 ---
 title: "Data Catalog"
+subtitle: '[<i class="bi bi-box-arrow-up-right"></i> Open the Data Catalog](https://stac-browser.cal-adapt.org/){target="_blank" style="font-size:var(--title-meta-font-size); font-weight:normal;"}'
+citation: false
+format:
+  html: default
 ---
 
-::: {.callout-note}
-This page is under development.
-:::
+The Data Catalog is a searchable [STAC](https://stacspec.org/) (SpatioTemporal Asset Catalog) browser listing every dataset hosted on the Cal-Adapt: Analytics Engine. It's the best place to check what's available before you start pulling data: models, scenarios, variables, and spatial and temporal resolution, along with metadata for each collection.
+
+Use the Data Catalog to:
+
+- Browse available datasets by variable, scenario, model, or downscaling method
+- View metadata describing each collection's spatial and temporal coverage
+- Get direct links to the underlying Zarr and NetCDF stores referenced by [Access Methods](access-methods.qmd)

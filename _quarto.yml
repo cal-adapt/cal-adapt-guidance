@@ -41,7 +41,8 @@ website:
           - href: scientific-guidance/extreme-value-analysis.qmd
       - text: Data & Tools
         menu:
-          - href: data-tools/explore-data.qmd
+          - href: data-tools/data-catalog.qmd
+          - href: data-tools/analytics-engine-hub.qmd
           - href: data-tools/access-methods.qmd
           - href: data-tools/about-the-data.qmd
           - href: data-tools/data-documentation/index.qmd
@@ -116,11 +117,8 @@ website:
       style: docked
       collapse-level: 1
       contents:
-        - section: "Explore Data"
-          contents:
-            - data-tools/explore-data.qmd
-            - data-tools/data-catalog.qmd
-            - data-tools/analytics-engine-hub.qmd
+        - data-tools/data-catalog.qmd
+        - data-tools/analytics-engine-hub.qmd
         - data-tools/access-methods.qmd
         - section: "Data Documentation"
           contents:

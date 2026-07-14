@@ -1,7 +1,52 @@
 ---
-title: "Notebooks & Development"
+title: "Jupyter Notebooks"
+author:
+  - name:
+      literal: "Cal-Adapt Analytics Engine Team"
+date: "2024-01-01"
+date-modified: "2026-07-14"
+format:
+  html: default
+  pdf: default
 ---
 
-::: {.callout-note}
-This page is under development.
-:::
+## What are Jupyter Notebooks?
+
+The Analytics Engine utilizes Jupyter notebooks to be the user-facing method to showcase the variety of applications built upon tools developed as part of the `climakitae` Python library. Each of these notebooks can be used in multiple applications focused on, but not limited to, the energy sector in California supporting ratepayers through reliable and renewable energy management.
+
+## How to Use the Notebooks
+
+The Jupyter notebooks linked below contain example code to support the user-identified applications and showcase how to use `climakitae` for data retrieval, subsetting, and general analysis. Interactive notebooks are publicly available on GitHub in the [`cae-notebooks`](https://github.com/cal-adapt/cae-notebooks) repository, and available on the [Analytics Engine JupyterHub](access-methods.qmd#data-access-with-the-analytics-engine-jupyterhub) for users with access. The notebooks provide step-by-step functionality to access, analyze, and plot climate data available through the Analytics Engine. The notebooks can be used as-is or serve as a starting point to adapt to a specific organization's needs, workflows, or particular applications.
+
+Python tools included in the notebooks provide examples for how to work with both the historical and projection data on the platform, and demonstrate how to move from the climate variables provided through the Analytics Engine to actionable information that can inform decision-making and risk assessments.
+
+## Notebook Types
+
+Analytics Engine notebooks are organized into three categories to help users identify the right notebook for their needs and set expectations for how each is structured.
+
+- **Data Access** notebooks demonstrate how to retrieve, subset, and visualize existing climate data and derived data products using available tools and workflows.
+- **Data Generation** notebooks show how to create new custom data products, profiles, or metrics by transforming and combining source data.
+- **Tool/Methods** notebooks teach specific tools, methodologies, or analytical approaches, with hands-on examples of how to apply them.
+
+Each notebook in the [AE Notebooks GitHub repository](https://github.com/cal-adapt/cae-notebooks) includes a categorical assignment in the [AE Navigation Guide](https://github.com/cal-adapt/cae-notebooks/blob/main/AE_navigation_guide.ipynb), which provides a full index of available notebooks organized by type, topic, and application.
+
+## Actively Maintained Notebooks
+
+This set of notebooks is actively maintained by the Cal Adapt team to highlight how to use `climakitae`, as well as showcase some scientific topics of high interest and value, such as Global Warming Levels.
+
+| Notebook | Description | Type |
+|---|---|---|
+| [`basic_data_access.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/basic_data_access.ipynb) | Access, subset, and export climate data using `climakitae`. | Data Access |
+| [`custom_climate_profiles.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/custom_climate_profiles.ipynb) | Generate annualized hourly climate profiles for energy system modeling and planning. | Data Generation |
+| [`derived_variables_demo.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/derived_variables_demo.ipynb) | Define and use custom derived climate metrics with `register_user_function`. | Tool/Methods |
+| [`renewables_data_access.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/renewables_data_access.ipynb) | Access and plot derived renewables data products. | Data Access |
+| [`threshold_tools.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/threshold_tools.ipynb) | Define extreme events and analyze their likelihood using extreme value theory. | Tool/Methods |
+| [`vulnerability_assessment.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/vulnerability_assessment.ipynb) | Generate data-informed answers for vulnerability assessments through a customizable metric builder. | Data Generation |
+| [`warming_level_methods.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/warming_level_methods.ipynb) | Compare SSP time-based and Global Warming Levels approaches. | Tool/Methods |
+| [`weather_station_data_access.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/weather_station_data_access.ipynb) | Access quality controlled historical weather station data. | Data Access |
+
+: Actively maintained Analytics Engine notebooks, available in the [`cae-notebooks`](https://github.com/cal-adapt/cae-notebooks) repository. {#tbl-notebooks .striped}
+
+## Other Notebooks
+
+The Cal Adapt team has an additional repository of notebooks that are **not** actively maintained, but are saved as reference for our users and developers. This includes notebooks developed with our partners for specific use-cases, notebooks used for one-off data or figure generation, among others. You can view and download these notebooks in the [`cae-archives`](https://github.com/cal-adapt/cae-archives/tree/master) repository on GitHub.

@@ -2,8 +2,12 @@
 title: "Global Warming Levels"
 author:
   - name:
-      literal: "Cal-Adapt Analytics Engine Team"
+      literal: "Cal-Adapt"
 date: "2024-01-01"
+citation:
+  id: "cal-adapt_global-warming-levels2024"
+  publisher: "Cal-Adapt"
+  issued: "2026-07-02"
 date-modified: "2026-07-02"
 format:
   html: default

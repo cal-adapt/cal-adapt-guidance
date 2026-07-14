@@ -2,8 +2,12 @@
 title: "Internal Variability"
 author:
   - name:
-      literal: "Cal-Adapt Analytics Engine Team"
+      literal: "Cal-Adapt"
 date: "2026-05-21"
+citation:
+  id: "cal-adapt_internal-variability2026"
+  publisher: "Cal-Adapt"
+  issued: "2026-05-21"
 date-modified: "2026-05-21"
 format:
   html: default

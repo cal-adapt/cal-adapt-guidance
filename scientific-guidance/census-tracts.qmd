@@ -2,8 +2,12 @@
 title: "Analyses at the Census Tract"
 author:
   - name:
-      literal: "Cal-Adapt Analytics Engine Team"
+      literal: "Cal-Adapt"
 date: "2026-06-02"
+citation:
+  id: "cal-adapt_census-tracts2026"
+  publisher: "Cal-Adapt"
+  issued: "2026-06-02"
 date-modified: "2026-06-02"
 format:
   html: default

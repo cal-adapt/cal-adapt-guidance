@@ -17,7 +17,7 @@ Sea Level Rise and Hydrologic Data are available for independent download but ar
 Downscaled climate projections produced for California's Fifth Climate Change Assessment, fully integrated into the Analytics Engine's Data Catalog and `climakitae` tooling. See the [Climate Model Data](../climate-model-data.qmd) page for full details on models, downscaling methods, and scenarios.
 
 ### WRF
-![](../../assets/dataset-icons/wrf_t2_d03_2030.gif){.dataset-thumb}
+![](../figures/static/wrf_t2_d03_2030.gif){.dataset-thumb}
 
 Source
 :   UCLA
@@ -32,7 +32,7 @@ Learn More
 :   [Climate Model Data](../climate-model-data.qmd)
 
 ### LOCA2
-![](../../assets/dataset-icons/loca2_tasmax_2030.gif){.dataset-thumb}
+![](../figures/static/loca2_tasmax_2030.gif){.dataset-thumb}
 
 Source
 :   Scripps Institution of Oceanography
@@ -61,7 +61,7 @@ Learn More
 
 
 ## Climate Profiles
-![](../../assets/dataset-icons/tmy_icon.png){.dataset-thumb}
+![](../figures/static/tmy_icon.png){.dataset-thumb}
 
 Source
 :   Cal Adapt
@@ -76,7 +76,7 @@ Learn More
 :   [Climate Profiles](/scientific-guidance/climate_profiles/index.qmd)
 
 ## Historic Weather Station Data
-![](../../assets/dataset-icons/hdp_icon.png){.dataset-thumb}
+![](../figures/static/hdp_icon.png){.dataset-thumb}
 
 Source
 :   Eagle Rock Analytics
@@ -92,7 +92,7 @@ Learn More
 
 
 ## Sea Level Rise
-![](../../assets/dataset-icons/sea_level_icon.png){.dataset-thumb}
+![](../figures/static/sea_level_icon.png){.dataset-thumb}
 
 Source
 :   Scripps Institution of Oceanography, U.C. San Diego

@@ -1,5 +1,5 @@
 ---
-title: "About the Data"
+title: "Climate Model Data"
 author:
   - name:
       literal: "Cal-Adapt Analytics Engine Team"

@@ -10,7 +10,7 @@ format:
   pdf: default
 ---
 
-The Analytics Engine public AWS S3 bucket named `cadcat`, short for Cal-Adapt: Data Catalog, contains dynamically downscaled WRF data in Zarr and statistically downscaled LOCA2-hybrid data in both NetCDF and Zarr formats, along with other datasets such as station data (HadISD). More detailed information about the climate data used by the Analytics Engine can be found in the [About the Data](../about-the-data.qmd) section.
+The Analytics Engine public AWS S3 bucket named `cadcat`, short for Cal-Adapt: Data Catalog, contains dynamically downscaled WRF data in Zarr and statistically downscaled LOCA2-hybrid data in both NetCDF and Zarr formats, along with other datasets such as station data (HadISD). More detailed information about the climate data used by the Analytics Engine can be found in the [Climate Model Data](../climate-model-data.qmd) section.
 
 ## NetCDF
 The raw LOCA2-Hybrid datasets are stored as NetCDF files in S3 at the subdirectory [LOCA2/aaa-ca-hybrid](https://cadcat.s3.amazonaws.com/index.html#loca2/aaa-ca-hybrid/). The advantage of NetCDF files is that they are single files stored in a directory structure, and can thus be manually downloaded using a web browser for a minimal set of data. The disadvantage of NetCDF is that they need to be loaded completely into memory to access even a slice of the data, which can be resource exhaustive or even prohibitive.

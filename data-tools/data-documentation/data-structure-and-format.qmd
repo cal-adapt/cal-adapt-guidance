@@ -33,4 +33,4 @@ WRF and LOCA2-Hybrid follow similar directory structures with some notable diffe
 - Not all parameters are the same between WRF and LOCA2-Hybrid
 - Parameters are not always internally consistent.
 
-More advanced query tools are useful in figuring out where the data is and how to load it into different software packages. The Analytics Engine searchable [data catalog](https://stac-browser.cal-adapt.org/) was generated from the contents of the Intake ESM catalog to help identify the exact path to the data of interest. Users can type into the search box to identify datasets of interest and view the path to those datasets in the S3 bucket structure.
+More advanced query tools are useful in figuring out where the data is and how to load it into different software packages. The Analytics Engine searchable [data catalog](../data-catalog.qmd) was generated from the contents of the Intake ESM catalog to help identify the exact path to the data of interest. Users can type into the search box to identify datasets of interest and view the path to those datasets in the S3 bucket structure.

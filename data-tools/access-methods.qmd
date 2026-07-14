@@ -202,7 +202,7 @@ Downloading large amounts of data, including multiple models, simulations, and/o
 Must download the entire dataset, whether it is NetCDF or Zarr store. Can not spatially or temporally filter the data using AWS CLI, thus resulting in the possibility of downloading more data than is necessary. This solution does not require an Analytics Engine login but does require some familiarity with shell scripting.
 
 ### Example Usage
-Natively, AWS S3 does not store data in a traditional directory structure but instead uses keys to the binary data stored there. The AWS Explorer represents the data keys as directories for convenience. Users can first utilize either the [AWS Explorer](https://cadcat.s3.amazonaws.com/index.html) or [Data Catalog](stac-browser.cal-adapt.org/) to find the path to the data of interest. 
+Natively, AWS S3 does not store data in a traditional directory structure but instead uses keys to the binary data stored there. The AWS Explorer represents the data keys as directories for convenience. Users can first utilize either the [AWS Explorer](https://cadcat.s3.amazonaws.com/index.html) or [Data Catalog](data-catalog.qmd) to find the path to the data of interest. 
 
 The following is an example of listing the bucket data using AWS CLI to display the variables available for this model:
 
@@ -213,7 +213,7 @@ aws s3 ls --no-sign-request s3://cadcat/loca2/aaa-ca-hybrid/MIROC6/0p0625deg/r1i
 aws s3 ls --no-sign-request s3://cadcat/wrf/ucla/miroc6/ssp370/day/
 ```
 
-The `–no-sign-request` option is required to access this public S3 bucket. Also notice the “s3://cadcat” URI is used instead of https://cadcat.s3.amazonaws.com/. S3 has its own protocol for accessing data, but users can examine the directory structure as shown above to find the path or can locate the S3 protocol path using the [Data Catalog](stac-browser.cal-adapt.org/).
+The `–no-sign-request` option is required to access this public S3 bucket. Also notice the “s3://cadcat” URI is used instead of https://cadcat.s3.amazonaws.com/. S3 has its own protocol for accessing data, but users can examine the directory structure as shown above to find the path or can locate the S3 protocol path using the [Data Catalog](data-catalog.qmd).
 
 Note the difference in “directory” structure in the two commands above between the NetCDF and Zarr data. It is important to remember that with the NetCDF, there is only one resolution, but with the Zarr data there are up to three resolutions for each variable.
 
@@ -281,7 +281,7 @@ Loading Analytics Engine Zarrs directly from S3 should be limited to datasets re
 GDAL, which underpins QGIS, has a default limit of 65,000 bands for reading raster layers. This is to prevent excess memory consumption. This makes it not possible to load hourly or daily data, as the QGIS driver does not allow spatial or temporal filtering upon definition of the data connection.
 
 ### Example Usage
-To open the S3 Zarr store go to the menu item Layer→Add Layer→Add Raster Layer. This will bring up the Data Source Manager | Raster interface. Under Source Type switch the radio button to Protocol: HTTP(S), cloud, etc. then under the Protocol section choose AWS S3 for the Type, cadcat for the Bucket or container, and then enter the relative path to the Zarr store, which can be found by using the [AWS Explorer](https://cadcat.s3.amazonaws.com/index.html) or [Data Catalog](stac-browser.cal-adapt.org/). 
+To open the S3 Zarr store go to the menu item Layer→Add Layer→Add Raster Layer. This will bring up the Data Source Manager | Raster interface. Under Source Type switch the radio button to Protocol: HTTP(S), cloud, etc. then under the Protocol section choose AWS S3 for the Type, cadcat for the Bucket or container, and then enter the relative path to the Zarr store, which can be found by using the [AWS Explorer](https://cadcat.s3.amazonaws.com/index.html) or [Data Catalog](data-catalog.qmd). 
 
 As an example to load the multi-model mean extreme heat absolute Zarr store, which is stored at various warming levels, enter “tmp/era/wrf/cae/mm4mean/ssp370/gwl/TX99p/d03/” for Object Key.
 

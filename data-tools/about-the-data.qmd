@@ -40,17 +40,124 @@ Downscaled data is available via two methods:
 - Downscaled by UCLA using a dynamical method with the Weather Research and Forecasting model (WRF)
 - Downscaled by Scripps Institution of Oceanography using a hybrid-statistical downscaling method, Localized Constructed Analogs version 2 (LOCA2-Hybrid)
 
-### Spatial Resolution
-- 45-km (WRF only)
-- 9-km - Western Electricity Coordinating Council (WECC) region (WRF only)
-- 3-km - California (CA) resolution (WRF and LOCA2-Hybrid)
+The table below summarizes the underlying data created by each institution, including the number of models available, spatial resolution, scenario (SSP) coverage, bias correction status, and native temporal resolution:
 
-Of particular note is the nuance that the 3km data is not "just" a narrowing of projections data but a qualitatively more accurate representation of the data than the 45km.
+| | Dynamically Downscaled (WRF) | Hybrid-Statistically Downscaled (LOCA2-Hybrid) |
+|---|---|---|
+| Institution | UCLA | Scripps Institution of Oceanography |
+| Models | 8 unique models | 15 unique models |
+| Spatial resolution | 45 km, 9 km (WECC region), 3 km (CA) | 3 km (CA) |
+| Scenarios (SSPs) | SSP3-7.0 (primary); limited SSP2-4.5/SSP5-8.5 runs — see @tbl-wrf-projections | SSP2-4.5, SSP3-7.0, SSP5-8.5 |
+| Bias correction* | A priori: EC-Earth3, EC-Earth3-Veg, MIROC6, TaiESM1, MPI-ESM1-2-HR. Other models are not bias-corrected. | All 15 models |
+| Native temporal resolution | Hourly | Daily |
+| Reanalysis dataset | WRF-ERA5 historical reconstruction (45 km, 9 km, 3 km; daily and hourly) | None |
+
+: Comparison of the dynamically downscaled (WRF) and hybrid-statistically downscaled (LOCA2-Hybrid) data foundations. Other pre-aggregated daily and monthly datasets are also available; see the [Data Catalog](https://analytics.cal-adapt.org/data/catalog/) for the full listing. {#tbl-data-foundation .striped}
+
+\* Details of the bias correction method are available in the Data Adoption Justification Memo [@pierce-bias-correction-2023].
+
+**WRF models (8):**
+
+- CESM2
+- CNRM-ESM2-1
+- EC-Earth3
+- EC-Earth3-Veg
+- FGOALS-g3
+- MIROC6
+- MPI-ESM1-2-HR
+- TaiESM1
+
+**LOCA2-Hybrid models (15):**
+
+- ACCESS-CM2
+- CESM2-LENS
+- CNRM-ESM2-1
+- EC-Earth3
+- EC-Earth3-Veg
+- FGOALS-g3
+- GFDL-ESM4
+- HadGEM-GC31-LL
+- INM-CM5-0
+- IPSL-CM6A-LR
+- KACE-1-0-G
+- MIROC
+- MPI-ESM1-2-HR
+- MRI-ESM2-0
+- TaiESM1
+
+### Spatial Resolution
+See @tbl-data-foundation for which spatial resolutions are available for each downscaling method. Of particular note is the nuance that the 3km data is not "just" a narrowing of projections data but a qualitatively more accurate representation of the data than the 45km.
 
 For both georeferenced raster data (such as LOCA2-Hybrid) and WRF data, the coordinate pair (latitude and longitude) represents the center point of the grid cell.
 
 ### Shared Scenario Pathways
-Various Shared Scenario Pathways (SSPs) representing global emissions trajectories from intermediate to higher trajectories are available on the Analytics Engine for the LOCA2-Hybrid data. SSP2-4.5, SSP3-7.0, and SSP5-8.5 each represent a combination of narratives (2, 3, and 5) and Representative Concentration Pathways (RCP) (4.5, 7.0, and 8.5). For example, SSP2-4.5 utilizes the SSP 2 narrative and RCP 4.5. All the WRF runs use SSP3-7.0.
+Various Shared Scenario Pathways (SSPs) representing global emissions trajectories from intermediate to higher trajectories are available on the Analytics Engine (see @tbl-data-foundation for which scenarios are available for each downscaling method). SSP2-4.5, SSP3-7.0, and SSP5-8.5 each represent a combination of narratives (2, 3, and 5) and Representative Concentration Pathways (RCP) (4.5, 7.0, and 8.5). For example, SSP2-4.5 utilizes the SSP 2 narrative and RCP 4.5.
+
+### Data Availability by Variable and Scenario
+
+Not every model, ensemble member, or variable is available for every scenario. The tables below summarize what is available for each downscaling method; for the full, searchable listing of individual datasets, see the [Data Catalog](https://analytics.cal-adapt.org/data/catalog/).
+
+#### LOCA2-Hybrid
+
+LOCA2-Hybrid data is available for 15 GCMs with a total of 199 ensemble runs, downscaled at a native daily resolution (a pre-aggregated monthly version is also available). For each scenario, **GCMs** is the count of models that were downscaled with that variable in at least one ensemble run, and **Ensembles** is the count of ensemble runs containing that variable. Variables within each group below always share identical availability:
+
+::: {#tbl-loca2-availability}
+::: {.content-visible when-format="html"}
+```{=html}
+<div class="figure-container">
+{{< include figures/html/tbl-loca2-availability.html >}}
+</div>
+```
+:::
+::: {.content-visible when-format="pdf"}
+![](figures/static/tbl-loca2-availability.png)
+:::
+LOCA2-Hybrid data availability by variable group and scenario, colored by scenario.
+:::
+
+**Precipitation & Temperature:**
+
+- Precipitation (total) (`pr`)
+- Maximum air temperature at 2m (`tasmax`)
+- Minimum air temperature at 2m (`tasmin`)
+
+**Humidity:**
+
+- Specific humidity at 2m (`huss`)
+- Maximum relative humidity (`hursmax`)
+- Minimum relative humidity (`hursmin`)
+
+**Wind:**
+
+- Wind speed at 10m (`wspeed`)
+- West-East component of Wind at 10m (`uas`)
+- North-South component of Wind at 10m (`vas`)
+
+**Radiation:**
+
+- Shortwave flux at the surface (`rsds`)
+
+#### WRF
+
+There are two kinds of WRF simulations: **projections simulations**, downscaled from GCMs for a given emissions scenario and spatial resolution, and **reanalysis simulations**, a downscaled run of the ERA5 reanalysis dataset providing an observationally-constrained historical reconstruction (see @tbl-data-foundation). The table below covers projections simulations only.
+
+WRF data is available for 8 GCMs with 1 ensemble run per emissions scenario, downscaled at a native hourly resolution; simulation counts are identical whether accessed at native hourly or pre-aggregated daily resolution, with the latter available for four of the WRF simulations:
+
+::: {#tbl-wrf-projections}
+::: {.content-visible when-format="html"}
+```{=html}
+<div class="figure-container">
+{{< include figures/html/tbl-wrf-projections.html >}}
+</div>
+```
+:::
+::: {.content-visible when-format="pdf"}
+![](figures/static/tbl-wrf-projections.png)
+:::
+Number of WRF projection simulations available by scenario and spatial resolution, colored by scenario.
+:::
+
+\* Additional simulations from CESM2 for SSP2-4.5 and SSP5-8.5 at 9 km resolution are part of the larger suite of dynamically downscaled GCMs by UCLA, of which the CEC-supported simulations are a subset; see [more information here](https://dept.atmos.ucla.edu/alexhall/downscaling-cmip6).
 
 ## Coordinate Reference Systems and Grid Conventions
 
@@ -94,14 +201,19 @@ When using warming levels, the Analytics Engine provides estimates for the cross
 Best estimate and 90% confidence interval for the year the world will reach 2.0 °C of warming under the SSP 3-7.0 scenario. The median year of crossing is denoted by the vertical dashed line and is provided. The solid lines represent the first and last occurrence of the 5th and 95th percentiles crossing the designated warming level, with the range in years provided. For example, the median year of GCMs reaching 2.0°C of warming is in 2047, with a range of 24 years between the first and last occurrence. Figure produced by the Cal-Adapt: Analytics Engine based on data from the IPCC.
 :::
 
-| SSP Scenario | 1.5°C | 2.0°C | 2.5°C | 3.0°C |
-|---|---|---|---|---|
-| SSP 1-2.6 | 2033 (2024–2100+) | – | – | – |
-| SSP 2-4.5 | 2031 (2024–2043) | 2053 (2039–2081) | 2080 (2054–2100+) | – |
-| SSP 3-7.0 | 2031 (2024–2041) | 2047 (2037–2061) | 2062 (2049–2080) | 2076 (2060–2097) |
-| SSP 5-8.5 | 2028 (2022–2037) | 2042 (2034–2054) | 2054 (2044–2069) | 2065 (2053–2083) |
-
-: Best estimate (with 90% very likely range in parentheses) for the year each SSP scenario reaches a given global warming level. Summarized from data from the IPCC. {#tbl-gwl-year-exceedance .striped}
+::: {#tbl-gwl-year-exceedance}
+::: {.content-visible when-format="html"}
+```{=html}
+<div class="figure-container">
+{{< include figures/html/tbl-gwl-year-exceedance.html >}}
+</div>
+```
+:::
+::: {.content-visible when-format="pdf"}
+![](figures/static/tbl-gwl-year-exceedance.png)
+:::
+Best estimate (with 90% very likely range in parentheses) for the year each SSP scenario reaches a given global warming level, colored by scenario. Summarized from data from the IPCC.
+:::
 
 For more information on fetching global warming level data in the Analytics Engine, or how California-focused warming level data is calculated, check out our [Global Warming Levels](/scientific-guidance/global-warming-levels.qmd) page.
 
@@ -214,7 +326,7 @@ All of the downscaled data available on the Analytics Engine comes from models t
 Although all the models on the Analytics Engine are skilled at representing California's climate, not all models perform equally well for any specific sub-region within California or for any given metric - particularly ones that the models were not specifically evaluated for. Therefore, the Analytics Engine also provides tools and guidance (see the forthcoming Guidance section) to help a user conduct additional, context-specific credibility analyses, such as examining the skill of the data or models for their specific region, metric, and/or application.
 
 
-## Known Data Issue: Relative humidity bias
+## Relative Humidity Bias
 
 The downscaled climate models (both WRF and LOCA2-Hybrid) produced for California's Fifth Climate Change Assessment, which is available through the Cal-Adapt: Analytics Engine, originates from an international scientific endeavor called CMIP6. The GCMs comprising CMIP6 are projecting more near surface moisture than has previously been observed and measured. In essence, this higher near surface moisture may be translating to higher relative humidity and water vapor in the downscaled climate information for the Fifth Climate Change Assessment. 
 

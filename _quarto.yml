@@ -151,9 +151,7 @@ format:
     format-links: [pdf]
     citation: true
     appendix-cite-as: display
-    include-after-body:
-      - glossary/_glossary-tooltip-inline.html
-      - _format-links-top.html
+    include-after-body: glossary/_glossary-tooltip-inline.html
   pdf:
     toc: false
     citation: true

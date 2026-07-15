@@ -125,7 +125,7 @@ div[id^="fig-"] {
 }
 
 
-.quarto-title-meta {
+.quarto-title-banner .quarto-title-meta {
   display: none;
 }
 

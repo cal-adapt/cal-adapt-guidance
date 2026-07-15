@@ -16,7 +16,7 @@ resources:
 ---
 
 ## Overview 
-This section outlines the steps a user takes to access data on global warming levels (GWLs) using `climakitae`. The tools in the Analytics Engine platform can calculate global warming levels for dynamically downscaled (WRF) or statistically downscaled (LOCA) data using the same methods. For more information on how to select a dataset for an application of interest, refer to the [Guidance on Using Climate Data in Decision-Making](/general-climate-guidance/using-climate-projections.qmd) page. The specific methodology and calculations underlying the generation of GWL data are covered in the next section.
+This section outlines the steps a user takes to access data on global warming levels (GWLs) using `climakitae`. The tools in the Analytics Engine platform can calculate global warming levels for dynamically downscaled (WRF) or statistically downscaled (LOCA) data using the same methods. For more information on how to select a dataset for an application of interest, refer to the [Guidance on Using Climate Data in Decision-Making](/scientific-guidance/general-climate-guidance/using-climate-projections.qmd) page. The specific methodology and calculations underlying the generation of GWL data are covered in the next section.
 
 ## Retrieving GWL data using climakitae
 

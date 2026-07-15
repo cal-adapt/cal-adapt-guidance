@@ -24,14 +24,10 @@ website:
           - text: Media
             href: general-resources/media/index.qmd
           - href: general-resources/faqs.qmd
-      - text: General Climate Guidance
-        menu:
-          - href: general-climate-guidance/about-climate-projections.qmd
-          - href: general-climate-guidance/using-climate-projections.qmd
-            text: Guidance on Using Climate Data in Decision-Making
-          - href: general-climate-guidance/guiding-principles.qmd
       - text: Scientific Guidance
         menu:
+          - href: scientific-guidance/general-climate-guidance/about-climate-projections.qmd
+            text: General Climate Guidance
           - href: scientific-guidance/climate_profiles/index.qmd
             text: Climate Profiles
           - href: scientific-guidance/uncertainty/index.qmd
@@ -84,19 +80,16 @@ website:
             - general-resources/media/webinars.qmd
             - general-resources/media/presentations.qmd
         - general-resources/faqs.qmd
-    - id: general-climate-guidance
-      title: "General Climate Guidance"
-      style: docked
-      collapse-level: 1
-      contents:
-        - general-climate-guidance/about-climate-projections.qmd
-        - general-climate-guidance/using-climate-projections.qmd
-        - general-climate-guidance/guiding-principles.qmd
     - id: scientific-guidance
       title: "Scientific Guidance"
       style: docked
       collapse-level: 1
       contents:
+        - section: "General Climate Guidance"
+          contents:
+            - scientific-guidance/general-climate-guidance/about-climate-projections.qmd
+            - scientific-guidance/general-climate-guidance/using-climate-projections.qmd
+            - scientific-guidance/general-climate-guidance/guiding-principles.qmd
         - section: "Climate Profiles"
           contents:
             - scientific-guidance/climate_profiles/index.qmd

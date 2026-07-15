@@ -53,6 +53,7 @@ html = f"""<!-- Auto-generated from glossary-data.json — do not edit -->
 
   function initTooltips() {{
     if (window.location.pathname.match(/glossary/)) return;
+    if (window.matchMedia && !window.matchMedia("(hover: hover)").matches) return;
     document.querySelectorAll("a[href]").forEach(function (link) {{
       var href = link.getAttribute("href");
       var m = href && href.match(/glossary[^#]*#([\\w-]+)/);

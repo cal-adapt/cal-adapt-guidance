@@ -4,11 +4,9 @@ author:
   - name:
       literal: "Cal-Adapt"
 date: "2026-05-21"
+date-modified: &date-modified "2026-05-21"
 citation:
-  id: "cal-adapt_internal-variability2026"
-  publisher: "Cal-Adapt"
-  issued: "2026-05-21"
-date-modified: "2026-05-21"
+  issued: *date-modified
 format:
   html: default
   pdf: default

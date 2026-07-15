@@ -4,11 +4,9 @@ author:
   - name:
       literal: "Cal-Adapt"
 date: "2024-06-26"
+date-modified: &date-modified "2026-06-26"
 citation:
-  id: "cal-adapt_extreme-met-year2024"
-  publisher: "Cal-Adapt"
-  issued: "2026-06-26"
-date-modified: "2026-06-26"
+  issued: *date-modified
 format:
   html: default
   pdf: default

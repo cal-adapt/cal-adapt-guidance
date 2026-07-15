@@ -4,11 +4,9 @@ author:
   - name:
       literal: "Cal-Adapt"
 date: "2024-03-24"
+date-modified: &date-modified "2026-07-02"
 citation:
-  id: "cal-adapt_extreme-value-analysis2024"
-  publisher: "Cal-Adapt"
-  issued: "2026-07-02"
-date-modified: "2026-07-02"
+  issued: *date-modified
 format:
   html: default
   pdf: default

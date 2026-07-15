@@ -148,6 +148,7 @@ format:
     toc: true
     format-links: [pdf]
     citation: true
+    appendix-cite-as: display
     include-after-body:
       - glossary/_glossary-tooltip-inline.html
       - _format-links-top.html

@@ -4,11 +4,9 @@ author:
   - name:
       literal: "Cal-Adapt"
 date: "2024-01-01"
+date-modified: &date-modified "2026-07-10"
 citation:
-  id: "cal-adapt_metadata-standards2024"
-  publisher: "Cal-Adapt"
-  issued: "2026-07-10"
-date-modified: "2026-07-10"
+  issued: *date-modified
 format:
   html: default
   pdf: default

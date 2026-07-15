@@ -20,16 +20,18 @@ website:
           - text: Getting Started
             href: general-resources/getting-started/index.qmd
           - href: glossary/index.qmd
-          - text: Reference Library
-            href: general-resources/reference-library/index.qmd
+          - href: general-resources/reference-library.qmd
           - text: Media
             href: general-resources/media/index.qmd
           - href: general-resources/faqs.qmd
+      - text: General Climate Guidance
+        menu:
+          - href: general-climate-guidance/about-climate-projections.qmd
+          - href: general-climate-guidance/using-climate-projections.qmd
+            text: Guidance on Using Climate Data in Decision-Making
+          - href: general-climate-guidance/guiding-principles.qmd
       - text: Scientific Guidance
         menu:
-          - href: scientific-guidance/about-climate-projections.qmd
-          - href: scientific-guidance/using_climate_projections/using-climate-projections.qmd
-            text: Guidance on Using Climate Data in Decision-Making
           - href: scientific-guidance/climate_profiles/index.qmd
             text: Climate Profiles
           - href: scientific-guidance/uncertainty/index.qmd
@@ -45,7 +47,6 @@ website:
           - href: data-tools/analytics-engine-hub.qmd
           - href: data-tools/access-methods.qmd
           - href: data-tools/climate-model-data.qmd
-          - href: data-tools/data-documentation/index.qmd
           - href: data-tools/notebooks.qmd
       - href: blog/index.qmd
       - text: About
@@ -75,11 +76,7 @@ website:
             - general-resources/getting-started/intro-to-ae.qmd
             - general-resources/getting-started/example-use-cases.qmd
         - glossary/index.qmd
-        - section: "Reference Library"
-          contents:
-            - general-resources/reference-library/index.qmd
-            - general-resources/reference-library/white-papers.qmd
-            - general-resources/reference-library/external-references.qmd
+        - general-resources/reference-library.qmd
         - section: "Media"
           contents:
             - general-resources/media/index.qmd
@@ -87,13 +84,19 @@ website:
             - general-resources/media/webinars.qmd
             - general-resources/media/presentations.qmd
         - general-resources/faqs.qmd
+    - id: general-climate-guidance
+      title: "General Climate Guidance"
+      style: docked
+      collapse-level: 1
+      contents:
+        - general-climate-guidance/about-climate-projections.qmd
+        - general-climate-guidance/using-climate-projections.qmd
+        - general-climate-guidance/guiding-principles.qmd
     - id: scientific-guidance
       title: "Scientific Guidance"
       style: docked
       collapse-level: 1
       contents:
-        - scientific-guidance/about-climate-projections.qmd
-        - scientific-guidance/using_climate_projections/using-climate-projections.qmd
         - section: "Climate Profiles"
           contents:
             - scientific-guidance/climate_profiles/index.qmd
@@ -122,7 +125,6 @@ website:
         - data-tools/access-methods.qmd
         - section: "Data Documentation"
           contents:
-            - data-tools/data-documentation/index.qmd
             - data-tools/climate-model-data.qmd
             - data-tools/data-documentation/data-structure-and-format.qmd
             - data-tools/data-documentation/metadata-standards.qmd

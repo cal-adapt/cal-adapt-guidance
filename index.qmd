@@ -118,7 +118,7 @@ Choose the right topic for your needs.
         <p>Learn about the data hosted on Cal-Adapt and how you can access it.</p>
       </div>
     </a>
-    <a id="resource-library" href="general-resources/reference-library/" class="resource-card">
+    <a id="resource-library" href="general-resources/reference-library.html" class="resource-card">
       <div class="resource-card-thumb"><img src="assets/resources/reference_library.png" alt=""></div>
       <div class="resource-card-body">
         <h4>Reference Library</h4>

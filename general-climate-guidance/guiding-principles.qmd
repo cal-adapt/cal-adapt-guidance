@@ -1,0 +1,17 @@
+---
+title: "Guiding Principles on the Use of Climate Data"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-07-15"
+date-modified: &date-modified "2026-07-15"
+citation:
+  issued: *date-modified
+format:
+  html: default
+  pdf: default
+---
+
+::: {.callout-note}
+This page is under development.
+:::

@@ -4,8 +4,6 @@
   --bs-primary-rgb: 232, 98, 26;
   --bs-link-color: #e8621a;
   --bs-link-hover-color: #7b3fa0;
-  /* Mirrors Quarto's .quarto-title-meta-contents font-size (author/date under the page title); rem so it doesn't compound inside .subtitle.lead's larger font-size */
-  --title-meta-font-size: 0.9rem;
 }
 
 

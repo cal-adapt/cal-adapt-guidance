@@ -6,7 +6,8 @@ author:
 date: "2026-05-21"
 description: "Some cool sciency article by Vanessa"
 categories: [Science]
-citation: true
+citation:
+  publisher: "Cal-Adapt"
 ---
 
 Some cool sciency article by Vanessa.

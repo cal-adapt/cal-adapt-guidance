@@ -6,6 +6,7 @@ author:
 date: "2024-01-01"
 date-modified: &date-modified "2026-07-06"
 citation:
+  publisher: "Cal-Adapt"
   issued: *date-modified
 format:
   html: default

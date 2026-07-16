@@ -2,9 +2,9 @@
 
 /* Warm tone overrides inspired by hero image */
 :root {
-  --bs-primary: #e8621a;
-  --bs-primary-rgb: 232, 98, 26;
-  --bs-link-color: #e8621a;
+  --bs-primary: #f79226;
+  --bs-primary-rgb: 247, 146, 38;
+  --bs-link-color: #f79226;
   --bs-link-hover-color: #7b3fa0;
   --bs-font-sans-serif: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 

@@ -151,6 +151,7 @@ format:
     mainfont: Inter
     geometry:
       - margin=1in
+      - headsep=35pt
     template-partials:
       - templates/title.tex
     filters:
@@ -160,7 +161,7 @@ format:
         \usepackage{fancyhdr}
         \usepackage{graphicx}
         \usepackage{xcolor}
-        \definecolor{caladaptorange}{HTML}{E8621A}
+        \definecolor{caladaptorange}{HTML}{F79226}
         \usepackage[framemethod=tikz]{mdframed}
         \newmdenv[
           backgroundcolor=caladaptorange!10,
@@ -180,6 +181,7 @@ format:
         \renewcommand{\footrulewidth}{0pt}
         \fancypagestyle{plain}{
           \fancyhf{}
+          \fancyhead[C]{\includegraphics[height=1cm]{caladapt-enterprise-banner.png}}
           \fancyfoot[L]{\textcolor{caladaptorange}{cal-adapt.org}}
           \fancyfoot[R]{\includegraphics[height=0.8cm]{bear.png}}
           \fancyfoot[C]{\thepage}

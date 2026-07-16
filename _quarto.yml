@@ -181,7 +181,7 @@ format:
         \renewcommand{\footrulewidth}{0pt}
         \fancypagestyle{plain}{
           \fancyhf{}
-          \fancyhead[C]{\includegraphics[height=1cm]{caladapt-enterprise-banner.png}}
+          \fancyhead[L]{\includegraphics[height=1cm]{caladapt-enterprise-banner.png}}
           \fancyfoot[L]{\textcolor{caladaptorange}{cal-adapt.org}}
           \fancyfoot[R]{\includegraphics[height=0.8cm]{bear.png}}
           \fancyfoot[C]{\thepage}

@@ -20,7 +20,8 @@ Layout of this file:
   3. page_url -- rebuilds the page's canonical https://analytics.cal-adapt.org
      URL from its source file path.
   4. Pandoc(doc) -- the filter entry point: assembles the pieces above
-     and appends the "Citation" section to the document.
+     and inserts the "Citation" section at the top of the document, just
+     below the title.
 ]]
 
 local site_url = "https://analytics.cal-adapt.org"
@@ -140,14 +141,22 @@ function Pandoc(doc)
     lead = lead .. " (" .. year .. ")."
   end
 
-  doc.blocks:insert(pandoc.Header(2, pandoc.Inlines({ pandoc.Str("Citation") })))
-  doc.blocks:insert(pandoc.Para({ pandoc.Str("For attribution, please cite this work as:") }))
-  doc.blocks:insert(pandoc.Para({
-    pandoc.Str(lead .. " "),
-    pandoc.Emph({ pandoc.Str(title) }),
-    pandoc.Str(". " .. publisher .. ". "),
-    pandoc.Link({ pandoc.Str(url) }, url),
-  }))
+  -- The mdframed environment (defined in _quarto.yml's include-in-header)
+  -- wraps the citation in a bordered, brand-colored box.
+  local citation_blocks = {
+    pandoc.RawBlock("latex", "\\begin{citebox}\\small"),
+    pandoc.Para({ pandoc.Str("For attribution, please cite this work as:") }),
+    pandoc.Para({
+      pandoc.Str(lead .. " "),
+      pandoc.Emph({ pandoc.Str(title) }),
+      pandoc.Str(". " .. publisher .. ". "),
+      pandoc.Link({ pandoc.Str(url) }, url),
+    }),
+    pandoc.RawBlock("latex", "\\end{citebox}"),
+  }
+  for i = #citation_blocks, 1, -1 do
+    doc.blocks:insert(1, citation_blocks[i])
+  end
 
   return doc
 end

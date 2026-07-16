@@ -34,7 +34,7 @@ This page does not include principles on how to conduct specific analyses downst
 - Each principle is followed by an **Important Considerations** callout, which provides background, rationale, and do's and don'ts. This text has more technical depth and may require a basic understanding of some key climate-related concepts.
 - Five cross-cutting boxes cover topics that arise across multiple principles. These are separated out for readability and are referenced from the relevant principles.
 
-## Summary of Principles (Short Version)
+## Summary of Principles
 
 - **Principle 1: Scope and identify data needs**
   - Identify climate data applications
@@ -115,7 +115,9 @@ This page does not include principles on how to conduct specific analyses downst
 - Consider improving your organization's technical capacity to work with climate data through training or hiring.
 - Consider improving data storage and computational capabilities if they are restrictive.
 
-::: {#box-1 .callout-warning icon=false title="Box 1: Choosing Variables and/or Metrics"}
+::: {#box-1 .alert .alert-primary}
+### Box 1: Choosing Variables and/or Metrics 
+
 Users need to make choices about which metrics (and underlying variables) are appropriate for answering questions at different stages of the process, including during:
 
 - Data needs identification (Principle 1)
@@ -128,7 +130,7 @@ For each stage, select the metric that most closely matches the risks or impacts
 
 Some questions or applications may require analyzing multiple metrics (e.g. multi-hazard vulnerability assessments, compounding events, heat indices). In such cases, users should check that there is physical consistency among the metrics.
 
-**Important considerations:**
+#### Important considerations
 
 - A climate variable is a fundamental atmospheric or oceanic quantity like temperature or precipitation that describes the Earth's climate.
 - Metrics can be simple calculations from a single climate variable (e.g. 3-day average temperature), or complex calculations derived from multiple variables (e.g. the Fosberg Fire Weather Index is calculated from temperature, relative humidity, and wind speed).
@@ -140,7 +142,9 @@ Some questions or applications may require analyzing multiple metrics (e.g. mult
 - Some metrics may be closely related for a given variable (i.e. one metric may be a proxy for another) and users can choose among them based on data availability and other contextual factors (e.g. cloud cover is sometimes used as a proxy for solar irradiance, heat index can be a proxy for wet bulb globe temperature in certain regions).
 :::
 
-::: {#box-2 .callout-warning icon=false title="Box 2: Selecting Appropriate Spatial & Temporal Scales"}
+::: {#box-2 .alert .alert-primary}
+### Box 2: Selecting Appropriate Spatial & Temporal Scales
+
 For most analyses, users will need to make choices regarding five spatio-temporal considerations:
 
 - Temporal resolution (daily, hourly, etc.)
@@ -164,7 +168,7 @@ Key considerations for determining the most appropriate scales are as follows:
 
 **Spatial extent:** Users should examine an area that is large enough to properly analyze the climate issue or the hazard under consideration (e.g. to analyze the impacts of a heat event on system-level planning, users should examine the entire regional extent where the impacts of the heat events may occur).
 
-**Important considerations:**
+#### Important considerations
 
 - Choice of temporal and spatial scales could vary based on multiple considerations including the characteristics of available data, specific temporal or spatial aspects of relevance to the application or planning context, type of variable or hazard, specific regional context, topography, etc.
 - When making decisions on appropriate scales, the scale of the decision and the scale that the climate phenomena of interest plays out at are both important to consider.
@@ -223,7 +227,9 @@ Key considerations for determining the most appropriate scales are as follows:
 - Once datasets are selected, users may choose to conduct analyses in the cloud to avoid storage and computational constraints. If downloading data is necessary, users should consider the data size and storage constraints before downloading.
 - When downloading geospatial data, `.csv` file format may not adequately preserve coordinate and metadata information. Therefore, `.netcdf`, `.zarr`, or other geospatial file formats are preferred.
 
-::: {#box-3 .callout-warning icon=false title="Box 3: Analyzing Data Size Trade-offs"}
+::: {#box-3 .alert .alert-primary}
+### Box 3: Analyzing Data Size Trade-offs
+
 The choices of spatio-temporal resolution, sampling window, timeframe, and spatial extent will have significant implications for data size, potentially leading to subsequent data or computational constraints. So users should first assess whether they are able to choose the "most appropriate" scales for their context (as determined in Principle 1) or if they need to make some trade-offs or compromises due to data size and computational constraints.
 
 Users should then examine the tradeoffs of different choices, i.e. information that is gained or lost by choosing different resolutions, windows, timeframes, or extents, as well as how they interact with the ability to work with multiple models or emission scenarios.
@@ -325,7 +331,9 @@ This trade-off analysis can be done either qualitatively (through informed judge
 - Uncertainties do not invalidate the usefulness of climate data for adaptation; rather they represent the complexity and range of potential future outcomes.
 - Some relevant scientific concepts, such as whether downscaling increases or decreases uncertainty, and how the relative significance of different sources of uncertainty varies for different spatial and temporal scales, are still emerging areas of research.
 
-::: {#box-4 .callout-warning icon=false title="Box 4: Aggregation Across Spatial and Temporal Scales"}
+::: {#box-4 .alert .alert-primary}
+### Box 4: Aggregation Across Spatial and Temporal Scales
+
 When conducting spatial (aggregating across gridcells) or temporal (aggregating across months/years) aggregations, first examine climate impacts without aggregation to understand the spatial and temporal variability and distribution of the data. This is because important climate change signals and information about uncertainty can be lost when aggregating across different locations, time scales, or models. Therefore it is recommended to first examine climate impacts without aggregation, and then aggregate data at the end, once the variability and distribution have been thoroughly examined.
 
 Consider reporting the most appropriate statistics for the region rather than defaulting to spatial or temporal averaging. These could include distributional statistics over the aggregated area, spatial variability within a county, temporal variability over a season, etc.
@@ -339,7 +347,9 @@ If your application involves presenting data as a time series, the sampling wind
 When presenting aggregated results, transparently document the types of impacts that might be missed due to aggregation across different locations, grid cells, or years (e.g. averaging over large spatial areas could lead to missing out on specific distributional impacts for different communities, which might have equity implications). Consider reporting other distributional statistics in addition to documenting the limitations in the results.
 :::
 
-::: {#box-5 .callout-warning icon=false title="Box 5: Computing Change Signals"}
+::: {#box-5 .alert .alert-primary}
+### Box 5: Computing Change Signals
+
 The appropriate reference period for computing change signals depends on the goals of your analysis. Choosing different reference periods can drastically influence the calculated change signal, not just in magnitude but also in spatial patterns and event frequencies. Some common choices include:
 
 - **Pre-industrial period** (e.g. 1850-1900) – Captures the full, cumulative impacts of greenhouse gas-driven climate change. This is consistent with international targets for limiting global climate change (to 1.5°C of global warming), and is the earliest reference period usable with most global climate models.

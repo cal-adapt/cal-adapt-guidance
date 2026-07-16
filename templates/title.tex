@@ -1,0 +1,26 @@
+$if(title)$
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+$if(subtitle)$
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{$subtitle$}
+$endif$
+\date{}
+
+$-- article.cls's default \maketitle reserves fixed vertical space for the
+$-- author/date blocks even when they're empty (each is wrapped in its own
+$-- \vskip, not conditioned on content). Since this template drops author
+$-- and blanks date, override it to lay out just the title.
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}%
+    {\LARGE \@title \par}%
+  \end{center}%
+  \vskip 1.75em
+}
+\makeatother

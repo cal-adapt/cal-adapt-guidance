@@ -148,6 +148,8 @@ format:
   pdf:
     toc: false
     citation: true
+    filters:
+      - filters/pdf-citation.lua
     include-in-header:
       text: |
         \usepackage{fancyhdr}

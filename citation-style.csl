@@ -24,10 +24,10 @@
   <macro name="title">
     <choose>
       <if variable="container-title">
-        <text variable="title" text-case="sentence"/>
+        <text variable="title"/>
       </if>
       <else>
-        <text variable="title" font-style="italic" text-case="sentence"/>
+        <text variable="title" font-style="italic"/>
       </else>
     </choose>
   </macro>

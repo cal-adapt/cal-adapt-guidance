@@ -18,7 +18,7 @@ website:
       - text: General Resources
         menu:
           - text: Getting Started
-            href: general-resources/getting-started/index.qmd
+            href: general-resources/getting-started.qmd
           - href: glossary/index.qmd
           - href: general-resources/reference-library.qmd
           - text: Media
@@ -66,11 +66,7 @@ website:
       style: docked
       collapse-level: 1
       contents:
-        - section: "Getting Started"
-          contents:
-            - general-resources/getting-started/index.qmd
-            - general-resources/getting-started/intro-to-ae.qmd
-            - general-resources/getting-started/example-use-cases.qmd
+        - general-resources/getting-started.qmd
         - glossary/index.qmd
         - general-resources/reference-library.qmd
         - section: "Media"

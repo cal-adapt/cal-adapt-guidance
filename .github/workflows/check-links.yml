@@ -15,11 +15,8 @@ jobs:
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install TinyTeX
-        run: quarto install tinytex --no-prompt
-
       - name: Render site
-        run: quarto render
+        run: quarto render --to html
 
       - name: Check links
         uses: lycheeverse/lychee-action@v2

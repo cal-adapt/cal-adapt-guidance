@@ -1,5 +1,5 @@
 ---
-title: "Heat Metrics"
+title: "A Guide to Heat Metrics for Energy Planning and System Assessment"
 author:
   - name:
       literal: "Cal-Adapt"

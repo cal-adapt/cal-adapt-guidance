@@ -159,7 +159,7 @@ format:
         \usepackage{fancyhdr}
         \usepackage{graphicx}
         \usepackage{xcolor}
-        \definecolor{caladaptorange}{HTML}{F79226}
+        \definecolor{caladaptorange}{HTML}{F2994E}
         \usepackage[framemethod=tikz]{mdframed}
         \newmdenv[
           backgroundcolor=caladaptorange!10,
@@ -172,17 +172,14 @@ format:
         \graphicspath{{./assets/}{../assets/}{../../assets/}{../../../assets/}}
         \pagestyle{fancy}
         \fancyhf{}
-        \fancyfoot[L]{\textcolor{caladaptorange}{cal-adapt.org}}
         \fancyfoot[R]{\includegraphics[height=0.8cm]{bear.png}}
         \fancyfoot[C]{\thepage}
         \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0pt}
         \fancypagestyle{plain}{
           \fancyhf{}
-          \fancyhead[L]{\includegraphics[height=1cm]{caladapt-enterprise-banner.png}}
-          \fancyfoot[L]{\textcolor{caladaptorange}{cal-adapt.org}}
+          \fancyfoot[L]{\parbox[b]{0.7\linewidth}{\textcolor{caladaptorange}{\textbf{Cal-Adapt}\\Supporting California’s Energy Resilience, Reliability, and Planning}}}
           \fancyfoot[R]{\includegraphics[height=0.8cm]{bear.png}}
-          \fancyfoot[C]{\thepage}
           \renewcommand{\headrulewidth}{0pt}
           \renewcommand{\footrulewidth}{0pt}
         }

@@ -71,9 +71,9 @@ website:
         - general-resources/getting-started.qmd
         - glossary/index.qmd
         - general-resources/reference-library.qmd
-        - section: "Media"
+        - text: "Media"
+          href: general-resources/media/index.qmd
           contents:
-            - general-resources/media/index.qmd
             - general-resources/media/video-tutorials.qmd
             - general-resources/media/webinars.qmd
             - general-resources/media/presentations.qmd
@@ -82,22 +82,22 @@ website:
       style: docked
       collapse-level: 1
       contents:
-        - section: "General Climate Guidance"
+        - text: "General Climate Guidance"
+          href: scientific-guidance/general-climate-guidance/index.qmd
           contents:
-            - scientific-guidance/general-climate-guidance/index.qmd
             - scientific-guidance/general-climate-guidance/about-climate-projections.qmd
             - scientific-guidance/general-climate-guidance/using-climate-projections.qmd
             - scientific-guidance/general-climate-guidance/guiding-principles.qmd
-        - section: "Climate Profiles"
+        - text: "Climate Profiles"
+          href: scientific-guidance/climate_profiles/index.qmd
           contents:
-            - scientific-guidance/climate_profiles/index.qmd
             - scientific-guidance/climate_profiles/climate-profiles-data.qmd
             - scientific-guidance/climate_profiles/standard-year.qmd
             - scientific-guidance/climate_profiles/typical-met-year.qmd
             - scientific-guidance/climate_profiles/extreme-met-year.qmd
-        - section: "Uncertainty"
+        - text: "Uncertainty"
+          href: scientific-guidance/uncertainty/index.qmd
           contents:
-            - scientific-guidance/uncertainty/index.qmd
             - scientific-guidance/uncertainty/model_uncertainty.qmd
             - scientific-guidance/uncertainty/scenario_uncertainty.qmd
             - scientific-guidance/uncertainty/internal_variability.qmd
@@ -115,9 +115,9 @@ website:
         - data-tools/data-catalog.qmd
         - data-tools/data-explorer.qmd
         - data-tools/access-methods.qmd
-        - section: "Data Documentation"
+        - text: "Data Documentation"
+          href: data-tools/data-documentation/index.qmd
           contents:
-            - data-tools/data-documentation/index.qmd
             - data-tools/data-documentation/climate-model-sims.qmd
             - data-tools/data-documentation/data-structure-and-format.qmd
             - data-tools/data-documentation/metadata-standards.qmd

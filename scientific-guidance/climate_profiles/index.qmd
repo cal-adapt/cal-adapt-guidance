@@ -1,5 +1,5 @@
 ---
-title: "Overview"
+title: "Climate Profiles"
 author:
   - name:
       literal: "Cal-Adapt"

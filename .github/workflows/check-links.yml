@@ -22,7 +22,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           args: >
-            --base _site
+            --root-dir ${{ github.workspace }}/_site
             --exclude-loopback
             --exclude 'localhost'
             --exclude 'analytics.cal-adapt.org'

@@ -20,7 +20,7 @@ The Cal-Adapt: Analytics Engine hosts a variety of climate data with varying lev
 
 ## Climate Model Simulations
 
-Downscaled climate projections produced for California's Fifth Climate Change Assessment, fully integrated into the Analytics Engine's Data Catalog and `climakitae` tooling. See the [Climate Model Data](climate-model-data.qmd) page for full details on models, downscaling methods, and scenarios.
+Downscaled climate projections produced for California's Fifth Climate Change Assessment, fully integrated into the Analytics Engine's Data Catalog and `climakitae` tooling. See the [Climate Model Simulations](data-documentation/climate-model-sims.qmd) page for full details on models, downscaling methods, and scenarios.
 
 ### WRF
 ![](figures/static/wrf_t2_d03_2030.gif){.dataset-thumb}
@@ -38,7 +38,7 @@ Catalog Link
 :   [STAC Browser](https://stac-browser.cal-adapt.org/#/collections/wrf-ucla)
 
 Learn More
-:   [Climate Model Data](climate-model-data.qmd)
+:   [Climate Model Simulations](data-documentation/climate-model-sims.qmd)
 
 ### LOCA2
 ![](figures/static/loca2_tasmax_2030.gif){.dataset-thumb}
@@ -56,7 +56,7 @@ Catalog Link
 :   [STAC Browser](https://stac-browser.cal-adapt.org/#/collections/loca2)
 
 Learn More
-:   [Climate Model Data](climate-model-data.qmd)
+:   [Climate Model Simulations](data-documentation/climate-model-sims.qmd)
 
 ## Climate Reanalysis Data
 
@@ -74,7 +74,7 @@ Catalog Link
 :   Use the filtering option to select `source-id=era5`
 
 Learn More
-:   [Climate Model Data](climate-model-data.qmd)
+:   [Climate Model Simulations](data-documentation/climate-model-sims.qmd)
 
 ## Climate Profiles
 ![](figures/static/tmy_icon.png){.dataset-thumb}

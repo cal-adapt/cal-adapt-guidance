@@ -1,5 +1,5 @@
 ---
-title: "Climate Model Data"
+title: "Climate Model Simulations"
 author:
   - name:
       literal: "Cal-Adapt"
@@ -15,11 +15,11 @@ format:
 
 ## Available Climate Data
 
-The Analytics Engine hosts downscaled climate change projections and related data, much of which was generated for California's Fifth Climate Change Assessment. The derived projections were created using two methods: 1) dynamical downscaling and 2) hybrid-statistical downscaling, with coarse resolution data available for western North America and the finest scale (3 km) available over California. Both methods were applied to outputs of global climate models (GCMs) from CMIP6 (Coupled Model Intercomparison Project Phase 6). For more detailed information on available datasets, visit our [Data Catalog](data-catalog.qmd).
+The Analytics Engine hosts downscaled climate change projections and related data, much of which was generated for California's Fifth Climate Change Assessment. The derived projections were created using two methods: 1) dynamical downscaling and 2) hybrid-statistical downscaling, with coarse resolution data available for western North America and the finest scale (3 km) available over California. Both methods were applied to outputs of global climate models (GCMs) from CMIP6 (Coupled Model Intercomparison Project Phase 6). For more detailed information on available datasets, visit our [Data Catalog](../data-catalog.qmd).
 
 California academic institutions implement dynamical and hybrid-statistical downscaling methods in support of California Energy Commission (CEC) initiatives. The dynamical downscaling data developed at UCLA utilized the Weather Research & Forecasting Model (WRF). This method created several physically-based projections that are available for public use and Analytics Engine use. This dynamically downscaled data was then used to train the Localized Construct Analogs (LOCA2-Hybrid) at Scripps Institution of Oceanography. The LOCA2-Hybrid hybrid-statistical datasets are bias-corrected GCM outputs that are adjusted to be consistent with station observations. WRF and LOCA2-Hybrid downscaled datasets differ in the number of GCMs, variables, temporal resolution, and [Shared Socioeconomic Pathways](/glossary/index.qmd#shared-socioeconomic-pathways) (SSPs) that are included. Depending on the analysis desired, one data set might be preferred; for more information on climate projections and models, check out our [Guidance](/scientific-guidance/general-climate-guidance/about-climate-projections.qmd) page.
 
-A summary of the datasets hosted on the Analytics Engine is listed in the [Data Catalog](data-catalog.qmd); for more information on how to access these datasets, see the [Accessing Data](access-methods.qmd) section. For additional details on Dynamical versus Statistical downscaling approaches, see the California Climate Change Assessment Justification Memos, as well as our forthcoming About Climate Models and Data and [Glossary](/glossary/index.qmd) of Terms sections. To understand how to use WRF and LOCA2-Hybrid data to answer application-specific questions for decision-making and planning purposes, refer to our [Guidance on Using Climate Data in Decision-Making](/scientific-guidance/general-climate-guidance/using-climate-projections.qmd) section. For further information on these introductory comments, refer to:
+A summary of the datasets hosted on the Analytics Engine is listed in the [Data Catalog](../data-catalog.qmd); for more information on how to access these datasets, see the [Accessing Data](../access-methods.qmd) section. For additional details on Dynamical versus Statistical downscaling approaches, see the California Climate Change Assessment Justification Memos, as well as our forthcoming About Climate Models and Data and [Glossary](/glossary/index.qmd) of Terms sections. To understand how to use WRF and LOCA2-Hybrid data to answer application-specific questions for decision-making and planning purposes, refer to our [Guidance on Using Climate Data in Decision-Making](/scientific-guidance/general-climate-guidance/using-climate-projections.qmd) section. For further information on these introductory comments, refer to:
 
 - Carbon Brief's Q&A: How do climate models work? [@carbonbrief-climate-models-2018]
 - Climate Data and Analytics Working Group ([C-DAWG](https://www.energy.ca.gov/programs-and-topics/topics/research-and-development/climate-data-and-analysis-working-group-c-dawg))
@@ -55,7 +55,7 @@ The table below summarizes the underlying data created by each institution, incl
 | Native temporal resolution | Hourly | Daily |
 | Reanalysis dataset | WRF-ERA5 historical reconstruction (45 km, 9 km, 3 km; daily and hourly) | None |
 
-: Comparison of the dynamically downscaled (WRF) and hybrid-statistically downscaled (LOCA2-Hybrid) data foundations. Other pre-aggregated daily and monthly datasets are also available; see the [Data Catalog](data-catalog.qmd) for the full listing. {#tbl-data-foundation .striped}
+: Comparison of the dynamically downscaled (WRF) and hybrid-statistically downscaled (LOCA2-Hybrid) data foundations. Other pre-aggregated daily and monthly datasets are also available; see the [Data Catalog](../data-catalog.qmd) for the full listing. {#tbl-data-foundation .striped}
 
 \* Details of the bias correction method are available in the Data Adoption Justification Memo [@pierce-bias-correction-2023].
 
@@ -98,7 +98,7 @@ Various Shared Scenario Pathways (SSPs) representing global emissions trajectori
 
 ### Data Availability by Variable and Scenario
 
-Not every model, ensemble member, or variable is available for every scenario. The tables below summarize what is available for each downscaling method; for the full, searchable listing of individual datasets, see the [Data Catalog](data-catalog.qmd).
+Not every model, ensemble member, or variable is available for every scenario. The tables below summarize what is available for each downscaling method; for the full, searchable listing of individual datasets, see the [Data Catalog](../data-catalog.qmd).
 
 #### LOCA2-Hybrid
 
@@ -108,12 +108,12 @@ LOCA2-Hybrid data is available for 15 GCMs with a total of 199 ensemble runs, do
 ::: {.content-visible when-format="html"}
 ```{=html}
 <div class="figure-container">
-{{< include figures/html/tbl-loca2-availability.html >}}
+{{< include ../figures/html/tbl-loca2-availability.html >}}
 </div>
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/tbl-loca2-availability.png)
+![](../figures/static/tbl-loca2-availability.png)
 :::
 LOCA2-Hybrid data availability by variable group and scenario, colored by scenario.
 :::
@@ -150,12 +150,12 @@ WRF data is available for 8 GCMs with 1 ensemble run per emissions scenario, dow
 ::: {.content-visible when-format="html"}
 ```{=html}
 <div class="figure-container">
-{{< include figures/html/tbl-wrf-projections.html >}}
+{{< include ../figures/html/tbl-wrf-projections.html >}}
 </div>
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/tbl-wrf-projections.png)
+![](../figures/static/tbl-wrf-projections.png)
 :::
 Number of WRF projection simulations available by scenario and spatial resolution, colored by scenario.
 :::
@@ -173,7 +173,7 @@ The CRS for LOCA2-Hybrid data on the Analytics Engine is WGS84 (World Geodetic S
 ## Dataset Definitions and Use
 
 ### Downscaled simulations of California's climate
-The climate projections hosted on the Cal-Adapt: Analytics Engine are regional simulations over the Western United States and California, produced by downscaling Global Climate Models (GCM) from the sixth iteration of the Climate Model Intercomparison Project (CMIP6). These downscaled simulations were created in support of California's Fifth Climate Change Assessment, and detailed information about the models used and the data produced can be found in the [Data Catalog](data-catalog.qmd).
+The climate projections hosted on the Cal-Adapt: Analytics Engine are regional simulations over the Western United States and California, produced by downscaling Global Climate Models (GCM) from the sixth iteration of the Climate Model Intercomparison Project (CMIP6). These downscaled simulations were created in support of California's Fifth Climate Change Assessment, and detailed information about the models used and the data produced can be found in the [Data Catalog](../data-catalog.qmd).
 
 ### Additional data sources for calculating data on Global Warming Levels
 When using the Analytics Engine to calculate climate variables at global warming levels, data from two additional sources are utilized in the calculations: the CMIP6 archive hosted by Pangeo, and data from the IPCC AR6 Report. A detailed methodology of how this data is used will be included in an upcoming section "How California-focused Warming Level Time Series are Calculated", and additional guidance on how to incorporate global warming levels into planning is given in [Global Warming Levels](/scientific-guidance/global-warming-levels.qmd).
@@ -194,12 +194,12 @@ When using warming levels, the Analytics Engine provides estimates for the cross
 ::: {.content-visible when-format="html"}
 ```{=html}
 <div class="figure-container">
-{{< include figures/html/warming_trajectory_2degC.html >}}
+{{< include ../figures/html/warming_trajectory_2degC.html >}}
 </div>
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/warming_trajectory_2degC.png)
+![](../figures/static/warming_trajectory_2degC.png)
 :::
 Best estimate and 90% confidence interval for the year the world will reach 2.0 °C of warming under the SSP 3-7.0 scenario. The median year of crossing is denoted by the vertical dashed line and is provided. The solid lines represent the first and last occurrence of the 5th and 95th percentiles crossing the designated warming level, with the range in years provided. For example, the median year of GCMs reaching 2.0°C of warming is in 2047, with a range of 24 years between the first and last occurrence. Figure produced by the Cal-Adapt: Analytics Engine based on data from the IPCC.
 :::
@@ -208,12 +208,12 @@ Best estimate and 90% confidence interval for the year the world will reach 2.0 
 ::: {.content-visible when-format="html"}
 ```{=html}
 <div class="figure-container">
-{{< include figures/html/tbl-gwl-year-exceedance.html >}}
+{{< include ../figures/html/tbl-gwl-year-exceedance.html >}}
 </div>
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/tbl-gwl-year-exceedance.png)
+![](../figures/static/tbl-gwl-year-exceedance.png)
 :::
 Best estimate (with 90% very likely range in parentheses) for the year each SSP scenario reaches a given global warming level, colored by scenario. Summarized from data from the IPCC.
 :::
@@ -367,4 +367,4 @@ Users are provided with a private directory space in the JupyterHub as a workspa
 
 ## Contributing Data
 
-The Analytics Engine team welcomes users to submit data for consideration for inclusion in the [Data Catalog](data-catalog.qmd). Users may also request the addition of external datasets to the platform for use in the cloud computing environment. These requests will be considered on a case-by-case basis depending on size, quality, and relationship to other funded work. All datasets must comply with CF conventions, as outlined in our [Metadata Standards](data-documentation/metadata-standards.qmd). Please submit requests via email to analytics@cal-adapt.org.
+The Analytics Engine team welcomes users to submit data for consideration for inclusion in the [Data Catalog](../data-catalog.qmd). Users may also request the addition of external datasets to the platform for use in the cloud computing environment. These requests will be considered on a case-by-case basis depending on size, quality, and relationship to other funded work. All datasets must comply with CF conventions, as outlined in our [Metadata Standards](metadata-standards.qmd). Please submit requests via email to analytics@cal-adapt.org.

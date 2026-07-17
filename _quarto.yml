@@ -42,7 +42,8 @@ website:
           - href: data-tools/data-catalog.qmd
           - href: data-tools/analytics-engine-hub.qmd
           - href: data-tools/access-methods.qmd
-          - href: data-tools/climate-model-data.qmd
+          - text: Data Documentation
+            href: data-tools/data-documentation/index.qmd
           - href: data-tools/notebooks.qmd
       - href: blog/index.qmd
       - text: About
@@ -114,7 +115,8 @@ website:
         - data-tools/access-methods.qmd
         - section: "Data Documentation"
           contents:
-            - data-tools/climate-model-data.qmd
+            - data-tools/data-documentation/index.qmd
+            - data-tools/data-documentation/climate-model-sims.qmd
             - data-tools/data-documentation/data-structure-and-format.qmd
             - data-tools/data-documentation/metadata-standards.qmd
         - data-tools/notebooks.qmd

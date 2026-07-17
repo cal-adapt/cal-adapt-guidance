@@ -81,7 +81,7 @@ A [SSP](/glossary/index.qmd#shared-socioeconomic-pathways) was not specified to 
 This section outlines the methodology for calculating GWL data used by `climakitae`. These are the calculations that take place "under the hood" (via internal `climakitae` methods) when you retrieve GWL data as described in the previous section. The methods described here follow the approach used by the IPCC AR6 report as closely as possible [@ipcc-2023].
 
 ::: {.callout-note title="Note"}
-The lookup tables described here are used for selecting data from each model, but are not an accurate way to estimate what year a GWL is most likely to be reached. To estimate the timing of GWLs, the Analytics Engine uses the IPCC's warming trajectories, as described on the [Climate Model Data](/data-tools/climate-model-data.qmd) page.
+The lookup tables described here are used for selecting data from each model, but are not an accurate way to estimate what year a GWL is most likely to be reached. To estimate the timing of GWLs, the Analytics Engine uses the IPCC's warming trajectories, as described on the [Climate Model Simulations](/data-tools/data-documentation/climate-model-sims.qmd) page.
 ::: 
 
 Calculating GWLs on the Analytics Engine is a two-step process, described below. 

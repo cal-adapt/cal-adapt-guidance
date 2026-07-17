@@ -4,7 +4,6 @@ subtitle: '[<i class="bi bi-box-arrow-up-right"></i> Open the Data Catalog](http
 citation: false
 format:
   html: default
-  pdf: default
 ---
 
 The Data Catalog is a searchable [STAC](https://stacspec.org/) (SpatioTemporal Asset Catalog) browser listing every dataset hosted on the Cal-Adapt: Analytics Engine. It's the best place to check what's available before you start pulling data: models, scenarios, variables, and spatial and temporal resolution, along with metadata for each collection.

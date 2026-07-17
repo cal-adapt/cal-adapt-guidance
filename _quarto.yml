@@ -148,7 +148,7 @@ format:
   pdf:
     toc: false
     citation: true
-    mainfont: Inter
+    mainfont: Arial
     geometry:
       - margin=1in
       - headsep=35pt

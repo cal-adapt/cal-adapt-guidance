@@ -12,7 +12,7 @@ Use the Data Catalog to:
 
 - Browse available datasets by variable, scenario, model, or downscaling method
 - View metadata describing each collection's spatial and temporal coverage
-- Get direct links to the underlying Zarr and NetCDF stores referenced by [Access Methods](access-methods.qmd)
+- Get direct links to the underlying Zarr and NetCDF stores referenced by [Data Access Methods](access-methods.qmd)
 
 ## Overview 
 

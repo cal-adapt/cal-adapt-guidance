@@ -23,16 +23,16 @@ website:
           - href: general-resources/reference-library.qmd
           - text: Media
             href: general-resources/media/index.qmd
-          - href: general-resources/faqs.qmd
       - text: Scientific Guidance
         menu:
-          - href: scientific-guidance/general-climate-guidance/about-climate-projections.qmd
+          - href: scientific-guidance/general-climate-guidance/index.qmd
             text: General Climate Guidance
           - href: scientific-guidance/climate_profiles/index.qmd
             text: Climate Profiles
           - href: scientific-guidance/uncertainty/index.qmd
             text: Uncertainty
           - href: scientific-guidance/heat-metrics.qmd
+            text: Heat Metrics
           - href: scientific-guidance/census-tracts.qmd
             text: Census Tracts
           - href: scientific-guidance/global-warming-levels.qmd
@@ -40,10 +40,11 @@ website:
       - text: Data & Tools
         menu:
           - href: data-tools/data-catalog.qmd
-          - href: data-tools/analytics-engine-hub.qmd
+          - href: data-tools/data-explorer.qmd
           - href: data-tools/access-methods.qmd
           - text: Data Documentation
             href: data-tools/data-documentation/index.qmd
+          - href: data-tools/analytics-engine-hub.qmd
           - href: data-tools/notebooks.qmd
       - href: blog/index.qmd
       - text: About
@@ -76,7 +77,6 @@ website:
             - general-resources/media/video-tutorials.qmd
             - general-resources/media/webinars.qmd
             - general-resources/media/presentations.qmd
-        - general-resources/faqs.qmd
     - id: scientific-guidance
       title: "Scientific Guidance"
       style: docked
@@ -84,6 +84,7 @@ website:
       contents:
         - section: "General Climate Guidance"
           contents:
+            - scientific-guidance/general-climate-guidance/index.qmd
             - scientific-guidance/general-climate-guidance/about-climate-projections.qmd
             - scientific-guidance/general-climate-guidance/using-climate-projections.qmd
             - scientific-guidance/general-climate-guidance/guiding-principles.qmd
@@ -100,7 +101,8 @@ website:
             - scientific-guidance/uncertainty/model_uncertainty.qmd
             - scientific-guidance/uncertainty/scenario_uncertainty.qmd
             - scientific-guidance/uncertainty/internal_variability.qmd
-        - scientific-guidance/heat-metrics.qmd
+        - text: Heat Metrics
+          href: scientific-guidance/heat-metrics.qmd
         - text: Census Tracts
           href: scientific-guidance/census-tracts.qmd
         - scientific-guidance/global-warming-levels.qmd
@@ -111,7 +113,7 @@ website:
       collapse-level: 1
       contents:
         - data-tools/data-catalog.qmd
-        - data-tools/analytics-engine-hub.qmd
+        - data-tools/data-explorer.qmd
         - data-tools/access-methods.qmd
         - section: "Data Documentation"
           contents:
@@ -119,6 +121,7 @@ website:
             - data-tools/data-documentation/climate-model-sims.qmd
             - data-tools/data-documentation/data-structure-and-format.qmd
             - data-tools/data-documentation/metadata-standards.qmd
+        - data-tools/analytics-engine-hub.qmd
         - data-tools/notebooks.qmd
     - id: about
       title: "About"

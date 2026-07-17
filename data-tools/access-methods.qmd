@@ -1,5 +1,5 @@
 ---
-title: "Access Methods"
+title: "Data Access Methods"
 author:
   - name:
       literal: "Cal-Adapt"

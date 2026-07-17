@@ -1,0 +1,12 @@
+---
+title: "Data Explorer"
+subtitle: '[<i class="bi bi-box-arrow-up-right"></i> Open the Cal-Adapt Data Explorer](https://cal-adapt.org/dashboard/climate-metrics-map){target="_blank"}'
+citation: false
+format:
+  html: default
+---
+
+
+::: {.callout-note}
+This page is under development.
+:::

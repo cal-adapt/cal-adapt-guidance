@@ -1,0 +1,11 @@
+---
+title: "New Methods Page Launched"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2024-10-24"
+description: "The Analytics Engine website now has a new Methods page describing datasets and their use."
+categories: [Announcement]
+---
+
+The Analytics Engine website now has a new "[Methods](https://analytics.cal-adapt.org/analytics/methods/)" page that includes information on datasets and how they are used in the Analytics Engine.

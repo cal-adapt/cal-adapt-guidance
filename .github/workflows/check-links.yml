@@ -23,8 +23,10 @@ jobs:
         with:
           args: >
             --root-dir ${{ github.workspace }}/_site
+            --method get
             --exclude-loopback
             --exclude 'localhost'
             --exclude 'analytics.cal-adapt.org'
+            --exclude '^file://.*\.pdf$'
             _site/**/*.html
           fail: true

@@ -1,0 +1,11 @@
+---
+title: "climakitae 1.2.3 Released"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2025-04-03"
+description: "climakitae 1.2.3 brings performance improvements and a reorganized set of data access notebooks."
+categories: [Announcement]
+---
+
+Recent release of _climakitae_ 1.2.3 and reorganization of data access notebooks on the Cal-Adapt: Analytics Engine JupyterHub. Updates include performance improvements, bug fixes, a new renewable energy data notebook, and a stremlined structure for data access notebooks. If your notebooks don't update automatically, follow the steps in the release notes to refresh your copy. You can read the full release notes [here](https://drive.google.com/file/d/1f4Z9mXJyMqRJ9MQyCVWf15aKwcynRwLD/view?usp=drive_link).

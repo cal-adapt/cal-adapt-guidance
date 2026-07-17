@@ -1,0 +1,11 @@
+---
+title: "climakitae 0.1.0 Released"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2023-11-02"
+description: "climakitae 0.1.0 brings a reorganization and renaming of notebooks."
+categories: [Announcement]
+---
+
+Recent release of _climakitae_ 0.1.0 and reorganization and renaming of notebooks. These enhancements are aimed at improving your overall experience with the platform and will impact how you interact with the notebooks. You can read the full release notes [here](https://drive.google.com/file/d/1VLLblJad_3qy0Y4XUyd4n6RsFMe-w5P9/view?usp=drive_link).

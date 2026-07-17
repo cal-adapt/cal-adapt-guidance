@@ -1,0 +1,11 @@
+---
+title: "Annual Report 2023-2024 Now Available"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2024-08-16"
+description: "The Analytics Engine Annual Report 2023-2024 is now available."
+categories: [Announcement]
+---
+
+[Annual Report 2023-2024](https://drive.google.com/file/d/1ECmIYmcEEx3F7O3DqZtkiuORg1WxQ5Pr/view?usp=drive_link)

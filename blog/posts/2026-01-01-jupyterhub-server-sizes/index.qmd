@@ -1,0 +1,11 @@
+---
+title: "New JupyterHub Server Size Options"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-01-01"
+description: "New server size options are available on the Analytics Engine JupyterHub."
+categories: [Announcement]
+---
+
+The Analytics Engine team has introduced new server size options on the Analytics Engine JupyterHub to give users greater flexibility when launching notebook sessions. Users can now choose between a Small server (2 CPU, 14 GB RAM) for most standard workflows and a Medium server (4 CPU, 28 GB RAM) for larger datasets or more computationally intensive analyses. To ensure compatibility and support, users should continue to select the Default environment when starting a server.

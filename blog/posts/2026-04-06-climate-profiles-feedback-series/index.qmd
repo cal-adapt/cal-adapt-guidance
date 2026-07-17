@@ -1,0 +1,11 @@
+---
+title: "Feedback Series on Climate Profiles"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-04-06"
+description: "The Analytics Engine team is hosting an engagement series to gather feedback on Climate Profiles."
+categories: [Announcement]
+---
+
+The Analytics Engine team is hosting a limited engagement series to gather feedback on how [Climate Profiles](https://analytics.cal-adapt.org/climate-profiles/) can better fit your applications and workflows.Your input will directly shape how these profiles are designed, referenced, and made available. If you're interested in joining, please fill out [this form](https://forms.gle/ADxofhTyRHdZExfJA) and the team will be in touch.

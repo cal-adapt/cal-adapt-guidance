@@ -1,0 +1,11 @@
+---
+title: "Climate Profiles Data Now Available for Download"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-04-17"
+description: "Climate Profiles data is now available for download through the Cal-Adapt: Data Explorer."
+categories: [Announcement]
+---
+
+Climate Profiles data is now available for download through the Cal-Adapt: Data Explorer! Access the data directly via the [Data Download Tool](https://cal-adapt.org/dashboard/data-download-tool).

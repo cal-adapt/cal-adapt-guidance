@@ -1,0 +1,11 @@
+---
+title: "Jupyter Notebooks Reorganized for Active Maintenance"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-06-01"
+description: "The Analytics Engine team has reorganized Jupyter notebooks into actively maintained and archived repositories."
+categories: [Announcement]
+---
+
+The Analytics Engine team has reorganized the Jupyter Notebooks on GitHub and the Analytics Engine JupyterHub to better support development and maintenance processes. Eight notebooks have been selected for active maintenance and will automatically appear in the Analytics Engine JupyterHub; these notebooks are also publicly available in the [`cae-notebooks`](https://github.com/cal-adapt/cae-notebooks) GitHub repository. Additional notebooks (including one-off analysis notebooks and partner-specific use-case notebooks) have been archived in the [`cae-archives`](https://github.com/cal-adapt/cae-archives) repository, where they are preserved for reference but not actively maintained. This reorganization ensures that the notebooks available in the JupyterHub are functional and up-to-date while preserving valuable prior work. For questions about locating specific notebooks or accessing archived resources, please reach out to the Analytics Engine team (analytics@cal-adapt.org).

@@ -1,0 +1,11 @@
+---
+title: "climakitae 1.4.3 Released"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2025-11-20"
+description: "climakitae 1.4.3 brings major enhancements to climate profile generation and test coverage."
+categories: [Announcement]
+---
+
+The Analytics Engine team has released the _climakitae_ 1.4.3 update, featuring major enhancements to climate profile generation, a new core architecture, expanded warming-level capabilities, and substantial improvements to test coverage. Users can now create Standard Year, TMY, and Future TMY profiles with improved smoothing, GWL options, refined data handling, and updated export tools. Test coverage has increased from ~30% to 80%, supported by extensive new unit tests and automated CodeCov monitoring. Review the full release notes [here](https://drive.google.com/file/d/11PXdqaiwgOGJMxcBGnJc_slT6SdT6qkq/view?usp=sharing).

@@ -1,0 +1,11 @@
+---
+title: "climakitae 1.5.0 Released"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-01-01"
+description: "climakitae version 1.5.0 features major performance improvements and a new ClimateData interface."
+categories: [Announcement]
+---
+
+The Analytics Engine team has released _climakitae_ version 1.5.0, featuring major performance improvements, a new unified ClimateData interface, and a more modular code architecture. Data access and processing have been significantly optimized using lazy evaluation with xarray and dask, reducing runtimes for complex analyses, such as 1-in-X workflows, from days to minutes. All existing functionality remains supported through at least the end of 2026. More information can be found [here](https://github.com/cal-adapt/climakitae/releases/tag/v1.5.0).

@@ -162,13 +162,18 @@ format:
         \definecolor{caladaptorange}{HTML}{F2994E}
         \usepackage[framemethod=tikz]{mdframed}
         \newmdenv[
+          hidealllines=true,
+          innerleftmargin=0pt, innerrightmargin=0pt,
+          innertopmargin=6pt, innerbottommargin=6pt
+        ]{citebox}
+        \newmdenv[
           backgroundcolor=caladaptorange!10,
           linecolor=caladaptorange,
           linewidth=0.5pt,
           roundcorner=2pt,
-          innerleftmargin=8pt, innerrightmargin=8pt,
-          innertopmargin=6pt, innerbottommargin=6pt
-        ]{citebox}
+          innerleftmargin=12pt, innerrightmargin=12pt,
+          innertopmargin=10pt, innerbottommargin=10pt
+        ]{titlebox}
         \graphicspath{{./assets/}{../assets/}{../../assets/}{../../../assets/}}
         \pagestyle{fancy}
         \fancyhf{}

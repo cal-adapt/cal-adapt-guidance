@@ -1,0 +1,22 @@
+---
+title: "climakitae 1.1.0 Released"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2024-12-02"
+description: "climakitae version 1.1.0 adds global warming levels functionality and several fixes."
+categories: [Announcement]
+---
+
+The Analytics Engine's python library, [climakitae](https://github.com/cal-adapt/climakitae), is now on version 1.1.0. The following changes have been made since version 1.0.1:
+- Added global warming levels approach and related functionality as a data retrieval option
+- Added gwl_timing_table.csv to package data and code used to create the file (generate_gwl_timing_table.py)
+- Handled an error in `WarmingLevels.calculate()`
+- Added goodness of fit prints for goodness-of-fit of distributions for 1 in X calculations to CAVA data function
+- Optimized FFWI by using xarray clipping vs numpy clipping
+- Allows individual GCMs to be selected using a warming level approach
+- Optimized CAVA pilot function by primarily using batch mode
+- Enables warming level simulation to be dropped for LOCA models in CAVA pilot
+- Fixed warming level simulation filtering bug with warming levels
+- Added new bias corrected WRF model to CAVA pilot
+- Refactored CAVA pilot to integrate new global warming approach and naming conventions via DataParameters

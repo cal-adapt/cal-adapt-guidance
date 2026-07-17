@@ -1,0 +1,14 @@
+---
+title: "Analytics Engine Update Meeting Announced"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2024-02-05"
+description: "An Analytics Engine Update Meeting for working group members will cover new notebooks and tools."
+categories: [Announcement]
+---
+
+Analytics Engine Update Meeting for working group members will be hosted on February 6, 2024 from 1-3pm PST. Topics that will be discussed:
+- New notebooks (Global Warming Levels and Heat Index Applications)
+- Updates on the Data Download Tool
+- Progress on our guidance development process

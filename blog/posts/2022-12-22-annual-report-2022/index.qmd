@@ -1,0 +1,11 @@
+---
+title: "Annual Report 2022 Now Available"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2022-12-22"
+description: "The Analytics Engine Annual Report 2022 is now available."
+categories: [Announcement]
+---
+
+[Annual Report 2022](https://drive.google.com/file/d/1Mlg9--79ObE2wXtRtwGnjhnyDzy27piA/view?usp=drive_link)

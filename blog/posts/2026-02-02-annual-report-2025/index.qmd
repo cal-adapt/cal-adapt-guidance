@@ -1,0 +1,11 @@
+---
+title: "Annual Report 2025 Now Available"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-02-02"
+description: "The Analytics Engine Annual Report 2025 is now available."
+categories: [Announcement]
+---
+
+The [Annual Report 2025](https://drive.google.com/file/d/1wyFbhdc76d7Ey139XPbrW4sXc7uhI3DE/view?usp=drive_link) is now available.

@@ -1,0 +1,11 @@
+---
+title: "New Climate Profiles Guidance Published"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2025-11-14"
+description: "New guidance on annualized hourly climate profiles is now available."
+categories: [Announcement]
+---
+
+The Analytics Engine team has published new Climate Profiles guidance on the website. This new resource provides detailed explanations of annualized hourly climate profiles, along with recommendations for selecting and applying these datasets in energy system modeling, building design, and long-term planning. The page also outlines upcoming extreme 8760 products planned for release in 2026 and provides step-by-step guidance for accessing or generating custom profiles using the Analytics Engine Data Catalog and JupyterHub. Explore the full guidance [here](https://analytics.cal-adapt.org/climate-profiles/).

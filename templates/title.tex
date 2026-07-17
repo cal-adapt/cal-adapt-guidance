@@ -15,12 +15,15 @@ $endif$
 $-- article.cls's default \maketitle reserves fixed vertical space for the
 $-- author/date blocks even when they're empty (each is wrapped in its own
 $-- \vskip, not conditioned on content). Since this template drops author
-$-- and blanks date, override it to lay out just the title.
+$-- and blanks date, override it to lay out just the title. The title sits
+$-- in a bordered, light-orange-tinted box (titlebox, defined via
+$-- include-in-header in _quarto.yml), matching the citation box's original
+$-- styling.
 \makeatletter
 \renewcommand{\maketitle}{%
-  \begin{center}%
-    {\LARGE \@title \par}%
-  \end{center}%
+  \begin{titlebox}
+    \centering\LARGE \@title\par
+  \end{titlebox}
   \vskip 1.75em
   \thispagestyle{plain}%
 }

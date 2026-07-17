@@ -1,0 +1,11 @@
+---
+title: "New Guidance on Getting Data at the Census Tract Level"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-01-15"
+description: "New guidance explains the risks and limitations of mapping gridded climate data to census tracts."
+categories: [Announcement]
+---
+
+The Analytics Engine team has published new guidance on Getting Data at the Census Tract Level. This page explains the risks, limitations, and appropriate interpretations of mapping gridded climate model data to census tract boundaries, with concrete examples illustrating spatial mismatch, aggregation effects, coastal influences, and grid-scale assumptions. The guidance also introduces the census tract clipping tool available in the _climakitae_ Python toolkit and clarifies how it is intended to support exploratory and screening-level analyses rather than authoritative tract-level climate datasets. Read the full guidance [here](https://analytics.cal-adapt.org/guidance/using_in_decision_making/census-tracts/).

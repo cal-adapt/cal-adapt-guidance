@@ -1,0 +1,11 @@
+---
+title: "New Guidance on Heat Metrics for Energy Sector Planning"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-03-20"
+description: "New guidance on Heat Metrics for Energy Sector Planning is now available."
+categories: [Announcement]
+---
+
+The Analytics Engine team has published new guidance on Heat Metrics for Energy Sector Planning. This resource provides an overview of the key heat metrics available in the Analytics Engine with explanations of how each is calculated and when to use them. The page also includes practical guidance on choosing the right metric for your application and links to relevant notebooks and tools. Explore the full guidance [here](https://analytics.cal-adapt.org/guidance/using_in_decision_making/heat-metrics/).

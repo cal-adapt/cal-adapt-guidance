@@ -1,0 +1,19 @@
+---
+title: "Join Us at the California Adaptation Forum"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2023-07-14"
+description: "The Analytics Engine team will host a workshop and session at the California Adaptation Forum."
+categories: [Announcement]
+---
+
+Join us at the California Adaptation Forum in Pomona, CA from July 31 to August 2, 2024! We will be hosting a workshop and session, providing valuable insights into the utilization of climate data and tools.
+
+Workshop: Learn to Use Climate Data & Tools for Decision-Making in CA through Cal-Adapt
+- Date: July 31st
+- Time: 1:00 - 2:45 pm
+
+Session: Actionable Data & Tools to Enable Climate-Informed Decision-Making in California
+- Date: August 2nd
+- Time: 10:15 - 11:45 am

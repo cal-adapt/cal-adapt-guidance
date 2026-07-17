@@ -1,0 +1,11 @@
+---
+title: "Presentation to California's 5th Climate Change Assessment Authors"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2025-02-18"
+description: "The Analytics Engine team presented to California's 5th Climate Change Assessment Authors."
+categories: [Announcement]
+---
+
+The Analytics Engine team presented to California's 5th Climate Change Assessment Authors to explain the Cal-Adapt enterprise and clarify the Analytics Engine's role in supporting authors navigating climate data. The goal was to increase awareness of Cal-Adapt's data access tools and guidance materials. Check out the presentation [here](https://drive.google.com/file/d/1Uhk0cTbDJ_wXRGn15TDip6oJtVsMo8qa/view?usp=sharing)!

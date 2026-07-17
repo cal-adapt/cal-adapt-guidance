@@ -1,0 +1,18 @@
+---
+title: "v1.0 of Analytics Engine Guidance Materials Live"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2024-08-06"
+description: "Version 1.0 of the Analytics Engine Guidance materials is now live."
+categories: [Announcement]
+---
+
+v1.0 of Analytics Engine Guidance materials is now live: https://analytics.cal-adapt.org/guidance/
+The new suite of guidance materials includes:
+- An overview of climate models and projections,
+- How to use Analytics Engine outputs for decision-making,
+- A glossary of frequently used terms, and
+- Key references
+
+An important feature of the new materials is the "[Guidance on Using Climate Data in Decision-Making](https://analytics.cal-adapt.org/guidance/using_in_decision_making/)" section. This section provides original content and practical answers to common questions regarding the use of climate data, such as selecting appropriate data and models, and considering spatial and temporal scales.

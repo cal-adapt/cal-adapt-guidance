@@ -68,13 +68,13 @@ For the latest memorandums on the datasets and methodology behind the Analytics 
   }
   #references-table .ref-link-btn {
     background-color: transparent;
-    border: 1px solid var(--color-link-hover);
-    color: var(--color-link-hover);
+    border: 1px solid var(--bs-link-hover-color);
+    color: var(--bs-link-hover-color);
   }
   #references-table .ref-link-btn:hover,
   #references-table .ref-link-btn:focus {
-    background-color: var(--color-link-hover);
-    border-color: var(--color-link-hover);
+    background-color: var(--bs-link-hover-color);
+    border-color: var(--bs-link-hover-color);
     color: var(--color-white);
   }
 </style>
@@ -183,7 +183,7 @@ $(document).ready(function () {
           search: 'Search:'
         },
         createdRow: function (row, rowData) {
-          if (rowData.categories.indexOf('Cal-Adapt') !== -1) {
+          if (rowData.categories.includes('Cal-Adapt')) {
             row.classList.add('cal-adapt-row');
           }
         }

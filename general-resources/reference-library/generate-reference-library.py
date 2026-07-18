@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Edit reference-library-data.csv to add, remove, or re-categorize references
-— do not edit _reference-library-data.html directly, it is generated.
+— do not edit reference-library-data.js directly, it is generated.
 
 The "category" column supports multiple topics per reference: separate them
 with a semicolon, e.g. "WRF; Bias Correction".
@@ -14,7 +14,7 @@ Citation text is formatted from references.bib via Quarto's bundled pandoc
 citeproc, using the site's citation-style.csl, so it matches the citation
 style used everywhere else on the site.
 
-Run from anywhere: python3 general-resources/generate-reference-library.py
+Run from anywhere: python3 general-resources/reference-library/generate-reference-library.py
 """
 import csv
 import json
@@ -25,11 +25,11 @@ import sys
 import tempfile
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT_DIR = os.path.dirname(SCRIPT_DIR)
+ROOT_DIR = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 BIB_PATH = os.path.join(ROOT_DIR, "references.bib")
 CSL_PATH = os.path.join(ROOT_DIR, "citation-style.csl")
 CSV_PATH = os.path.join(SCRIPT_DIR, "reference-library-data.csv")
-OUT_PATH = os.path.join(SCRIPT_DIR, "_reference-library-data.html")
+OUT_PATH = os.path.join(SCRIPT_DIR, "reference-library-data.js")
 
 with open(CSV_PATH, encoding="utf-8") as f:
     rows = list(csv.DictReader(f))
@@ -108,13 +108,11 @@ for row in rows:
 data.sort(key=lambda d: (0 if "Cal-Adapt" in d["categories"] else 1, d["categories"][0], d["description"]))
 
 js_data = json.dumps(data, ensure_ascii=False, indent=2)
-html = f"""<!-- Auto-generated from reference-library-data.csv and references.bib — do not edit -->
-<script>
+js = f"""// Auto-generated from reference-library-data.csv and references.bib — do not edit
 var REFERENCES_DATA = {js_data};
-</script>
 """
 
 with open(OUT_PATH, "w", encoding="utf-8") as f:
-    f.write(html)
+    f.write(js)
 
 print(f"Generated {os.path.relpath(OUT_PATH, ROOT_DIR)} from {len(data)} references")

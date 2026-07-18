@@ -14,6 +14,7 @@ For the latest memorandums on the datasets and methodology behind the Analytics 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js"></script>
+<script src="reference-library/reference-library-data.js"></script>
 <style>
   #references-table > tbody > tr > td {
     padding-top: 0.85rem;
@@ -100,8 +101,6 @@ For the latest memorandums on the datasets and methodology behind the Analytics 
   <tbody></tbody>
 </table>
 ```
-
-{{< include _reference-library-data.html >}}
 
 ```{=html}
 <script>

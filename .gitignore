@@ -4,3 +4,6 @@ _site/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Regenerated on every quarto render via project pre-render scripts
+general-resources/reference-library/reference-library-data.js

@@ -2,7 +2,7 @@ project:
   type: website
   pre-render:
     - glossary/generate-glossary.py
-    - general-resources/generate-reference-library.py
+    - general-resources/reference-library/generate-reference-library.py
   resources:
     - assets/pdfs/**
 

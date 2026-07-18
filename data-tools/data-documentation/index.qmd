@@ -1,7 +1,20 @@
 ---
 title: "Data Documentation"
+citation: false
+format:
+  html: default
 ---
 
-::: {.callout-note}
-This page is under development.
-:::
+This section provides technical documentation for users who want to understand how climate data is organized, stored, and standardized on the Cal-Adapt: Analytics Engine. Whether someone is browsing available datasets for the first time or writing code to access data directly from the cloud, these pages offer the technical grounding needed to work confidently with the platform's data holdings.
+
+## [Climate Model Simulations](climate-model-sims.qmd)
+
+This page describes the climate datasets hosted on the Analytics Engine, including the dynamically downscaled (WRF) and hybrid-statistically downscaled (LOCA2-Hybrid) projections developed for California's Fifth Climate Change Assessment. It covers the models, downscaling methods, and emissions scenarios represented in each dataset, along with details on spatial and temporal resolution, derived variables and indices, historical data sources, and known data credibility considerations.
+
+## [Data Structure and Format](data-structure-and-format.qmd)
+
+This page explains how data is organized within the Analytics Engine's public AWS S3 bucket, cadcat. It walks through the two primary file formats used, NetCDF and Zarr, and describes when and why each is used, how the underlying directory structure is organized, and how tools like the Analytics Engine's searchable data catalog can help users locate and access the specific datasets they need.
+
+## [Metadata Standards](metadata-standards.qmd)
+
+This page outlines the metadata conventions followed by the Analytics Engine to ensure that datasets are readable, interoperable, and well-documented. It covers best practices for both GIS data (following FGDC standards) and NetCDF files (following CF Conventions), including guidance on coordinate systems, variable naming, missing data handling, and recommended global attributes. This information is especially useful for anyone contributing data to the platform.

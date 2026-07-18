@@ -6,7 +6,6 @@ format:
   html: default
 ---
 
+The Cal-Adapt: Data Explorer offers a growing suite of interactive tools designed to make climate data more accessible and actionable for a wide range of users. The Climate Metrics Map allows users to visually explore key climate variables and metrics across California, making it easy to see how conditions like temperature, precipitation, and extreme heat are projected to change over time and by location. Alongside the Climate Metrics Map, the Data Download Tool provides a straightforward way to access and export climate data for further analysis, while the Renewables Visualizer helps users explore how climate change may affect renewable energy resources and infrastructure planning.
 
-::: {.callout-note}
-This page is under development.
-:::
+These tools are built to serve both newcomers exploring climate data for the first time and experienced users conducting more detailed analyses. The Cal-Adapt team is actively developing additional tools to expand these capabilities, so users are encouraged to check back often as new features and resources become available.

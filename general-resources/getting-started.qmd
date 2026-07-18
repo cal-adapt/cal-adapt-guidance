@@ -1,7 +1,30 @@
 ---
 title: "Getting Started"
+citation: false
+format:
+  html: default
 ---
 
-::: {.callout-note}
-This page is under development.
+Welcome to the Cal-Adapt: Analytics Engine. This website is designed to help California's energy sector (utilities, regulators, consultants, and researchers) make sense of climate projections and apply them confidently to resilience planning. Whether a visitor is new to climate data or an experienced analyst looking for a specific technical detail, this site brings together the science, guidance, and tools needed to work with the Analytics Engine's climate datasets.
+
+Below is an overview of what's available.
+
+## New to climate data? Start with Scientific Guidance.
+
+The Scientific Guidance section introduces the fundamentals under the [General Climate Guidance](/scientific-guidance/general-climate-guidance/index.qmd) section: what climate projections are, how global climate models and downscaling work, and key concepts. It also includes a set of [guiding principles](/scientific-guidance/general-climate-guidance/guiding-principles.qmd) for working through a climate data analysis from start to finish, and [practical answers to common questions](/scientific-guidance/general-climate-guidance/using-climate-projections.qmd) users encounter when applying climate data to real-world decisions. This section also houses topical climate science pages, including [climate profiles](/scientific-guidance/climate_profiles/index.qmd), [global warming levels](/scientific-guidance/global-warming-levels.qmd), and [uncertainty](/scientific-guidance/uncertainty/index.qmd), for users looking for guidance on a particular subject area.
+
+## Ready to look into the data? Explore the Data Catalog.
+
+The [Data Catalog](/data-tools/data-catalog.qmd) is the best starting point for understanding what climate data is available on the Analytics Engine and how it's organized. From there, the [Data Access Methods](/data-tools/access-methods.qmd) page outlines the many ways to retrieve data so users can choose the approach that best fits their workflow.
+
+## Looking for background research and methods? Visit the Reference Library.
+
+The [Reference Library](/general-resources/reference-library.qmd) brings together foundational project references, including Cal-Adapt methods papers and external literature relevant to the Analytics Engine's data and approach.
+
+## Need deeper technical analysis? Utilize the Analytics Engine.
+
+For users looking to conduct detailed technical analyses, cloud-based Jupyter notebooks and the [climakitae](https://github.com/cal-adapt/climakitae) Python package are being developed for the [Analytics Engine JupyterHub](/data-tools/analytics-engine-hub.qmd) to work directly with downscaled climate data at scale. The JupyterHub is only available for energy sector users, but the underlying code for the notebooks is publicly available via the project's [GitHub repository](https://github.com/cal-adapt/cae-notebooks).
+
+::: {.callout-note title="Note"}
+This site is intended to support long-term planning and research. For details on how to interpret and appropriately apply this material, see the full disclaimer on the [Our Project](/about/our-project.qmd) page.
 :::

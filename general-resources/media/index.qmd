@@ -1,7 +1,10 @@
 ---
 title: "Media"
+citation: false
+format:
+  html: default
 ---
 
-::: {.callout-note}
-This page is under development.
-:::
+This section offers a collection of videos, presentations, and other visual resources that showcase the work of the Cal-Adapt: Analytics Engine. It includes recordings from past workshops and trainings, YouTube tutorials covering core tools and methods, and slide decks and posters presented at conferences such as AGU. Together, these materials provide an accessible way for users to learn about the platform's capabilities, see real-world applications in action, and follow along with demonstrations at their own pace.
+
+Whether visitors are just getting started with the Analytics Engine or looking for a deeper technical dive, this page serves as a central hub for learning and engagement. It will continue to be updated with new videos, presentations, and outreach materials as they become available.

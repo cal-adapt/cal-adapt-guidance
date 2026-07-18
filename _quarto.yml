@@ -1,6 +1,10 @@
 project:
   type: website
-  pre-render: glossary/generate-glossary.py
+  pre-render:
+    - glossary/generate-glossary.py
+    - general-resources/generate-reference-library.py
+  resources:
+    - assets/pdfs/**
 
 website:
   title: "Cal-Adapt: Analytics Engine"

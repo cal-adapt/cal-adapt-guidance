@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Warm tone overrides inspired by hero image */
-:root {
+/* Warm tone overrides inspired by hero image.
+   Selector also targets [data-bs-theme="light"] because Quarto's bundled
+   Bootstrap theme sets its own --bs-* variables on that same attribute
+   selector, which has higher specificity than a plain :root — without this,
+   Bootstrap's default blue/orange silently wins over these overrides. */
+:root,
+[data-bs-theme="light"] {
   --bs-primary: #f2994e;
   --bs-primary-rgb: 242, 153, 78;
-  --bs-link-color: #f2994e;
-  --bs-link-hover-color: #7b3fa0;
+  --bs-link-color: #0d6efd;
+  --bs-link-hover-color: #0a58ca;
   --bs-font-sans-serif: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
   --color-text: #222;
@@ -15,6 +20,8 @@
   --color-bg-warm: #f7f5f2;
   --color-white: #fff;
   --color-navy: #1d3557;
+  --color-link: #0d6efd;
+  --color-link-hover: #0a58ca;
 }
 
 

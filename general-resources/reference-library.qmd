@@ -30,13 +30,13 @@ For the latest memorandums on the datasets and methodology behind the Analytics 
   }
   /* Cal-Adapt-authored references get a brand-orange accent */
   #references-table > tbody > tr.cal-adapt-row > td {
-    background-color: rgba(242, 153, 78, 0.22) !important;
+    background-color: rgba(var(--bs-primary-rgb), 0.22) !important;
     box-shadow: none !important;
   }
   #topic-filter-btn {
     background-color: transparent;
-    border: 1px solid var(--color-navy);
-    color: var(--color-navy);
+    border: 1px solid var(--color-blue-dark);
+    color: var(--color-blue-dark);
     min-width: 280px;
   }
   #topic-filter-menu {
@@ -45,8 +45,8 @@ For the latest memorandums on the datasets and methodology behind the Analytics 
   #topic-filter-btn:hover,
   #topic-filter-btn:focus,
   #topic-filter-btn:active {
-    background-color: var(--color-navy) !important;
-    border-color: var(--color-navy) !important;
+    background-color: var(--color-blue-dark) !important;
+    border-color: var(--color-blue-dark) !important;
     color: var(--color-white) !important;
   }
   #table-controls {

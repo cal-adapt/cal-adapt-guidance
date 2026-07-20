@@ -7,10 +7,12 @@
    Bootstrap's default blue/orange silently wins over these overrides. */
 :root,
 [data-bs-theme="light"] {
-  --bs-primary: #f2994e;
-  --bs-primary-rgb: 242, 153, 78;
-  --bs-link-color: #0d6efd;
-  --bs-link-hover-color: #0a58ca;
+  --bs-primary: #f79226;
+  --bs-primary-rgb: 247, 146, 38;
+  --bs-primary-light: #f9e4c8;
+  --bs-primary-light-rgb: 249, 228, 200;
+  --bs-link-color: #4d9de0;
+  --bs-link-hover-color: #33658a;
   --bs-font-sans-serif: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
   --color-text: #222;
@@ -19,7 +21,8 @@
   --color-bg-subtle: #f5f5f5;
   --color-bg-warm: #f7f5f2;
   --color-white: #fff;
-  --color-navy: #1d3557;
+  --color-blue-dark: #33658a;
+  --color-blue-light: #4d9de0;
 }
 
 
@@ -29,7 +32,7 @@ body {
 
 .alert-primary {
   --bs-alert-color: var(--color-text);
-  --bs-alert-bg: rgba(var(--bs-primary-rgb), 0.1);
+  --bs-alert-bg: var(--bs-primary-light);
   --bs-alert-border-color: rgba(var(--bs-primary-rgb), 0.35);
 }
 
@@ -67,7 +70,7 @@ body {
 .quarto-grid-item .listing-categories .listing-category {
   color: var(--color-text);
   border-color: rgba(var(--bs-primary-rgb), 0.35);
-  background: rgba(var(--bs-primary-rgb), 0.08);
+  background: var(--bs-primary-light);
 }
 
 /* TOC: hide nested items by default, expand when parent section is active */
@@ -167,7 +170,7 @@ div[id^="fig-"] {
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
-  background: rgba(var(--bs-primary-rgb), 0.08);
+  background: var(--bs-primary-light);
 }
 
 .info-card .bi {
@@ -361,7 +364,7 @@ div[id^="fig-"] {
 }
 
 .resource-arrow:hover {
-  background: rgba(var(--bs-primary-rgb), 0.1);
+  background: var(--bs-primary-light);
   border-color: var(--bs-primary);
 }
 
@@ -491,18 +494,18 @@ div[id^="fig-"] {
 #quarto-citation > div > :nth-child(3) { order: 1; }
 #quarto-citation > div > :nth-child(4) { order: 2; }
 
-/* Unified table styling (navy header, bordered cells) for all tables site-wide */
+/* Unified table styling (dark blue header, bordered cells) for all tables site-wide */
 table.table {
   border-collapse: collapse;
 }
 
 table.table > thead > tr > th {
-  background-color: var(--color-navy);
+  background-color: var(--color-blue-dark);
   color: var(--color-white);
   font-weight: bold;
   text-align: center;
   padding: 10px 16px;
-  border: 1px solid var(--color-navy);
+  border: 1px solid var(--color-blue-dark);
 }
 
 table.table > tbody > tr > td {

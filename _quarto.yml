@@ -168,7 +168,8 @@ format:
         \usepackage{fancyhdr}
         \usepackage{graphicx}
         \usepackage{xcolor}
-        \definecolor{caladaptorange}{HTML}{F2994E}
+        \definecolor{caladaptorange}{HTML}{F79226}
+        \definecolor{caladaptorangelight}{HTML}{F9E4C8}
         \usepackage[framemethod=tikz]{mdframed}
         \newmdenv[
           hidealllines=true,
@@ -176,7 +177,7 @@ format:
           innertopmargin=6pt, innerbottommargin=6pt
         ]{citebox}
         \newmdenv[
-          backgroundcolor=caladaptorange!10,
+          backgroundcolor=caladaptorangelight,
           linecolor=caladaptorange,
           linewidth=0.5pt,
           roundcorner=2pt,

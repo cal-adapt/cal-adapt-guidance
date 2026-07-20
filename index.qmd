@@ -1,6 +1,6 @@
 ---
 title: "Climate Science & Data for California"
-subtitle: "Access authoritative climate projections grounded in California's Fifth Climate Change Assessment, with expert guidance built in to support informed decisions about resilience and planning."
+subtitle: "The Cal-Adapt: Analytics Engine transforms the foundational climate and environmental data behind California’s Fifth Climate Change Assessment into actionable, expert-guided information to support informed decisions about resilience and planning."
 title-block-banner: assets/hero.jpg
 title-block-banner-color: "#222"
 citation: false
@@ -30,15 +30,15 @@ Climate projections are powerful, but they need interpretation. Our guidance bri
 
 :::: {.grid .mt-3}
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .info-card}
 <i class="bi bi-patch-check-fill"></i>
 
-**Grounded in peer review**
+**Grounded in peer reviewed research**
 
 Derived from California's Fifth Climate Change Assessment and validated by leading climate scientists.
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .info-card}
 <i class="bi bi-people-fill"></i>
 
 **Co-produced with users**
@@ -46,7 +46,7 @@ Derived from California's Fifth Climate Change Assessment and validated by leadi
 Developed alongside practitioners, planners, and decision makers.
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .info-card}
 <i class="bi bi-signpost-fill"></i>
 
 **Actionable, not prescriptive**
@@ -54,20 +54,30 @@ Developed alongside practitioners, planners, and decision makers.
 Presents options and frameworks to help you make the decisions.
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .info-card}
 <i class="bi bi-unlock-fill"></i>
 
-**Free and public**
+**Publically accessible**
 
 Part of California's commitment to climate transparency.
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .feature-card}
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .info-card}
 <i class="bi bi-arrow-repeat"></i>
 
 **Continuously evolving**
 
 Updated with new research, user feedback, and emerging climate impacts.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .info-card}
+<i class="bi bi-link-45deg"></i>
+
+**Partners and related resources**
+
+- [California Climate Change Assessment](https://lci.ca.gov/climate/icarp/climate-assessment/)
+- [California Energy Commission](https://www.energy.ca.gov/)
+- [Amazon Sustainability](https://sustainability.aboutamazon.com/)
 :::
 
 ::::
@@ -78,71 +88,73 @@ Choose the right topic for your needs.
 
 ```{=html}
 <div class="resource-explorer">
-  <div class="resource-nav">
-    <button class="resource-nav-item active" data-target="resource-analytics">
-      <i class="bi bi-cloud-fill"></i> Jupyter Hub Login
-    </button>
-    <button class="resource-nav-item" data-target="resource-profiles">
-      <i class="bi bi-bar-chart-fill"></i> Climate Profiles
-    </button>
-    <button class="resource-nav-item" data-target="resource-catalog">
-      <i class="bi bi-database-fill"></i> Data Catalog
-    </button>
-    <button class="resource-nav-item" data-target="resource-library">
-      <i class="bi bi-book-fill"></i> Reference Library
-    </button>
-    <button class="resource-nav-item" data-target="resource-notebooks">
-      <i class="bi bi-code-slash"></i> Jupyter Notebooks
-    </button>
-  </div>
-
-  <div class="resource-carousel">
-    <a id="resource-analytics" href="https://hub.cal-adapt.org/user-redirect/doc/tree/cae-notebooks/AE_navigation_guide.ipynb" class="resource-card">
-      <div class="resource-card-thumb"><img src="assets/resources/jupyter_hub.png" alt=""></div>
-      <div class="resource-card-body">
-        <h4>Analytics Engine Jupyter Hub</h4>
-        <p>For users with access, log in to the Jupyter Hub for easy cloud-based access to our data and notebooks. Perform custom analysis without downloading massive files.</p>
-      </div>
-    </a>
-    <a id="resource-profiles" href="scientific-guidance/climate_profiles/" class="resource-card">
-      <div class="resource-card-thumb"><img src="assets/resources/climate_profiles.png" alt=""></div>
-      <div class="resource-card-body">
-        <h4>Climate Profiles</h4>
-        <p>Pre-built hourly climate-year datasets for engineering and planning, built from future climate projections at California locations.</p>
-      </div>
-    </a>
-    <a id="resource-catalog" href="https://stac-browser.cal-adapt.org" class="resource-card">
-      <div class="resource-card-thumb"><img src="assets/resources/data_catalog.gif" alt=""></div>
-      <div class="resource-card-body">
-        <h4>Data Catalog</h4>
-        <p>Learn about the data hosted on Cal-Adapt and how you can access it.</p>
-      </div>
-    </a>
-    <a id="resource-library" href="general-resources/reference-library.html" class="resource-card">
-      <div class="resource-card-thumb"><img src="assets/resources/reference_library.png" alt=""></div>
-      <div class="resource-card-body">
-        <h4>Reference Library</h4>
-        <p>Find citable Cal-Adapt guidance materials written by our team of climate experts.</p>
-      </div>
-    </a>
-    <a id="resource-notebooks" href="data-tools/notebooks.html" class="resource-card">
-      <div class="resource-card-thumb"><img src="assets/resources/notebooks.png" alt=""></div>
-      <div class="resource-card-body">
-        <h4>Jupyter Notebooks</h4>
-        <p>Reproducible code examples and workflows available on GitHub. Learn how to work with climate data and adapt tools to your needs.</p>
-      </div>
-    </a>
+  <div class="resource-carousel-wrap">
+    <button type="button" class="resource-arrow resource-arrow-prev" aria-label="Previous resource"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+    <div class="resource-carousel" role="region" aria-label="Resources carousel">
+      <a id="resource-analytics" href="data-tools/analytics-engine-hub.html" class="resource-card">
+        <div class="resource-card-thumb"><img src="assets/resources/jupyter_hub.png" alt=""></div>
+        <div class="resource-card-body">
+          <h4>Analytics Engine Jupyter Hub</h4>
+          <p>For users with access, log in to the Jupyter Hub for easy cloud-based access to our data and notebooks. Perform custom analysis without downloading massive files.</p>
+        </div>
+      </a>
+      <a id="resource-profiles" href="scientific-guidance/climate_profiles/" class="resource-card">
+        <div class="resource-card-thumb"><img src="assets/resources/climate_profiles.png" alt=""></div>
+        <div class="resource-card-body">
+          <h4>Climate Profiles</h4>
+          <p>Pre-built hourly climate-year datasets for engineering and planning, built from future climate projections at California locations.</p>
+        </div>
+      </a>
+      <a id="resource-catalog" href="data-tools/data-catalog.html" class="resource-card">
+        <div class="resource-card-thumb"><img src="assets/resources/data_catalog.gif" alt=""></div>
+        <div class="resource-card-body">
+          <h4>Data Catalog</h4>
+          <p>Learn about the data hosted on Cal-Adapt and how you can access it.</p>
+        </div>
+      </a>
+      <a id="resource-library" href="general-resources/reference-library.html" class="resource-card">
+        <div class="resource-card-thumb"><img src="assets/resources/reference_library.png" alt=""></div>
+        <div class="resource-card-body">
+          <h4>Reference Library</h4>
+          <p>Find citable Cal-Adapt guidance materials written by our team of climate experts.</p>
+        </div>
+      </a>
+      <a id="resource-notebooks" href="data-tools/notebooks.html" class="resource-card">
+        <div class="resource-card-thumb"><img src="assets/resources/notebooks.png" alt=""></div>
+        <div class="resource-card-body">
+          <h4>Jupyter Notebooks</h4>
+          <p>Reproducible code examples and workflows available on GitHub. Learn how to work with climate data and adapt tools to your needs.</p>
+        </div>
+      </a>
+    </div>
+    <button type="button" class="resource-arrow resource-arrow-next" aria-label="Next resource"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
   </div>
 </div>
 
 <script>
-document.querySelectorAll('.resource-nav-item').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    document.querySelectorAll('.resource-nav-item').forEach(function (b) { b.classList.remove('active'); });
-    btn.classList.add('active');
-    document.getElementById(btn.dataset.target).scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
-  });
-});
+(function () {
+  var carousel = document.querySelector('.resource-carousel');
+  var prevBtn = document.querySelector('.resource-arrow-prev');
+  var nextBtn = document.querySelector('.resource-arrow-next');
+
+  function scrollByCard(direction) {
+    var card = carousel.querySelector('.resource-card');
+    var distance = card ? card.getBoundingClientRect().width + 20 : 320;
+    carousel.scrollBy({ left: direction * distance, behavior: 'smooth' });
+  }
+
+  function updateArrows() {
+    var maxScroll = carousel.scrollWidth - carousel.clientWidth - 1;
+    prevBtn.disabled = carousel.scrollLeft <= 0;
+    nextBtn.disabled = carousel.scrollLeft >= maxScroll;
+  }
+
+  prevBtn.addEventListener('click', function () { scrollByCard(-1); });
+  nextBtn.addEventListener('click', function () { scrollByCard(1); });
+  carousel.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
+  updateArrows();
+})();
 </script>
 ```
 
@@ -150,38 +162,51 @@ document.querySelectorAll('.resource-nav-item').forEach(function (btn) {
 
 Led by Eagle Rock Analytics and funded by the California Energy Commission, supported by partners across research, analytics, and state agencies.
 
+```{=html}
+<div class="partner-logos">
+  <img src="assets/logos/logo-era.png" alt="Eagle Rock Analytics">
+  <img src="assets/logos/logo-cec.jpg" alt="California Energy Commission">
+  <img src="assets/logos/logo-lbnl.jpg" alt="Lawrence Berkeley National Lab">
+  <img src="assets/logos/logo-gif.jpg" alt="UC Berkeley Geospatial Innovation Facility">
+  <img src="assets/logos/logo-sig.svg" alt="Spatial Informatics Group">
+  <img src="assets/logos/logo-e3.png" alt="Energy and Environmental Economics">
+  <img src="assets/logos/logo-ucla.jpg" alt="UCLA Center for Climate Science">
+  <img src="assets/logos/logo-amazon-sustainability.jpg" alt="Amazon Sustainability">
+</div>
+```
+
 :::: {.grid .mt-3}
 
-::: {.g-col-12 .g-col-md-6 .trust-card}
-<i class="bi bi-geo-alt-fill"></i>
-
-**California Commitment**
-
-Part of California's Fifth Climate Change Assessment. Represents state-of-the-art climate science for decision making.
+::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
+<img src="assets/cards/california-commitment.jpg" alt="">
+<div class="info-card-photo-body">
+<strong>California Commitment</strong>
+<p>Part of California's Fifth Climate Change Assessment. Represents state-of-the-art climate science for decision making.</p>
+</div>
 :::
 
-::: {.g-col-12 .g-col-md-6 .trust-card}
-<i class="bi bi-people-fill"></i>
-
-**Multi-Sector Team**
-
-Scientists, modelers, software engineers, and domain experts from Eagle Rock Analytics, Energy and Environmental Economics, Inc., Lawrence Berkeley National Lab, Spatial Informatics Group, UC Berkeley Geospatial Innovation Facility, and UCLA Center for Climate Science.
+::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
+<img src="assets/cards/multi-sector-team.jpg" alt="">
+<div class="info-card-photo-body">
+<strong>Multi-Sector Team</strong>
+<p>Scientists, modelers, software engineers, and domain experts from Eagle Rock Analytics, Energy and Environmental Economics, Inc., Lawrence Berkeley National Lab, Spatial Informatics Group, UC Berkeley Geospatial Innovation Facility, and UCLA Center for Climate Science.</p>
+</div>
 :::
 
-::: {.g-col-12 .g-col-md-6 .trust-card}
-<i class="bi bi-bank2"></i>
-
-**Sustained Funding**
-
-Supported by the California Energy Commission (EPC-20-007 and EPC-23-024) and Amazon Sustainability, ensuring long-term availability.
+::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
+<img src="assets/cards/sustained-funding.jpg" alt="">
+<div class="info-card-photo-body">
+<strong>Sustained Funding</strong>
+<p>Supported by the California Energy Commission (EPC-20-007 and EPC-23-024) and Amazon Sustainability, ensuring long-term availability.</p>
+</div>
 :::
 
-::: {.g-col-12 .g-col-md-6 .trust-card}
-<i class="bi bi-arrows-angle-contract"></i>
-
-**Co-Production**
-
-Data producers, technical staff, and decision makers collaborate to ensure outputs are accessible and actionable.
+::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
+<img src="assets/cards/co-production.jpg" alt="">
+<div class="info-card-photo-body">
+<strong>Co-Production</strong>
+<p>Data producers, technical staff, and decision makers collaborate to ensure outputs are accessible and actionable.</p>
+</div>
 :::
 
 ::::

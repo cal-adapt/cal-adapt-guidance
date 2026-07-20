@@ -5,6 +5,7 @@ project:
     - general-resources/reference-library/generate-reference-library.py
   resources:
     - assets/pdfs/**
+    - assets/cards/**
 
 website:
   title: "Cal-Adapt: Analytics Engine"

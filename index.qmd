@@ -177,36 +177,36 @@ Led by Eagle Rock Analytics and funded by the California Energy Commission, supp
 
 :::: {.grid .mt-3}
 
-::: {.g-col-12 .g-col-md-6 .info-card}
-<i class="bi bi-geo-alt-fill"></i>
-
-**California Commitment**
-
-Part of California's Fifth Climate Change Assessment. Represents state-of-the-art climate science for decision making.
+::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
+<img src="assets/cards/california-commitment.jpg" alt="">
+<div class="info-card-photo-body">
+<strong>California Commitment</strong>
+<p>Part of California's Fifth Climate Change Assessment. Represents state-of-the-art climate science for decision making.</p>
+</div>
 :::
 
-::: {.g-col-12 .g-col-md-6 .info-card}
-<i class="bi bi-people-fill"></i>
-
-**Multi-Sector Team**
-
-Scientists, modelers, software engineers, and domain experts from Eagle Rock Analytics, Energy and Environmental Economics, Inc., Lawrence Berkeley National Lab, Spatial Informatics Group, UC Berkeley Geospatial Innovation Facility, and UCLA Center for Climate Science.
+::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
+<img src="assets/cards/multi-sector-team.jpg" alt="">
+<div class="info-card-photo-body">
+<strong>Multi-Sector Team</strong>
+<p>Scientists, modelers, software engineers, and domain experts from Eagle Rock Analytics, Energy and Environmental Economics, Inc., Lawrence Berkeley National Lab, Spatial Informatics Group, UC Berkeley Geospatial Innovation Facility, and UCLA Center for Climate Science.</p>
+</div>
 :::
 
-::: {.g-col-12 .g-col-md-6 .info-card}
-<i class="bi bi-bank2"></i>
-
-**Sustained Funding**
-
-Supported by the California Energy Commission (EPC-20-007 and EPC-23-024) and Amazon Sustainability, ensuring long-term availability.
+::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
+<img src="assets/cards/sustained-funding.jpg" alt="">
+<div class="info-card-photo-body">
+<strong>Sustained Funding</strong>
+<p>Supported by the California Energy Commission (EPC-20-007 and EPC-23-024) and Amazon Sustainability, ensuring long-term availability.</p>
+</div>
 :::
 
-::: {.g-col-12 .g-col-md-6 .info-card}
-<i class="bi bi-arrows-angle-contract"></i>
-
-**Co-Production**
-
-Data producers, technical staff, and decision makers collaborate to ensure outputs are accessible and actionable.
+::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
+<img src="assets/cards/co-production.jpg" alt="">
+<div class="info-card-photo-body">
+<strong>Co-Production</strong>
+<p>Data producers, technical staff, and decision makers collaborate to ensure outputs are accessible and actionable.</p>
+</div>
 :::
 
 ::::

@@ -190,6 +190,35 @@ div[id^="fig-"] {
   margin-bottom: 0;
 }
 
+.info-card-photo {
+  padding: 0;
+  overflow: hidden;
+}
+
+.info-card-photo img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.info-card-photo-body {
+  padding: 1.25rem 1.5rem;
+}
+
+.info-card-photo-body strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+  color: var(--color-text);
+}
+
+.info-card-photo-body p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-bottom: 0;
+}
+
 .topic-card {
   display: flex;
   flex-direction: column;

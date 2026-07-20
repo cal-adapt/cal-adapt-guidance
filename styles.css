@@ -127,7 +127,7 @@ div[id^="fig-"] {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.35);
   pointer-events: none;
 }
 

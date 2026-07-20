@@ -443,6 +443,21 @@ div[id^="fig-"] {
   justify-self: center;
 }
 
+.partner-logos img[src*="logo-era"] {
+  height: 4.25rem;
+  max-width: 220px;
+}
+
+.partner-logos img[src*="logo-cec"] {
+  height: 6rem;
+  max-width: 220px;
+}
+
+.partner-logos img[src*="logo-e3"] {
+  height: 3.4rem;
+  max-width: 280px;
+}
+
 @media (max-width: 576px) {
   .partner-logos {
     grid-template-columns: repeat(2, auto);

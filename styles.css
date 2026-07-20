@@ -398,11 +398,11 @@ div[id^="fig-"] {
 
 
 .partner-logos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   justify-content: center;
-  gap: 2.5rem;
+  align-items: center;
+  gap: 1.5rem 2.5rem;
   margin-top: 1.5rem;
 }
 
@@ -411,14 +411,13 @@ div[id^="fig-"] {
   width: auto;
   max-width: 170px;
   object-fit: contain;
-  filter: brightness(0);
-  opacity: 0.85;
-  transition: filter 0.2s ease, opacity 0.2s ease;
+  justify-self: center;
 }
 
-.partner-logos img:hover {
-  filter: none;
-  opacity: 1;
+@media (max-width: 576px) {
+  .partner-logos {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .footer {

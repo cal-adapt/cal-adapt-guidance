@@ -164,10 +164,14 @@ Led by Eagle Rock Analytics and funded by the California Energy Commission, supp
 
 ```{=html}
 <div class="partner-logos">
-  <img src="assets/logos/logo-era.svg" alt="Eagle Rock Analytics">
-  <img src="assets/logos/logo-cec.svg" alt="California Energy Commission">
-  <img src="assets/logos/logo-lbnl.svg" alt="Lawrence Berkeley National Lab">
-  <img src="assets/logos/logo-gif.svg" alt="UC Berkeley Geospatial Innovation Facility">
+  <img src="assets/logos/logo-era.png" alt="Eagle Rock Analytics">
+  <img src="assets/logos/logo-cec.jpg" alt="California Energy Commission">
+  <img src="assets/logos/logo-lbnl.jpg" alt="Lawrence Berkeley National Lab">
+  <img src="assets/logos/logo-gif.jpg" alt="UC Berkeley Geospatial Innovation Facility">
+  <img src="assets/logos/logo-sig.svg" alt="Spatial Informatics Group">
+  <img src="assets/logos/logo-e3.png" alt="Energy and Environmental Economics">
+  <img src="assets/logos/logo-ucla.jpg" alt="UCLA Center for Climate Science">
+  <img src="assets/logos/logo-amazon-sustainability.jpg" alt="Amazon Sustainability">
 </div>
 ```
 

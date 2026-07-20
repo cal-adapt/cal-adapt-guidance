@@ -169,7 +169,7 @@ format:
         \usepackage{graphicx}
         \usepackage{xcolor}
         \definecolor{caladaptorange}{HTML}{F79226}
-        \definecolor{caladaptorangelight}{HTML}{F9E4C8}
+        \definecolor{caladaptorangelight}{HTML}{FBECDA}
         \usepackage[framemethod=tikz]{mdframed}
         \newmdenv[
           hidealllines=true,

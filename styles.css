@@ -9,8 +9,8 @@
 [data-bs-theme="light"] {
   --bs-primary: #f79226;
   --bs-primary-rgb: 247, 146, 38;
-  --bs-primary-light: #f9e4c8;
-  --bs-primary-light-rgb: 249, 228, 200;
+  --bs-primary-light: #fbecda;
+  --bs-primary-light-rgb: 251, 236, 218;
   --bs-link-color: #4d9de0;
   --bs-link-hover-color: #33658a;
   --bs-font-sans-serif: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;

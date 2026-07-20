@@ -1,0 +1,20 @@
+---
+title: "General Climate Guidance"
+citation: false
+format:
+  html: default
+---
+
+This section introduces the foundational climate science concepts behind the Cal-Adapt: Analytics Engine and offers guidance on how to responsibly apply climate data to real-world decisions. It is designed for users at any technical level, from those encountering climate models/projections for the first time, to experienced analysts looking for a refresher on best practices. Together, these pages explain what climate projections are and how they're built, and provide a practical framework for selecting, analyzing, and interpreting climate data with confidence.
+
+### [About Climate Projections & Models](about-climate-projections.qmd)
+
+This page covers the fundamentals of climate modeling: what climate projections are (and aren't), how global climate models and downscaling work, and the key concepts that shape the data available on the Analytics Engine. It's a good starting point for anyone who wants to understand the science underlying the platform's tools and datasets.
+
+### [Using Climate Data in Decision-Making](using-climate-projections.qmd)
+
+This page answers the practical questions that come up when applying climate data to planning and decision-making. It covers topics such as choosing between the WRF and LOCA2-Hybrid datasets, selecting models and ensemble members, determining appropriate spatial and temporal scales, and assessing data credibility and uncertainty. The guidance reflects extensive input from climate scientists and data users across sectors, and is intended to help users make well-informed, context-specific choices.
+
+### [Guiding Principles on the Use of Climate Data](guiding-principles.qmd)
+
+This page lays out a step-by-step process for working with climate data, from identifying data needs through to analyzing results and documenting a final workflow. This resource is organized around seven core principles: scoping data needs, cataloging available data, selecting data that fits, assessing credibility, sampling, analysis, and documentation. Altogether this page offers a structured yet flexible approach that can be adapted to a wide range of applications and planning contexts.

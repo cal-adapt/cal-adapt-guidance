@@ -155,6 +155,7 @@ format:
     toc: false
     citation: true
     mainfont: Arial
+    fontsize: 11pt
     geometry:
       - margin=1in
       - headsep=35pt

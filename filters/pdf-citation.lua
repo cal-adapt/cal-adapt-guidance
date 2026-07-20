@@ -144,7 +144,7 @@ function Pandoc(doc)
   -- The mdframed environment (defined in _quarto.yml's include-in-header)
   -- wraps the citation in a bordered, brand-colored box.
   local citation_blocks = {
-    pandoc.RawBlock("latex", "\\begin{citebox}\\small\\raggedright"),
+    pandoc.RawBlock("latex", "\\begin{citebox}\\normalsize\\raggedright"),
     pandoc.Para({ pandoc.Str("For attribution, please cite this work as:") }),
     pandoc.Para({
       pandoc.Str(lead .. " "),

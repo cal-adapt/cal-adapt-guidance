@@ -8,4 +8,4 @@ format:
 
 Energy-sector users with a Cal-Adapt: Analytics Engine JupyterHub login can access co-produced, pre-developed Jupyter notebooks to analyze, subset, and utilize existing Analytics Engine data directly in the browser. The JupyterHub environment provides private cloud storage on Amazon Web Services, so data can be processed and exported without downloading massive files to a local machine.
 
-This access method requires a Cal-Adapt: Analytics Engine login. See [Data Access Methods](access-methods.qmd) for details on this and other ways to work with Analytics Engine data, and [Jupyter Notebooks](notebooks.qmd) for the notebooks available on the Hub.
+This access method requires a Cal-Adapt: Analytics Engine login. See [Data Access Methods](access-methods.qmd) for details on this and other ways to work with Analytics Engine data, and [Analytics Engine Python Tools](python-tools.qmd) for the notebooks available on the Hub.

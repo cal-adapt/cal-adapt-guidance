@@ -50,7 +50,7 @@ website:
           - text: Data Documentation
             href: data-tools/data-documentation/index.qmd
           - href: data-tools/analytics-engine-hub.qmd
-          - href: data-tools/notebooks.qmd
+          - href: data-tools/python-tools.qmd
       - href: blog/index.qmd
       - text: About
         menu:
@@ -127,7 +127,7 @@ website:
             - data-tools/data-documentation/data-structure-and-format.qmd
             - data-tools/data-documentation/metadata-standards.qmd
         - data-tools/analytics-engine-hub.qmd
-        - data-tools/notebooks.qmd
+        - data-tools/python-tools.qmd
     - id: about
       title: "About"
       style: docked

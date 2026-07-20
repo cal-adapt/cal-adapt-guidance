@@ -119,10 +119,10 @@ Choose the right topic for your needs.
           <p>Find citable Cal-Adapt guidance materials written by our team of climate experts.</p>
         </div>
       </a>
-      <a id="resource-notebooks" href="data-tools/notebooks.html" class="resource-card">
+      <a id="resource-python-tools" href="data-tools/python-tools.html" class="resource-card">
         <div class="resource-card-thumb"><img src="assets/resources/notebooks.png" alt=""></div>
         <div class="resource-card-body">
-          <h4>Jupyter Notebooks</h4>
+          <h4>Analytics Engine Python Tools</h4>
           <p>Reproducible code examples and workflows available on GitHub. Learn how to work with climate data and adapt tools to your needs.</p>
         </div>
       </a>

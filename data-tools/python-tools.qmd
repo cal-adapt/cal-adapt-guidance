@@ -1,5 +1,6 @@
 ---
-title: "Jupyter Notebooks"
+title: "Analytics Engine Python Tools"
+subtitle: '[<i class="bi bi-box-arrow-up-right"></i> View and download the Jupyter Notebooks on GitHub](https://github.com/cal-adapt/cae-notebooks){target="_blank"}<br>[<i class="bi bi-box-arrow-up-right"></i> Read the climakitae docs](https://cal-adapt.github.io/climakitae/dev/){target="_blank"}'
 author:
   - name:
       literal: "Cal-Adapt"
@@ -13,17 +14,21 @@ format:
   pdf: default
 ---
 
-## What are Jupyter Notebooks?
+The Cal Adapt Analytics Engine maintains a collection of Jupyter Notebooks and an open source Python package `climakitae` to support data access, analytics, and vizualization for working with Cal Adapt climate datasets, especially for energy sector use cases. 
+
+## Jupyter Notebooks 
+
+### What are Jupyter Notebooks?
 
 The Analytics Engine utilizes Jupyter notebooks to be the user-facing method to showcase the variety of applications built upon tools developed as part of the `climakitae` Python library. Each of these notebooks can be used in multiple applications focused on, but not limited to, the energy sector in California supporting ratepayers through reliable and renewable energy management.
 
-## How to Use the Notebooks
+### How to Use the Notebooks
 
 The Jupyter notebooks linked below contain example code to support the user-identified applications and showcase how to use `climakitae` for data retrieval, subsetting, and general analysis. Interactive notebooks are publicly available on GitHub in the [`cae-notebooks`](https://github.com/cal-adapt/cae-notebooks) repository, and available on the [Analytics Engine JupyterHub](access-methods.qmd#data-access-with-the-analytics-engine-jupyterhub) for users with access. The notebooks provide step-by-step functionality to access, analyze, and plot climate data available through the Analytics Engine. The notebooks can be used as-is or serve as a starting point to adapt to a specific organization's needs, workflows, or particular applications.
 
 Python tools included in the notebooks provide examples for how to work with both the historical and projection data on the platform, and demonstrate how to move from the climate variables provided through the Analytics Engine to actionable information that can inform decision-making and risk assessments.
 
-## Notebook Types
+### Notebook Types
 
 Analytics Engine notebooks are organized into three categories to help users identify the right notebook for their needs and set expectations for how each is structured.
 
@@ -33,7 +38,7 @@ Analytics Engine notebooks are organized into three categories to help users ide
 
 Each notebook in the [AE Notebooks GitHub repository](https://github.com/cal-adapt/cae-notebooks) includes a categorical assignment in the [AE Navigation Guide](https://github.com/cal-adapt/cae-notebooks/blob/main/AE_navigation_guide.ipynb), which provides a full index of available notebooks organized by type, topic, and application.
 
-## Actively Maintained Notebooks
+### Actively Maintained Notebooks
 
 This set of notebooks is actively maintained by the Cal Adapt team to highlight how to use `climakitae`, as well as showcase some scientific topics of high interest and value, such as Global Warming Levels.
 
@@ -50,6 +55,35 @@ This set of notebooks is actively maintained by the Cal Adapt team to highlight 
 
 : Actively maintained Analytics Engine notebooks, available in the [`cae-notebooks`](https://github.com/cal-adapt/cae-notebooks) repository. {#tbl-notebooks .striped}
 
-## Other Notebooks
+### Other Notebooks
 
 The Cal Adapt team has an additional repository of notebooks that are **not** actively maintained, but are saved as reference for our users and developers. This includes notebooks developed with our partners for specific use-cases, notebooks used for one-off data or figure generation, among others. You can view and download these notebooks in the [`cae-archives`](https://github.com/cal-adapt/cae-archives/tree/master) repository on GitHub.
+
+## climakitae
+`climakitae` provides programmatic access to WRF dynamical downscaling, LOCA2 statistical downscaling, and several other relevant California climate datasets — with built-in tools for spatial clipping, temporal subsetting, warming-level analysis, unit conversion, and more. It's completely open source and actively maintained and improved upon by the Cal Adapt team. 
+
+For more information, see the following pages: 
+
+- `climakitae` on GitHub: <https://github.com/cal-adapt/climakitae>
+- `climakitae` docs page: <https://cal-adapt.github.io/climakitae/dev/>
+
+### Key features 
+
+- **Comprehensive Climate Data Access**: Retrieve climate variables from hosted climate model, weather station, and renewable energy datasets
+- **Downscaled Climate Models**: Access dynamical (WRF) and statistical (LOCA2) downscaling methods
+- **Spatial Analysis Tools**: Built-in support for geographic subsetting and spatial aggregation
+- **Climate Indices**: Calculate heat indices, warming levels, and extreme event metrics
+- **Flexible Data Export**: Export to NetCDF, CSV, and Zarr
+
+### Contributions 
+
+The Cal Adapt team welcomes contributions to the `climakitae` library. Please see the [contributing guidelines](https://github.com/cal-adapt/climakitae/blob/main/docs-mkdocs/contributing.md) for details on:
+
+- Reporting bugs
+- Requesting features
+- Submitting code changes
+- Improving documentation
+
+For setting up a development environment (editable install, tests, formatters), see the [Installation Guide on the wiki](https://github.com/cal-adapt/climakitae/wiki).
+
+When opening a pull request, please tag at least two project maintainers for review.

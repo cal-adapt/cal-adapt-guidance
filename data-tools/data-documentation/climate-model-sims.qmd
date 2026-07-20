@@ -113,7 +113,7 @@ LOCA2-Hybrid data is available for 15 GCMs with a total of 199 ensemble runs, do
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](../figures/static/tbl-loca2-availability.png)
+![Table of LOCA2-Hybrid data availability by variable group and scenario, colored by scenario.](../figures/static/tbl-loca2-availability.png)
 :::
 LOCA2-Hybrid data availability by variable group and scenario, colored by scenario.
 :::
@@ -155,7 +155,7 @@ WRF data is available for 8 GCMs with 1 ensemble run per emissions scenario, dow
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](../figures/static/tbl-wrf-projections.png)
+![Table of the number of WRF projection simulations available by scenario and spatial resolution, colored by scenario.](../figures/static/tbl-wrf-projections.png)
 :::
 Number of WRF projection simulations available by scenario and spatial resolution, colored by scenario.
 :::
@@ -199,7 +199,7 @@ When using warming levels, the Analytics Engine provides estimates for the cross
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](../figures/static/warming_trajectory_2degC.png)
+![Chart of the best estimate and 90% confidence interval for the year the world reaches 2.0°C of warming under the SSP3-7.0 scenario.](../figures/static/warming_trajectory_2degC.png)
 :::
 Best estimate and 90% confidence interval for the year the world will reach 2.0 °C of warming under the SSP 3-7.0 scenario. The median year of crossing is denoted by the vertical dashed line and is provided. The solid lines represent the first and last occurrence of the 5th and 95th percentiles crossing the designated warming level, with the range in years provided. For example, the median year of GCMs reaching 2.0°C of warming is in 2047, with a range of 24 years between the first and last occurrence. Figure produced by the Cal-Adapt: Analytics Engine based on data from the IPCC.
 :::
@@ -213,7 +213,7 @@ Best estimate and 90% confidence interval for the year the world will reach 2.0 
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](../figures/static/tbl-gwl-year-exceedance.png)
+![Table of the best estimate and 90% likely range for the year each SSP scenario reaches a given global warming level, colored by scenario.](../figures/static/tbl-gwl-year-exceedance.png)
 :::
 Best estimate (with 90% very likely range in parentheses) for the year each SSP scenario reaches a given global warming level, colored by scenario. Summarized from data from the IPCC.
 :::

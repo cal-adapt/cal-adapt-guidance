@@ -289,7 +289,7 @@ To open the S3 Zarr store go to the menu item Layer→Add Layer→Add Raster Lay
 As an example to load the multi-model mean extreme heat absolute Zarr store, which is stored at various warming levels, enter “tmp/era/wrf/cae/mm4mean/ssp370/gwl/TX99p/d03/” for Object Key.
 
 ::: {#fig-qgis-data-access1}
-![](figures/static/qgis_data_access1.png)
+![Screenshot of the QGIS Data Source Manager Raster dialog configured to connect to the cadcat S3 bucket via the AWS S3 protocol.](figures/static/qgis_data_access1.png)
 
 The Data Source Manager | Raster dialog in QGIS, configured to connect to the `cadcat` S3 bucket via the AWS S3 protocol.
 :::
@@ -297,7 +297,7 @@ The Data Source Manager | Raster dialog in QGIS, configured to connect to the `c
 Clicking the Add button will bring up another menu. Select the variable name, in this case, TX99p. The shape of the array can be seen in the description with 472 by 223 spatial cells and 5 warming level bands.
 
 ::: {#fig-qgis-data-access2}
-![](figures/static/qgis_data_access2.png)
+![Screenshot of the QGIS Select Items to Add dialog showing the TX99p variable with a shape of 5x472x223.](figures/static/qgis_data_access2.png)
 
 The Select Items to Add dialog, showing the `/TX99p` variable with a shape of 5x472x223.
 :::

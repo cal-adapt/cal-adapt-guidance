@@ -13,119 +13,119 @@ This team is led by Dr. Owen Doherty (Eagle Rock Analytics, Inc.) and organized 
 :::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/owen-doherty.jpg)
+![Headshot of Owen Doherty](images/team/owen-doherty.jpg)
 <p class="team-name"><a href="https://www.linkedin.com/in/owen-doherty-b5108914a/" target="_blank">Owen Doherty</a></p>
 <p class="team-title">Principal Research Scientist</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/mark-koenig.jpg)
+![Headshot of Mark Koenig](images/team/mark-koenig.jpg)
 <p class="team-name"><a href="https://www.linkedin.com/in/mark-koenig-7920486/" target="_blank">Mark Koenig</a></p>
 <p class="team-title">Vice President Of Operations And Strategy</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/colie-roman.png)
+![Headshot of Colie Roman](images/team/colie-roman.png)
 <p class="team-name"><a href="https://www.linkedin.com/in/jacola-roman-4464b8178/" target="_blank">Colie Roman</a></p>
 <p class="team-title">Senior Atmospheric Scientist</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/neil-schroeder.jfif)
+![Headshot of Neil Schroeder](images/team/neil-schroeder.jfif)
 <p class="team-name"><a href="https://www.linkedin.com/in/nschroed/" target="_blank">Neil Schroeder</a></p>
 <p class="team-title">Senior Python Developer</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/victoria-ford.png)
+![Headshot of Victoria Ford](images/team/victoria-ford.png)
 <p class="team-name"><a href="https://www.linkedin.com/in/victorialford/" target="_blank">Victoria Ford</a></p>
 <p class="team-title">Atmospheric Scientist</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/beth-mcclenny.jpeg)
+![Headshot of Beth McClenny](images/team/beth-mcclenny.jpeg)
 <p class="team-name"><a href="https://www.linkedin.com/in/beth-mcclenny-7986a120b/" target="_blank">Beth McClenny</a></p>
 <p class="team-title">Atmospheric Scientist</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/will-krantz.jpg)
+![Headshot of Will Krantz](images/team/will-krantz.jpg)
 <p class="team-name"><a href="https://www.linkedin.com/in/will-krantz-23693221/" target="_blank">Will Krantz</a></p>
 <p class="team-title">Climate Scientist</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/nancy-freitas.jpg)
+![Headshot of Nancy Freitas](images/team/nancy-freitas.jpg)
 <p class="team-name"><a href="https://www.linkedin.com/in/nancy-freitas-67892a74/" target="_blank">Nancy Freitas</a></p>
 <p class="team-title">Post-Doctoral Researcher</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/hector-inda.jpg)
+![Headshot of Héctor Inda](images/team/hector-inda.jpg)
 <p class="team-name">Héctor Inda</p>
 <p class="team-title">Atmospheric Scientist</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/nicole-keeney.jpg)
+![Headshot of Nicole Keeney](images/team/nicole-keeney.jpg)
 <p class="team-name"><a href="https://www.linkedin.com/in/nicole-keeney/" target="_blank">Nicole Keeney</a></p>
 <p class="team-title">Research Software Engineer</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/calvin-chen.jpg)
+![Headshot of Calvin Chen](images/team/calvin-chen.jpg)
 <p class="team-name"><a href="http://linkedin.com/in/chencalvin99" target="_blank">Calvin Chen</a></p>
 <p class="team-title">Python Developer</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/ana-ordonez.jpg)
+![Headshot of Ana Ordonez](images/team/ana-ordonez.jpg)
 <p class="team-name"><a href="https://www.linkedin.com/in/ana-ordonez-458612117" target="_blank">Ana Ordonez</a></p>
 <p class="team-title">Senior Research Associate</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/vanessa-machuca.png)
+![Headshot of Vanessa Machuca](images/team/vanessa-machuca.png)
 <p class="team-name">Vanessa Machuca</p>
 <p class="team-title">Research Associate</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/justine-bui.jpg)
+![Headshot of Justine Bui](images/team/justine-bui.jpg)
 <p class="team-name"><a href="https://www.linkedin.com/in/justine-luong-bui/" target="_blank">Justine Bui</a></p>
 <p class="team-title">Engagement Co-Lead</p>
 <p class="team-association">Spatial Informatics Group</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/ashley-conrad-saydah.jpg)
+![Headshot of Ashley Conrad-Saydah](images/team/ashley-conrad-saydah.jpg)
 <p class="team-name"><a href="https://www.linkedin.com/in/ashley-conrad-saydah-02bb565/" target="_blank">Ashley Conrad-Saydah</a></p>
 <p class="team-title">Project and Policy Advisor</p>
 <p class="team-association">Founder and Principal, Sowing Change Strategies</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/kripa-jagannathan.jpg)
+![Headshot of Kripa Jagannathan](images/team/kripa-jagannathan.jpg)
 <p class="team-name"><a href="https://www.linkedin.com/in/kripa-jagannathan-38148a13/" target="_blank">Kripa Jagannathan</a></p>
 <p class="team-title">Engagement Co-Lead</p>
 <p class="team-association">Climate and Ecosystem Sciences Division, Lawrence Berkeley National Laboratory</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
-![](images/team/andy-jones.jpg)
+![Headshot of Andy Jones](images/team/andy-jones.jpg)
 <p class="team-name"><a href="https://erg.berkeley.edu/people/andrew-d-jones/" target="_blank">Andy Jones</a></p>
 <p class="team-title">Scientific Advisor</p>
 <p class="team-association">Climate and Ecosystem Sciences Division, Lawrence Berkeley National Laboratory</p>

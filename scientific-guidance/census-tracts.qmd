@@ -42,7 +42,7 @@ In dense urban areas, multiple census tracts may fall entirely within a single m
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/census_tract_fig1.png)
+![Map of San Francisco showing a single climate model grid cell overlapping seven census tracts.](figures/static/census_tract_fig1.png)
 :::
 :::
 
@@ -59,7 +59,7 @@ Census tracts and grid cells are not a perfect one-to-one match. In rural areas,
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/census_tract_fig2.png)
+![Map of a large rural census tract in eastern Fresno County spanning multiple climate model grid cells across the Sierra Nevada foothills.](figures/static/census_tract_fig2.png)
 :::
 :::
 

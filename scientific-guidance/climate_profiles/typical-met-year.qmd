@@ -119,7 +119,7 @@ The TMY method specifically uses a [cumulative distribution function](/glossary/
 <iframe src="figures/html/tmy_cdf_annual.html" width="100%" height="500px" frameborder="0"></iframe>
 ```
 ::: {.content-visible when-format="pdf"}
-![](figures/static/tmy_cdf_annual.png)
+![CDF of long-term climatological daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport, 1990–2020.](figures/static/tmy_cdf_annual.png)
 :::
 An example of the long-term climatological conditions of daily max air temperature, for use in a TMY. This CDF represents the baseline conditions of each month's max air temperatures in 4 bias-adjusted WRF models at Los Angeles International Airport (LAX) from 1990-2020.
 :::
@@ -132,7 +132,7 @@ Next, the CDF for each month of each year is calculated (i.e., January 2001, Jan
 <iframe src="figures/html/tmy_cdf_mon_yr_grouped.html" width="100%" height="500px" frameborder="0"></iframe>
 ```
 ::: {.content-visible when-format="pdf"}
-![](figures/static/tmy_cdf_mon_yr_grouped.png)
+![CDF of candidate month daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport for every year-month combination in 2015.](figures/static/tmy_cdf_mon_yr_grouped.png)
 :::
 
 An example of a candidate month’s daily max air temperature, for use in a TMY. This CDF represents the conditions of max air temperatures in 4 bias-adjusted WRF models at Los Angeles International Airport (LAX) for every year-month combination in 2015. The TMY process identifies the closest candidate month to the long-term climatological conditions to pick a “typical” month of January. For example, one would look for the closest instance of the distribution in this figure to that of Figure 1.
@@ -176,7 +176,7 @@ Smoothing at the monthly interface between months is performed via curve fit to 
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/tmy_8760_by_variable.png)
+![Historical TMY hourly profile for Los Angeles International Airport for the 2038–2068 period, from MPI-ESM1-2-HR, shown across all weather variables.](figures/static/tmy_8760_by_variable.png)
 :::
 An example historical TMY hourly profile for Los Angeles International Airport (LAX) for the 2038–2068 period, from MPI-ESM1-2-HR.
 :::

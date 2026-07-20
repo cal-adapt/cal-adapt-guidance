@@ -55,7 +55,7 @@ Each scenario's **multi-model mean (MMM)** is shown as a bold line; the **shaded
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/scenario_plume.png)
+![Timeseries plume chart of California annual temperature anomaly multi-model means and model-spread envelopes for three SSP emissions scenarios.](figures/static/scenario_plume.png)
 :::
 **California annual temperature anomaly, three emissions scenarios.** Each bold line is the multi-model mean of California-mean annual temperature anomaly (relative to 1981–2010) under one SSP; the shaded envelope spans the full range across the LOCA2 models within that scenario. The vertical dashed line at 2040 marks the approximate onset of scenario divergence.
 :::
@@ -78,7 +78,7 @@ The spread between the highest and lowest scenario MMMs, plotted as a single lin
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/scenario_spread_ts.png)
+![Timeseries of the growing spread between SSP5-8.5 and SSP2-4.5 multi-model mean temperature anomalies over time.](figures/static/scenario_spread_ts.png)
 :::
 **Growth of scenario uncertainty over time.** The difference between the SSP5-8.5 and SSP2-4.5 multi-model means at each year (filled area = annual spread; bold line = 10-year rolling mean). The vertical dashed line marks 2040; the annotation marks the end-of-century spread.
 :::
@@ -99,7 +99,7 @@ The plume chart shows trends; this bar chart makes the comparison between planni
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/scenario_period_bars.png)
+![Bar chart of period-mean California temperature anomaly by emissions scenario across near-term, mid-century, and end-of-century planning horizons, with model spread shown as bars.](figures/static/scenario_period_bars.png)
 :::
 **Period-mean California temperature anomaly by scenario.** Dots are the multi-model means for each scenario over three planning horizons (near-term 2020–2040, mid-century 2041–2070, end-of-century 2071–2100); bars span the full model spread (±1 standard deviation across the LOCA2 models).
 :::
@@ -125,7 +125,7 @@ Their sum approximates total uncertainty (excluding internal variability, which 
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/scenario_vs_model_variance.png)
+![Two-panel chart of scenario versus model variance over time, showing absolute variance and fractional contribution, with the crossover year marked where scenario uncertainty exceeds model uncertainty.](figures/static/scenario_vs_model_variance.png)
 :::
 **Scenario vs. model uncertainty over time.** Left: absolute variance of the scenario component, the model component, and their total. Right: fractional contributions of each component to total variance. The dashed line marks the crossover year after which scenario uncertainty exceeds model uncertainty.
 :::
@@ -153,7 +153,7 @@ The timeseries above is a California-wide average. Scenario uncertainty is not s
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![](figures/static/scenario_spatial_maps.png)
+![Three-panel map of California end-of-century temperature anomaly under SSP2-4.5 and SSP5-8.5, and their difference showing the spatial field of scenario uncertainty.](figures/static/scenario_spatial_maps.png)
 :::
 **California temperature anomaly at end-of-century, scenario sensitivity.** Left and centre: multi-model mean temperature anomaly (relative to 1981–2010) under SSP2-4.5 and SSP5-8.5 over 2071–2100. Right: the difference (SSP5-8.5 − SSP2-4.5) shows the local temperature change (SSP5-8.5 − SSP2-4.5) expressed as a fraction of the domain-mean temperature change; positive values indicate above-average warming, negative values indicate below-average warming, relative to the spatial mean.
 :::

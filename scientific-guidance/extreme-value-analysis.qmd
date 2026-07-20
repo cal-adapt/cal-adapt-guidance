@@ -89,9 +89,9 @@ The [cumulative distribution function (CDF)](/glossary/index.qmd#cumulative-dist
 Figure 1 provides a demonstration of this procedure for the Maximum case.
 
 ::: {#fig-eva-return-probability layout-ncol=2}
-![](figures/static/eva_figure1_gev_distribution.png)
+![GEV distribution fitted to an annual maximum series of daily maximum air temperature.](figures/static/eva_figure1_gev_distribution.png)
 
-![](figures/static/eva_figure1_cdf.png)
+![CDF plot showing a return probability of 0.2 for a return value of 115°F.](figures/static/eva_figure1_cdf.png)
 
 This figure shows the CDF (right) for a GEV distribution (left) fitted to an AMS of daily maximum air temperature from a simulation. The return probability of 0.2 is read for a return value of 115°F (1 - 0.8 = 0.2), meaning that there is a 20% chance of temperatures exceeding 115°F in any given year at this location.
 :::
@@ -112,7 +112,7 @@ A [percentage point function](/glossary/index.qmd#percentage-point-function) (PP
 Figure 2 provides a demonstration of this procedure for the Maximum case.
 
 ::: {#fig-eva-return-value}
-![](figures/static/eva_figure2_ppf.png){width=70%}
+![PPF plot showing a return value of 115°F for a return probability of 0.2.](figures/static/eva_figure2_ppf.png){width=70%}
 
 This figure shows the PPF for a GEV distribution fitted to an AMS of daily maximum air temperature from a simulation. The return value of 115°F is read for the return probability of 0.2 (1 - 0.8 = 0.2), meaning that there is a 20% chance of temperatures exceeding 115°F in any given year at this location.
 :::

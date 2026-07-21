@@ -2,3 +2,5 @@ citation: false
 format:
   html:
     include-after-body: ../../filters/_category-badge-no-link.html
+    template-partials:
+      - ../../templates/blog-post/title-block.html

@@ -1,0 +1,18 @@
+<script>
+(function () {
+  function unwrapCategoryLinks() {
+    document
+      .querySelectorAll("header.quarto-title-block .quarto-category a")
+      .forEach(function (a) {
+        var span = document.createElement("span");
+        span.textContent = a.textContent;
+        a.replaceWith(span);
+      });
+  }
+  unwrapCategoryLinks();
+  new MutationObserver(unwrapCategoryLinks).observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+})();
+</script>

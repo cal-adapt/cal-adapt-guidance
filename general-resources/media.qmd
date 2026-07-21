@@ -1,0 +1,65 @@
+---
+title: "Media"
+citation: false
+format:
+  html: default
+---
+
+This section offers a collection of videos, presentations, and other visual resources that showcase the work of the Cal-Adapt: Analytics Engine. It includes recordings from past workshops and trainings, YouTube tutorials covering core tools and methods, and slide decks and posters presented at conferences such as AGU. Together, these materials provide an accessible way for users to learn about the platform's capabilities, see real-world applications in action, and follow along with demonstrations at their own pace.
+
+Whether visitors are just getting started with the Analytics Engine or looking for a deeper technical dive, this page serves as a central hub for learning and engagement. It will continue to be updated with new videos, presentations, and outreach materials as they become available.
+
+## Posters
+
+```{=html}
+<div class="media-grid" data-media-type="poster"></div>
+```
+
+## Slide Decks
+
+```{=html}
+<div class="media-grid" data-media-type="slide_deck"></div>
+```
+
+## Other
+
+```{=html}
+<div class="media-grid" data-media-type="other"></div>
+```
+
+```{=html}
+<script src="media-data.js"></script>
+<script>
+(function () {
+  var ICONS = {
+    poster: "bi-file-earmark-pdf-fill",
+    other: "bi-file-earmark-pdf-fill",
+    slide_deck: "bi-easel2-fill",
+    youtube: "bi-play-fill",
+  };
+
+  document.querySelectorAll("[data-media-type]").forEach(function (grid) {
+    var type = grid.getAttribute("data-media-type");
+    MEDIA_DATA.filter(function (item) {
+      return item.type === type;
+    }).forEach(function (item) {
+      var card = document.createElement("a");
+      card.className = "media-card";
+      card.href = item.url;
+      card.target = "_blank";
+      card.rel = "noopener noreferrer";
+      card.innerHTML =
+        '<div class="media-thumb">' +
+          '<img src="' + item.thumbnail + '" alt="' + item.title + '">' +
+          '<span class="media-type-icon ' + item.type + '"><i class="bi ' + ICONS[item.type] + '"></i></span>' +
+        "</div>" +
+        '<div class="media-body">' +
+          "<h4>" + item.title + "</h4>" +
+          "<p>" + item.description + "</p>" +
+        "</div>";
+      grid.appendChild(card);
+    });
+  });
+})();
+</script>
+```

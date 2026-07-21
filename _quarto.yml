@@ -6,6 +6,7 @@ project:
   resources:
     - assets/pdfs/**
     - assets/cards/**
+    - assets/media/**
 
 website:
   title: "Cal-Adapt: Analytics Engine"
@@ -27,7 +28,7 @@ website:
           - href: glossary/index.qmd
           - href: general-resources/reference-library.qmd
           - text: Media
-            href: general-resources/media/index.qmd
+            href: general-resources/media.qmd
           - text: Citation Guide
             href: general-resources/how-to-cite.qmd
       - text: Scientific Guidance
@@ -78,12 +79,7 @@ website:
         - general-resources/getting-started.qmd
         - glossary/index.qmd
         - general-resources/reference-library.qmd
-        - text: "Media"
-          href: general-resources/media/index.qmd
-          contents:
-            - general-resources/media/video-tutorials.qmd
-            - general-resources/media/webinars.qmd
-            - general-resources/media/presentations.qmd
+        - general-resources/media.qmd
     - id: scientific-guidance
       title: "Scientific Guidance"
       style: docked
@@ -153,6 +149,8 @@ format:
     citation: true
     appendix-cite-as: display
     include-after-body: glossary/_glossary-tooltip-inline.html
+    filters:
+      - filters/back-to-blog.lua
   pdf:
     toc: false
     citation: true

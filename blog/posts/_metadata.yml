@@ -1,4 +1,4 @@
 citation: false
 format:
   html:
-    include-after-body: /filters/_category-badge-no-link.html
+    include-after-body: ../../filters/_category-badge-no-link.html

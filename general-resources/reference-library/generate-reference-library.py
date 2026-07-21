@@ -6,9 +6,11 @@ Edit reference-library-data.csv to add, remove, or re-categorize references
 The "category" column supports multiple topics per reference: separate them
 with a semicolon, e.g. "WRF; Bias Correction".
 
-The "pdf" column is optional: a root-relative path (e.g.
-/assets/pdfs/some-file.pdf) to a PDF hosted on this site. When set, the
+The "pdf" column is optional: a path relative to this page (e.g.
+../assets/pdfs/some-file.pdf) to a PDF hosted on this site. When set, the
 table's link button points to that PDF and reads "View" instead of "Link".
+Use a relative path, not a root-relative ("/assets/...") one — the site is
+served from a subpath on GitHub Pages, so a root-relative path 404s there.
 
 Citation text is formatted from references.bib via Quarto's bundled pandoc
 citeproc, using the site's citation-style.csl, so it matches the citation
@@ -74,9 +76,14 @@ for m in re.finditer(
     re.DOTALL,
 ):
     citation = re.sub(r"\s+", " ", m.group(2)).strip()
-    # The CSL appends the source URL/DOI as a clickable link; drop it here since
-    # each row already has its own Link/View button.
-    citation = re.sub(r'\s*<a href="[^"]*">[^<]*</a>\.?\s*$', "", citation).rstrip()
+    # The CSL appends the source URL/DOI as a clickable link; each row already
+    # has its own Link/View button, so drop the hyperlink but keep the DOI/URL
+    # text itself as part of the citation.
+    citation = re.sub(
+        r'\s*<a href="[^"]*">([^<]*)</a>\.?\s*$',
+        lambda m: " " + m.group(1).rstrip(".") + ".",
+        citation,
+    ).rstrip()
     if not citation.endswith("."):
         citation += "."
     citation_by_key[m.group(1)] = citation

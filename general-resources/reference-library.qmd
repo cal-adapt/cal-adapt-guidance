@@ -16,10 +16,14 @@ For the latest memorandums on the datasets and methodology behind the Analytics 
 <script src="https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js"></script>
 <script src="reference-library/reference-library-data.js"></script>
 <style>
+  #references-table {
+    table-layout: fixed;
+  }
   #references-table > tbody > tr > td {
     padding-top: 0.85rem;
     padding-bottom: 0.85rem;
     vertical-align: top;
+    overflow-wrap: anywhere;
   }
   #references-table .ref-description {
     font-weight: 500;
@@ -143,17 +147,18 @@ $(document).ready(function () {
       var table = $('#references-table').DataTable({
         data: data,
         ordering: false,
+        autoWidth: false,
         columns: [
           {
             data: 'categories',
-            width: '16%',
+            width: '18%',
             render: function (data) {
               return data.join(', ');
             }
           },
           {
             data: 'description',
-            width: '74%',
+            width: '66%',
             render: function (data, type, row) {
               if (type === 'display') {
                 return '<div class="ref-description">' + data + '</div>'
@@ -164,7 +169,7 @@ $(document).ready(function () {
           },
           {
             data: 'link',
-            width: '10%',
+            width: '16%',
             render: function (data, type, row) {
               if (!data) return '';
               var icon = row.isPdf ? 'bi-file-earmark-pdf-fill' : 'bi-link-45deg';

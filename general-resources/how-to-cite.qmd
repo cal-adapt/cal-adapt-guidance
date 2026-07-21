@@ -1,0 +1,170 @@
+---
+title: "How to Cite Cal-Adapt Materials"
+citation: false
+format:
+  html: default
+---
+
+Cal-Adapt produces a range of citable outputs that can be used in state planning, research, and public reporting. This guide provides users with recommended citation formats for each material type, so that Cal-Adapt outputs are attributed consistently and can be reliably traced back to their source. 
+Citation formats below follow APA style unless otherwise noted. Where a persistent identifier (DOI) is available, it should always be included, as it provides the most stable and version-specific reference.
+
+For any questions about citation formats, DOIs, or attribution for a specific Cal-Adapt output, please email the Cal-Adapt team at support@cal-adapt.org. 
+
+## Cal-Adapt Content on Zenodo
+Formal Cal-Adapt outputs (such as guidance documents, methodology reports, white papers, and derived datasets) are archived in the Cal-Adapt community on Zenodo, which is the authoritative source for DOIs referenced elsewhere in this guide. 
+
+Zenodo Cal-Adapt community: <https://zenodo.org/communities/cal-adapt/>
+
+::: {.callout-note title="Note"}
+For convenience, the citation format can be found at the bottom of the Zenodo page and copied directly. 
+:::
+
+## climakitae 
+`climakitae` is Cal-Adapt’s open source Python library. Each release is archived on Zenodo with a version-specific DOI. 
+
+DOI on Zenodo: <https://doi.org/10.5281/zenodo.18111935> 
+
+This DOI represents all versions, and will always resolve to the latest one. When citing climakitae, always cite the specific version used in the analysis, as functionality and outputs may change between releases.
+
+
+::: {#box-3 .alert .alert-primary}
+**Example citation**: 
+
+Nicole Keeney, Calvin Chen, Neil Schroeder, Ana Ordonez, Eric Lehmer, Victoria Ford, Naomi Goldenson, Cora Kingdon, Tianchi-Liu, Beth McClenny, Brian Galey, Will Krantz, Owen Doherty, Grace Di Cecco, Vanessa Machuca& Nabig Chaudhry. (2026). cal-adapt/climakitae: v1.5.5 (Version v1.5.5) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.18111935 
+:::
+
+## Analytics Engine Jupyter Notebooks 
+The Cal-Adapt: Analytics Engine JupyterHub provides example and workflow notebooks publicly available and hosted on the cae-notebooks GitHub repository. Please cite the specific notebook used.
+
+::: {#box-3 .alert .alert-primary}
+**General format**: 
+
+Cal-Adapt. (Year). Notebook title. [Jupyter Notebook]. GitHub or JupyterHub. Retrieved Month DD, Year from [link to notebook]. 
+
+**Example for the Data Access Notebook:** 
+
+Cal-Adapt. (2026). Data Access Notebook [Jupyter notebook]. GitHub. Retrieved July 14, 2026 from https://github.com/cal-adapt/cae-notebooks/blob/main/basic_data_access.ipynb 
+:::
+
+## Cal-Adapt Website Content
+
+### Analytics Engine Website (this site)
+base url: <https://analytics.cal-adapt.org/> 
+
+An APA-style citation is auto-generated from structured page metadata and displayed at the bottom of every page. 
+
+::: {#box-3 .alert .alert-primary}
+**Format:**
+Cal-Adapt. (Year). Webpage title. Cal-Adapt. [link to page]
+
+**Example for Getting Data at the Census Tract Level:**
+
+Cal-Adapt. (2026). Getting Data at the Census Tract Level. Cal-Adapt. https://analytics.cal-adapt.org/guidance/using_in_decision_making/census-tracts/ 
+:::
+
+### Data Explorer Web Tools 
+base url: <https://cal-adapt.org/>
+
+Data Explorer tools can be cited in APA format. 
+
+::: {#box-3 .alert .alert-primary}
+**Format:**
+Cal-Adapt. (Year). Webpage title. Cal-Adapt. Link
+
+**Example for the Climate Metrics Map:**
+Cal-Adapt. (2026). Climate Metrics Map. Cal-Adapt. https://cal-adapt.org/dashboard/climate-metrics-map 
+:::
+
+## Datasets
+
+### Datasets Produced/Derived by Cal-Adapt 
+Derived datasets are those that Cal-Adapt has processed, downscaled, or otherwise transformed from source data. These are always published on the Cal-Adapt Zenodo Community and should be cited using the standard Zenodo dataset format, including all contributing authors. 
+
+::: {#box-3 .alert .alert-primary}
+**Example for Climate Profiles dataset:**  
+Ford, V., Machuca, V., Ordonez, A., Chen, C., Schroeder, N.& Keeney, N. (2025). Annual Hourly Climate Profiles: Typical Meteorological Year and Standard Year Profiles in California with Dynamically-Downscaled Climate Models (Version v1.0.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.18135273 
+:::
+
+Note that this APA style citation can be directly pulled from Zenodo. 
+
+### Original Source Dataset
+Where a Cal-Adapt tool relies on an upstream dataset (for example, a foundational climate scenario dataset), that original source should be cited directly. On the legacy CMIP5 Cal-Adapt website (<https://cmip5.cal-adapt.org/>), each tool includes a section listing its underlying datasets. The current Cal-Adapt website (<https://cal-adapt.org/>) is working to make this listing consistent and easy to locate across all CMIP6 tools. 
+
+::: {#box-3 .alert .alert-primary}
+
+**Example for the LOCA downscaled dataset:**
+
+Pierce, D. W. and D. R. Cayan. (2015). Downscaling humidity with Localized Constructed Analogs (LOCA) over the conterminous United States [Dataset]. UC San Diego. https://cirrus.ucsd.edu/~pierce/LOCA2_humidity/f7db9baa82aaa3aa80015c4d8e93b8ea/ 
+
+**Example for the scientific publication associated with the LOCA downscaled dataset:**
+
+Pierce, D. W., J. F. Kalansky, and D. R. Cayan, (Scripps Institution of Oceanography). 2018. Climate, Drought, and Sea Level Rise Scenarios for the Fourth California Climate Assessment. California’s Fourth Climate Change Assessment, California Energy Commission. Publication Number: CNRA-CEC-2018-006. 
+:::
+
+### External Datasets Hosted by Cal-Adapt 
+Applies to an externally produced dataset made available through the Analytics Engine cloud [data catalog](/data-tools/data-catalog.qmd). When retrieved from the Analytics Engine cloud data catalog, please cite in APA style.
+
+::: {#box-3 .alert .alert-primary}
+**Format:**
+
+Cal-Adapt. (Year). Name of dataset [Dataset]. Retrieved Month DD, Year, from https://cadcat.s3.amazonaws.com/index.html 
+
+**Example for HadISD station data:**
+
+Cal-Adapt. (n.d.). HadISD station data [Dataset]. Retrieved July 20, 2026, from https://cadcat.s3.amazonaws.com/index.html#hadisd/ 
+:::
+
+## Presentations
+
+### Slide Decks 
+Slide decks are posted to the Analytics Engine website’s Media page. 
+
+::: {#box-3 .alert .alert-primary}
+**Format:** 
+
+Author / Presenter. (Year). Title of presentation [Slide deck]. Cal-Adapt. [link].
+
+**Example for the California’s 5th Climate Assessment Authors Meeting:**
+
+Ford, V. & Krantz, W. (February 18, 2025). California’s 5th Climate Assessment Authors Meeting [Slide deck]. Cal-Adapt. https://drive.google.com/file/d/1Uhk0cTbDJ_wXRGn15TDip6oJtVsMo8qa/view?usp=sharing
+:::
+
+### Video/Webinar Recordings
+Video recordings are posted to the [Cal-Adapt Youtube channel](https://www.youtube.com/@Cal-Adapt) and embedded on the Analytics Engine website’s Media page. 
+
+::: {#box-3 .alert .alert-primary}
+**Format:**
+Presenter / Host / Cal-Adapt. (Month Day, Year). Title of video [Video]. Youtube. Link
+
+**Example for the Analytics Engine’s Working Group 10 meeting:**
+
+Roman, C. & Cal-Adapt Team. (April 2, 2026). Analytics Engine | Working Group 10 | Climate Finder Tools and Compound Events [Video]. Youtube. https://youtu.be/MPRF_PPE7So?si=H_g2clE4Z2vIYkUe 
+:::
+
+## Figures 
+Cal-Adapt figures include graphs, maps, and other visuals. 
+
+### In-Caption (Short Form)
+
+::: {#box-3 .alert .alert-primary}
+**Format:**
+
+Title of figure (Cal-Adapt, Year). 
+
+**Example:**
+
+Table 1: Comparison of the dynamically downscaled (WRF) and hybrid-statistically downscaled (LOCA2-Hybrid) data foundations. (Cal-Adapt, 2026). 
+::: 
+
+### Full Reference List Entry
+
+::: {#box-3 .alert .alert-primary}
+
+**Format:**
+
+Cal-Adapt. (Year). Tool/page title where the figure was generated. Cal-Adapt. Link
+
+**Example:**
+
+Cal-Adapt. (2026). Analytics Engine Data Catalog. Cal-Adapt. https://analytics.cal-adapt.org/data/catalog/ 
+:::

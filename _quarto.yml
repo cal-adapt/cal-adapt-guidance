@@ -28,6 +28,8 @@ website:
           - href: general-resources/reference-library.qmd
           - text: Media
             href: general-resources/media/index.qmd
+          - text: Citation Guide
+            href: general-resources/how-to-cite.qmd
       - text: Scientific Guidance
         menu:
           - href: scientific-guidance/general-climate-guidance/index.qmd

@@ -18,6 +18,10 @@ format:
   pdf: default
 ---
 
+## Acknowledgments
+
+We thank our many collaborators who contributed to the development of these guiding principles, including California Investor Owned Utilities, state agencies, consulting groups, and researchers. We also specifically thank Grace Di Cecco and Naomi Goldenson for their input on early drafts of the principles.
+
 ## Preamble
 
 The purpose of this page is to provide users of climate data with broad principles and a process that can be followed when working with climate data for different applications. This process goes through the various steps in climate data analyses – from identifying data needs and choosing the right products, to analysing data and reporting on climate-related results. The principles were developed through 2.5 years of iterative deliberations among different scientists of the Cal-Adapt Analytics Engine Project, with regular feedback from key climate data users (including energy utilities) at various steps of the process. The principles try to balance scientific rigor and the practical constraints of data use to afford users different options to work with climate data. These principles can be useful for anyone who is currently integrating or looking to integrate climate data into different applications or decision-contexts.
@@ -36,7 +40,7 @@ This page does not include principles on how to conduct specific analyses downst
 
 ## Summary of Principles
 
-- **Principle 1: Scope and identify data needs**
+- [**Principle 1: Scope and identify data needs**](/scientific-guidance/general-climate-guidance/guiding-principles.html#principle-1-scope-and-identify-data-needs)
   - Identify climate data applications
   - Identify audience for the analysis and results
   - Involve relevant people
@@ -45,41 +49,47 @@ This page does not include principles on how to conduct specific analyses downst
   - Determine risk and uncertainty tolerance
   - Evaluate technical capabilities
   - Evaluate computational capacity
-- **Principle 2: Catalog available data**
+
+- [**Principle 2: Catalog available data**](/scientific-guidance/general-climate-guidance/guiding-principles.html#principle-2-catalog-available-data)
   - Identify all datasets covering the spatial domain
   - Catalog data details for each dataset
   - Review metadata
   - Identify available user guidance
   - Identify data-related regulations or policies
-- **Principle 3: Screen available datasets against requirements**
+
+- [**Principle 3: Screen available datasets against requirements**](/scientific-guidance/general-climate-guidance/guiding-principles.html#principle-3-screen-available-datasets-against-requirements)
   - Conduct initial screening for fit of datasets
   - Revisit important data considerations/criteria
   - Assess tradeoffs between datasets
   - If data size is a constraint, revisit spatial and temporal scale choices
   - Select datasets that fulfil the most important data considerations/criteria
   - Consider a preliminary comparative analysis between multiple datasets
-- **Principle 4: Assess credibility of data**
+
+- [**Principle 4: Assess credibility of data**](/scientific-guidance/general-climate-guidance/guiding-principles.html#principle-4-assess-credibility-of-data)
   - Identify existing credibility assessments
   - Critically review assessments to understand approach, known biases, and credibility at multiple scales
   - Identify the most pertinent credibility-related considerations and determine if elimination of models/datasets is necessary
   - Document reasons for elimination of models/datasets
   - Cross-check to ensure that data spans a range of outcomes
   - Determine if a context-specific credibility assessment is necessary
-- **Principle 5: Sub-select data**
+
+- [**Principle 5: Sub-select data**](/scientific-guidance/general-climate-guidance/guiding-principles.html#principle-5-sub-select-data)
   - Determine whether sub-selection of models is necessary
   - Develop a principled, step-by-step plan for choosing a well-balanced sample
   - Conduct an exploratory analysis to characterize the distribution of model runs
   - Use the distribution plots to choose an appropriate sample based on context
   - Cross-check that the sample spans a range of outcomes
   - Document and communicate the sub-selection approach
-- **Principle 6: Analyze data and summarize results**
+
+- [**Principle 6: Analyze data and summarize results**](/scientific-guidance/general-climate-guidance/guiding-principles.html#principle-6-analyze-data-and-summarize-results)
   - Revisit the purpose and audience for the data analysis
   - Identify metrics, statistical analyses, and aggregations needed to analyze data
   - Develop a step-by-step method to compute metrics, aggregate across scales, and synthesize across models and scenarios
   - Consider model weighting, presenting results as change signals versus absolute values, and framing impact relative to natural variability
   - Evaluate uncertainty
   - Document and communicate the analysis approach and limitations
-- **Principle 7: Evaluate and document the analysis**
+
+- [**Principle 7: Evaluate and document the analysis**](/scientific-guidance/general-climate-guidance/guiding-principles.html#principle-7-evaluate-and-document-the-analysis)
   - Evaluate if the analysis answered the original questions
   - If questions were not answered, revisit previous principles or reframe the original question
   - Finalize documentation of the workflow
@@ -374,7 +384,3 @@ It is generally recommended that the chosen baseline be at least 30 years long t
 - Sometimes the questions we ask of the data cannot be answered, because of the data's inherent limitations. It is important to understand that a "non-result" can still be a valid answer to your original question and may provide meaningful information about the question and/or analysis (e.g. the uncertainty range is too large to distinguish a signal, or the statistical significance is too low). Do not cherry-pick results to answer the original question.
 - The goal of documenting your workflow should be to ensure that others can replicate or build upon your analysis in the future. Consider focusing on: transformations to the original dataset, spatial or temporal aggregations or disaggregations, coordinate system transformations, metric calculations, statistical tests applied, technical documentation of developed code, and data download format.
 - Consider sharing your results, data, and analysis via an open-source forum, such as an open-access code repository (e.g. GitHub), online blog post, or open-access journal (if appropriate). Be aware that many scientific journals and regulatory institutions strongly recommend — if not require — that code and data be open-access and citable via DOI.
-
-## Acknowledgments
-
-Kripa Jagannathan and Nancy Freitas contributed equally to this document. Naomi Goldenson and Grace Di Cecco provided review and feedback. This work was supported by California Energy Commission (CEC) funding.

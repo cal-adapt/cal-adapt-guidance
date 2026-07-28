@@ -102,11 +102,12 @@ body {
 .quarto-grid-item .listing-title {
   font-size: 1.05rem;
   font-weight: 600;
+  color: #000;
 }
 
 .quarto-grid-item .listing-description {
   font-size: 0.9rem;
-  color: var(--color-muted);
+  color: #000;
 }
 
 .quarto-grid-item .listing-categories {
@@ -329,12 +330,12 @@ div[id^="fig-"] {
   display: block;
   font-size: 1rem;
   margin-bottom: 0.35rem;
-  color: var(--color-text);
+  color: #000;
 }
 
 .info-card p {
   font-size: 0.9rem;
-  color: var(--color-muted);
+  color: #000;
   margin-bottom: 0;
 }
 
@@ -370,12 +371,12 @@ div[id^="fig-"] {
   display: block;
   font-size: 1rem;
   margin-bottom: 0.35rem;
-  color: var(--color-text);
+  color: #000;
 }
 
 .info-card-photo-body p {
   font-size: 0.9rem;
-  color: var(--color-muted);
+  color: #000;
   margin-bottom: 0;
 }
 
@@ -577,11 +578,12 @@ div[id^="fig-"] {
   margin: 0 0 0.4rem;
   font-size: 1.05rem;
   font-weight: 600;
+  color: #000;
 }
 
 .resource-card-body p {
   margin: 0;
-  color: var(--color-muted);
+  color: #000;
   font-size: 0.9rem;
 }
 

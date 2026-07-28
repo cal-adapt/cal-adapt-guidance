@@ -23,7 +23,12 @@ jobs:
 
       - name: Install additional LaTeX packages
         run: |
-          TLMGR="$(find "$HOME" -maxdepth 4 -type f -name tlmgr -path '*TinyTeX*' | head -n 1)"
+          TLMGR="$(find "$HOME" -maxdepth 6 -iname tlmgr 2>/dev/null | head -n 1)"
+          if [ -z "$TLMGR" ]; then
+            echo "::error::could not locate tlmgr under $HOME"
+            find "$HOME" -maxdepth 6
+            exit 1
+          fi
           "$TLMGR" install luatexbase
 
       - name: Install Chrome (PDF/Mermaid rendering)

@@ -36,56 +36,83 @@ This page does not include principles on how to conduct specific analyses downst
 
 ## Summary of Principles
 
-- **Principle 1: Scope and identify data needs**
-  - Identify climate data applications
-  - Identify audience for the analysis and results
-  - Involve relevant people
-  - Determine types of data analyses needed
-  - Develop a list of metrics, variables, temporal and spatial scales, scenarios, downscaling, and unknowns
-  - Determine risk and uncertainty tolerance
-  - Evaluate technical capabilities
-  - Evaluate computational capacity
-- **Principle 2: Catalog available data**
-  - Identify all datasets covering the spatial domain
-  - Catalog data details for each dataset
-  - Review metadata
-  - Identify available user guidance
-  - Identify data-related regulations or policies
-- **Principle 3: Screen available datasets against requirements**
-  - Conduct initial screening for fit of datasets
-  - Revisit important data considerations/criteria
-  - Assess tradeoffs between datasets
-  - If data size is a constraint, revisit spatial and temporal scale choices
-  - Select datasets that fulfil the most important data considerations/criteria
-  - Consider a preliminary comparative analysis between multiple datasets
-- **Principle 4: Assess credibility of data**
-  - Identify existing credibility assessments
-  - Critically review assessments to understand approach, known biases, and credibility at multiple scales
-  - Identify the most pertinent credibility-related considerations and determine if elimination of models/datasets is necessary
-  - Document reasons for elimination of models/datasets
-  - Cross-check to ensure that data spans a range of outcomes
-  - Determine if a context-specific credibility assessment is necessary
-- **Principle 5: Sub-select data**
-  - Determine whether sub-selection of models is necessary
-  - Develop a principled, step-by-step plan for choosing a well-balanced sample
-  - Conduct an exploratory analysis to characterize the distribution of model runs
-  - Use the distribution plots to choose an appropriate sample based on context
-  - Cross-check that the sample spans a range of outcomes
-  - Document and communicate the sub-selection approach
-- **Principle 6: Analyze data and summarize results**
-  - Revisit the purpose and audience for the data analysis
-  - Identify metrics, statistical analyses, and aggregations needed to analyze data
-  - Develop a step-by-step method to compute metrics, aggregate across scales, and synthesize across models and scenarios
-  - Consider model weighting, presenting results as change signals versus absolute values, and framing impact relative to natural variability
-  - Evaluate uncertainty
-  - Document and communicate the analysis approach and limitations
-- **Principle 7: Evaluate and document the analysis**
-  - Evaluate if the analysis answered the original questions
-  - If questions were not answered, revisit previous principles or reframe the original question
-  - Finalize documentation of the workflow
-  - Consider a plan and timeline for updating the analysis
-  - Determine how the analysis and results should be presented and communicated
-  - Archive the most important data and outputs
+::: {.blue-box}
+[Principle 1: Scope and identify data needs]{.box-title}
+
+- Identify climate data applications
+- Identify audience for the analysis and results
+- Involve relevant people
+- Determine types of data analyses needed
+- Develop a list of metrics, variables, temporal and spatial scales, scenarios, downscaling, and unknowns
+- Determine risk and uncertainty tolerance
+- Evaluate technical capabilities
+- Evaluate computational capacity
+:::
+
+::: {.blue-box}
+[Principle 2: Catalog available data]{.box-title}
+
+- Identify all datasets covering the spatial domain
+- Catalog data details for each dataset
+- Review metadata
+- Identify available user guidance
+- Identify data-related regulations or policies
+:::
+
+::: {.blue-box}
+[Principle 3: Screen available datasets against requirements]{.box-title}
+
+- Conduct initial screening for fit of datasets
+- Revisit important data considerations/criteria
+- Assess tradeoffs between datasets
+- If data size is a constraint, revisit spatial and temporal scale choices
+- Select datasets that fulfil the most important data considerations/criteria
+- Consider a preliminary comparative analysis between multiple datasets
+:::
+
+::: {.blue-box}
+[Principle 4: Assess credibility of data]{.box-title}
+
+- Identify existing credibility assessments
+- Critically review assessments to understand approach, known biases, and credibility at multiple scales
+- Identify the most pertinent credibility-related considerations and determine if elimination of models/datasets is necessary
+- Document reasons for elimination of models/datasets
+- Cross-check to ensure that data spans a range of outcomes
+- Determine if a context-specific credibility assessment is necessary
+:::
+
+::: {.blue-box}
+[Principle 5: Sub-select data]{.box-title}
+
+- Determine whether sub-selection of models is necessary
+- Develop a principled, step-by-step plan for choosing a well-balanced sample
+- Conduct an exploratory analysis to characterize the distribution of model runs
+- Use the distribution plots to choose an appropriate sample based on context
+- Cross-check that the sample spans a range of outcomes
+- Document and communicate the sub-selection approach
+:::
+
+::: {.blue-box}
+[Principle 6: Analyze data and summarize results]{.box-title}
+
+- Revisit the purpose and audience for the data analysis
+- Identify metrics, statistical analyses, and aggregations needed to analyze data
+- Develop a step-by-step method to compute metrics, aggregate across scales, and synthesize across models and scenarios
+- Consider model weighting, presenting results as change signals versus absolute values, and framing impact relative to natural variability
+- Evaluate uncertainty
+- Document and communicate the analysis approach and limitations
+:::
+
+::: {.blue-box}
+[Principle 7: Evaluate and document the analysis]{.box-title}
+
+- Evaluate if the analysis answered the original questions
+- If questions were not answered, revisit previous principles or reframe the original question
+- Finalize documentation of the workflow
+- Consider a plan and timeline for updating the analysis
+- Determine how the analysis and results should be presented and communicated
+- Archive the most important data and outputs
+:::
 
 ## Principle 1: Scope and Identify Data Needs
 
@@ -115,8 +142,8 @@ This page does not include principles on how to conduct specific analyses downst
 - Consider improving your organization's technical capacity to work with climate data through training or hiring.
 - Consider improving data storage and computational capabilities if they are restrictive.
 
-::: {#box-1 .alert .alert-primary}
-### Box 1: Choosing Variables and/or Metrics 
+<details id="box-1" class="orange-collapsable-box">
+<summary class="box-title">Box 1: Choosing Variables and/or Metrics</summary>
 
 Users need to make choices about which metrics (and underlying variables) are appropriate for answering questions at different stages of the process, including during:
 
@@ -140,10 +167,10 @@ Some questions or applications may require analyzing multiple metrics (e.g. mult
 - Engineering requirements or existing policies may already have well-defined thresholds that can be translated into a metric, such as the temperature rating of equipment, or an unsafe temperature for outdoor work.
 - Data availability may strongly dictate your choice of metric.
 - Some metrics may be closely related for a given variable (i.e. one metric may be a proxy for another) and users can choose among them based on data availability and other contextual factors (e.g. cloud cover is sometimes used as a proxy for solar irradiance, heat index can be a proxy for wet bulb globe temperature in certain regions).
-:::
+</details>
 
-::: {#box-2 .alert .alert-primary}
-### Box 2: Selecting Appropriate Spatial & Temporal Scales
+<details id="box-2" class="orange-collapsable-box">
+<summary class="box-title">Box 2: Selecting Appropriate Spatial & Temporal Scales</summary>
 
 For most analyses, users will need to make choices regarding five spatio-temporal considerations:
 
@@ -187,7 +214,7 @@ Key considerations for determining the most appropriate scales are as follows:
   - Point location localization requires high-quality historical observations data at that location. If historical data is unavailable, then users would need to assess and rely upon the finest resolution gridded data from the nearest gridcells.
   - Many informed decisions and investments can be made by using lower resolution data that considers more models and plausible future outcomes.
   - When conducting analyses for specific spatial extents that do not match a grid cell, care must be taken to create a rigorous workflow which carefully considers edge cases where, for example, a gridcell may be only partially included in a selected spatial extent. Conducting hyper-local spatial analyses (e.g. using [census tracts](/scientific-guidance/census-tracts.qmd) in urban areas) may require more specialized approaches.
-:::
+</details>
 
 ## Principle 2: Catalog Available Data
 
@@ -227,15 +254,15 @@ Key considerations for determining the most appropriate scales are as follows:
 - Once datasets are selected, users may choose to conduct analyses in the cloud to avoid storage and computational constraints. If downloading data is necessary, users should consider the data size and storage constraints before downloading.
 - When downloading geospatial data, `.csv` file format may not adequately preserve coordinate and metadata information. Therefore, `.netcdf`, `.zarr`, or other geospatial file formats are preferred.
 
-::: {#box-3 .alert .alert-primary}
-### Box 3: Analyzing Data Size Trade-offs
+<details id="box-3" class="orange-collapsable-box">
+<summary class="box-title">Box 3: Analyzing Data Size Trade-offs</summary>
 
 The choices of spatio-temporal resolution, sampling window, timeframe, and spatial extent will have significant implications for data size, potentially leading to subsequent data or computational constraints. So users should first assess whether they are able to choose the "most appropriate" scales for their context (as determined in Principle 1) or if they need to make some trade-offs or compromises due to data size and computational constraints.
 
 Users should then examine the tradeoffs of different choices, i.e. information that is gained or lost by choosing different resolutions, windows, timeframes, or extents, as well as how they interact with the ability to work with multiple models or emission scenarios.
 
 This trade-off analysis can be done either qualitatively (through informed judgements of data size and implications) or by conducting a quantitative preliminary comparative analysis to more directly examine the implications of different choices and their potential trade-offs. For the comparative analysis, start with coarser resolution data or smaller timeframes and then work towards larger or finer sets of data to determine which choices lead to significantly different results and are important to consider.
-:::
+</details>
 
 ## Principle 4: Assess Credibility of Data
 
@@ -331,8 +358,8 @@ This trade-off analysis can be done either qualitatively (through informed judge
 - Uncertainties do not invalidate the usefulness of climate data for adaptation; rather they represent the complexity and range of potential future outcomes.
 - Some relevant scientific concepts, such as whether downscaling increases or decreases uncertainty, and how the relative significance of different sources of uncertainty varies for different spatial and temporal scales, are still emerging areas of research.
 
-::: {#box-4 .alert .alert-primary}
-### Box 4: Aggregation Across Spatial and Temporal Scales
+<details id="box-4" class="orange-collapsable-box">
+<summary class="box-title">Box 4: Aggregation Across Spatial and Temporal Scales</summary>
 
 When conducting spatial (aggregating across gridcells) or temporal (aggregating across months/years) aggregations, first examine climate impacts without aggregation to understand the spatial and temporal variability and distribution of the data. This is because important climate change signals and information about uncertainty can be lost when aggregating across different locations, time scales, or models. Therefore it is recommended to first examine climate impacts without aggregation, and then aggregate data at the end, once the variability and distribution have been thoroughly examined.
 
@@ -345,10 +372,10 @@ Exercise caution when aggregating over grid cells for assessments of extremes, s
 If your application involves presenting data as a time series, the sampling window for aggregation should be long enough to smooth out large variations from diurnal or seasonal cycles if they are not the focus of the analysis. If your application needs to preserve interannual or multi-year variability, ensure that the window for aggregation is short enough to evaluate the change signal relative to the magnitude of natural variability.
 
 When presenting aggregated results, transparently document the types of impacts that might be missed due to aggregation across different locations, grid cells, or years (e.g. averaging over large spatial areas could lead to missing out on specific distributional impacts for different communities, which might have equity implications). Consider reporting other distributional statistics in addition to documenting the limitations in the results.
-:::
+</details>
 
-::: {#box-5 .alert .alert-primary}
-### Box 5: Computing Change Signals
+<details id="box-5" class="orange-collapsable-box">
+<summary class="box-title">Box 5: Computing Change Signals</summary>
 
 The appropriate reference period for computing change signals depends on the goals of your analysis. Choosing different reference periods can drastically influence the calculated change signal, not just in magnitude but also in spatial patterns and event frequencies. Some common choices include:
 
@@ -357,7 +384,7 @@ The appropriate reference period for computing change signals depends on the goa
 - **Present conditions** (e.g. 2015-2040) – A more difficult-to-define reference period, due to the need for assumptions about how current trends will continue, but potentially useful for very specific operational planning.
 
 It is generally recommended that the chosen baseline be at least 30 years long to capture the range of year-to-year fluctuations in climate. However shorter time windows may be considered for some sectoral applications (e.g. those that require a specific focus on current climate).
-:::
+</details>
 
 ## Principle 7: Evaluate and Document the Analysis
 
@@ -377,4 +404,4 @@ It is generally recommended that the chosen baseline be at least 30 years long t
 
 ## Acknowledgments
 
-Kripa Jagannathan and Nancy Freitas contributed equally to this document. Naomi Goldenson and Grace Di Cecco provided review and feedback. This work was supported by California Energy Commission (CEC) funding.
+We thank our many collaborators who contributed to the development of these guiding principles, including California Investor Owned Utilities, state agencies, consulting groups, and researchers. We also specifically thank Grace Di Cecco and Naomi Goldenson for their input on early drafts of the principles.

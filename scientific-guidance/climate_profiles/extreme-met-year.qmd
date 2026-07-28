@@ -33,7 +33,7 @@ The Labor Day 2022 Heatwaves was one of the hottest on record for California, wi
 :::
 
 ::: {#fig-exec-summary-boxplots}
-![Boxplot comparing typical (TMY) and extreme heat (XMY) temperature distributions for Sacramento across sector-relevant planning horizons.](figures/static/exec-summary-boxplots.png){width=55%}
+![](figures/static/exec-summary-boxplots.png){width=55% fig-alt="Boxplot comparing typical (TMY) and extreme heat (XMY) temperature distributions for Sacramento across sector-relevant planning horizons."}
 
 The Labor Day 2022 Heatwave produced record-breaking electricity demand of more than 52,000 MW, but current design standards use “typical” conditions. Boxplot distribution of temperatures for Sacramento comparing typical standards (TMY) to extreme heat tailored (XMY) future conditions at sector-relevant planning horizons.
 :::
@@ -51,7 +51,7 @@ For example, peak temperature events may occur during periods of relatively low 
 Additionally, the error-based selection method provides limited flexibility for tailoring events to specific return periods, dates, or desired intensity levels. 
 
 ::: {#fig-shock-timeseries}
-![Timeseries comparing Hot and Cold Shock XMY profiles to the TMY profile for Sacramento Executive Airport at mid-century (2.0°C GWL), with simulated heatwaves and coldsnaps highlighted.](figures/static/shock_timeseries.png){width=85%}
+![](figures/static/shock_timeseries.png){width=85% fig-alt="Timeseries comparing Hot and Cold Shock XMY profiles to the TMY profile for Sacramento Executive Airport at mid-century (2.0°C GWL), with simulated heatwaves and coldsnaps highlighted."}
 
 (Top) Hot Shock XMY profile compared to the TMY for the Sacramento Executive Airport (Sacramento, CA), with simulated heatwaves and associated impacts highlighted via arrows as examples for stress testing at mid-century (2.0°C GWL). (Bottom) Cold Shock XMY profile compared to the TMY profile for Sacramento, CA, with simulated coldsnaps and associated impacts highlighted as arrows at mid-century (2.0°C GWL).
 :::
@@ -70,7 +70,7 @@ The hourly chronology is not representative of a “real” year of data because
 A Persistence XMY is limited in its suitability for analyses that require realistic weather evolution or event chronology, but can provide key insights for extreme threshold tuning in resource adequacy planning. 
 
 ::: {#fig-persistence-timeseries}
-![Timeseries comparing Hot (90th percentile) and Cold (10th percentile) Persistence XMY profiles to the TMY profile for Sacramento Executive Airport at mid-century (2.0°C GWL).](figures/static/persistence_timeseries.png){width=85%}
+![](figures/static/persistence_timeseries.png){width=85% fig-alt="Timeseries comparing Hot (90th percentile) and Cold (10th percentile) Persistence XMY profiles to the TMY profile for Sacramento Executive Airport at mid-century (2.0°C GWL)."}
 
 (Top) Hot Persistence XMY profile compared to the TMY profile for Sacramento Executive Airport (Sacramento, CA) at the 90th percentile extreme at mid-century (2.0°C GWL). (Bottom) Cold Persistence XMY profile compared to TMY for Sacramento, at the 10th percentile extreme at mid-century (2.0°C).
 :::
@@ -87,7 +87,7 @@ Preparing for extreme events that increase system strain requires climate-driven
 - Specific stress testing of peak demand windows for infrastructure planning (e.g., grid hardening). 
 
 ::: {#fig-xmy-degree-day-comparison}
-![Scatter plot of projected cooling and heating degree day changes across Extreme Meteorological Year profiles compared to Typical Meteorological Year median conditions for Sacramento, at present-day and mid-century warming levels.](figures/static/xmy_degree_day_comparison.png){width=60%}
+![](figures/static/xmy_degree_day_comparison.png){width=60% fig-alt="Scatter plot of projected cooling and heating degree day changes across Extreme Meteorological Year profiles compared to Typical Meteorological Year median conditions for Sacramento, at present-day and mid-century warming levels."}
 
 Projected change in cooling and heating degree days between present-day (1.2°C GWL, open-faced circles) and mid-century (2.0°C, solid circles) across Extreme Meteorological Year climate profiles compared to Typical Meteorological Year median conditions for Sacramento, CA. Dashed cross-hatch lines intersect at the multi-model mean present-day TMY CDD/HDD point (CDD: 1721 degree days, HDD: 1850 degree days). All 4 a priori bias-adjusted dynamically-downscaled WRF models are provided for each profile.
 :::
@@ -101,7 +101,7 @@ obscure critical vulnerabilities and lead to incomplete assessment.
 - If you require a **fully customizable intensity level**, such as "turning a dial" on stress testing, consider a **Persistence XMY** climate profile. Be aware that each hour is defined by the desired extreme percentile.
 
 ::: {#fig-use-case-labor-day-heatwave}
-![Line chart comparing Typical Meteorological Year and Shock Extreme Meteorological Year temperature profiles for Sacramento during heatwave conditions at mid-century (2.0°C), referenced against the Labor Day 2022 Heatwave.](figures/static/use_case_labor-day-heatwave.png){width=85%}
+![](figures/static/use_case_labor-day-heatwave.png){width=85% fig-alt="Line chart comparing Typical Meteorological Year and Shock Extreme Meteorological Year temperature profiles for Sacramento during heatwave conditions at mid-century (2.0°C), referenced against the Labor Day 2022 Heatwave."}
 
 Comparison of Typical Meteorological Year conditions to a Shock Extreme Meteorological Year profile for Sacramento, CA during heatwave conditions at mid-century (2.0°C). As a reference, the Labor Day 2022 Heatwave maximum temperature is provided as motivating context for preparing for realistic extreme conditions. The Labor Day 2022 Heatwave was one of the hottest on record for California, with Sacramento reaching 116°F (46.7°C) and record-breaking electricity demand of more than 52,000 MW. The Labor Day 2022 Heatwave is estimated to be a 1-in-450 year extreme heat event. 
 :::
@@ -157,9 +157,9 @@ Hourly air temperature is retrieved for the location and climatology selections 
 For each month, two sets of cumulative distribution functions (CDF) are calculated: one for the long-term median climatology across all candidate years, and one for each year within the climatology (i.e., a candidate year). The candidate year is compared against climatology to quantitatively select the month that is furthest from the long-term median conditions, maximizing the error. For cold extremes, this translates to the lowest-value month or maximized negative error relative to climatology. For hot extremes, the highest-value month or maximized positive error relative to climatology is selected (Figure 7). This process is repeated for all months, per simulation. Doing so ensures that model data is kept intact within a single physically-consistent climate profile, rather than pooling across models which introduces multi-model uncertainty. Following TMY methodological best practice, years of abnormal volcanic activity are excluded from consideration due to the impact of aerosols on air temperatures. 
 
 ::: {#fig-shock-cdfs layout-ncol=2}
-![CDF plot comparing January climatological conditions to the maximized error month for a Cold Shock XMY.](figures/static/cold_shock_cdf.png)
+![](figures/static/cold_shock_cdf.png){fig-alt="CDF plot comparing January climatological conditions to the maximized error month for a Cold Shock XMY."}
 
-![CDF plot comparing July climatological conditions to the maximized error month for a Hot Shock XMY.](figures/static/hot_shock_cdf.png)
+![](figures/static/hot_shock_cdf.png){fig-alt="CDF plot comparing July climatological conditions to the maximized error month for a Hot Shock XMY."}
 
 (Left) Cumulative distributions of January climatological conditions and the maximized error month for a Cold Shock XMY. (Right) Cumulative distributions of the July climatological conditions and the maximized error month for a Hot Shock XMY. For illustrative purposes, only one model is shown (MPI-ESM1-2-HR).
 :::

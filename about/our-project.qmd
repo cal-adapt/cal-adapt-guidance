@@ -60,7 +60,7 @@ While @fig-cal-adapt-ecosystem shows how these two products relate structurally,
 @fig-cal-adapt-operational traces this same distinction through Cal-Adapt's underlying technical architecture.
 
 ::: {#fig-cal-adapt-operational}
-![Diagram of Cal-Adapt's operational architecture, showing how weather, historical, and projections data flow into the Cal-Adapt database and are served to users through the Data Explorer and Analytics Engine.](figures/static/cal-adapt-operational-diagram.png)
+![](figures/static/cal-adapt-operational-diagram.png){fig-alt="Diagram of Cal-Adapt's operational architecture, showing how weather, historical, and projections data flow into the Cal-Adapt database and are served to users through the Data Explorer and Analytics Engine."}
 
 Cal-Adapt's operational diagram, showing how weather, historical, and projections data flow into the Cal-Adapt database and are served to general and heavy users through the Data Explorer and Analytics Engine.
 :::

@@ -196,7 +196,7 @@ Using warming levels as the future target and the reference period ensures that 
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Side-by-side comparison of global mean surface temperature trajectories using GWL-based reference periods (consistent 1.2°C change signal) versus a fixed time-based reference period (variable change signal across simulations).](figures/static/gwl_periods.png)
+![](figures/static/gwl_periods.png){fig-alt="Side-by-side comparison of global mean surface temperature trajectories using GWL-based reference periods (consistent 1.2°C change signal) versus a fixed time-based reference period (variable change signal across simulations)."}
 :::
 :::
 
@@ -211,7 +211,7 @@ The Analytics Engine has three global warming levels designed specifically to be
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Table of estimated center years and associated 30-year climatology windows for the standard reference global warming levels used in the Analytics Engine.](figures/static/warming_levels_table.png)
+![](figures/static/warming_levels_table.png){fig-alt="Table of estimated center years and associated 30-year climatology windows for the standard reference global warming levels used in the Analytics Engine."}
 :::
 :::
 
@@ -226,7 +226,7 @@ For each reference period, the approximate equivalent time range is determined u
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Global mean surface temperature trajectory showing the estimated year the world reached 0.8°C of warming.](figures/static/warming_trajectory.png)
+![](figures/static/warming_trajectory.png){fig-alt="Global mean surface temperature trajectory showing the estimated year the world reached 0.8°C of warming."}
 :::
 :::
 

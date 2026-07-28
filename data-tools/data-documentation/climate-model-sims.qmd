@@ -199,7 +199,7 @@ When using warming levels, the Analytics Engine provides estimates for the cross
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Chart of the best estimate and 90% confidence interval for the year the world reaches 2.0°C of warming under the SSP3-7.0 scenario.](../figures/static/warming_trajectory_2degC.png)
+![](../figures/static/warming_trajectory_2degC.png){fig-alt="Chart of the best estimate and 90% confidence interval for the year the world reaches 2.0°C of warming under the SSP3-7.0 scenario."}
 :::
 Best estimate and 90% confidence interval for the year the world will reach 2.0 °C of warming under the SSP 3-7.0 scenario. The median year of crossing is denoted by the vertical dashed line and is provided. The solid lines represent the first and last occurrence of the 5th and 95th percentiles crossing the designated warming level, with the range in years provided. For example, the median year of GCMs reaching 2.0°C of warming is in 2047, with a range of 24 years between the first and last occurrence. Figure produced by the Cal-Adapt: Analytics Engine based on data from the IPCC.
 :::

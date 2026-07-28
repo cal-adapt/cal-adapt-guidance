@@ -54,7 +54,7 @@ For seven Cal-Adapt models, raw CMIP6 provides multiple ensemble members. Becaus
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Grid of maps showing change in 99th-percentile monthly precipitation per CMIP6 ensemble member, organized by model (columns) and ensemble member (rows).](figures/static/members_variability.png)
+![](figures/static/members_variability.png){fig-alt="Grid of maps showing change in 99th-percentile monthly precipitation per CMIP6 ensemble member, organized by model (columns) and ensemble member (rows)."}
 :::
 **Change in 99th-percentile monthly precipitation per ensemble member.** Each column is one CMIP6 model; each row within a column is a different ensemble member of that model. Differences *within* a column reflect internal variability alone (identical model physics and forcing); differences *between* columns mix internal variability with model uncertainty. Values are the change in the 99th-percentile of monthly precipitation at the selected warming level, relative to the 1981–2010 baseline.
 :::
@@ -75,7 +75,7 @@ The spatial maps show the *pattern*; the next chart makes the comparison between
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Range plot comparing internal variability (per-model ensemble spread) to inter-model spread in 99th-percentile monthly precipitation change, with each model's downscaled WRF member marked.](figures/static/internal_var_vs_model_spread.png)
+![](figures/static/internal_var_vs_model_spread.png){fig-alt="Range plot comparing internal variability (per-model ensemble spread) to inter-model spread in 99th-percentile monthly precipitation change, with each model's downscaled WRF member marked."}
 :::
 **Internal variability vs. inter-model spread.** For each CMIP6 model, the bar spans the full range of % change in 99th-percentile monthly precipitation across all of that model's ensemble members (internal variability); the horizontal tick marks the ensemble median; the gold dot marks the single downscaled WRF member available for that model. Values are area-averaged over a Northern/Central California sub-region at the selected warming level under SSP3-7.0.
 :::
@@ -102,7 +102,7 @@ The range chart shows only the min–max and median. The ridgeline below shows t
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Ridgeline plot of kernel density estimates showing each model's within-ensemble distribution of 99th-percentile monthly precipitation change, with the single downscaled WRF member marked per model.](figures/static/warming_ridgeplots.png)
+![](figures/static/warming_ridgeplots.png){fig-alt="Ridgeline plot of kernel density estimates showing each model's within-ensemble distribution of 99th-percentile monthly precipitation change, with the single downscaled WRF member marked per model."}
 :::
 **Within-model distribution of ensemble members.** Each ridge is the kernel density estimate of % change in 99th-percentile monthly precipitation across one model's CMIP6 ensemble members, at the selected warming level under SSP3-7.0. The dotted line marks the ensemble median; the gold dot marks where the single downscaled WRF member lands on that distribution.
 :::
@@ -143,9 +143,9 @@ To compare distributions rather than just means, a two-sample **Kolmogorov–Smi
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Map of change in 99th-percentile monthly precipitation computed from the multi-model mean.](figures/static/ks_99_precip_no_sig.png)
+![](figures/static/ks_99_precip_no_sig.png){fig-alt="Map of change in 99th-percentile monthly precipitation computed from the multi-model mean."}
 
-![Map of change in 99th-percentile monthly precipitation computed from the pooled model-month sample, with stippling marking grid cells where a Kolmogorov–Smirnov test finds a statistically significant difference.](figures/static/ks_99_precip_sig.png)
+![](figures/static/ks_99_precip_sig.png){fig-alt="Map of change in 99th-percentile monthly precipitation computed from the pooled model-month sample, with stippling marking grid cells where a Kolmogorov–Smirnov test finds a statistically significant difference."}
 :::
 **Change in 99th-percentile monthly precipitation — multi-model mean vs. pooled.** Left: the change computed from the multi-model mean. Right: the change computed from the pooled sample (every model-month treated as a separate sample). The "KS significant" view stipples the grid cells where a two-sample Kolmogorov–Smirnov test detects a statistically significant difference (p < 0.05) between the deseasonalized historical and future precipitation distributions.
 :::

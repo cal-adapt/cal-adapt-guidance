@@ -23,6 +23,7 @@
   --color-white: #fff;
   --color-blue-dark: #33658a;
   --color-blue-light: #4d9de0;
+  --color-blue-pale: #e5f2fa;
   --color-blue-pastel-bg: #eaf4fb;
   --color-blue-pastel-border: rgba(77, 157, 224, 0.35);
 }
@@ -84,6 +85,7 @@ body {
 .quarto-grid-item {
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
+  background: var(--bs-primary-light);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -100,11 +102,12 @@ body {
 .quarto-grid-item .listing-title {
   font-size: 1.05rem;
   font-weight: 600;
+  color: #000;
 }
 
 .quarto-grid-item .listing-description {
   font-size: 0.9rem;
-  color: var(--color-muted);
+  color: #000;
 }
 
 .quarto-grid-item .listing-categories {
@@ -114,7 +117,7 @@ body {
 .quarto-grid-item .listing-categories .listing-category {
   color: var(--color-text);
   border-color: rgba(var(--bs-primary-rgb), 0.35);
-  background: var(--bs-primary-light);
+  background: var(--color-white);
 }
 
 /* TOC: hide nested items by default, expand when parent section is active */
@@ -313,7 +316,7 @@ div[id^="fig-"] {
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
-  background: var(--bs-primary-light);
+  background: var(--color-white);
 }
 
 .info-card .bi {
@@ -327,18 +330,30 @@ div[id^="fig-"] {
   display: block;
   font-size: 1rem;
   margin-bottom: 0.35rem;
-  color: var(--color-text);
+  color: #000;
 }
 
 .info-card p {
   font-size: 0.9rem;
-  color: var(--color-muted);
+  color: #000;
   margin-bottom: 0;
 }
 
 .info-card-photo {
+  display: block;
   padding: 0;
   overflow: hidden;
+  background: var(--color-blue-pale);
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.info-card-photo:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-blue-light);
+  color: inherit;
 }
 
 .info-card-photo img {
@@ -356,12 +371,12 @@ div[id^="fig-"] {
   display: block;
   font-size: 1rem;
   margin-bottom: 0.35rem;
-  color: var(--color-text);
+  color: #000;
 }
 
 .info-card-photo-body p {
   font-size: 0.9rem;
-  color: var(--color-muted);
+  color: #000;
   margin-bottom: 0;
 }
 
@@ -563,51 +578,72 @@ div[id^="fig-"] {
   margin: 0 0 0.4rem;
   font-size: 1.05rem;
   font-weight: 600;
+  color: #000;
 }
 
 .resource-card-body p {
   margin: 0;
-  color: var(--color-muted);
+  color: #000;
   font-size: 0.9rem;
 }
 
 
-.partner-logos {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem 2.5rem;
+.partner-explorer {
+  display: flex;
+  gap: 2.5rem;
   margin-top: 1.5rem;
+  align-items: center;
 }
 
-.partner-logos img {
-  height: 3.25rem;
+.partner-carousel-wrap {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.partner-carousel {
+  flex: 1 1 auto;
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  min-width: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.partner-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.partner-logo-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 180px;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.6rem;
+  background: var(--color-white);
+}
+
+.partner-logo-item img {
+  height: 7rem;
   width: auto;
-  max-width: 170px;
+  max-width: 100%;
   object-fit: contain;
-  justify-self: center;
 }
 
-.partner-logos img[src*="logo-era"] {
-  height: 4.25rem;
-  max-width: 220px;
-}
-
-.partner-logos img[src*="logo-cec"] {
-  height: 6rem;
-  max-width: 220px;
-}
-
-.partner-logos img[src*="logo-e3"] {
-  height: 3.4rem;
-  max-width: 280px;
-}
-
-@media (max-width: 576px) {
-  .partner-logos {
-    grid-template-columns: repeat(2, auto);
-  }
+.partner-logo-item img[src*="logo-cec"] {
+  height: 8.5rem;
 }
 
 .footer {

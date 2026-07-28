@@ -17,13 +17,6 @@ listing:
     fields: [date, title, description, categories]
 ---
 
-## Latest Updates
-
-Stay informed about new data, guidance, and features.
-
-:::{#latest-updates}
-:::
-
 ## Science-backed guidance you can trust
 
 Climate projections are powerful, but they need interpretation. Our guidance bridges the gap between raw data and real-world decisions.
@@ -57,7 +50,7 @@ Presents options and frameworks to help you make the decisions.
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .info-card}
 <i class="bi bi-unlock-fill"></i>
 
-**Publically accessible**
+**Publicly accessible**
 
 Part of California's commitment to climate transparency.
 :::
@@ -82,6 +75,13 @@ Updated with new research, user feedback, and emerging climate impacts.
 
 ::::
 
+## Latest updates
+
+Stay informed about new data, guidance, and features.
+
+:::{#latest-updates}
+:::
+
 ## Explore our resources
 
 Choose the right topic for your needs.
@@ -94,8 +94,8 @@ Choose the right topic for your needs.
       <a id="resource-analytics" href="data-tools/analytics-engine-hub.html" class="resource-card">
         <div class="resource-card-thumb"><img src="assets/resources/jupyter_hub.png" alt=""></div>
         <div class="resource-card-body">
-          <h4>Analytics Engine Jupyter Hub</h4>
-          <p>For users with access, log in to the Jupyter Hub for easy cloud-based access to our data and notebooks. Perform custom analysis without downloading massive files.</p>
+          <h4>Analytics Engine JupyterHub</h4>
+          <p>For users with access, log in to the JupyterHub for easy cloud-based access to our data and notebooks. Perform custom analysis without downloading massive files.</p>
         </div>
       </a>
       <a id="resource-profiles" href="scientific-guidance/climate_profiles/" class="resource-card">
@@ -116,7 +116,7 @@ Choose the right topic for your needs.
         <div class="resource-card-thumb"><img src="assets/resources/reference_library.png" alt=""></div>
         <div class="resource-card-body">
           <h4>Reference Library</h4>
-          <p>Find citable Cal-Adapt guidance materials written by our team of climate experts.</p>
+          <p>Find citable Cal-Adapt guidance materials written by climate experts.</p>
         </div>
       </a>
       <a id="resource-python-tools" href="data-tools/python-tools.html" class="resource-card">
@@ -163,50 +163,82 @@ Choose the right topic for your needs.
 Led by Eagle Rock Analytics and funded by the California Energy Commission, supported by partners across research, analytics, and state agencies.
 
 ```{=html}
-<div class="partner-logos">
-  <img src="assets/logos/logo-era.png" alt="Eagle Rock Analytics">
-  <img src="assets/logos/logo-cec.jpg" alt="California Energy Commission">
-  <img src="assets/logos/logo-lbnl.png" alt="Lawrence Berkeley National Lab">
-  <img src="assets/logos/logo-gif.jpg" alt="UC Berkeley Geospatial Innovation Facility">
-  <img src="assets/logos/logo-sig.svg" alt="Spatial Informatics Group">
-  <img src="assets/logos/logo-e3.png" alt="Energy and Environmental Economics">
-  <img src="assets/logos/logo-ucla.jpg" alt="UCLA Center for Climate Science">
-  <img src="assets/logos/logo-amazon-sustainability.jpg" alt="Amazon Sustainability">
+<div class="partner-explorer">
+  <div class="partner-carousel-wrap">
+    <button type="button" class="resource-arrow partner-arrow-prev" aria-label="Previous partner"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+    <div class="partner-carousel" role="region" aria-label="Partner logos carousel">
+      <div class="partner-logo-item"><img src="assets/logos/logo-era.png" alt="Eagle Rock Analytics"></div>
+      <div class="partner-logo-item"><img src="assets/logos/logo-cec.jpg" alt="California Energy Commission"></div>
+      <div class="partner-logo-item"><img src="assets/logos/logo-lbnl.png" alt="Lawrence Berkeley National Lab"></div>
+      <div class="partner-logo-item"><img src="assets/logos/logo-gif.jpg" alt="UC Berkeley Geospatial Innovation Facility"></div>
+      <div class="partner-logo-item"><img src="assets/logos/logo-sig.svg" alt="Spatial Informatics Group"></div>
+      <div class="partner-logo-item"><img src="assets/logos/logo-e3.png" alt="Energy and Environmental Economics"></div>
+      <div class="partner-logo-item"><img src="assets/logos/logo-ucla.jpg" alt="UCLA Center for Climate Science"></div>
+      <div class="partner-logo-item"><img src="assets/logos/logo-amazon-sustainability.jpg" alt="Amazon Sustainability"></div>
+    </div>
+    <button type="button" class="resource-arrow partner-arrow-next" aria-label="Next partner"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+  </div>
 </div>
+
+<script>
+(function () {
+  var carousel = document.querySelector('.partner-carousel');
+  var prevBtn = document.querySelector('.partner-arrow-prev');
+  var nextBtn = document.querySelector('.partner-arrow-next');
+
+  function scrollByItem(direction) {
+    var item = carousel.querySelector('.partner-logo-item');
+    var distance = item ? item.getBoundingClientRect().width + 24 : 220;
+    carousel.scrollBy({ left: direction * distance, behavior: 'smooth' });
+  }
+
+  function updateArrows() {
+    var maxScroll = carousel.scrollWidth - carousel.clientWidth - 1;
+    prevBtn.disabled = carousel.scrollLeft <= 0;
+    nextBtn.disabled = carousel.scrollLeft >= maxScroll;
+  }
+
+  prevBtn.addEventListener('click', function () { scrollByItem(-1); });
+  nextBtn.addEventListener('click', function () { scrollByItem(1); });
+  carousel.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
+  updateArrows();
+})();
+</script>
 ```
 
-:::: {.grid .mt-3}
+```{=html}
+<div class="grid mt-3">
+  <a href="about/our-users.html" class="info-card info-card-photo g-col-12 g-col-md-6">
+    <img src="assets/cards/california-commitment.jpg" alt="">
+    <div class="info-card-photo-body">
+      <strong>Built for Decision Makers</strong>
+      <p>This project is part of California's Fifth Climate Change Assessment and represents state-of-the-art climate science for decision makers across the state.</p>
+    </div>
+  </a>
 
-::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
-<img src="assets/cards/california-commitment.jpg" alt="">
-<div class="info-card-photo-body">
-<strong>California Commitment</strong>
-<p>Part of California's Fifth Climate Change Assessment. Represents state-of-the-art climate science for decision making.</p>
+  <a href="about/our-team.html" class="info-card info-card-photo g-col-12 g-col-md-6">
+    <img src="assets/cards/multi-sector-team.jpg" alt="">
+    <div class="info-card-photo-body">
+      <strong>Multi-Sector Team</strong>
+      <p>Scientists, modelers, software engineers, and domain experts work together from multiple organizations.</p>
+    </div>
+  </a>
+
+  <a href="about/our-project.html" class="info-card info-card-photo g-col-12 g-col-md-6">
+    <img src="assets/cards/sustained-funding.jpg" alt="">
+    <div class="info-card-photo-body">
+      <strong>Sustained Funding</strong>
+      <p>Supported by the California Energy Commission (EPC-20-007 and EPC-23-024) and Amazon Sustainability, ensuring long-term availability.</p>
+    </div>
+  </a>
+
+  <a href="about/co-production.html" class="info-card info-card-photo g-col-12 g-col-md-6">
+    <img src="assets/cards/co-production.jpg" alt="">
+    <div class="info-card-photo-body">
+      <strong>Co-Production</strong>
+      <p>Data producers, technical staff, and decision makers collaborate to ensure outputs are accessible and actionable.</p>
+    </div>
+  </a>
 </div>
-:::
-
-::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
-<img src="assets/cards/multi-sector-team.jpg" alt="">
-<div class="info-card-photo-body">
-<strong>Multi-Sector Team</strong>
-<p>Scientists, modelers, software engineers, and domain experts from Eagle Rock Analytics, Energy and Environmental Economics, Inc., Lawrence Berkeley National Lab, Spatial Informatics Group, UC Berkeley Geospatial Innovation Facility, and UCLA Center for Climate Science.</p>
-</div>
-:::
-
-::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
-<img src="assets/cards/sustained-funding.jpg" alt="">
-<div class="info-card-photo-body">
-<strong>Sustained Funding</strong>
-<p>Supported by the California Energy Commission (EPC-20-007 and EPC-23-024) and Amazon Sustainability, ensuring long-term availability.</p>
-</div>
-:::
-
-::: {.g-col-12 .g-col-md-6 .info-card .info-card-photo}
-<img src="assets/cards/co-production.jpg" alt="">
-<div class="info-card-photo-body">
-<strong>Co-Production</strong>
-<p>Data producers, technical staff, and decision makers collaborate to ensure outputs are accessible and actionable.</p>
-</div>
-:::
-
-::::
+```

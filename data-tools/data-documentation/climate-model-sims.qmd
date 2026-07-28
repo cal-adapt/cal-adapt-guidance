@@ -113,7 +113,7 @@ LOCA2-Hybrid data is available for 15 GCMs with a total of 199 ensemble runs, do
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Table of LOCA2-Hybrid data availability by variable group and scenario, colored by scenario.](../figures/static/tbl-loca2-availability.png)
+![](../figures/static/tbl-loca2-availability.png){fig-alt="Table of LOCA2-Hybrid data availability by variable group and scenario, colored by scenario."}
 :::
 LOCA2-Hybrid data availability by variable group and scenario, colored by scenario.
 :::
@@ -155,7 +155,7 @@ WRF data is available for 8 GCMs with 1 ensemble run per emissions scenario, dow
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Table of the number of WRF projection simulations available by scenario and spatial resolution, colored by scenario.](../figures/static/tbl-wrf-projections.png)
+![](../figures/static/tbl-wrf-projections.png){fig-alt="Table of the number of WRF projection simulations available by scenario and spatial resolution, colored by scenario."}
 :::
 Number of WRF projection simulations available by scenario and spatial resolution, colored by scenario.
 :::
@@ -213,7 +213,7 @@ Best estimate and 90% confidence interval for the year the world will reach 2.0 
 ```
 :::
 ::: {.content-visible when-format="pdf"}
-![Table of the best estimate and 90% likely range for the year each SSP scenario reaches a given global warming level, colored by scenario.](../figures/static/tbl-gwl-year-exceedance.png)
+![](../figures/static/tbl-gwl-year-exceedance.png){fig-alt="Table of the best estimate and 90% likely range for the year each SSP scenario reaches a given global warming level, colored by scenario."}
 :::
 Best estimate (with 90% very likely range in parentheses) for the year each SSP scenario reaches a given global warming level, colored by scenario. Summarized from data from the IPCC.
 :::

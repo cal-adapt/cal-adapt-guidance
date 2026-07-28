@@ -50,6 +50,11 @@ jobs:
       - name: Render site
         run: quarto render
 
+      - name: Dump LaTeX logs on failure
+        if: failure()
+        run: |
+          find . -name "*.log" -not -path "./_site/*" -print -exec cat {} \;
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

@@ -21,6 +21,11 @@ jobs:
       - name: Install TinyTeX
         run: quarto install tinytex --no-prompt
 
+      - name: Install additional LaTeX packages
+        run: |
+          TLMGR="$(find "$HOME" -maxdepth 4 -type f -name tlmgr -path '*TinyTeX*' | head -n 1)"
+          "$TLMGR" install luatexbase
+
       - name: Install Chrome (PDF/Mermaid rendering)
         if: github.event_name != 'pull_request'
         run: quarto install chrome-headless-shell --no-prompt

@@ -29,6 +29,7 @@ jobs:
             find "$HOME" -maxdepth 6
             exit 1
           fi
+          "$TLMGR" update --self
           "$TLMGR" install luatexbase
 
       - name: Install Chrome (PDF/Mermaid rendering)

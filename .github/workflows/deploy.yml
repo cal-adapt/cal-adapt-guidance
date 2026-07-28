@@ -30,7 +30,7 @@ jobs:
             exit 1
           fi
           "$TLMGR" update --self
-          "$TLMGR" install luatexbase
+          "$TLMGR" install luatexbase tcolorbox fontawesome5
 
       - name: Install Chrome (PDF/Mermaid rendering)
         if: github.event_name != 'pull_request'

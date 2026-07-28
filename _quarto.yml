@@ -65,11 +65,15 @@ website:
     left: |
       ![](/assets/bear.png){width="24px"} &nbsp;&copy; 2026 Cal-Adapt Analytics Engine
     right:
-      - text: "Contact Us"
+      - icon: envelope
         href: "mailto:analytics@cal-adapt.org"
+        aria-label: Contact Us
       - icon: github
         href: "https://github.com/cal-adapt"
         aria-label: GitHub
+      - icon: linkedin
+        href: "https://www.linkedin.com/company/cal-adapt"
+        aria-label: LinkedIn
   sidebar:
     - id: general-resources
       title: "General Resources"

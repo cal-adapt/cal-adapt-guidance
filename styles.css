@@ -693,6 +693,11 @@ table.table > tbody > tr > td {
   background-color: var(--color-white);
 }
 
+/* Let wide cross-referenced tables scroll horizontally instead of overflowing the page */
+div[aria-describedby] {
+  overflow-x: auto;
+}
+
 /* Neutralize Bootstrap's zebra striping so every table matches, striped or not */
 table.table-striped > tbody > tr:nth-of-type(odd) > td,
 table.table-striped > tbody > tr:nth-of-type(even) > td {

@@ -32,6 +32,14 @@ jobs:
           "$TLMGR" update --self
           "$TLMGR" install luatexbase tcolorbox fontawesome5
 
+      - name: Install Arial (msttcorefonts)
+        if: github.event_name != 'pull_request'
+        run: |
+          echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
+          sudo apt-get update
+          sudo apt-get install -y ttf-mscorefonts-installer
+          sudo fc-cache -f -v
+
       - name: Install Chrome (PDF/Mermaid rendering)
         if: github.event_name != 'pull_request'
         run: quarto install chrome-headless-shell --no-prompt

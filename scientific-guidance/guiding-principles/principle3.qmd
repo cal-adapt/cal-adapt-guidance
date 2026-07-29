@@ -1,0 +1,34 @@
+---
+title: "Principle 3: Screen available datasets against requirements"
+citation: false
+format:
+  html: default
+---
+
+- Conduct an initial screening of all regional datasets (identified in Principle 2) to assess the extent to which they fit/meet your technical data requirements and analysis needs. Note that here you are screening models/data for fit and meeting technical requirements, and not credibility. Credibility-based selection is the next step.
+- Revisit all the important data considerations/criteria for your application (identified in Principle 1) such as need for fine resolution data, manageable data size, range of outcomes, statistical power, etc.
+- Assess the tradeoffs between different datasets in terms of how well they fit your specific data needs and requirements (e.g. some datasets may offer finer resolution but not a large range of models or scenarios, while others may have more distinct models or more realizations of a single model).
+- At this stage, data-size considerations for your applications should be evaluated. For instances where data size is a key limiting factor, you may need to re-visit your choice of spatial and temporal scales with respect to trade-offs on other important criteria (e.g. finer resolution data may preclude the ability to work with a large number of models and scenarios based on data size — see [Box 3](#box-3)).
+- Identify all the datasets that fulfill the most important technical considerations/criteria for your application of interest (e.g. if extreme events and daily resolution are most important, then choose datasets that have daily data and a large number of models with many ensemble members that provide statistical power).
+- If multiple datasets are deemed a good fit for your application, use a preliminary comparative analysis to evaluate how results may vary, and to see what different types of information each dataset might provide (e.g. one dataset may have more models and scenarios while another could have different types of relevant metrics).
+
+<details class="grey-collapsable-box">
+<summary class="box-title">Important Considerations</summary>
+
+- Dataset selection at this stage may be constrained by the availability of specific variables or spatial and temporal scales. Sometimes users may need to re-evaluate or adjust data needs and expectations based on the available data (i.e. if the desired resolutions are not available, users might need to re-evaluate whether coarser data can be used).
+- There may be a need to eliminate some datasets that do not have the data you require or do not fit your needs. It is good practice to transparently document and re-evaluate the reasons for selection/elimination of specific datasets.
+- Different datasets suit different needs. Take care not to overly rule out datasets at this stage, and keep the eliminations as minimal as possible.
+- Different datasets may use different downscaling and bias-adjustment techniques. Evaluate the [advantages and disadvantages](https://apps.epri.com/climate-data-user-guide/en/climate-model-downscaling.html) of each and determine which is most appropriate for your context.
+- Once datasets are selected, users may choose to conduct analyses in the cloud to avoid storage and computational constraints. If downloading data is necessary, users should consider the data size and storage constraints before downloading.
+- When downloading geospatial data, `.csv` file format may not adequately preserve coordinate and metadata information. Therefore, `.netcdf`, `.zarr`, or other geospatial file formats are preferred.
+</details>
+
+<details id="box-3" class="orange-collapsable-box">
+<summary class="box-title">Box 3: Analyzing Data Size Trade-offs</summary>
+
+The choices of spatio-temporal resolution, sampling window, timeframe, and spatial extent will have significant implications for data size, potentially leading to subsequent data or computational constraints. So users should first assess whether they are able to choose the "most appropriate" scales for their context (as determined in Principle 1) or if they need to make some trade-offs or compromises due to data size and computational constraints.
+
+Users should then examine the tradeoffs of different choices, i.e. information that is gained or lost by choosing different resolutions, windows, timeframes, or extents, as well as how they interact with the ability to work with multiple models or emission scenarios.
+
+This trade-off analysis can be done either qualitatively (through informed judgements of data size and implications) or by conducting a quantitative preliminary comparative analysis to more directly examine the implications of different choices and their potential trade-offs. For the comparative analysis, start with coarser resolution data or smaller timeframes and then work towards larger or finer sets of data to determine which choices lead to significantly different results and are important to consider.
+</details>

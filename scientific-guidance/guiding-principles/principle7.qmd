@@ -1,0 +1,22 @@
+---
+title: "Principle 7: Evaluate and document the analysis"
+citation: false
+format:
+  html: default
+---
+
+- Critically evaluate whether your findings answered the original question(s). Check back in with the people who were involved in determining data needs for the application.
+- If you determine that the results were not sufficient to answer your original question(s), either reframe the analysis by re-visiting one or more of the above principles, or reframe the original question so that the available data can sufficiently answer it.
+- Finalize the documentation for your analysis once you determine that the results are sufficient. At a minimum, this should include the steps taken within your workflow, as well as limitations, assumptions, and decisions made at each step.
+- Consider a plan and timeline for updating, improving, or changing the analysis as new information or resources become available.
+- Determine the format in which the analysis and results should be presented and communicated with the intended audience(s) (e.g. reports, one-pagers, figures/maps, presentation formats).
+- Consider archiving the data needed to reproduce your final analysis. If space constraints prevent downloading or retaining the full dataset, consider saving a smaller derived or processed dataset to enable future changes to final calculations.
+
+<details class="grey-collapsable-box">
+<summary class="box-title">Important Considerations</summary>
+
+- Climate data analysis can be an iterative process. It often takes multiple evaluations and iterative data assessments to develop a robust analysis that produces results that sufficiently answer a question.
+- Sometimes the questions we ask of the data cannot be answered, because of the data's inherent limitations. It is important to understand that a "non-result" can still be a valid answer to your original question and may provide meaningful information about the question and/or analysis (e.g. the uncertainty range is too large to distinguish a signal, or the statistical significance is too low). Do not cherry-pick results to answer the original question.
+- The goal of documenting your workflow should be to ensure that others can replicate or build upon your analysis in the future. Consider focusing on: transformations to the original dataset, spatial or temporal aggregations or disaggregations, coordinate system transformations, metric calculations, statistical tests applied, technical documentation of developed code, and data download format.
+- Consider sharing your results, data, and analysis via an open-source forum, such as an open-access code repository (e.g. GitHub), online blog post, or open-access journal (if appropriate). Be aware that many scientific journals and regulatory institutions strongly recommend — if not require — that code and data be open-access and citable via DOI.
+</details>

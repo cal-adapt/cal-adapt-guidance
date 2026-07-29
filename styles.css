@@ -26,6 +26,8 @@
   --color-blue-pale: #e5f2fa;
   --color-blue-pastel-bg: #eaf4fb;
   --color-blue-pastel-border: rgba(77, 157, 224, 0.35);
+  --color-grey-box-bg: #f5f5f5;
+  --color-grey-box-border: #d3d3d3;
 }
 
 
@@ -39,35 +41,57 @@ body {
   --bs-alert-border-color: rgba(var(--bs-primary-rgb), 0.35);
 }
 
-/* Shared box styling: collapsible orange box (guiding-principles cross-cutting
-   boxes) and static blue box (Summary of Principles). Not built on .alert, so
-   the base properties are spelled out here rather than inherited from Bootstrap. */
+/* Shared box styling: collapsible orange/blue/grey boxes (guiding-principles
+   cross-cutting boxes and Important Considerations sections) and static
+   orange box (How to Cite examples). Not built on .alert, so the base
+   properties are spelled out here rather than inherited from Bootstrap. */
 .orange-collapsable-box,
-.blue-box {
+.blue-collapsable-box,
+.grey-collapsable-box,
+.orange-box {
   border-radius: var(--bs-border-radius, 0.375rem);
   color: var(--color-text);
   margin-bottom: 1rem;
 }
 
-.orange-collapsable-box {
+.orange-collapsable-box,
+.blue-collapsable-box,
+.grey-collapsable-box {
   position: relative;
   padding: 1rem 1rem;
+}
+
+.orange-collapsable-box {
   background-color: var(--bs-primary-light);
   border: 1px solid rgba(var(--bs-primary-rgb), 0.35);
 }
 
-.orange-collapsable-box > summary {
+.blue-collapsable-box {
+  background-color: var(--color-blue-pastel-bg);
+  border: 1px solid var(--color-blue-pastel-border);
+}
+
+.grey-collapsable-box {
+  background-color: var(--color-grey-box-bg);
+  border: 1px solid var(--color-grey-box-border);
+}
+
+.orange-collapsable-box > summary,
+.blue-collapsable-box > summary,
+.grey-collapsable-box > summary {
   cursor: pointer;
 }
 
-.orange-collapsable-box[open] > summary {
+.orange-collapsable-box[open] > summary,
+.blue-collapsable-box[open] > summary,
+.grey-collapsable-box[open] > summary {
   margin-bottom: 0.25rem;
 }
 
-.blue-box {
+.orange-box {
   padding: 0.5rem 0.75rem;
-  background-color: var(--color-blue-pastel-bg);
-  border: 1px solid var(--color-blue-pastel-border);
+  background-color: var(--bs-primary-light);
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.35);
 }
 
 .box-title {
@@ -77,7 +101,9 @@ body {
 }
 
 .orange-collapsable-box ul:last-child,
-.blue-box ul:last-child {
+.blue-collapsable-box ul:last-child,
+.grey-collapsable-box ul:last-child,
+.orange-box ul:last-child {
   margin-bottom: 0;
 }
 
@@ -378,6 +404,41 @@ div[id^="fig-"] {
   font-size: 0.9rem;
   color: #000;
   margin-bottom: 0;
+}
+
+/* Bouncy blue card variant for link-cards with list content instead of a photo */
+.info-card-list {
+  display: block;
+  background: var(--color-blue-pale);
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.info-card-list:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-blue-light);
+  color: inherit;
+}
+
+.info-card-list h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.info-card-list ul {
+  margin-bottom: 0;
+  padding-left: 1.1rem;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.info-card-list ul li {
+  margin-bottom: 0.25rem;
 }
 
 .topic-card {

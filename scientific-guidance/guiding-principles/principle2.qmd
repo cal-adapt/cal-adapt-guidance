@@ -1,0 +1,24 @@
+---
+title: "Principle 2: Catalog available data"
+citation: false
+format:
+  html: default
+---
+
+- Identify all datasets available for your region or spatial domain.
+- For each dataset, catalog the relevant details including:
+  - Data formats and any transformations/pre-processing that have been conducted
+  - Variables or metrics available
+  - Spatial and temporal resolution
+  - Spatial extent and timeframes of data
+  - Future scenarios
+  - Historical scenarios
+  - Models and corresponding ensemble members
+  - Downscaling and bias-adjustment approaches
+- Review existing metadata for each dataset including:
+  - Approach for dataset development
+  - Limitations of the dataset
+  - Frequency of dataset updates
+  - Accessibility and transparency of methods
+- Identify the availability of user guidance for each dataset.
+- Identify any relevant regulations, policies, or guidelines related to data use for your region or sectoral application (e.g. guidance on which models, metrics, or scenarios to use).

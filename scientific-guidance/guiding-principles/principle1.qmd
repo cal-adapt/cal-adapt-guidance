@@ -1,0 +1,108 @@
+---
+title: "Principle 1: Scope and identify data needs"
+citation: false
+format:
+  html: default
+---
+
+- Identify the various applications that need to use climate data.
+- For each application, identify the audience for the specific results that are generated from data analyses.
+- Identify the people within your organization who should be involved in climate data needs assessments for each application.
+- Determine the type of analyses you would like to conduct with the climate data (e.g. exploratory analyses to examine general trends or patterns, or explanatory analyses where data needs to be used to test a hypothesis or answer specific questions), and what question you would like to answer through the analyses.
+- For each application (with the relevant people) develop a list of detailed data needs including at the minimum:
+  - Data information including climate variables or metrics (see [Box 1](#box-1))
+  - Spatial resolution and extent (see [Box 2](#box-2))
+  - Temporal resolution, sampling window, and timeframe (see [Box 2](#box-2))
+  - Historical scenarios (see [EPRI's guide to choosing climate projections](https://apps.epri.com/climate-data-user-guide/en/choosing-climate-projections.html))
+  - Future scenarios (see [EPRI's guide to choosing climate projections](https://apps.epri.com/climate-data-user-guide/en/choosing-climate-projections.html))
+  - Preference for downscaling or bias-adjustment approach, if any (see [EPRI's guide to climate model downscaling](https://apps.epri.com/climate-data-user-guide/en/climate-model-downscaling.html))
+  - Any unknowns in the above categories that cannot be determined a-priori
+- Determine the risk and uncertainty tolerance for each application (e.g. decisions related to infrastructure resilience could be high-risk with lower uncertainty tolerance, whereas broad regional vulnerability analyses might have lower risk and higher uncertainty tolerance for the climate data).
+- Evaluate the technical capabilities of personnel to conduct climate data analyses.
+- Evaluate the computational as well as data storage capabilities (or limitations) for data analyses.
+
+<details class="grey-collapsable-box">
+<summary class="box-title">Important Considerations</summary>
+
+- Climate data can have a direct influence on broader decision-making within your organization as well as for communities impacted by those decisions. Therefore people from all relevant departments should be included in the data identification process. This may include external experts if subject matter expertise is not available within your organization.
+- Different applications may warrant different data choices and may need to be deliberated separately.
+- Examine [Box 1](#box-1) and [Box 2](#box-2) for important considerations on how to choose metrics/variables and appropriate spatial and temporal scales for your application.
+- In some instances, users may not know a-priori which types of data or approaches are appropriate for specific applications. Therefore some data needs identified at this stage might need to be revisited and iterated on as the analyses are being conducted.
+- Risk and uncertainty tolerance can play an important role in the choice of scenarios or models, i.e. choices can depend on whether the risk of overestimating or underestimating extremes is more consequential in a particular application.
+- Consider improving your organization's technical capacity to work with climate data through training or hiring.
+- Consider improving data storage and computational capabilities if they are restrictive.
+</details>
+
+<details id="box-1" class="orange-collapsable-box">
+<summary class="box-title">Box 1: Choosing Variables and/or Metrics</summary>
+
+Users need to make choices about which metrics (and underlying variables) are appropriate for answering questions at different stages of the process, including during:
+
+- Data needs identification (Principle 1)
+- Credibility assessment (Principle 4)
+- Developing distribution plots for sampling data (Principle 5)
+- Data analysis (Principle 6)
+- Reporting analyses (Principle 7)
+
+For each stage, select the metric that most closely matches the risks or impacts being studied and is most relevant to the context of the analysis. Ensure that the spatial and temporal scale of a metric matches the impact or risk being studied. Available scientific literature and/or existing planning or policy requirements can help determine which metrics are appropriate for different contexts.
+
+Some questions or applications may require analyzing multiple metrics (e.g. multi-hazard vulnerability assessments, compounding events, heat indices). In such cases, users should check that there is physical consistency among the metrics.
+
+<h4>Important considerations</h4>
+
+- A climate variable is a fundamental atmospheric or oceanic quantity like temperature or precipitation that describes the Earth's climate.
+- Metrics can be simple calculations from a single climate variable (e.g. 3-day average temperature), or complex calculations derived from multiple variables (e.g. the Fosberg Fire Weather Index is calculated from temperature, relative humidity, and wind speed).
+- Some climate impacts are instantaneous (e.g. high winds) while others are cumulative (e.g. groundwater depletion over many years). Climate metrics should be chosen at the timescale that is most appropriate for the type of impact.
+- Choice of metrics may differ at different stages (e.g. credibility assessment metrics may require simpler metrics, while reporting analyses may require sophisticated, derived metrics).
+- In some cases, it is hard to a-priori identify the one metric that best represents the specific risk/impact. Consider comparing between different relevant metrics to understand how sensitive your data sample/result is to the choice of metric (e.g. comparing PDSI, SPI, and SPEI for drought analyses).
+- Engineering requirements or existing policies may already have well-defined thresholds that can be translated into a metric, such as the temperature rating of equipment, or an unsafe temperature for outdoor work.
+- Data availability may strongly dictate your choice of metric.
+- Some metrics may be closely related for a given variable (i.e. one metric may be a proxy for another) and users can choose among them based on data availability and other contextual factors (e.g. cloud cover is sometimes used as a proxy for solar irradiance, heat index can be a proxy for wet bulb globe temperature in certain regions).
+</details>
+
+<details id="box-2" class="orange-collapsable-box">
+<summary class="box-title">Box 2: Selecting Appropriate Spatial & Temporal Scales</summary>
+
+For most analyses, users will need to make choices regarding five spatio-temporal considerations:
+
+- Temporal resolution (daily, hourly, etc.)
+- Sampling window (number of years of analyses)
+- Timeframe (historical, mid-century, end-of-century, etc.)
+- Spatial resolution (the size of grid cell or data at a point location)
+- Spatial extent (the area over which data needs to be analyzed)
+
+Key considerations for determining the most appropriate scales are as follows:
+
+**Temporal resolution:** Choice of resolution should be dependent on the specific temporal aspects that are most relevant to the application. These can be identified by qualitatively assessing the temporal nature of the climate hazard of interest and how it interacts with a user's system and planning process (e.g. daily or monthly resolutions may be sufficient for analyzing general trends in temperature or heat, while hourly resolution may be needed for assessing wildfire risk where temporal aspects are much more important).
+
+**Sampling window:** For many applications, users should choose a data window that is able to sufficiently represent the different modes of variability of the climate that are relevant to the region and the application. A 30-year window is broadly recommended to characterize the average conditions and internal variability of the climate. However shorter time windows may be appropriate for some sectoral applications (e.g. those that require a specific focus on current climate).
+
+**Timeframe:** Climate trends are harder to discern in shorter timeframes due to inherent natural variability in the system. Longer-term analyses can provide a better understanding of the direction of change, which can in turn be helpful in interpreting shorter-term trends where some risks may be less visible and harder to discern. Therefore, for applications that require analyses of near-term or short-term time frames, it is recommended that users consider a supplementary assessment of impacts over longer periods of time (e.g. 2070, end of century, etc).
+
+**Spatial resolution:**
+
+- Users must first determine whether they need point location data or can work with gridded data depending on their application. For instance, applications that examine hyper-local issues (e.g. a point-based asset such as a substation) or that involve models parameterized on particular weather stations might necessitate point location data. For analyzing regional climate responses, gridded data might be most appropriate.
+- To determine the appropriate resolution of gridded data, users should assess whether the spatial heterogeneity/variability (topographic, climatic, or other) within the region they want to examine is small or large. Finer resolution data could provide greater benefits for regions that are spatially heterogeneous (e.g. areas of complex terrain or regions that transition quickly from water to land) as compared to regions that are more spatially homogeneous (e.g. large plains).
+
+**Spatial extent:** Users should examine an area that is large enough to properly analyze the climate issue or the hazard under consideration (e.g. to analyze the impacts of a heat event on system-level planning, users should examine the entire regional extent where the impacts of the heat events may occur).
+
+<h4>Important considerations</h4>
+
+- Choice of temporal and spatial scales could vary based on multiple considerations including the characteristics of available data, specific temporal or spatial aspects of relevance to the application or planning context, type of variable or hazard, specific regional context, topography, etc.
+- When making decisions on appropriate scales, the scale of the decision and the scale that the climate phenomena of interest plays out at are both important to consider.
+- Reflect on general assumptions and norms (both within science and decision context) to qualitatively judge the most appropriate scales for the context.
+- Other important considerations for temporal scale are as follows:
+  - Highest resolution data might not always be the best fit (or necessary) for your application.
+  - Finer resolution data is not always better data and in some cases can introduce or amplify biases in the coarser data. For example, studies have shown that increasing the resolution of WRF data for California led to improvements in certain snow and wind metrics, but also led to wet precipitation bias in some regions that was perpetuated and amplified by certain boundary conditions in the coarser data ([Rahimi et al. 2022](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021JD035699), [Risser et al. 2024](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL105979)).
+  - Many studies suggest using a sampling window that is about 30 years. Shorter windows might not adequately represent the various modes of climate variability, and therefore may not be fully representative of the hazards that might impact systems (i.e. there is a possibility of missing out on key hazards). For instance, applications like extreme value analyses require at least 30 years of simulation to appropriately pull event maxima ([Bonnin et al. 2006](https://www.weather.gov/media/owp/hdsc_documents/Atlas14_Volume2.pdf)).
+  - Recently, agencies such as NOAA have considered [shorter sampling windows](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals) (i.e. 15 years), particularly for applications that require more recent climate information, such as predicting [energy system loads](https://kleinmanenergy.upenn.edu/commentary/blog/the-new-climate-normal-for-utility-weather-forecasts/) and informing economic decisions. The appropriateness of using sampling windows that are shorter than 30 years for certain applications (and/or regions) is an active area of [research and deliberation](https://yaleclimateconnections.org/2021/02/updated-yardstick-begs-question-whats-normal-in-a-changing-climate/) ([Livezey et al. 2007](https://journals.ametsoc.org/view/journals/apme/46/11/2007jamc1666.1.xml)).
+  - Another instance where shorter time-windows of 5-10 years are commonly used is when users are presenting results as continuous time series rather than comparing climatologies. In such instances, using a rolling average of shorter windows can serve the purpose of smoothing out interannual variability to allow the results to focus on long-term change signals.
+  - There may be a need to align timeframe choices with planning cycles and/or with the lifetime of the asset/infrastructure under consideration. However, near-term timeframes have higher noise-to-signal ratios, making it harder to discern trends. Further, climatic changes, as well as the impacts and risks that stem from these changes, could be non-linear and increase at a more rapid rate towards the end of the century. Hence, near-term timeframes might not always provide a holistic picture of long-term risk and impacts, particularly for the higher SSPs. Therefore, a supplemental long-term analysis is recommended even if applications are looking at shorter time-scales.
+  - Using [Global Warming Levels](/scientific-guidance/global-warming-levels.qmd) (GWL) as an alternate framework can help overcome some of the challenges relating to timeframes, as this framework is more suited to adaptive planning. However, choosing a single GWL might lead you to miss out on non-linear impacts that are visible at different warming levels, therefore it is recommended that users choose multiple warming levels for their analyses.
+- Other important considerations for spatial scale are as follows:
+  - Most GCM climate data is gridded, and climate models do not automatically output data at point locations.
+  - If point locations are needed, then an appropriate localization approach which includes bias-correction might be necessary.
+  - Point location localization requires high-quality historical observations data at that location. If historical data is unavailable, then users would need to assess and rely upon the finest resolution gridded data from the nearest gridcells.
+  - Many informed decisions and investments can be made by using lower resolution data that considers more models and plausible future outcomes.
+  - When conducting analyses for specific spatial extents that do not match a grid cell, care must be taken to create a rigorous workflow which carefully considers edge cases where, for example, a gridcell may be only partially included in a selected spatial extent. Conducting hyper-local spatial analyses (e.g. using [census tracts](/scientific-guidance/census-tracts.qmd) in urban areas) may require more specialized approaches.
+</details>

@@ -1,0 +1,42 @@
+---
+title: "Principle 4: Assess credibility of data"
+citation: false
+format:
+  html: default
+---
+
+- Identify existing credibility assessments available in the literature for each dataset. This could be, for instance, a peer-reviewed paper or report defining the applications, intended use, credibility, and limitations of the data.
+- Critically review available assessments to determine how well different datasets represent the phenomena, variables, and regions of interest. Include, at a minimum, the following steps:
+  - Examining how the assessment was conducted (e.g. spatial and temporal scales, variables, climate processes that were assessed)
+  - Determining the appropriateness of the methodology used to generate the datasets for your application (e.g. type of downscaling method used or type of bias-adjustment conducted)
+  - Understanding known biases within the dataset that may preclude use for specific regions and/or variables (e.g. near-surface moisture is projected to be higher than historical observations within CMIP6 GCMs)
+  - Understanding credibility for the entire dataset, as well as individual models within the dataset, at multiple scales (e.g. global, regional, local) and for different variables of interest (e.g. by examining existing model rankings, if available)
+  - Assessing whether the models include a representation of key processes relevant to the application (e.g. lake-ocean effects may be important in some regions and not all models include these processes)
+- Based on the review, identify the most pertinent credibility-related considerations for your context (e.g. large biases in relevant variables for some models, need for physical consistency among different variables, appropriate representation of key regional processes), and determine whether it is necessary to remove entire datasets or models from further analyses.
+- Transparently document the findings from the review of credibility assessments, and the reasons for inclusion or elimination of specific models/datasets.
+- If model eliminations are necessary, cross-check to ensure that the datasets still contain multiple models that span a range of outcomes and robustly characterize uncertainty about future conditions.
+- Determine whether a more context-specific credibility assessment of the data is necessary (e.g. if your niche application requires further analysis of credibility for a specific variable or phenomenon). If so, it may require contracting an expert or research agency to conduct such an assessment.
+
+<details class="grey-collapsable-box">
+<summary class="box-title">Important Considerations</summary>
+
+- Conducting credibility assessments is a complex scientific endeavor, so users should identify and rely on existing assessments where possible, such as:
+  - Peer-reviewed publications and/or guidance materials produced for the datasets (e.g. LOCA2 or [WRF datasets](https://www2.mmm.ucar.edu/wrf/users/wrf_users_guide/build/html/index.html))
+  - Broader climate assessments (e.g. state assessments, National Climate Assessment, or IPCC)
+  - Credibility assessments for the region(s) of interest (e.g. [Krantz et al. 2021](https://www.energy.ca.gov/sites/default/files/2022-09/20220907_CDAWG_MemoEvaluating_GCMs_EPC-20-006_Nov2021-ADA.pdf), [CA DWR 2015](https://water.ca.gov/-/media/DWR-Website/Web-Pages/Programs/All-Programs/Climate-Change-Program/Climate-Program-Activities/Files/Reports/Perspectives-Guidance-Climate-Change-Analysis.pdf), [Pierce et al. 2016](https://loca.ucsd.edu/~pierce/IEPR_Clim_proj_using_LOCA_and_VIC_2016-06-13b.pdf), [Rupp et al. 2013](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/jgrd.50843))
+- Critically reviewing existing credibility assessments for a user context can also be a complex endeavor, so this needs to be done carefully and intentionally, and in some cases might need consultation with experts.
+- While critically reviewing credibility assessments, be aware that:
+  - Credibility assessments can be at a dataset-level and/or at a model-level.
+  - A good credibility assessment involves examining models at different scales. For instance, evaluating credibility for local applications still requires examining models' ability to represent regional and even global processes.
+  - All climate models have some degree of bias relative to the real-world values of climate variables. Models with large apparent biases can still have excellent representation of physical climate processes and produce a credible climate change signal. For this reason, credibility assessments that incorporate evaluation of physical processes are preferred over ones that only focus on variables without evaluating process-credibility.
+  - Even if a model is deemed credible for a region, model performance for specific subregions or metrics might vary.
+  - A model that represents one metric well may not necessarily represent another metric equally well for the same region. The degree to which model skill is correlated for different metrics is not well understood.
+  - High resolution spatial data is not always more credible than coarser spatial resolution.
+  - Dynamical and statistical downscaling techniques have unique [strengths and weaknesses](https://apps.epri.com/climate-data-user-guide/en/climate-model-downscaling.html). One is not automatically more credible than the other.
+  - Bias-adjusted (also termed bias-corrected) and non-bias-adjusted data are not more or less credible than one another, but each kind may be more appropriate for specific types of use (e.g. if your analysis is focused on a change relative to historical conditions, non-bias-adjusted data can perform just as well as bias-adjusted data).
+- Credibility assessments are better suited for eliminating models that do not accurately represent the regional climate (or have large known biases) rather than cherry-picking top performers.
+- There may be trade-offs involved while eliminating models based on credibility, therefore users should take care not to overscreen models. Each model makes different (but valid) choices on how various climatic processes are represented and emphasized. The diversity of models reflects the fact that we have incomplete understanding of the future. Therefore it is not recommended to select "one," or even a few, of the best models for a region or an application. Utilizing a set of several credible models can provide users with valuable insights about the range of plausible outcomes.
+- If consulting with experts while reviewing credibility assessments, be aware that different scientists may have their own preferences and biases. Seeking a second or third opinion could be valuable. If there are no scientists within your state or region with expertise in credibility assessments, consider experts from other similar regions.
+- If multiple datasets are deemed credible, it might be useful to evaluate how results vary across the datasets.
+- If a credibility assessment is not available for the dataset relevant to your specific context, include that information as part of your documentation so the level of risk and undefined credibility is transparent to all decision-makers.
+</details>

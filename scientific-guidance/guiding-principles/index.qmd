@@ -1,0 +1,129 @@
+---
+title: "Guiding Principles on the Use of Climate Data"
+author:
+  - name: "Kripa Jagannathan"
+  - name: "Nancy Freitas"
+  - name: "Victoria Ford"
+  - name: "Will Krantz"
+  - name: "Justine Bui"
+  - name: "Owen Doherty"
+  - name: "Andrew Jones"
+date: "2026-07-15"
+date-modified: &date-modified "2026-07-16"
+citation:
+  publisher: "Cal-Adapt"
+  issued: *date-modified
+format:
+  html: default
+---
+
+## Preamble
+
+The purpose of this page is to provide users of climate data with broad principles and a process that can be followed when working with climate data for different applications. This process goes through the various steps in climate data analyses – from identifying data needs and choosing the right products, to analysing data and reporting on climate-related results. The principles were developed through 2.5 years of iterative deliberations among different scientists of the Cal-Adapt Analytics Engine Project, with regular feedback from key climate data users (including energy utilities) at various steps of the process. The principles try to balance scientific rigor and the practical constraints of data use to afford users different options to work with climate data. These principles can be useful for anyone who is currently integrating or looking to integrate climate data into different applications or decision-contexts.
+
+The principles are presented sequentially and in a step-by-step manner, however a user may follow a different order based on their context. There are also many offramps for this process, and some users may not need to go through all the steps based on their specific contextual needs. This process can be highly iterative and may require certain assumptions and decisions (e.g. metrics, scales, or types of analyses) to be re-visited several times. Although the document presents broad principles that can apply to many different contexts and uses, specific applications will likely require more complex and nuanced examinations within one or more principles. Each principle or step of this process might also require specific technical skills in climate data analysis such as coding, statistics, data visualisations, understanding of basics of climate models, etc.
+
+**How this page is organized:**
+
+- The main text of each principle describes what a user should do at that stage of the process.
+- Each principle is followed by an **Important Considerations** callout, which provides background, rationale, and do's and don'ts. This text has more technical depth and may require a basic understanding of some key climate-related concepts.
+- Five cross-cutting boxes cover topics that arise across multiple principles. These are separated out for readability and are referenced from the relevant principles.
+
+::: {.callout-note title="Note"}
+This page does not include principles on how to conduct specific analyses downstream of the climate data, i.e. how to do climate risk assessments or a health impact assessment. It is meant mainly to help users understand how to pick and choose the right data and analysis approaches for analysing the climate hazards of interest.
+:::
+
+## Summary of Principles
+
+```{=html}
+<div class="grid mt-3">
+  <a href="principle1.qmd" class="info-card info-card-list g-col-12">
+    <h4>Principle 1: Scope and identify data needs</h4>
+    <ul>
+      <li>Identify climate data applications</li>
+      <li>Identify audience for the analysis and results</li>
+      <li>Involve relevant people</li>
+      <li>Determine types of data analyses needed</li>
+      <li>Develop a list of metrics, variables, temporal and spatial scales, scenarios, downscaling, and unknowns</li>
+      <li>Determine risk and uncertainty tolerance</li>
+      <li>Evaluate technical capabilities</li>
+      <li>Evaluate computational capacity</li>
+    </ul>
+  </a>
+
+  <a href="principle2.qmd" class="info-card info-card-list g-col-12">
+    <h4>Principle 2: Catalog available data</h4>
+    <ul>
+      <li>Identify all datasets covering the spatial domain</li>
+      <li>Catalog data details for each dataset</li>
+      <li>Review metadata</li>
+      <li>Identify available user guidance</li>
+      <li>Identify data-related regulations or policies</li>
+    </ul>
+  </a>
+
+  <a href="principle3.qmd" class="info-card info-card-list g-col-12">
+    <h4>Principle 3: Screen available datasets against requirements</h4>
+    <ul>
+      <li>Conduct initial screening for fit of datasets</li>
+      <li>Revisit important data considerations/criteria</li>
+      <li>Assess tradeoffs between datasets</li>
+      <li>If data size is a constraint, revisit spatial and temporal scale choices</li>
+      <li>Select datasets that fulfil the most important data considerations/criteria</li>
+      <li>Consider a preliminary comparative analysis between multiple datasets</li>
+    </ul>
+  </a>
+
+  <a href="principle4.qmd" class="info-card info-card-list g-col-12">
+    <h4>Principle 4: Assess credibility of data</h4>
+    <ul>
+      <li>Identify existing credibility assessments</li>
+      <li>Critically review assessments to understand approach, known biases, and credibility at multiple scales</li>
+      <li>Identify the most pertinent credibility-related considerations and determine if elimination of models/datasets is necessary</li>
+      <li>Document reasons for elimination of models/datasets</li>
+      <li>Cross-check to ensure that data spans a range of outcomes</li>
+      <li>Determine if a context-specific credibility assessment is necessary</li>
+    </ul>
+  </a>
+
+  <a href="principle5.qmd" class="info-card info-card-list g-col-12">
+    <h4>Principle 5: Sub-select data</h4>
+    <ul>
+      <li>Determine whether sub-selection of models is necessary</li>
+      <li>Develop a principled, step-by-step plan for choosing a well-balanced sample</li>
+      <li>Conduct an exploratory analysis to characterize the distribution of model runs</li>
+      <li>Use the distribution plots to choose an appropriate sample based on context</li>
+      <li>Cross-check that the sample spans a range of outcomes</li>
+      <li>Document and communicate the sub-selection approach</li>
+    </ul>
+  </a>
+
+  <a href="principle6.qmd" class="info-card info-card-list g-col-12">
+    <h4>Principle 6: Analyze data and summarize results</h4>
+    <ul>
+      <li>Revisit the purpose and audience for the data analysis</li>
+      <li>Identify metrics, statistical analyses, and aggregations needed to analyze data</li>
+      <li>Develop a step-by-step method to compute metrics, aggregate across scales, and synthesize across models and scenarios</li>
+      <li>Consider model weighting, presenting results as change signals versus absolute values, and framing impact relative to natural variability</li>
+      <li>Evaluate uncertainty</li>
+      <li>Document and communicate the analysis approach and limitations</li>
+    </ul>
+  </a>
+
+  <a href="principle7.qmd" class="info-card info-card-list g-col-12">
+    <h4>Principle 7: Evaluate and document the analysis</h4>
+    <ul>
+      <li>Evaluate if the analysis answered the original questions</li>
+      <li>If questions were not answered, revisit previous principles or reframe the original question</li>
+      <li>Finalize documentation of the workflow</li>
+      <li>Consider a plan and timeline for updating the analysis</li>
+      <li>Determine how the analysis and results should be presented and communicated</li>
+      <li>Archive the most important data and outputs</li>
+    </ul>
+  </a>
+</div>
+```
+
+## Acknowledgments
+
+We thank our many collaborators who contributed to the development of these guiding principles, including California Investor Owned Utilities, state agencies, consulting groups, and researchers. We also specifically thank Grace Di Cecco and Naomi Goldenson for their input on early drafts of the principles.

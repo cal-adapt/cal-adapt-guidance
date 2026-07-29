@@ -1,0 +1,66 @@
+---
+title: "Principle 6: Analyze data and summarize results"
+citation: false
+format:
+  html: default
+---
+
+- Revisit the specific purpose and audience for which you are analyzing the data (identified in Principle 1) and identify the types of questions you intend to answer with the data.
+- Based on the above determined purpose, identify the metrics (see [Box 1](principle1.qmd#box-1)), the types of statistical analyses, and spatial and temporal aggregations (see [Box 4](#box-4)), etc. needed to analyze, visualize, and/or interpret the data. Note that these may be the same as those identified in Principle 1 or could be more detailed or nuanced than the initially identified needs.
+- Develop a step-by-step method on how to conduct the analysis and summarize results. This may include computing metrics, aggregating across spatial and temporal scales, and synthesizing data across models and emission scenarios/warming levels. Note that the order in which you perform each step will have a significant impact on the final results.
+- Ensure that your analysis considers the following:
+  - Whether projections need to be weighted differently based on the number of ensemble members per model, model independence, model credibility, etc.
+  - Whether change signals or absolute results are more appropriate for your analysis context. If calculating change signals, determine the most meaningful baseline or reference period (see [Box 5](#box-5)). If using absolutes (such as measuring exceedances of a threshold), ensure that bias-adjusted data is used. For a change signal, both bias-adjusted and non-bias-adjusted data can still produce valid delta signals.
+  - Evaluate and frame the significance of climate impacts relative to the range of natural variability that exists within the climate system.
+- Evaluate uncertainty in your analysis as follows:
+  - Review and understand the different types of uncertainties in climate data (e.g. internal variability, model uncertainty, scenario uncertainty) and where they may arise within your analysis (see [EPRI 2024](https://apps.epri.com/climate-readi-hazard-guide/en/8-Uncertainty.html) and [Jagannathan et al. 2024](/scientific-guidance/general-climate-guidance/using-climate-projections.qmd)).
+  - Heuristically identify the types of uncertainties that are most important to assess for your context. Although all sources of uncertainty are important to consider, the relative importance of each depends on a given application, risk tolerance, etc.
+    - Consider the timeframe of your analysis to determine whether specific types of uncertainty may be more relevant than others. For many regional applications, internal variability dominates for the near-term. Model and scenario uncertainty increase in their relative importance over time, while the importance of internal variability tapers over time. Scenario uncertainty only starts to matter after mid-century ([Hawkins and Sutton 2009](https://journals.ametsoc.org/view/journals/bams/90/8/2009bams2607_1.xml)).
+    - Additionally, consider if your choice of metrics/variables, temporal and spatial scales, and temporal and spatial aggregations impact the relative importance of the different types of uncertainty.
+  - Choose the appropriate method for evaluating uncertainty based on the type of uncertainty/ies identified as most relevant.
+    - Scenario uncertainty can be evaluated by considering multiple SSPs or GWLs.
+    - Model uncertainties can be examined by interpreting a range of possible outcomes across multiple models.
+    - Internal variability can be analyzed by using large ensembles of a single model.
+  - Overall, examine a range of plausible future outcomes using different datasets, models, emission scenarios, and downscaling approaches to build contextual awareness of an uncertain future. Specific recommendations related to these considerations are also included within each of the previous principles, such as when assessing data credibility, sampling, etc.
+- Transparently document and communicate the analysis approach (including uncertainty evaluations) as well as any limitations of the analysis or aggregations.
+
+<details class="grey-collapsable-box">
+<summary class="box-title">Important Considerations</summary>
+
+- Determination of the metrics, types of analyses, aggregations, etc. should be done carefully and intentionally, based on the most valuable information that needs to be conveyed.
+- Very different interpretations of the data can arise through different approaches to aggregating, summarizing, or visualizing across the dimensions of space, time, simulation, model, and scenario.
+- The most appropriate way to present results depends on the context and audience. For any given analysis, different audiences may require different types of metrics or statistical approaches. For example, some users may require a specific result/explanatory analysis (e.g. a 1-in-x event to plug into a downstream model), while others may need a simple exploratory analysis of trends.
+- Because every model has unique biases and systematic errors, absolute numbers (e.g. temperature of the hottest day of the year) from different models can only be directly compared if they have all had a similar bias-adjustment applied to align with a trusted observational data source. If a mixture of bias-adjusted and non-bias-adjusted models are used, comparisons should only be made between change signals (e.g. future change in degrees of the hottest day of the year).
+- Users should qualitatively consider how known biases in data might impact results in their direction and extent. For example, studies show that CMIP6 GCMs may be over-estimating water vapor in the US Southwest ([Simpson et al. 2023](https://doi.org/10.1073/pnas.2302480120)). Therefore heat impact studies using metrics that include relative humidity variables (such as heat index) may overstate the impacts due to the inherent biases in the models. Such potential biases should be transparently documented in user analyses.
+- Future climate data will always have inherent uncertainty because there is no way to verify and validate events that have not happened yet.
+- Uncertainties do not invalidate the usefulness of climate data for adaptation; rather they represent the complexity and range of potential future outcomes.
+- Some relevant scientific concepts, such as whether downscaling increases or decreases uncertainty, and how the relative significance of different sources of uncertainty varies for different spatial and temporal scales, are still emerging areas of research.
+</details>
+
+<details id="box-4" class="orange-collapsable-box">
+<summary class="box-title">Box 4: Aggregation Across Spatial and Temporal Scales</summary>
+
+When conducting spatial (aggregating across gridcells) or temporal (aggregating across months/years) aggregations, first examine climate impacts without aggregation to understand the spatial and temporal variability and distribution of the data. This is because important climate change signals and information about uncertainty can be lost when aggregating across different locations, time scales, or models. Therefore it is recommended to first examine climate impacts without aggregation, and then aggregate data at the end, once the variability and distribution have been thoroughly examined.
+
+Consider reporting the most appropriate statistics for the region rather than defaulting to spatial or temporal averaging. These could include distributional statistics over the aggregated area, spatial variability within a county, temporal variability over a season, etc.
+
+Consider the homogeneity of the climate hazard as it overlaps with the homogeneity of the spatial area or timeframe being aggregated over (e.g. aggregating heat over homogeneous plains versus precipitation over heterogeneous topography can have very different implications for the eventual results).
+
+Exercise caution when aggregating over grid cells for assessments of extremes, such as in [extreme value analysis](/scientific-guidance/extreme-value-analysis.qmd), where there is potential for biasing results toward the most extreme value in the area and/or missing an extreme of interest.
+
+If your application involves presenting data as a time series, the sampling window for aggregation should be long enough to smooth out large variations from diurnal or seasonal cycles if they are not the focus of the analysis. If your application needs to preserve interannual or multi-year variability, ensure that the window for aggregation is short enough to evaluate the change signal relative to the magnitude of natural variability.
+
+When presenting aggregated results, transparently document the types of impacts that might be missed due to aggregation across different locations, grid cells, or years (e.g. averaging over large spatial areas could lead to missing out on specific distributional impacts for different communities, which might have equity implications). Consider reporting other distributional statistics in addition to documenting the limitations in the results.
+</details>
+
+<details id="box-5" class="orange-collapsable-box">
+<summary class="box-title">Box 5: Computing Change Signals</summary>
+
+The appropriate reference period for computing change signals depends on the goals of your analysis. Choosing different reference periods can drastically influence the calculated change signal, not just in magnitude but also in spatial patterns and event frequencies. Some common choices include:
+
+- **Pre-industrial period** (e.g. 1850-1900) – Captures the full, cumulative impacts of greenhouse gas-driven climate change. This is consistent with international targets for limiting global climate change (to 1.5°C of global warming), and is the earliest reference period usable with most global climate models.
+- **Recent historical baseline** (e.g. 1980-2010) – Focuses on changes relative to recent times when we have fairly complete observational records and "modern" infrastructure, societal function, etc. This is more common for climate impact studies and adaptation planning.
+- **Present conditions** (e.g. 2015-2040) – A more difficult-to-define reference period, due to the need for assumptions about how current trends will continue, but potentially useful for very specific operational planning.
+
+It is generally recommended that the chosen baseline be at least 30 years long to capture the range of year-to-year fluctuations in climate. However shorter time windows may be considered for some sectoral applications (e.g. those that require a specific focus on current climate).
+</details>

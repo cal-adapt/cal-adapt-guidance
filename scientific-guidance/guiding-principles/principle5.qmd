@@ -1,0 +1,32 @@
+---
+title: "Principle 5: Sub-select data"
+citation: false
+format:
+  html: default
+---
+
+- Determine if you are able to utilize all the models and simulations within the credible dataset(s) based on computational capacity, data size limitations, or the type of analysis being conducted. Based on your context, sub-selecting the data may be necessary.
+- If you are unable to use the entire dataset, develop a principled, step-by-step plan to identify a well-balanced sample from all available models and simulations within the credible datasets. Note that different sampling strategies may be needed for different applications due to their unique needs (e.g. data sub-selection approaches might differ for applications where users are assessing a worst-case scenario or conducting a stress test analysis versus where users are planning around average changes or quantify uncertainty).
+- Conduct an exploratory analysis on the entire dataset to characterize the distribution of models and ensembles across the range of outcomes for the metric(s) of interest as follows:
+  - Plot the distribution of the model runs ranging from hottest to coolest, wettest to driest, or based on the magnitude of the change signal or of a relevant metric.
+  - If multiple variables are important to your analysis, plot how they change in combination with each other across different model runs (e.g. which models predict hotter and drier conditions vs. hotter and wetter).
+  - If there are computational constraints, use a simplified form of the exploratory analysis by choosing a shorter time period, smaller area, or simplified metric. For example, if studying 1-in-x heat events, users may choose to do the model sub-setting using a simpler metric such as annual maximum temperature. This can help avoid the computationally intensive steps that may be involved in using a 1-in-x metric for the analysis, such as fitting a distribution to the data.
+- Using the distribution plots from the exploratory analysis, sub-select the most appropriate sample for your context as follows:
+  - Sample to (1) match the mean of the full dataset, (2) capture a range or representative variability, or (3) select extreme bounding cases. The option you choose will depend on the focus of your analysis, risk tolerance, and/or additional context around the impacts of the relevant variable (e.g. for worst-case scenario or stress test analyses, users may choose to sample simulations that fall at the extremes or tails; whereas users planning around average changes might pick the mean or choose a sub-set that spans the range of the distribution to quantify uncertainty across simulations).
+  - If your application is focused on changes to rare or extreme events, include as many individual simulations as possible to ensure statistical robustness. If available in your dataset, individual models that have large ensembles of simulations should be included, as they provide a useful way to measure changes to extremes.
+  - If your analysis is not focused on rare or extreme events, sample a range of models that have diverse physical representations of the climate system, as they can be more valuable than including many simulations from a single model.
+- Cross-check that the resultant sample includes an appropriate combination of multiple models, ensemble members, and/or a variety of future scenarios that appropriately captures the goals for the analysis.
+- Clearly document the sub-selection approach and communicate it when sharing the results.
+
+<details class="grey-collapsable-box">
+<summary class="box-title">Important Considerations</summary>
+
+- For some regions, there may be published analyses or distributions of models that can be leveraged for sampling (e.g. distribution plots characterizing models from hot to cold or wet to dry are often included within credibility assessments like [Krantz et al. 2021](https://www.energy.ca.gov/sites/default/files/2022-09/20220907_CDAWG_MemoEvaluating_GCMs_EPC-20-006_Nov2021-ADA.pdf)).
+- Sub-selection always involves tradeoffs, so it is important to do so carefully and transparently. Even with the most careful sampling procedure, there may be a chance of missing plausible worst-case scenarios.
+- When sub-selecting, it is essential to avoid unintentionally selecting a biased sample (e.g. unknowingly choosing the hottest three models from a larger set).
+- Using the entire sample of all credible models will provide the most comprehensive picture of future projections. But if sub-selecting is necessary, most scientific recommendations suggest that at a minimum the sample should contain 5-10 models, although there may be differences based on specific variables, size of change signal, etc. (see [Pierce et al. 2009](https://www.pnas.org/doi/10.1073/pnas.0900094106), [McSweeney et al. 2014](https://link.springer.com/article/10.1007/s00382-014-2418-8), [Mendlik and Gobiet 2015](https://link.springer.com/article/10.1007/s10584-015-1582-0), and [CA DWR 2015](https://water.ca.gov/-/media/DWR-Website/Web-Pages/Programs/All-Programs/Climate-Change-Program/Climate-Program-Activities/Files/Reports/Perspectives-Guidance-Climate-Change-Analysis.pdf)).
+- Sub-selection strategies may differ for applications that require extreme event analysis and internal variability, versus those that do not require analyzing extreme event statistics or internal variability.
+  - Applications involving the evaluation of statistics of extreme events or internal variability may require large ensembles to ensure that there are sufficient instances of rare events to adequately examine their properties and frequencies. Therefore these applications may rely on a suite of models with multiple ensemble members.
+  - For applications that do not require these analyses, it may not be essential to distinguish among models and ensembles, and each projection can be considered a realization of a plausible outcome.
+- For some specific applications like stress tests, it may not be necessary to examine the entire range of plausible outcomes, and users might specifically choose the models or simulations that fall in the tails of the distribution.
+</details>

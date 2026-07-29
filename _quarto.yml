@@ -35,6 +35,8 @@ website:
         menu:
           - href: scientific-guidance/general-climate-guidance/index.qmd
             text: General Climate Guidance
+          - href: scientific-guidance/guiding-principles/index.qmd
+            text: Guiding Principles
           - href: scientific-guidance/climate_profiles/index.qmd
             text: Climate Profiles
           - href: scientific-guidance/uncertainty/index.qmd
@@ -84,6 +86,7 @@ website:
         - glossary/index.qmd
         - general-resources/reference-library.qmd
         - general-resources/media.qmd
+        - general-resources/how-to-cite.qmd
     - id: scientific-guidance
       title: "Scientific Guidance"
       style: docked
@@ -94,7 +97,16 @@ website:
           contents:
             - scientific-guidance/general-climate-guidance/about-climate-projections.qmd
             - scientific-guidance/general-climate-guidance/using-climate-projections.qmd
-            - scientific-guidance/general-climate-guidance/guiding-principles.qmd
+        - text: "Guiding Principles"
+          href: scientific-guidance/guiding-principles/index.qmd
+          contents:
+            - scientific-guidance/guiding-principles/principle1.qmd
+            - scientific-guidance/guiding-principles/principle2.qmd
+            - scientific-guidance/guiding-principles/principle3.qmd
+            - scientific-guidance/guiding-principles/principle4.qmd
+            - scientific-guidance/guiding-principles/principle5.qmd
+            - scientific-guidance/guiding-principles/principle6.qmd
+            - scientific-guidance/guiding-principles/principle7.qmd
         - text: "Climate Profiles"
           href: scientific-guidance/climate_profiles/index.qmd
           contents:

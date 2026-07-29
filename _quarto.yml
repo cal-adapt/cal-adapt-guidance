@@ -100,13 +100,20 @@ website:
         - text: "Guiding Principles"
           href: scientific-guidance/guiding-principles/index.qmd
           contents:
-            - scientific-guidance/guiding-principles/principle1.qmd
-            - scientific-guidance/guiding-principles/principle2.qmd
-            - scientific-guidance/guiding-principles/principle3.qmd
-            - scientific-guidance/guiding-principles/principle4.qmd
-            - scientific-guidance/guiding-principles/principle5.qmd
-            - scientific-guidance/guiding-principles/principle6.qmd
-            - scientific-guidance/guiding-principles/principle7.qmd
+            - text: "Principle 1"
+              href: scientific-guidance/guiding-principles/principle1.qmd
+            - text: "Principle 2"
+              href: scientific-guidance/guiding-principles/principle2.qmd
+            - text: "Principle 3"
+              href: scientific-guidance/guiding-principles/principle3.qmd
+            - text: "Principle 4"
+              href: scientific-guidance/guiding-principles/principle4.qmd
+            - text: "Principle 5"
+              href: scientific-guidance/guiding-principles/principle5.qmd
+            - text: "Principle 6"
+              href: scientific-guidance/guiding-principles/principle6.qmd
+            - text: "Principle 7"
+              href: scientific-guidance/guiding-principles/principle7.qmd
         - text: "Climate Profiles"
           href: scientific-guidance/climate_profiles/index.qmd
           contents:

@@ -14,7 +14,3 @@ This page covers the fundamentals of climate modeling: what climate projections 
 ### [Using Climate Data in Decision-Making](using-climate-projections.qmd)
 
 This page answers the practical questions that come up when applying climate data to planning and decision-making. It covers topics such as choosing between the WRF and LOCA2-Hybrid datasets, selecting models and ensemble members, determining appropriate spatial and temporal scales, and assessing data credibility and uncertainty. The guidance reflects extensive input from climate scientists and data users across sectors, and is intended to help users make well-informed, context-specific choices.
-
-### [Guiding Principles on the Use of Climate Data](/scientific-guidance/guiding-principles/index.qmd)
-
-This page lays out a step-by-step process for working with climate data, from identifying data needs through to analyzing results and documenting a final workflow. This resource is organized around seven core principles: scoping data needs, cataloging available data, selecting data that fits, assessing credibility, sampling, analysis, and documentation. Altogether this page offers a structured yet flexible approach that can be adapted to a wide range of applications and planning contexts.

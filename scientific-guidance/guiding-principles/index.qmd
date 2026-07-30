@@ -19,21 +19,22 @@ format:
 
 ## Preamble
 
-The purpose of this page is to provide users of climate data with broad principles and a process that can be followed when working with climate data for different applications. This process goes through the various steps in climate data analyses – from identifying data needs and choosing the right products, to analysing data and reporting on climate-related results. The principles were developed through 2.5 years of iterative deliberations among different scientists of the Cal-Adapt Analytics Engine Project, with regular feedback from key climate data users (including energy utilities) at various steps of the process. The principles try to balance scientific rigor and the practical constraints of data use to afford users different options to work with climate data. These principles can be useful for anyone who is currently integrating or looking to integrate climate data into different applications or decision-contexts.
+The purpose of this section is to provide users of climate data with broad principles and a process that can be followed when working with climate data for different applications. This process goes through the various steps in climate data analyses – from identifying data needs and choosing the right products, to analysing data and reporting on climate-related results. The principles were developed through 2.5 years of iterative deliberations among different scientists of the Cal-Adapt Analytics Engine Project, with regular feedback from key climate data users (including energy utilities) at various steps of the process. The principles try to balance scientific rigor and the practical constraints of data use to afford users different options to work with climate data. These principles can be useful for anyone who is currently integrating or looking to integrate climate data into different applications or decision-contexts.
 
-The principles are presented sequentially and in a step-by-step manner, however a user may follow a different order based on their context. There are also many offramps for this process, and some users may not need to go through all the steps based on their specific contextual needs. This process can be highly iterative and may require certain assumptions and decisions (e.g. metrics, scales, or types of analyses) to be re-visited several times. Although the document presents broad principles that can apply to many different contexts and uses, specific applications will likely require more complex and nuanced examinations within one or more principles. Each principle or step of this process might also require specific technical skills in climate data analysis such as coding, statistics, data visualisations, understanding of basics of climate models, etc.
+## How This Section is Organized
 
-**How this page is organized:**
+Principles
+:   The main text of each principle describes what a user should do at that stage of the process.
 
-- The main text of each principle describes what a user should do at that stage of the process.
-- Each principle is followed by an **Important Considerations** callout, which provides background, rationale, and do's and don'ts. This text has more technical depth and may require a basic understanding of some key climate-related concepts.
-- Five cross-cutting boxes cover topics that arise across multiple principles. These are separated out for readability and are referenced from the relevant principles.
+Important Considerations
+:   Each principle is followed by an Important Considerations callout, which provides background, rationale, and do’s and don’ts. This text has more technical depth and may require a basic understanding of some key climate-related concepts.
 
-::: {.callout-note title="Note"}
-This page does not include principles on how to conduct specific analyses downstream of the climate data, i.e. how to do climate risk assessments or a health impact assessment. It is meant mainly to help users understand how to pick and choose the right data and analysis approaches for analysing the climate hazards of interest.
-:::
+Boxes
+:   Five cross-cutting boxes cover topics that arise across multiple principles. These are separated out for readability and are referenced from the relevant principles.
 
-## Summary of Principles
+## Principles
+
+Click on each box for additional details on the background, rationale, and to find a step by step process for each principle.
 
 ```{=html}
 <div class="grid mt-3">
@@ -123,6 +124,12 @@ This page does not include principles on how to conduct specific analyses downst
   </a>
 </div>
 ```
+
+## Additional Notes 
+The principles are presented sequentially and in a step-by-step manner, however a user may follow a different order based on their context. There are also many offramps for this process, and some users may not need to go through all the steps based on their specific contextual needs. This process can be highly iterative and may require certain assumptions and decisions (e.g. metrics, scales, or types of analyses) to be re-visited several times. Although the document presents broad principles that can apply to many different contexts and uses, specific applications will likely require more complex and nuanced examinations within one or more principles. Each principle or step of this process might also require specific technical skills in climate data analysis such as coding, statistics, data visualisations, understanding of basics of climate models, etc.
+
+Additionally, this section does not include principles on how to conduct specific analyses downstream of the climate data, i.e. how to do climate risk assessments or a health impact assessment. It is meant mainly to help users understand how to pick and choose the right data and analysis approaches for analysing the climate hazards of interest.
+
 
 ## Acknowledgments
 

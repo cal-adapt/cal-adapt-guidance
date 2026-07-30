@@ -40,7 +40,7 @@ The long-term average or baseline conditions for a given climate variable (such 
 
 ## CMIP6 {#cmip6}
 
-The [Coupled Model Intercomparison Project, Phase 6](https://esgf-node.llnl.gov/projects/cmip6/) is a coordinated international effort to produce climate model output with consistent standards in areas such as variable naming and experimental design. This consistency allows different models to be compared to each other more easily. CMIP6 is the latest generation of global climate models (ca. 2020), used in the Intergovernmental Panel on Climate Change [Sixth Assessment Report](https://www.ipcc.ch/report/sixth-assessment-report-cycle/) (IPCC AR6), and in California's Fifth Climate Change Assessment.
+The [Coupled Model Intercomparison Project, Phase 6](https://wcrp-cmip.org/cmip-phases/cmip6/) is a coordinated international effort to produce climate model output with consistent standards in areas such as variable naming and experimental design. This consistency allows different models to be compared to each other more easily. CMIP6 is the latest generation of global climate models (ca. 2020), used in the Intergovernmental Panel on Climate Change [Sixth Assessment Report](https://www.ipcc.ch/report/sixth-assessment-report-cycle/) (IPCC AR6), and in California's Fifth Climate Change Assessment.
 
 ## Compound event {#compound-event}
 

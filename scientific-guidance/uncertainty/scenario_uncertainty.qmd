@@ -31,7 +31,7 @@ Two key properties of scenario uncertainty distinguish it from the other two sou
 - It **grows with time:** in the near term (< ~2040), all three pathways produce nearly identical projections because atmospheric GHG concentrations have not yet diverged enough to matter. By end-of-century, scenario choice dominates total uncertainty for temperature.
 
 ::: {.callout-note title="IPCC AR6 Synthesis Report"}
-Scenario uncertainty is fundamentally a statement about human choices, not about the limits of climate science. The range between pathways is not a flaw to be narrowed by better model, it is a quantified expression of how much today's emissions decisions will shape the climate of the future. For deeper treatment, see the IPCC AR6 Synthesis Report [@calvinIPCC2023] and Pirani et al. [@piraniScenarios2024].
+Scenario uncertainty is fundamentally a statement about human choices, not about the limits of climate science. The range between pathways is not a flaw to be narrowed by better models, it is a quantified expression of how much today's emissions decisions will shape the climate of the future. For deeper treatment, see the IPCC AR6 Synthesis Report [@calvinIPCC2023] and Pirani et al. [@piraniScenarios2024].
 :::
 
 
@@ -39,7 +39,7 @@ Scenario uncertainty is fundamentally a statement about human choices, not about
 
 The analyses on this page use **monthly maximum air temperature at 2m** from the Cal-Adapt LOCA2 statistically downscaled models, for all three emissions scenarios (SSP2-4.5, SSP3-7.0, SSP5-8.5) and the historical baseline. Temperature is used because it has the cleanest scenario signal. For precipitation, internal variability often dominates (see [internal variability](internal_variability.qmd)).
 
-The historical baseline is scenario-independent, all three pathways share the same observed forcing history and is used to express results as **anomalies relative to the 1981–2010 mean** per simulation, which removes inter-model mean biases so the three scenario lines start near zero and diverge upward. The future period runs from 2015 to 2100, covering the full divergence of the three pathways.
+The historical baseline is scenario-independent, as all three pathways share the same observed forcing history. This baseline is used to express results as **anomalies relative to each simulation's 1981–2010 mean**. Calculating the anomalies removes the inter-model mean biases and allows the three scenario lines to start near zero and diverge upward. The future period runs from 2015 to 2100, covering the full divergence of the three pathways.
 
 
 # How does scenario spread grow over time?
@@ -104,7 +104,7 @@ The plume chart shows trends; this bar chart makes the comparison between planni
 **Period-mean California temperature anomaly by scenario.** Dots are the multi-model means for each scenario over three planning horizons (near-term 2020–2040, mid-century 2041–2070, end-of-century 2071–2100); bars span the full model spread (±1 standard deviation across the LOCA2 models).
 :::
 
-Reading @fig-bars, the dots are the multi-model means and the bars span the full range across the LOCA2 models within each scenario. In the near-term panel, the three dots very close, making the scenario choice less relevant than the model uncertainty at that horizon. By the end-of-century, the dots are well-separated, making the scenario choice comparable and/or more relevant to the model spread; the scenario choice is the dominant source of uncertainty as shown in figure @fig-variance.
+Reading @fig-bars, the dots are the multi-model means and the bars span the full range across the LOCA2 models within each scenario. In the near-term panel, the three dots are very close, making the scenario choice less relevant than the model uncertainty at that horizon. By the end-of-century, the dots are well-separated, making the scenario choice comparable and/or more relevant to the model spread; the scenario choice is the dominant source of uncertainty as shown in @fig-variance.
 
 
 # When does scenario uncertainty overtake model uncertainty?

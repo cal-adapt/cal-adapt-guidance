@@ -17,7 +17,7 @@ flowchart TD
     DE(["<span style='font-size:24px'>Data Explorer</span>"])
     DA(["<span style='font-size:24px'>Data Access</span>"])
     NB(["<span style='font-size:24px'>Notebooks</span>"])
-    CK(["<span style='font-size:24px'>ClimaKitAE</span>"])
+    CK(["<span style='font-size:24px'>climakitae</span>"])
     VZ(["<span style='font-size:24px'>Visualizations</span>"])
     DD(["<span style='font-size:24px'>Data<br>Download</span>"])
 

@@ -13,7 +13,7 @@ format:
   pdf: default
 ---
 
-This page and its sub-page [Census Tracts](/scientific-guidance/census-tracts.qmd) offer Analytics Engine data users a set of guiding materials on the most appropriate ways to use climate data for decision making. It includes an explanation of why such guidance is important and provides answers to specific data-related questions that users commonly have. These guidelines can be utilized by any technical or semi-technical data user to better understand the Do's and Don't of working with climate data in the Analytics Engine. By understanding how to effectively integrate climate data into sectors such as energy, municipal planning, natural resource management, and public health, data users can better anticipate and mitigate the impacts of climate change.
+This page and its sub-page [Census Tracts](/scientific-guidance/census-tracts.qmd) offer Analytics Engine data users a set of guiding materials on the most appropriate ways to use climate data for decision making. It includes an explanation of why such guidance is important and provides answers to specific data-related questions that users commonly have. These guidelines can be utilized by any technical or semi-technical data user to better understand the Do's and Don'ts of working with climate data in the Analytics Engine. By understanding how to effectively integrate climate data into sectors such as energy, municipal planning, natural resource management, and public health, data users can better anticipate and mitigate the impacts of climate change.
 
 **Topics covered in this article:**
 
@@ -333,6 +333,6 @@ The initial set of questions that have been answered here were developed based o
 - Hausfather, Z. (2022). *Guest post: How climate scientists should handle 'hot models.'* Carbon Brief. <https://www.carbonbrief.org/guest-post-how-climate-scientists-should-handle-hot-models/>
 - Intergovernmental Panel on Climate Change (IPCC). (2023). *Sixth Assessment Report: Synthesis Report.* <https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf>
 - Intergovernmental Panel on Climate Change (IPCC). (2021). *AR6 WGI Summary for Policymakers, Figure SPM.8.* <https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_08/v20210809/panel_a>
-- Krantz, D., et al. (2021). *Evaluating Global Climate Models for California's Fifth Climate Change Assessment.* California Energy Commission. <https://www.energy.ca.gov/media/7264>
+- Krantz, W., et al. (2021). *Evaluating Global Climate Models for California's Fifth Climate Change Assessment.* California Energy Commission. <https://www.energy.ca.gov/media/7264>
 - Fifth National Climate Assessment. (2023). <https://nca2023.globalchange.gov/>
 - Rahimi, S., et al. (2024). *Atmospheric River Precipitation in the WRF-CMIP6 Ensemble.* *Geophysical Research Letters.* <https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106264>

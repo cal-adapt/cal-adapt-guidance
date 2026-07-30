@@ -115,7 +115,7 @@ This amplification of regional warming relative to the global mean is a robust f
 :::
 
 
-# Relationship between warming rate and end-of-century anomaly.
+# Relationship between warming rate and end-of-century anomaly
 
 ::: {#fig-wl_scatter}
 ::: {.content-visible when-format="html"}
@@ -170,7 +170,7 @@ CMIP6 inter-model spread by variable, Western North America (SSP3-7.0). Projecte
 
 ## Surface Wind
 
-**Moderate spread, consistent drying signal.** Wind shows a consistent negative signal (decreasing surface wind speeds) across all periods, with the long-term distribution entirely below zero at the P25–P75 level. However, the P5–P95 range crosses zero for near- and medium-term periods, indicating lower confidence at shorter horizons. By the long term, confidence in the direction increases.
+**Moderate spread, consistent slowing signal.** Wind shows a consistent negative signal (decreasing surface wind speeds) across all periods, with the long-term distribution entirely below zero at the P25–P75 level. However, the P5–P95 range crosses zero for near- and medium-term periods, indicating lower confidence at shorter horizons. By the long term, confidence in the direction increases.
 
 :::
 

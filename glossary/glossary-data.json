@@ -5,9 +5,9 @@
     "definition": "A representative hourly time series for a variable for one year (24 hours x 365 days in a year), used to characterize typical environmental conditions in many energy system modeling applications. 8760s are also referred to as hourly profiles."
   },
   {
-    "term": "Annual Maximum Series (AMS)",
+    "term": "Annual maximum series (AMS)",
     "slug": "annual-maximum-series",
-    "definition": "A time series constructed by extracting the maximum (or minimum) value for each year from a longer time series of observations or model outputs. The AMS is a foundational input to extreme value analysis and can be derived from data at any sub-annual time resolution, including hourly, daily, or monthly. The AMS is a specific case of the more general Block Maxima/Minima Series, where the block size is set to one year. When working with climate model simulations, the AMS should be constructed on a simulation-by-simulation basis rather than aggregating across simulations prior to analysis."
+    "definition": "A time series constructed by extracting the maximum (or minimum) value for each year from a longer time series of observations or model outputs. The AMS is a foundational input to extreme value analysis and can be derived from data at any sub-annual time resolution, including hourly, daily, or monthly. The AMS is a specific case of the more general block maximum/minimum series, where the block size is set to one year. When working with climate model simulations, the AMS should be constructed on a simulation-by-simulation basis rather than aggregating across simulations prior to analysis."
   },
   {
     "term": "Bias correction / adjustment",
@@ -52,15 +52,15 @@
   {
     "term": "CMIP6",
     "slug": "cmip6",
-    "definition": "The [Coupled Model Intercomparison Project, Phase 6](https://esgf-node.llnl.gov/projects/cmip6/) is a coordinated international effort to produce climate model output with consistent standards in areas such as variable naming and experimental design. This consistency allows different models to be compared to each other more easily. CMIP6 is the latest generation of global climate models (ca. 2020), used in the Intergovernmental Panel on Climate Change [Sixth Assessment Report](https://www.ipcc.ch/report/sixth-assessment-report-cycle/) (IPCC AR6), and in California's Fifth Climate Change Assessment."
+    "definition": "The [Coupled Model Intercomparison Project, Phase 6](https://wcrp-cmip.org/cmip-phases/cmip6/) is a coordinated international effort to produce climate model output with consistent standards in areas such as variable naming and experimental design. This consistency allows different models to be compared to each other more easily. CMIP6 is the latest generation of global climate models (ca. 2020), used in the Intergovernmental Panel on Climate Change [Sixth Assessment Report](https://www.ipcc.ch/report/sixth-assessment-report-cycle/) (IPCC AR6), and in California's Fifth Climate Change Assessment."
   },
   {
     "term": "Compound event",
     "slug": "compound-event",
-    "definition": "A type of climate event that arises due to the combination of two or more climate drivers or hazards occurring simultaneously or successively with negative implications to environmental and human systems. The weather phenomena contributing to the compound hazard may not be extreme events on their own, but combine to create negative impacts."
+    "definition": "A type of climate event that arises due to the combination of two or more climate drivers or hazards occurring simultaneously or successively with negative implications for environmental and human systems. The weather phenomena contributing to the compound hazard may not be extreme events on their own, but combine to create negative impacts."
   },
   {
-    "term": "Cooling Degree Days (CDDs)",
+    "term": "Cooling degree days (CDDs)",
     "slug": "cooling-degree-days",
     "definition": "Cooling degree days (CDDs) measure how much and for how long outdoor temperatures exceed a specific threshold, indicating the need for indoor cooling. For each day, CDDs are calculated as the number of degrees the day's temperature is above the chosen base temperature; days that do not exceed the threshold are assigned zero. The threshold (commonly 65°F) represents the temperature above which cooling is typically required."
   },
@@ -80,12 +80,12 @@
     "definition": "A method to generate fine scale spatial resolution data from coarse scale global climate models using a dynamical regional weather model. The regional model uses the global climate model output as the inputs to generate additional projections. The Analytics Engine hosts dynamically downscaled model output created using the [Weather Research and Forecasting](https://dept.atmos.ucla.edu/alexhall/downscaling-cmip6) (WRF) model."
   },
   {
-    "term": "Effective Sample Size (ESS)",
+    "term": "Effective sample size (ESS)",
     "slug": "effective-sample-size",
     "definition": "An independent estimate of sample size that accounts for the reduction in statistical information caused by temporal autocorrelation in a dataset. When observations within a block are strongly correlated with one another (as is common in meteorological data), the effective number of independent data points is lower than the actual number of observations."
   },
   {
-    "term": "Effective Temperature",
+    "term": "Effective temperature",
     "slug": "effective-temperature",
     "definition": "A heat metric that represents the cumulative influence of temperatures over multiple consecutive days, rather than relying on a single day's measurement. It is calculated as a weighted sum of the current day's temperature and temperatures from preceding days, with weights that vary depending on the application."
   },
@@ -100,12 +100,12 @@
     "definition": "An area of statistical analysis focused on extremes relative to the median of a probability distribution. Concepts from extreme value analysis can be used to analyze extreme weather events (such as a heat wave or extreme precipitation event), including event return levels and return periods."
   },
   {
-    "term": "Gamma Distribution",
+    "term": "Gamma distribution",
     "slug": "gamma-distribution",
     "definition": "A flexible probability distribution commonly used in climate and hydrological applications to model variables that are strictly positive and right-skewed, such as precipitation totals or soil moisture."
   },
   {
-    "term": "Generalized Extreme Value (GEV) distribution",
+    "term": "Generalized extreme value (GEV) distribution",
     "slug": "generalized-extreme-value",
     "definition": "A family of continuous probability distributions developed within extreme value theory to model the largest or smallest value from a large collection of random observations. Some distributions within this family include the Gumbel, Fréchet, and Weibull distributions."
   },
@@ -115,12 +115,12 @@
     "definition": "A probability distribution used to model the tail behavior of a variety of data types; it is particularly useful for assessing the probabilities of extreme events, such as rare climate events that exceed a certain threshold."
   },
   {
-    "term": "Global Climate Model (GCM)",
+    "term": "Global climate model (GCM)",
     "slug": "global-climate-model",
     "definition": "A mathematical model that represents the physical processes in the atmosphere, ocean, cryosphere, and land surface. GCMs are used to simulate the climate system and predict future climate conditions based on different scenarios of greenhouse gas emissions and other factors."
   },
   {
-    "term": "Global Warming Level",
+    "term": "Global warming level",
     "slug": "global-warming-level",
     "definition": "A global warming level is defined as the difference in the global mean air temperature from the historical period (defined on the Analytics Engine as the pre-industrial period 1850-1900). Global warming levels are frequently used in international policy discussions (for example, goals to constrain global warming to 1.5 or 2 degrees Celsius). The standard global warming levels are 1.5°C, 2°C, 3°C, and 4°C."
   },
@@ -135,12 +135,12 @@
     "definition": "A probability distribution used to model the distribution of the maximum (or the minimum) value from a number of samples of various distributions. It is commonly applied in extreme value theory, particularly for modeling the distribution of extreme events such as floods, heatwaves, or other climate extremes."
   },
   {
-    "term": "Heat Index",
+    "term": "Heat index",
     "slug": "heat-index",
     "definition": "A metric that combines air temperature and relative humidity to estimate how hot conditions feel to the human body, often referred to as \"apparent temperature\". The heat index is widely used to assess heat-related health risk and predict cooling energy demand."
   },
   {
-    "term": "Heating Degree Days (HDDs)",
+    "term": "Heating degree days (HDDs)",
     "slug": "heating-degree-days",
     "definition": "Heating degree days (HDDs) quantify how much and for how long outdoor temperatures fall below a specific threshold, reflecting demand for indoor heating. The base temperature (commonly 65°F) approximates the point at which heating becomes necessary."
   },
@@ -160,7 +160,7 @@
     "definition": "Statistical method to produce time-series of future weather at a point-location where a weather station is presently in operation. Localization involves bias adjusting gridded climate model output, based on observations from the weather station."
   },
   {
-    "term": "Maximum Likelihood Estimation (MLE)",
+    "term": "Maximum likelihood estimation (MLE)",
     "slug": "maximum-likelihood-estimation",
     "definition": "A statistical method used to estimate the parameters of a probability distribution by finding the parameter values that make the observed data most probable under that distribution."
   },
@@ -190,7 +190,7 @@
     "definition": "A probability distribution that is commonly used in hydrology and climatology to model skewed data, particularly in the context of flood frequency analysis."
   },
   {
-    "term": "Percentage Point Function (PPF)",
+    "term": "Percentage point function (PPF)",
     "slug": "percentage-point-function",
     "definition": "The inverse of the cumulative distribution function (CDF); also known as the quantile function. Given a specified probability, the PPF returns the corresponding value of the variable."
   },
@@ -220,9 +220,9 @@
     "definition": "Uncertainty that arises from not knowing how people, policies, the economy, and technology will evolve in the future to address the issue of climate change."
   },
   {
-    "term": "Shared Socioeconomic Pathways (SSPs)",
+    "term": "Shared socioeconomic pathways (SSPs)",
     "slug": "shared-socioeconomic-pathways",
-    "definition": "[Shared Socioeconomic Pathways](https://www.carbonbrief.org/explainer-how-shared-socioeconomic-pathways-explore-future-climate-change/) are inputs into the latest generation of IPCC reports which describe potential pathways the world could take in terms of features such as political, economic, and other societal dynamics and choices which impact greenhouse gas emissions. The Analytics Engine has multiple data sources with several SSPs, including SSP2-4.5, SSP3-7.0, and SSP5-8.5."
+    "definition": "[Shared socioeconomic pathways](https://www.carbonbrief.org/explainer-how-shared-socioeconomic-pathways-explore-future-climate-change/) are inputs into the latest generation of IPCC reports which describe potential pathways the world could take in terms of features such as political, economic, and other societal dynamics and choices which impact greenhouse gas emissions. The Analytics Engine has multiple data sources with several SSPs, including SSP2-4.5, SSP3-7.0, and SSP5-8.5."
   },
   {
     "term": "Simulation",
@@ -247,7 +247,7 @@
   {
     "term": "Typical meteorological year",
     "slug": "typical-meteorological-year",
-    "definition": "A typical meteorological year ([TMY](https://nsrdb.nrel.gov/data-sets/tmy)) is a complete set of meteorological variables at a given location for every hour in a year. TMYs are used in some building and energy system modeling applications to describe typical annual weather conditions at a specific location."
+    "definition": "A typical meteorological year ([TMY](https://nsrdb.nlr.gov/data-sets/tmy)) is a complete set of meteorological variables at a given location for every hour in a year. TMYs are used in some building and energy system modeling applications to describe typical annual weather conditions at a specific location."
   },
   {
     "term": "Use-case",
@@ -260,7 +260,7 @@
     "definition": "A probability distribution used to model the distribution of extreme values, particularly for analyzing the reliability of systems and the occurrence of extreme weather events. This distribution falls within the GEV distribution family."
   },
   {
-    "term": "Wet Bulb Globe Temperature (WBGT)",
+    "term": "Wet bulb globe temperature (WBGT)",
     "slug": "wet-bulb-globe-temperature",
     "definition": "A heat stress metric that estimates the combined effects of air temperature, humidity, wind speed, and solar radiation on the human body, particularly in direct sunlight. WBGT is [widely used to assess heat hazards for outdoor workers](https://www.osha.gov/otm/section-3-health-hazards/chapter-4#heat_hazardassessment)."
   },

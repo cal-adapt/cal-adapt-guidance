@@ -29,7 +29,7 @@ Recognizing that no single “extreme year” can satisfy all planning needs, Ca
 - **Persistence XMY**: An extreme climate profile that is representative of *extreme annual metrics*, such as an extreme hot year or an extreme cold year, that can be applied for highly tailorable system stress tests. The Persistence XMY is built upon a given statistical extreme percentile of weather conditions for a location over a climatological period. 
 
 ::: {.callout-important title="Recent Extreme Events in California"}
-The Labor Day 2022 Heatwaves was one of the hottest on record for California, with Sacramento reaching 116°F (46.7°C), it's highest temperature ever, alongside record-breaking electricity demand of more than 52,000 MW.  
+The Labor Day 2022 Heatwaves was one of the hottest on record for California, with Sacramento reaching 116°F (46.7°C), its highest temperature ever, alongside record-breaking electricity demand of more than 52,000 MW.  
 :::
 
 ::: {#fig-exec-summary-boxplots}

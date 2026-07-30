@@ -21,6 +21,6 @@ This glossary is a non-exhaustive source for definitions of key terms and concep
 - Gutiérrez, J.M., et al. (2021). *IPCC AR6 Interactive Atlas.* In: Climate Change 2021: The Physical Science Basis. <https://interactive-atlas.ipcc.ch/>
 - Intergovernmental Panel on Climate Change (IPCC). *Sixth Assessment Report.* <https://www.ipcc.ch/report/sixth-assessment-report-cycle/>
 - Lafferty, D.C., et al. (2023). *LOCA2-Hybrid Downscaled Climate Projections for California.* <https://loca.ucsd.edu/>
-- National Renewable Energy Laboratory. *National Solar Radiation Database — Typical Meteorological Year.* <https://nsrdb.nrel.gov/data-sets/tmy>
+- National Renewable Energy Laboratory. *National Solar Radiation Database — Typical Meteorological Year.* <https://nsrdb.nlr.gov/data-sets/tmy>
 - O'Neill, B.C., et al. (2016). The Scenario Model Intercomparison Project (ScenarioMIP) for CMIP6. *Geoscientific Model Development*, 9, 3461–3482.
 - Zarr Development Team. *Zarr: An implementation of chunked, compressed, N-dimensional arrays.* <https://zarr.dev/>

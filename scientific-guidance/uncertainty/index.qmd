@@ -11,7 +11,7 @@ format:
   pdf: default
 ---
 
-The following sections explain what are the sources of uncertainty in climate projections, how it appears in CMIP6 climate projections for California, and how to interpret and communicate it responsibly in planning and decision-making contexts. The analyses presented here use near-surface air temperature (*tas*) and precipitation (*pr*) from the CMIP6 archive, subsetted to California under the SSP3-7.0 scenario, and accessed through the Cal-Adapt Analytics Engine.
+The following sections describe the sources of uncertainty in climate projections, how they appear in CMIP6 climate projections for California, and how to interpret and communicate them responsibly in planning and decision-making contexts. The analyses presented here use near-surface air temperature (*tas*) and precipitation (*pr*) from the CMIP6 archive subsetted to California under the SSP3-7.0 scenario and accessed through the Cal-Adapt Analytics Engine.
 
 For background on climate projections and models more broadly, see [About Climate Projections and Models](https://analytics.cal-adapt.org/guidance/about_climate_projections_and_models). For guidance on how to apply uncertainty information to decisions, see [Using Climate Data in Decision-Making](https://analytics.cal-adapt.org/guidance/using_in_decision_making).
 
@@ -19,7 +19,7 @@ For background on climate projections and models more broadly, see [About Climat
 
 ## What are sources of uncertainty in climate projections?
 
-Climate projections come from ensembles of models, not from a single simulation. When multiple models are run under the same emissions scenario, they produce a range of outcomes — and that range is not a flaw. It is a quantified expression of genuine scientific uncertainty about how the climate system works.
+Climate projections come from ensembles of models rather than a single simulation. When multiple models are run under the same emissions scenario, they produce a range of outcomes. That range is not a flaw, but a quantified expression of genuine scientific uncertainty about how the climate system works.
 
 The IPCC distinguishes three principal sources of uncertainty in climate projections [@ipcc-2023]:
 
@@ -27,7 +27,7 @@ The IPCC distinguishes three principal sources of uncertainty in climate project
 - [**Scenario uncertainty**](scenario_uncertainty.qmd): future greenhouse gas emissions depend on societal choices that have not yet been made.
 - [**Internal variability**](internal_variability.qmd): the climate system's own unforced fluctuations, independent of any external forcing.
 
-Which source dominates depends on the time horizon. Internal variability is most important at scales of less than a decade. Model uncertainty dominates over the 10–40 year planning horizon that is most relevant for infrastructure and resource decisions. Scenario uncertainty becomes the largest source of spread only at multi-decadal to centennial scales.
+The time horizon of the simulations dictates the dominant source of uncertainty. Internal variability is most important in sub-decade scales; model uncertainty dominates over the 10–40 year planning horizon most relevant for infrastructure and resource decisions; and scenario uncertainty becomes the largest source of spread at multi-decadal to centennial scales.
 
 Despite the uncertainties inherent in modeling future climate, they do not invalidate climate data; rather, they represent the complexity and range of potential future outcomes, and ultimately illustrate the critical importance of policy decisions made today and how they will determine the magnitude of future climate changes. 
 

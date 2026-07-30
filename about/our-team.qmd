@@ -15,14 +15,14 @@ This team is led by Dr. Owen Doherty (Eagle Rock Analytics, Inc.) and organized 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
 ![](images/team/owen-doherty.jpg){fig-alt="Headshot of Owen Doherty"}
 <p class="team-name"><a href="https://www.linkedin.com/in/owen-doherty-b5108914a/" target="_blank">Owen Doherty</a></p>
-<p class="team-title">Principal Research Scientist</p>
+<p class="team-title">Principal Investigator</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
 ![](images/team/mark-koenig.jpg){fig-alt="Headshot of Mark Koenig"}
 <p class="team-name"><a href="https://www.linkedin.com/in/mark-koenig-7920486/" target="_blank">Mark Koenig</a></p>
-<p class="team-title">Vice President Of Operations And Strategy</p>
+<p class="team-title">Project Manager</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
@@ -36,7 +36,7 @@ This team is led by Dr. Owen Doherty (Eagle Rock Analytics, Inc.) and organized 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
 ![](images/team/neil-schroeder.jfif){fig-alt="Headshot of Neil Schroeder"}
 <p class="team-name"><a href="https://www.linkedin.com/in/nschroed/" target="_blank">Neil Schroeder</a></p>
-<p class="team-title">Senior Python Developer</p>
+<p class="team-title">Senior Developer</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
@@ -64,7 +64,7 @@ This team is led by Dr. Owen Doherty (Eagle Rock Analytics, Inc.) and organized 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
 ![](images/team/nancy-freitas.jpg){fig-alt="Headshot of Nancy Freitas"}
 <p class="team-name"><a href="https://www.linkedin.com/in/nancy-freitas-67892a74/" target="_blank">Nancy Freitas</a></p>
-<p class="team-title">Post-Doctoral Researcher</p>
+<p class="team-title">Engagement Lead</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
@@ -78,21 +78,21 @@ This team is led by Dr. Owen Doherty (Eagle Rock Analytics, Inc.) and organized 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
 ![](images/team/nicole-keeney.jpg){fig-alt="Headshot of Nicole Keeney"}
 <p class="team-name"><a href="https://www.linkedin.com/in/nicole-keeney/" target="_blank">Nicole Keeney</a></p>
-<p class="team-title">Research Software Engineer</p>
+<p class="team-title">Developer</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
 ![](images/team/calvin-chen.jpg){fig-alt="Headshot of Calvin Chen"}
 <p class="team-name"><a href="http://linkedin.com/in/chencalvin99" target="_blank">Calvin Chen</a></p>
-<p class="team-title">Python Developer</p>
+<p class="team-title">Developer</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
 ![](images/team/ana-ordonez.jpg){fig-alt="Headshot of Ana Ordonez"}
 <p class="team-name"><a href="https://www.linkedin.com/in/ana-ordonez-458612117" target="_blank">Ana Ordonez</a></p>
-<p class="team-title">Senior Research Associate</p>
+<p class="team-title">Research Associate</p>
 <p class="team-association">Eagle Rock Analytics</p>
 :::
 
@@ -106,7 +106,7 @@ This team is led by Dr. Owen Doherty (Eagle Rock Analytics, Inc.) and organized 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
 ![](images/team/justine-bui.jpg){fig-alt="Headshot of Justine Bui"}
 <p class="team-name"><a href="https://www.linkedin.com/in/justine-luong-bui/" target="_blank">Justine Bui</a></p>
-<p class="team-title">Engagement Co-Lead</p>
+<p class="team-title">Guidance Lead</p>
 <p class="team-association">Spatial Informatics Group</p>
 :::
 
@@ -120,7 +120,7 @@ This team is led by Dr. Owen Doherty (Eagle Rock Analytics, Inc.) and organized 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .team-card}
 ![](images/team/kripa-jagannathan.jpg){fig-alt="Headshot of Kripa Jagannathan"}
 <p class="team-name"><a href="https://www.linkedin.com/in/kripa-jagannathan-38148a13/" target="_blank">Kripa Jagannathan</a></p>
-<p class="team-title">Engagement Co-Lead</p>
+<p class="team-title">Engagement Advisor</p>
 <p class="team-association">Climate and Ecosystem Sciences Division, Lawrence Berkeley National Laboratory</p>
 :::
 

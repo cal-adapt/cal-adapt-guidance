@@ -38,7 +38,7 @@ tasmax_gwl_data = (
     .processes(
         {
             "warming_level": {
-                "warming_levels": [0.8, 1.0, 2.0, 3.0, 4.0],
+                "warming_levels": [0.8, 1.5, 2.0, 3.0, 4.0],
                 "warming_level_window": 15,
             },
         }
@@ -73,7 +73,7 @@ Data variables:
 ```
 :::
 
-The above example is loading data at two specific warming levels (0.8 and 2.0) with a 15-year window for the variable maximum air temperature.
+The above example is loading data at five specific warming levels (0.8, 1.5, 2.0, 3.0, and 4.0) with a 15-year window for the variable maximum air temperature.
 
 A [SSP](/glossary/index.qmd#shared-socioeconomic-pathways) was not specified to load the data because simulations from any SSP can be used to measure climate impacts at a given GWL. This ability to utilize data from all SSPs equivalently is one of the benefits of the GWL approach.
 
@@ -141,7 +141,7 @@ Additionally, the GWL at each month is saved for each ensemble member from 1860-
 
 : Example excerpt from `gwl_1850-1900ref_timeidx.csv`, showing the GWL (°C above the 1850-1900 baseline) reached by each GCM/run/scenario combination at a given time. The full file has one column per GCM/run/scenario combination (490+ columns). {#tbl-gwl-timeidx .striped}
 
-- These files have time as the index, whereas the files generated in Step 4 have the model as the index.
+- These files have time as the index, whereas the files generated in Step 1d have the model as the index.
 
 - The time range of these files is 1860-2090 because the 20-year running average window clips the first and last 10 years.
 

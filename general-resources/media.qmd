@@ -9,6 +9,12 @@ This section offers a collection of videos, presentations, and other visual reso
 
 Whether visitors are just getting started with the Analytics Engine or looking for a deeper technical dive, this page serves as a central hub for learning and engagement. It will continue to be updated with new videos, presentations, and outreach materials as they become available.
 
+## Videos
+
+```{=html}
+<div class="media-grid" data-media-type="youtube"></div>
+```
+
 ## Posters
 
 ```{=html}

@@ -7,6 +7,27 @@
 //   poster | slide_deck | other | youtube
 var MEDIA_DATA = [
   {
+    type: "youtube",
+    title: "Cal-Adapt Analytics Engine Sept Workshop Day 1",
+    url: "https://youtu.be/1_txUY9ifh8",
+    thumbnail: "https://img.youtube.com/vi/1_txUY9ifh8/hqdefault.jpg",
+    description: "Workshop Recording",
+  },
+  {
+    type: "youtube",
+    title: "Cal-Adapt Analytics Engine Sept Workshop Day 2",
+    url: "https://youtu.be/cSBrZiOHzdE",
+    thumbnail: "https://img.youtube.com/vi/cSBrZiOHzdE/hqdefault.jpg",
+    description: "Workshop Recording",
+  },
+  {
+    type: "youtube",
+    title: "Analytics Engine | Working Group 10 | Climate Finder Tools and Compound Events",
+    url: "https://youtu.be/MPRF_PPE7So",
+    thumbnail: "https://img.youtube.com/vi/MPRF_PPE7So/hqdefault.jpg",
+    description: "Working Group 10 Presentation",
+  },
+  {
     type: "poster",
     title: "Risk Analytics in Climate Adaptation and Vulnerability Assessments",
     url: "../assets/media/posters/pdfs/AGU_2025_CAVA.pdf",

@@ -36,10 +36,11 @@ In dense urban areas, multiple census tracts may fall entirely within a single m
 ::: {#fig-sf-tracts fig-cap="Example of spatial mismatch between a single model grid cell and multiple census tracts within the city of San Francisco, CA. If extracting air temperature for these seven census tracts, each tract would result in the same value, despite actual microclimatic differences within these neighborhoods. Census tracts shown here are: 161.02, 202.02, 167.00, 168.01, 168.02, 162.00, 163.00, San Francisco, CA."}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/census_tract_fig1.html >}}
 </div>
 ```
+![](figures/static/census_tract_fig1.png){.d-md-none fig-alt="Map of San Francisco showing a single climate model grid cell overlapping seven census tracts."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/census_tract_fig1.png){fig-alt="Map of San Francisco showing a single climate model grid cell overlapping seven census tracts."}
@@ -53,10 +54,11 @@ Census tracts and grid cells are not a perfect one-to-one match. In rural areas,
 ::: {#fig-rural-tract fig-cap="Example of a large rural census tract in eastern Fresno County spanning Sierra Nevada foothills into higher elevation terrain, covering multiple climate model grid cells. If extracting a single representative air temperature value for this census tract, the variability of temperatures would be substantially smoothed, and may not accurately represent realistic conditions. The census tract shown here is Census Tract 64.08, Fresno County, CA."}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/census_tract_fig2.html >}}
 </div>
 ```
+![](figures/static/census_tract_fig2.png){.d-md-none fig-alt="Map of a large rural census tract in eastern Fresno County spanning multiple climate model grid cells across the Sierra Nevada foothills."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/census_tract_fig2.png){fig-alt="Map of a large rural census tract in eastern Fresno County spanning multiple climate model grid cells across the Sierra Nevada foothills."}

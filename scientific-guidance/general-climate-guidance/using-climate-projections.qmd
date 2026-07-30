@@ -190,10 +190,11 @@ Using warming levels as the future target and the reference period ensures that 
 ::: {#fig-gwl-periods fig-cap="Consistent vs. Inconsistent GWL Reference Periods. Each line shows the global mean surface temperature trajectory for an individual CMIP6 model simulation (data source: [IPCC](https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_08/v20210809/panel_a)) relative to 1850–1900. Left: Using GWL-based reference periods, the change signal between 0.8°C and 2.0°C is a consistent 1.2°C across all simulations (orange). Right: Using a fixed time-based reference period (1980–2010, green shading), each simulation corresponds to a different amount of warming at the reference period, introducing additional uncertainty into the change signal (orange)."}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/gwl_periods.html >}}
 </div>
 ```
+![](figures/static/gwl_periods.png){.d-md-none fig-alt="Side-by-side comparison of global mean surface temperature trajectories using GWL-based reference periods (consistent 1.2°C change signal) versus a fixed time-based reference period (variable change signal across simulations)."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/gwl_periods.png){fig-alt="Side-by-side comparison of global mean surface temperature trajectories using GWL-based reference periods (consistent 1.2°C change signal) versus a fixed time-based reference period (variable change signal across simulations)."}
@@ -220,10 +221,11 @@ For each reference period, the approximate equivalent time range is determined u
 ::: {#fig-warming-trajectory fig-cap="Estimate of the year the world reached 0.8 °C of warming. Figure produced by the Cal-Adapt: Analytics Engine (data source: [IPCC](https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_08/v20210809/panel_a))."}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/warming_trajectory.html >}}
 </div>
 ```
+![](figures/static/warming_trajectory.png){.d-md-none fig-alt="Global mean surface temperature trajectory showing the estimated year the world reached 0.8°C of warming."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/warming_trajectory.png){fig-alt="Global mean surface temperature trajectory showing the estimated year the world reached 0.8°C of warming."}

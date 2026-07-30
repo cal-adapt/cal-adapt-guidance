@@ -39,10 +39,11 @@ Within the broader CMIP6 archive, the Cal-Adapt Analytics Engine uses a curated 
 ::: {#fig-plume}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/temperature_projections.html >}}
 </div>
 ```
+![](figures/static/temperature_projections.png){.d-md-none fig-alt="CMIP6 California surface temperature projection timeseries under SSP3-7.0, showing the multi-model spread and mean relative to 1850–1900."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/temperature_projections.png){fig-alt="CMIP6 California surface temperature projection timeseries under SSP3-7.0, showing the multi-model spread and mean relative to 1850–1900."}
@@ -68,10 +69,11 @@ A few things are worth noting when reading @fig-plume:
 ::: {#fig-ridgeline}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/ridgeplot.html >}}
 </div>
 ```
+![](figures/static/ridgeplot.png){.d-md-none fig-alt="Ridgeline plot of kernel density estimates of annual California-mean temperature anomaly for each CMIP6 model over 2071–2100 under SSP3-7.0."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/ridgeplot.png){fig-alt="Ridgeline plot of kernel density estimates of annual California-mean temperature anomaly for each CMIP6 model over 2071–2100 under SSP3-7.0."}
@@ -92,10 +94,11 @@ Warming Levels denote what is the Global Warming around the world, and the model
 ::: {#fig-dots}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/region_dots.html >}}
 </div>
 ```
+![](figures/static/region_dots_4panel.png){.d-md-none fig-alt="Four-panel dot plot of temperature anomaly at selected global warming levels for each California sub-region (Coastal CA, Southern CA, Sierra Nevada), disaggregated by model."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/region_dots_4panel.png){fig-alt="Four-panel dot plot of temperature anomaly at selected global warming levels for each California sub-region (Coastal CA, Southern CA, Sierra Nevada), disaggregated by model."}
@@ -120,10 +123,11 @@ This amplification of regional warming relative to the global mean is a robust f
 ::: {#fig-wl_scatter}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/wl_scatter.html >}}
 </div>
 ```
+![](figures/static/wl_scatter.png){.d-md-none fig-alt="Scatter plot of global warming rate versus California end-of-century temperature anomaly for each CMIP6 model under SSP3-7.0, colored by warming level."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/wl_scatter.png){fig-alt="Scatter plot of global warming rate versus California end-of-century temperature anomaly for each CMIP6 model under SSP3-7.0, colored by warming level."}
@@ -145,10 +149,11 @@ No. Model uncertainty varies substantially across variables.
 ::: {#fig-ipcc_atlas_uncertainty}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/ipcc_atlas_uncertainty.html >}}
 </div>
 ```
+![](figures/static/ipcc_atlas_uncertainty.png){.d-md-none fig-alt="Box-and-whisker chart of CMIP6 inter-model spread by climate variable (temperature, max temperature, precipitation, wind speed, sea surface temperature) for Western North America across near-, medium-, and long-term periods under SSP3-7.0."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/ipcc_atlas_uncertainty.png){fig-alt="Box-and-whisker chart of CMIP6 inter-model spread by climate variable (temperature, max temperature, precipitation, wind speed, sea surface temperature) for Western North America across near-, medium-, and long-term periods under SSP3-7.0."}

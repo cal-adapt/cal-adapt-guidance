@@ -116,8 +116,11 @@ The TMY method specifically uses a [cumulative distribution function](/glossary/
 
 ::: {#fig-tmy-cdf-annual}
 ```{=html}
-<iframe src="figures/html/tmy_cdf_annual.html" width="100%" height="500px" frameborder="0" title="CDF of long-term climatological daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport, 1990–2020."></iframe>
+<iframe class="d-none d-md-block" src="figures/html/tmy_cdf_annual.html" width="100%" height="500px" frameborder="0" title="CDF of long-term climatological daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport, 1990–2020."></iframe>
 ```
+::: {.content-visible when-format="html"}
+![](figures/static/tmy_cdf_annual.png){.d-md-none fig-alt="CDF of long-term climatological daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport, 1990–2020."}
+:::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/tmy_cdf_annual.png){fig-alt="CDF of long-term climatological daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport, 1990–2020."}
 :::
@@ -129,8 +132,11 @@ Next, the CDF for each month of each year is calculated (i.e., January 2001, Jan
 
 ::: {#fig-tmy-cdf-mon-yr-grouped}
 ```{=html}
-<iframe src="figures/html/tmy_cdf_mon_yr_grouped.html" width="100%" height="500px" frameborder="0" title="CDF of candidate month daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport for every year-month combination in 2015."></iframe>
+<iframe class="d-none d-md-block" src="figures/html/tmy_cdf_mon_yr_grouped.html" width="100%" height="500px" frameborder="0" title="CDF of candidate month daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport for every year-month combination in 2015."></iframe>
 ```
+::: {.content-visible when-format="html"}
+![](figures/static/tmy_cdf_mon_yr_grouped.png){.d-md-none fig-alt="CDF of candidate month daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport for every year-month combination in 2015."}
+:::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/tmy_cdf_mon_yr_grouped.png){fig-alt="CDF of candidate month daily max air temperature from 4 bias-adjusted WRF models at Los Angeles International Airport for every year-month combination in 2015."}
 :::
@@ -172,8 +178,9 @@ Smoothing at the monthly interface between months is performed via curve fit to 
 ::: {#fig-tmy-8760}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<iframe src="figures/html/tmy_8760_by_variable.html" width="100%" height="900px" frameborder="0" title="Historical TMY hourly profile for Los Angeles International Airport for the 2038–2068 period, from MPI-ESM1-2-HR, shown across all weather variables."></iframe>
+<iframe class="d-none d-md-block" src="figures/html/tmy_8760_by_variable.html" width="100%" height="900px" frameborder="0" title="Historical TMY hourly profile for Los Angeles International Airport for the 2038–2068 period, from MPI-ESM1-2-HR, shown across all weather variables."></iframe>
 ```
+![](figures/static/tmy_8760_by_variable.png){.d-md-none fig-alt="Historical TMY hourly profile for Los Angeles International Airport for the 2038–2068 period, from MPI-ESM1-2-HR, shown across all weather variables."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/tmy_8760_by_variable.png){fig-alt="Historical TMY hourly profile for Los Angeles International Airport for the 2038–2068 period, from MPI-ESM1-2-HR, shown across all weather variables."}

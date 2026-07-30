@@ -193,10 +193,11 @@ When using warming levels, the Analytics Engine provides estimates for the cross
 ::: {#fig-warming-trajectory-2c}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include ../figures/html/warming_trajectory_2degC.html >}}
 </div>
 ```
+![](../figures/static/warming_trajectory_2degC.png){.d-md-none fig-alt="Chart of the best estimate and 90% confidence interval for the year the world reaches 2.0°C of warming under the SSP3-7.0 scenario."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](../figures/static/warming_trajectory_2degC.png){fig-alt="Chart of the best estimate and 90% confidence interval for the year the world reaches 2.0°C of warming under the SSP3-7.0 scenario."}

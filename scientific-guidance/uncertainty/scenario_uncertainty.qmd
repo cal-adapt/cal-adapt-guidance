@@ -49,10 +49,11 @@ Each scenario's **multi-model mean (MMM)** is shown as a bold line; the **shaded
 ::: {#fig-plume}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/scenario_plume.html >}}
 </div>
 ```
+![](figures/static/scenario_plume.png){.d-md-none fig-alt="Timeseries plume chart of California annual temperature anomaly multi-model means and model-spread envelopes for three SSP emissions scenarios."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/scenario_plume.png){fig-alt="Timeseries plume chart of California annual temperature anomaly multi-model means and model-spread envelopes for three SSP emissions scenarios."}
@@ -72,10 +73,11 @@ The spread between the highest and lowest scenario MMMs, plotted as a single lin
 ::: {#fig-spread}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/scenario_spread_ts.html >}}
 </div>
 ```
+![](figures/static/scenario_spread_ts.png){.d-md-none fig-alt="Timeseries of the growing spread between SSP5-8.5 and SSP2-4.5 multi-model mean temperature anomalies over time."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/scenario_spread_ts.png){fig-alt="Timeseries of the growing spread between SSP5-8.5 and SSP2-4.5 multi-model mean temperature anomalies over time."}
@@ -93,10 +95,11 @@ The plume chart shows trends; this bar chart makes the comparison between planni
 ::: {#fig-bars}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/scenario_period_bars.html >}}
 </div>
 ```
+![](figures/static/scenario_period_bars.png){.d-md-none fig-alt="Bar chart of period-mean California temperature anomaly by emissions scenario across near-term, mid-century, and end-of-century planning horizons, with model spread shown as bars."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/scenario_period_bars.png){fig-alt="Bar chart of period-mean California temperature anomaly by emissions scenario across near-term, mid-century, and end-of-century planning horizons, with model spread shown as bars."}
@@ -119,10 +122,11 @@ Their sum approximates total uncertainty (excluding internal variability, which 
 ::: {#fig-variance}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/scenario_vs_model_variance.html >}}
 </div>
 ```
+![](figures/static/scenario_vs_model_variance.png){.d-md-none fig-alt="Two-panel chart of scenario versus model variance over time, showing absolute variance and fractional contribution, with the crossover year marked where scenario uncertainty exceeds model uncertainty."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/scenario_vs_model_variance.png){fig-alt="Two-panel chart of scenario versus model variance over time, showing absolute variance and fractional contribution, with the crossover year marked where scenario uncertainty exceeds model uncertainty."}
@@ -147,10 +151,11 @@ The timeseries above is a California-wide average. Scenario uncertainty is not s
 ::: {#fig-spatial}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div class="figure-container">
+<div class="figure-container d-none d-md-block">
 {{< include figures/html/scenario_spatial_maps.html >}}
 </div>
 ```
+![](figures/static/scenario_spatial_maps.png){.d-md-none fig-alt="Three-panel map of California end-of-century temperature anomaly under SSP2-4.5 and SSP5-8.5, and their difference showing the spatial field of scenario uncertainty."}
 :::
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/scenario_spatial_maps.png){fig-alt="Three-panel map of California end-of-century temperature anomaly under SSP2-4.5 and SSP5-8.5, and their difference showing the spatial field of scenario uncertainty."}

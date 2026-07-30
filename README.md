@@ -49,6 +49,45 @@ To link to a glossary term from any page (includes a hover tooltip):
 
 The `slug` for each term is defined in `glossary-data.json`.
 
+## Figures
+
+Each page with figures gets its own `figures/html/` and `figures/static/` subdirectory alongside the `.qmd` file:
+
+- `figures/html/<filename>.html` — interactive Panel/Bokeh/Plotly figure, embedded in HTML output
+- `figures/static/<filename>.png` — static image, used as the PDF fallback and the mobile fallback
+
+Declare `resources: - figures/html/` in the page's frontmatter so Quarto copies the files to `_site/`.
+
+### Standard figure block
+
+```
+::: {.content-visible when-format="html"}
+```{=html}
+<div class="figure-container d-none d-md-block">
+{{< include figures/html/<filename>.html >}}
+</div>
+```
+![](figures/static/<filename>.png){.d-md-none fig-alt="..."}
+:::
+::: {.content-visible when-format="pdf"}
+![](figures/static/<filename>.png){fig-alt="..."}
+:::
+```
+
+- `d-none d-md-block` on the interactive figure hides it below the `md` breakpoint (768px, matching the mobile breakpoint in `styles.css`).
+- `d-md-none` on the mobile image shows it only below that breakpoint, so phones get the static PNG instead of a cramped/JS-heavy interactive figure.
+- This mobile swap only applies to charts and maps — interactive data tables are left as scrollable HTML on mobile, since a flattened table image would have unreadably small text.
+
+For true `<iframe src="...">` embeds (rather than `{{< include >}}`), add the same `d-none d-md-block` class directly to the `<iframe>` tag instead of a wrapping `<div>`.
+
+Use iframes (not `{{< include >}}`) for Panel/HoloViz figures when more than one appears on a page — bundling multiple Panel figures via `{{< include >}}` causes JS conflicts between them.
+
+### Notes
+
+- Only the *first* figure on a page can safely use the `{#fig-...}` wrapper with cross-references (`@fig-...`). Additional figures with the same pattern trigger a Quarto "FloatRefTarget with no content" bug that breaks the embed — for those, drop the `{#fig-...}` wrapper and caption manually ("Figure 2.").
+- `<iframe>` has no `alt` attribute — set its `title` to the same text as the corresponding `fig-alt`, so HTML and PDF carry equivalent accessible descriptions.
+- Run `make preview` from the project root to render and serve the full site locally (`quarto render` + a static server on `_site/`). `quarto preview` alone only serves pages with recent changes, which can hide stale figures.
+
 ## Link checking
 
 A link checker runs automatically on every push to `main` and every Monday at 8am UTC (`.github/workflows/check-links.yml`). It renders the site and uses [lychee](https://github.com/lycheeverse/lychee) to check all HTML links, failing the workflow if any broken links are found.

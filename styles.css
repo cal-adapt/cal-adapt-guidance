@@ -838,6 +838,14 @@ table.table-striped > tbody > tr:nth-of-type(even) > td {
     display: none;
   }
 
+  /* .resource-explorer is a row-direction flex container, so the scroll
+     track (a sibling of .resource-carousel-wrap, meant to sit below it)
+     would otherwise land beside it instead, squeezed by the wrap's
+     flex-grow. Stack them vertically. */
+  .resource-explorer {
+    flex-direction: column;
+  }
+
   .resource-card {
     flex-basis: 80vw;
   }

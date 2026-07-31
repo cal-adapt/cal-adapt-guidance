@@ -1,5 +1,7 @@
 ---
 title: "Glossary"
+aliases:
+  - /guidance/glossary
 citation: false
 format:
   html:

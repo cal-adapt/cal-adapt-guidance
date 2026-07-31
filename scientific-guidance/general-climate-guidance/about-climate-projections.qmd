@@ -1,5 +1,7 @@
 ---
 title: "About Climate Projections & Models"
+aliases:
+  - /guidance/about_climate_projections_and_models
 author:
   - name:
       literal: "Cal-Adapt"

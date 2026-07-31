@@ -1,5 +1,7 @@
 ---
 title: "Standard Year 8760s"
+aliases:
+  - /climate-profiles/standard_year_8760s
 author:
   - name:
       literal: "Cal-Adapt"

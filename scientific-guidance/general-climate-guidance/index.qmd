@@ -1,5 +1,8 @@
 ---
 title: "General Climate Guidance"
+aliases:
+  - /guidance
+  - /guidance/using_in_decision_making/guidelines
 citation: false
 format:
   html: default

@@ -1,5 +1,7 @@
 ---
 title: "Our Team"
+aliases:
+  - /about/team
 citation: false
 format:
   html: default

@@ -782,6 +782,27 @@ table.table-striped > tbody > tr:nth-of-type(even) > td {
   .quarto-title-banner {
     min-height: 250px !important;
     padding: 2rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Bold black text with no shadow reads fine over the bright sky in the
+     hero photo but loses contrast where it crosses the darker palm-tree
+     silhouettes lower in the frame. Give it the same white halo already
+     used on the subtitle, and shrink it so it wraps to fewer lines and
+     stays higher up, in the brighter part of the image. */
+  .quarto-title-banner h1.title {
+    font-size: 2rem;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8), 0 1px 8px rgba(255, 255, 255, 0.6);
+  }
+
+  .quarto-title-banner::before {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Empty on this page (no author/date), but zero it out explicitly so it
+     can't contribute stray height. */
+  .quarto-title-meta {
+    display: none;
   }
 
   /* Long subtitle text wrapped over the photo needs more image height on
@@ -792,7 +813,7 @@ table.table-striped > tbody > tr:nth-of-type(even) > td {
   }
 
   .mobile-hero-subtitle {
-    margin: 1.5rem auto 0;
+    margin: 0.5rem auto 0;
     max-width: 640px;
     text-align: center;
     color: var(--color-muted);

@@ -133,6 +133,7 @@ Choose the right topic for your needs.
     </div>
     <button type="button" class="resource-arrow resource-arrow-next" aria-label="Next resource"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
   </div>
+  <div class="resource-scroll-track" aria-hidden="true"><div class="resource-scroll-thumb"></div></div>
 </div>
 
 <script>
@@ -140,6 +141,8 @@ Choose the right topic for your needs.
   var carousel = document.querySelector('.resource-carousel');
   var prevBtn = document.querySelector('.resource-arrow-prev');
   var nextBtn = document.querySelector('.resource-arrow-next');
+  var track = document.querySelector('.resource-scroll-track');
+  var thumb = document.querySelector('.resource-scroll-thumb');
 
   function scrollByCard(direction) {
     var card = carousel.querySelector('.resource-card');
@@ -153,10 +156,20 @@ Choose the right topic for your needs.
     nextBtn.disabled = carousel.scrollLeft >= maxScroll;
   }
 
+  function updateScrollTrack() {
+    var maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    var maxTranslate = track.clientWidth - thumb.clientWidth;
+    var ratio = maxScroll > 0 ? carousel.scrollLeft / maxScroll : 0;
+    thumb.style.transform = 'translateX(' + (ratio * maxTranslate) + 'px)';
+  }
+
   prevBtn.addEventListener('click', function () { scrollByCard(-1); });
   nextBtn.addEventListener('click', function () { scrollByCard(1); });
   carousel.addEventListener('scroll', updateArrows);
+  carousel.addEventListener('scroll', updateScrollTrack);
   window.addEventListener('resize', updateArrows);
+  window.addEventListener('resize', updateScrollTrack);
+  updateScrollTrack();
   updateArrows();
 })();
 </script>

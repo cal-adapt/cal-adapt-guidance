@@ -602,6 +602,14 @@ div[id^="fig-"] {
   pointer-events: none;
 }
 
+/* Hidden on desktop, where the arrow buttons already signal scrollability;
+   shown on mobile (see mobile media query at the end of this file) since
+   the arrows are hidden there and swipe-scrollability isn't otherwise
+   obvious at rest. */
+.resource-scroll-track {
+  display: none;
+}
+
 .resource-card {
   flex: 0 0 320px;
   scroll-snap-align: start;
@@ -835,6 +843,23 @@ table.table-striped > tbody > tr:nth-of-type(even) > td {
 
   .resource-card-thumb {
     height: 45vw;
+  }
+
+  .resource-scroll-track {
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+    background: var(--color-border);
+    overflow: hidden;
+  }
+
+  .resource-scroll-thumb {
+    width: 40%;
+    height: 100%;
+    border-radius: 2px;
+    background: var(--bs-primary);
   }
 
   /* Partner logos add little value at this size and the carousel

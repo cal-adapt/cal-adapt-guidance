@@ -28,6 +28,17 @@
   --color-blue-pastel-border: rgba(77, 157, 224, 0.35);
   --color-grey-box-bg: #f5f5f5;
   --color-grey-box-border: #d3d3d3;
+
+  --navbar-logo-height: 24px;
+}
+
+/* Quarto's bundled theme caps .navbar-logo at max-height: 24px, but doesn't
+   scale it down further for mobile, so the wide (521x269) bear logo can
+   overflow the collapsed mobile navbar row. !important guarantees this wins
+   over the bundled rule regardless of stylesheet load order. */
+.navbar-logo {
+  max-height: var(--navbar-logo-height) !important;
+  width: auto;
 }
 
 
@@ -331,9 +342,27 @@ div[id^="fig-"] {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --navbar-logo-height: 18px;
+  }
+
   .quarto-title-banner {
     min-height: 250px !important;
     padding: 2rem !important;
+  }
+
+  /* Long subtitle text wrapped over the photo needs more image height on
+     narrow screens, exposing busier/lower-contrast regions of the image
+     behind it. Move it below the banner instead of shrinking it further. */
+  .quarto-title-banner .subtitle {
+    display: none;
+  }
+
+  .mobile-hero-subtitle {
+    margin: 1.5rem auto 0;
+    max-width: 640px;
+    text-align: center;
+    color: var(--color-muted);
   }
 
   /* Arrow buttons assume cursor/hover precision and steal width from the

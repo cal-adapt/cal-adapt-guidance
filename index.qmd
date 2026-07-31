@@ -17,6 +17,10 @@ listing:
     fields: [date, title, description, categories]
 ---
 
+::: {.lead .mobile-hero-subtitle .d-md-none}
+The Cal-Adapt: Analytics Engine transforms the foundational climate and environmental data behind California’s Fifth Climate Change Assessment into actionable, expert-guided information to support informed decisions about resilience and planning.
+:::
+
 ## Science-backed guidance you can trust
 
 Climate projections are powerful, but they need interpretation. Our guidance bridges the gap between raw data and real-world decisions.

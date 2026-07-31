@@ -775,8 +775,11 @@ table.table-striped > tbody > tr:nth-of-type(even) > td {
    .partner-logo-item) set the same properties without a media query, and
    equal-specificity rules are decided by which one appears later. */
 @media (max-width: 768px) {
-  :root {
-    --navbar-logo-height: 18px;
+  /* Sidesteps whatever is clipping the wide (521x269) bear logo on mobile
+     rather than continuing to fight it with height/width tweaks — just
+     show the text brand name on narrow screens. */
+  .navbar-logo {
+    display: none;
   }
 
   .quarto-title-banner {

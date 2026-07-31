@@ -544,6 +544,7 @@ div[id^="fig-"] {
 }
 
 .resource-carousel-wrap {
+  position: relative;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -843,6 +844,19 @@ table.table-striped > tbody > tr:nth-of-type(even) > td {
 
   .resource-card-thumb {
     height: 45vw;
+  }
+
+  /* Fade hints that a partial card is peeking off the right edge, since
+     the arrow buttons that used to signal scrollability are hidden here. */
+  .resource-carousel-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 32px;
+    background: linear-gradient(to right, transparent, var(--color-white));
+    pointer-events: none;
   }
 
   .resource-scroll-track {

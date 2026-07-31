@@ -1,5 +1,7 @@
 ---
 title: "A Guide to Heat Metrics for Energy Planning and System Assessment"
+aliases:
+  - /guidance/using_in_decision_making/heat-metrics
 author:
   - name:
       literal: "Cal-Adapt"

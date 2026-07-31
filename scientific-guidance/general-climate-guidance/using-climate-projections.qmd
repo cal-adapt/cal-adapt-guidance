@@ -1,5 +1,7 @@
 ---
 title: "Guidance on Using Climate Data in Decision-Making"
+aliases:
+  - /guidance/using_in_decision_making
 author:
   - name:
       literal: "Cal-Adapt"

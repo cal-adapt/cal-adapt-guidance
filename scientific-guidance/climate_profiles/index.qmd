@@ -1,5 +1,7 @@
 ---
 title: "Climate Profiles"
+aliases:
+  - /climate-profiles
 author:
   - name:
       literal: "Cal-Adapt"

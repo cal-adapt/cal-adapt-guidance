@@ -1,5 +1,7 @@
 ---
 title: "Typical Meteorological Year 8760s"
+aliases:
+  - /climate-profiles/typical_meteorological_year_8760s
 author:
   - name:
       literal: "Cal-Adapt"

@@ -1,5 +1,9 @@
 ---
 title: "Data Catalog"
+aliases:
+  - /data
+  - /data/catalog
+  - /data/more_data
 subtitle: '[<i class="bi bi-box-arrow-up-right"></i> Open the Data Catalog](https://stac-browser.cal-adapt.org/){target="_blank"}'
 citation: false
 format:

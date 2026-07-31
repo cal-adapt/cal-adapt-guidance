@@ -1,5 +1,8 @@
 ---
 title: "Analytics Engine JupyterHub"
+aliases:
+  - /analytics
+  - /sign-in
 subtitle: '[<i class="bi bi-box-arrow-up-right"></i> Open the Analytics Engine JupyterHub](https://hub.cal-adapt.org/user-redirect/doc/tree/cae-notebooks/AE_navigation_guide.ipynb){target="_blank"}'
 citation: false
 format:

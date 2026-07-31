@@ -1,5 +1,7 @@
 ---
 title: "Our Users"
+aliases:
+  - /about/users
 citation: false
 format:
   html: default

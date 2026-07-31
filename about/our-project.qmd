@@ -1,5 +1,9 @@
 ---
 title: "Our Project"
+aliases:
+  - /about
+  - /about/introduction
+  - /about/cal-adapt
 citation: false
 format:
   html: default

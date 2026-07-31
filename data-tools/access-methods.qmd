@@ -1,5 +1,7 @@
 ---
 title: "Data Access Methods"
+aliases:
+  - /data/access
 author:
   - name:
       literal: "Cal-Adapt"

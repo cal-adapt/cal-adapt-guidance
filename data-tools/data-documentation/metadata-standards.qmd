@@ -1,5 +1,7 @@
 ---
 title: "Metadata Standards"
+aliases:
+  - /data/standards
 author:
   - name:
       literal: "Cal-Adapt"

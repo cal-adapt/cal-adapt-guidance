@@ -1,5 +1,7 @@
 ---
 title: "Blog"
+aliases:
+  - /about/announcements
 citation: false
 format:
   html: default

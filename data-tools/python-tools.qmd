@@ -1,5 +1,10 @@
 ---
 title: "Analytics Engine Python Tools"
+aliases:
+  - /analytics/applications
+  - /analytics/applications/notebooks
+  - /analytics/applications/example
+  - /analytics/resources
 subtitle: '[<i class="bi bi-box-arrow-up-right"></i> View and download the Jupyter Notebooks on GitHub](https://github.com/cal-adapt/cae-notebooks){target="_blank"}<br>[<i class="bi bi-box-arrow-up-right"></i> Read the climakitae docs](https://cal-adapt.github.io/climakitae/dev/){target="_blank"}'
 author:
   - name:

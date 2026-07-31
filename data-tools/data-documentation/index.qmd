@@ -1,5 +1,7 @@
 ---
 title: "Data Documentation"
+aliases:
+  - /data/about
 citation: false
 format:
   html: default

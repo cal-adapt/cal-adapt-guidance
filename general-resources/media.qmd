@@ -1,5 +1,9 @@
 ---
 title: "Media"
+aliases:
+  - /about/media
+  - /about/media/video
+  - /about/media/presentations
 citation: false
 format:
   html: default

@@ -1,5 +1,7 @@
 ---
 title: "Reference Library"
+aliases:
+  - /guidance/references
 citation: false
 format:
   html: default

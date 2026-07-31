@@ -692,23 +692,23 @@ div[id^="fig-"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
-  height: 180px;
-  padding: 1.25rem;
+  width: 220px;
+  height: 140px;
+  padding: 1rem;
   border: 1px solid var(--color-border);
   border-radius: 0.6rem;
   background: var(--color-white);
 }
 
 .partner-logo-item img {
-  height: 7rem;
+  height: 5.5rem;
   width: auto;
   max-width: 100%;
   object-fit: contain;
 }
 
 .partner-logo-item img[src*="logo-cec"] {
-  height: 8.5rem;
+  height: 6.75rem;
 }
 
 .footer {
@@ -788,18 +788,11 @@ table.table-striped > tbody > tr:nth-of-type(even) > td {
     margin-bottom: 0 !important;
   }
 
-  /* Bold black text with no shadow reads fine over the bright sky in the
-     hero photo but loses contrast where it crosses the darker palm-tree
-     silhouettes lower in the frame. Give it the same white halo already
-     used on the subtitle, and shrink it so it wraps to fewer lines and
-     stays higher up, in the brighter part of the image. */
+  /* Shrink so it wraps to fewer/shorter lines and stays higher up, in the
+     brighter sky part of the image, instead of extending down into the
+     darker palm-tree silhouettes where contrast was poor. */
   .quarto-title-banner h1.title {
     font-size: 2rem;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8), 0 1px 8px rgba(255, 255, 255, 0.6);
-  }
-
-  .quarto-title-banner::before {
-    background: rgba(255, 255, 255, 0.5);
   }
 
   /* Empty on this page (no author/date), but zero it out explicitly so it
@@ -815,8 +808,15 @@ table.table-striped > tbody > tr:nth-of-type(even) > td {
     display: none;
   }
 
+  /* Unscoped base rule (further up this file) adds 1rem of padding after
+     the whole header block on every screen size; on mobile that stacks on
+     top of the subtitle's own spacing and reads as a big empty gap. */
+  #title-block-header {
+    padding-bottom: 0;
+  }
+
   .mobile-hero-subtitle {
-    margin: 0.5rem auto 0;
+    margin: 0 auto;
     max-width: 640px;
     text-align: center;
     color: var(--color-muted);
@@ -837,9 +837,10 @@ table.table-striped > tbody > tr:nth-of-type(even) > td {
     height: 45vw;
   }
 
-  .partner-logo-item {
-    width: 60vw;
-    height: auto;
-    aspect-ratio: 280 / 180;
+  /* Partner logos add little value at this size and the carousel
+     mechanics (swipe + arrows) are more friction than they're worth for a
+     row of static logos on a small screen — drop it entirely on mobile. */
+  .partner-explorer {
+    display: none;
   }
 }

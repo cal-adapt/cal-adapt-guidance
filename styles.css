@@ -335,6 +335,27 @@ div[id^="fig-"] {
     min-height: 250px !important;
     padding: 2rem !important;
   }
+
+  /* Arrow buttons assume cursor/hover precision and steal width from the
+     cards on narrow screens; swipe-scrolling the carousel works fine
+     without them, so hide them and let the cards use the freed-up space. */
+  .resource-arrow {
+    display: none;
+  }
+
+  .resource-card {
+    flex-basis: 80vw;
+  }
+
+  .resource-card-thumb {
+    height: 45vw;
+  }
+
+  .partner-logo-item {
+    width: 60vw;
+    height: auto;
+    aspect-ratio: 280 / 180;
+  }
 }
 
 /* ===== Homepage ===== */

@@ -15,7 +15,8 @@ website:
   search: true
   page-navigation: true
   bread-crumbs: true
-  open-graph: true
+  open-graph:
+    image: assets/hero.jpg
   navbar:
     pinned: true
     logo: assets/bear.png

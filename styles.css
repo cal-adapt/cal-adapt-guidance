@@ -341,52 +341,6 @@ div[id^="fig-"] {
   color: var(--color-muted);
 }
 
-@media (max-width: 768px) {
-  :root {
-    --navbar-logo-height: 18px;
-  }
-
-  .quarto-title-banner {
-    min-height: 250px !important;
-    padding: 2rem !important;
-  }
-
-  /* Long subtitle text wrapped over the photo needs more image height on
-     narrow screens, exposing busier/lower-contrast regions of the image
-     behind it. Move it below the banner instead of shrinking it further. */
-  .quarto-title-banner .subtitle {
-    display: none;
-  }
-
-  .mobile-hero-subtitle {
-    margin: 1.5rem auto 0;
-    max-width: 640px;
-    text-align: center;
-    color: var(--color-muted);
-  }
-
-  /* Arrow buttons assume cursor/hover precision and steal width from the
-     cards on narrow screens; swipe-scrolling the carousel works fine
-     without them, so hide them and let the cards use the freed-up space. */
-  .resource-arrow {
-    display: none;
-  }
-
-  .resource-card {
-    flex-basis: 80vw;
-  }
-
-  .resource-card-thumb {
-    height: 45vw;
-  }
-
-  .partner-logo-item {
-    width: 60vw;
-    height: auto;
-    aspect-ratio: 280 / 180;
-  }
-}
-
 /* ===== Homepage ===== */
 .info-card {
   padding: 1.25rem 1.5rem;
@@ -813,4 +767,55 @@ div[aria-describedby] {
 table.table-striped > tbody > tr:nth-of-type(odd) > td,
 table.table-striped > tbody > tr:nth-of-type(even) > td {
   background-color: var(--color-white);
+}
+
+/* Mobile overrides. Kept at the end of the file (rather than near the
+   components they touch) so they win the cascade by source order alone —
+   several of the base rules above (.resource-arrow, .resource-card,
+   .partner-logo-item) set the same properties without a media query, and
+   equal-specificity rules are decided by which one appears later. */
+@media (max-width: 768px) {
+  :root {
+    --navbar-logo-height: 18px;
+  }
+
+  .quarto-title-banner {
+    min-height: 250px !important;
+    padding: 2rem !important;
+  }
+
+  /* Long subtitle text wrapped over the photo needs more image height on
+     narrow screens, exposing busier/lower-contrast regions of the image
+     behind it. Move it below the banner instead of shrinking it further. */
+  .quarto-title-banner .subtitle {
+    display: none;
+  }
+
+  .mobile-hero-subtitle {
+    margin: 1.5rem auto 0;
+    max-width: 640px;
+    text-align: center;
+    color: var(--color-muted);
+  }
+
+  /* Arrow buttons assume cursor/hover precision and steal width from the
+     cards on narrow screens; swipe-scrolling the carousel works fine
+     without them, so hide them and let the cards use the freed-up space. */
+  .resource-arrow {
+    display: none;
+  }
+
+  .resource-card {
+    flex-basis: 80vw;
+  }
+
+  .resource-card-thumb {
+    height: 45vw;
+  }
+
+  .partner-logo-item {
+    width: 60vw;
+    height: auto;
+    aspect-ratio: 280 / 180;
+  }
 }

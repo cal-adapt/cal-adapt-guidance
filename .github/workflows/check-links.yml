@@ -33,5 +33,5 @@ jobs:
             --timeout 30
             --retry-wait-time 5
             --max-retries 3
-            _site/**/*.html
+            '_site/**/*.html'
           fail: true

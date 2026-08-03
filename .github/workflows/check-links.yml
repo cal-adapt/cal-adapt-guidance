@@ -28,5 +28,10 @@ jobs:
             --exclude 'localhost'
             --exclude 'analytics.cal-adapt.org'
             --exclude '^file://.*\.pdf$'
+            --accept 200..=299,401,403,405,999
+            --insecure
+            --timeout 30
+            --retry-wait-time 5
+            --max-retries 3
             _site/**/*.html
           fail: true

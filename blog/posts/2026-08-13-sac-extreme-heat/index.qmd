@@ -88,7 +88,10 @@ To compare the 2020 heat waves to the historical record and to future projection
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/fig_annual_anomaly_plotly.png){fig-alt="Bar chart of annual mean temperature anomaly at KSAC relative to the full-record mean, 2020 highlighted."}
 :::
-Figure 4. Annual mean temperature anomaly at KSAC (Sacramento Executive Airport) relative to the full-record mean. Red bars indicate warmer-than-average years; blue bars indicate cooler-than-average years. 2020 is highlighted in gold. The black line shows the 5-year rolling mean. Data: Historical Data Platform (HDP).
+::: {.content-visible when-format="docx"}
+![](figures/static/fig_annual_anomaly_plotly.png){fig-alt="Bar chart of annual mean temperature anomaly at KSAC relative to the full-record mean, 2020 highlighted."}
+:::
+Annual mean temperature anomaly at KSAC (Sacramento Executive Airport) relative to the full-record mean. Red bars indicate warmer-than-average years; blue bars indicate cooler-than-average years. 2020 is highlighted in gold. The black line shows the 5-year rolling mean. Data: Historical Data Platform (HDP).
 :::
 
 ---
@@ -110,7 +113,10 @@ The pattern is clear: 2020 stands out not just for its peaks, but for the elevat
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/fig_daily_temp_by_year_plotly.png){fig-alt="Line chart of daily maximum and minimum temperature at KSAC across all available years, with 2020 highlighted."}
 :::
-Figure 3. Daily maximum and minimum temperature at KSAC (Sacramento Executive Airport), all available years. Dark gray lines = historical daily max; light blue lines = historical daily min; bold red = 2020 daily max; bold dark blue = 2020 daily min. Shaded regions indicate Heat Wave I (August 14–26) and Heat Wave II (September 5–8). Dashed gray line marks the approximate 65°F AC threshold. Hover a line to see year, date, and temperature. Data: Historical Data Platform (HDP).
+::: {.content-visible when-format="docx"}
+![](figures/static/fig_daily_temp_by_year_plotly.png){fig-alt="Line chart of daily maximum and minimum temperature at KSAC across all available years, with 2020 highlighted."}
+:::
+Daily maximum and minimum temperature at KSAC (Sacramento Executive Airport), all available years. Dark gray lines = historical daily max; light blue lines = historical daily min; bold red = 2020 daily max; bold dark blue = 2020 daily min. Shaded regions indicate Heat Wave I (August 14–26) and Heat Wave II (September 5–8). Dashed gray line marks the approximate 65°F AC threshold. Hover a line to see year, date, and temperature. Data: Historical Data Platform (HDP).
 :::
 
 ---
@@ -157,7 +163,10 @@ We can take a look at the return period of this event in the historical record, 
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/fig_return_period_by_gwl_plotly.png){fig-alt="Bar chart of return period for extreme heat days without nighttime reprieve in Sacramento County under three warming levels."}
 :::
-Figure 5. Return period of extreme heat days without nighttime reprieve in Sacramento County under three warming levels. A shorter return period means the event becomes more frequent. Data: WRF UCLA 3 km, SSP3-7.0.
+::: {.content-visible when-format="docx"}
+![](figures/static/fig_return_period_by_gwl_plotly.png){fig-alt="Bar chart of return period for extreme heat days without nighttime reprieve in Sacramento County under three warming levels."}
+:::
+Return period of extreme heat days without nighttime reprieve in Sacramento County under three warming levels. A shorter return period means the event becomes more frequent. Data: WRF UCLA 3 km, SSP3-7.0.
 :::
 
 Comparing across warming levels, days meeting this threshold are expected to occur approximately **3 times more frequently** under 2.0°C of warming than under the recent historical baseline (0.8°C). At 1.5°C, which is roughly the amount of warming we are at today, the frequency is already elevated relative to the recent past.
@@ -187,7 +196,12 @@ During extreme heat, air conditioners run continuously, driving electricity dema
 <!-- PHOTO: Add an image here — e.g., CAISO demand chart during the blackout event, a news
      photo of rolling blackouts, or a photo of power infrastructure under stress.
      Save to images/ and update the path and caption below. -->
-![*California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave. [File: Richard Vogel/Associated Press]*](images/transmission-lines.jpeg){style="border-radius:5px; margin:1rem 0;"}
+```{=html}
+<img src="images/transmission-lines.jpeg" alt="California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave" style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:3px;">
+```
+
+*California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave. [File: Richard Vogel/Associated Press]*
+
 
 As events like this become five times more common, the grid implications are not linearly correlated to be five times worse. More frequent peaks erode the reserve margins that utilities rely on to absorb demand spikes. However, over the past three years, California has strengthened its grid resilience, with the CEC reporting that  “up to 4,500 MW of contingency resources are available for summer 2026 in case of extreme events that strain the grid.” (CEC, 2026). Still, as climate change continues to raise the likelihood of extreme events statewide (and countrywide), electric demand throughout the day is only expected to keep climbing.
 
@@ -198,7 +212,10 @@ The California Department of Public Health reported a surge in heat-related emer
 <!-- PHOTO: Add a news article screenshot or photo showing the surge in hospital/ER visits
      during the August 2020 heat wave. A screenshot from a local news story (e.g., ABC10,
      Sacramento Bee) works well here. Save to images/ and update path and caption below. -->
-![*Surge in heat-related emergency room visits during the 2020 heat wave. [Credit: SOURCE — update when image is added.]*](images/test_img.jpg){style="border-radius:5px; margin:1rem 0;"}
+```{=html}
+<img src="images/public-health.jpg" alt="Surge in heat-related emergency room visits during the 2020 heat wave" style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:5px;">
+```
+*Surge in heat-related emergency room visits during the 2020 heat wave. [Credit: SOURCE — update when image is added.]*
 
 #### **Equity and Disproportionate Impacts**
 
@@ -209,7 +226,10 @@ Not everyone experiences heat equally. In Sacramento, lower-income neighborhoods
      a street-level photo of a low-canopy neighborhood on a hot day, or a news photo
      showing outdoor workers or vulnerable residents during the heat wave.
      Save to images/ and update path and caption below. -->
-![*Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas. [Credit: SOURCE — update when image is added.]*](images/test_img.jpg){style="border-radius:5px; margin:1rem 0;"}
+```{=html}
+<img src="images/urban-heat-island.jpg" alt="Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas" style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;">
+```
+*Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas. [Credit: SOURCE — update when image is added.]*
 
 :::
 
@@ -239,7 +259,10 @@ Below, we've mapped the projected frequency of heat events under 2°C of global 
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/fig_tx105_75night_by_gwl_plotly.png){fig-alt="Choropleth map of the 105°F day / 75°F night heat metric across Sacramento County census tracts, comparing the 0.8°C historical baseline against 1.5°C, 2.0°C, and 3.0°C warming levels."}
 :::
-Figure 6. Projected number of 105°F day / 75°F night events per year across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.
+::: {.content-visible when-format="docx"}
+![](figures/static/fig_tx105_75night_by_gwl_plotly.png){fig-alt="Choropleth map of the 105°F day / 75°F night heat metric across Sacramento County census tracts, comparing the 0.8°C historical baseline against 1.5°C, 2.0°C, and 3.0°C warming levels."}
+:::
+Projected number of 105°F day / 75°F night events per year across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.
 :::
 
 ::: {#fig-crai-tx105-delta}
@@ -254,7 +277,10 @@ Figure 6. Projected number of 105°F day / 75°F night events per year across Sa
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/fig_tx105_75night_delta_by_gwl_plotly.png){fig-alt="Choropleth map of change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, comparing 1.5°C, 2.0°C, and 3.0°C warming levels against the 0.8°C historical baseline."}
 :::
-Figure 7. Change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.
+::: {.content-visible when-format="docx"}
+![](figures/static/fig_tx105_75night_delta_by_gwl_plotly.png){fig-alt="Choropleth map of change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, comparing 1.5°C, 2.0°C, and 3.0°C warming levels against the 0.8°C historical baseline."}
+:::
+Change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.
 :::
 
 <!-- PNG fallback (figures/static/fig_consecutive_heatwave_by_gwl_plotly.png) not yet generated — .d-md-none/pdf fallback omitted below until it exists. -->
@@ -266,7 +292,7 @@ Figure 7. Change in CRAI heat hazard score for the 105°F day / 75°F night metr
 </div>
 ```
 :::
-Figure 8. Projected consecutive-heatwave-day counts across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.
+Projected consecutive-heatwave-day counts across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.
 :::
 
 <!-- PNG fallback (figures/static/fig_consecutive_heatwave_delta_by_gwl_plotly.png) not yet generated — .d-md-none/pdf fallback omitted below until it exists. -->
@@ -278,13 +304,15 @@ Figure 8. Projected consecutive-heatwave-day counts across Sacramento County cen
 </div>
 ```
 :::
-Figure 9. Change in CRAI heat hazard score for the consecutive-heatwave metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.
+Change in CRAI heat hazard score for the consecutive-heatwave metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.
 :::
 
 
 **We can see through these CRAI layers that certain areas are expecting more difficultly to adapt than others [WIP].** The areas with the highest projected heat hazard and the lowest equity scores are likely to be the most vulnerable to future heat events, and will require targeted interventions to reduce risk.
 
 Let's take a look at what kinds of solutions communities can adapt to address a changing climate, and what Sacramento is already doing to prepare for future heat events.
+
+CRAI hazard and equity data: Ford, V., Espinoza, J., & McClenny, B. (2024). *California Climate Risk and Adaptation Index Metric Files and Metadata, v1* [Data set]. Eagle Rock Analytics. [https://zenodo.org/records/13840187](https://zenodo.org/records/13840187)
 
 ---
 
@@ -302,7 +330,7 @@ The risks are real, but so are the tools available to address them. Communities 
          style="width:100%; height:160px; object-fit:cover;">
     <div style="padding:1rem; flex:1;">
       <strong>Urban Tree Canopy</strong>
-      <p style="margin-top:0.5rem; font-size:0.9rem;">Trees shade pavement, reduce surface temperatures, and cool the air through evapotranspiration. Research consistently shows a 10% increase in urban canopy cover can lower mean summer temperatures by 1–2°F in dense, paved environments — with larger effects in low-canopy neighborhoods where the urban heat island is most intense.</p>
+      <p style="margin-top:0.5rem; font-size:0.9rem;">Trees shade pavement, reduce surface temperatures, and cool the air through evapotranspiration. Research consistently shows a 10% increase in urban canopy cover can lower mean summer temperatures by 1–2°F in dense, paved environments — with larger effects in low-canopy neighborhoods where the urban heat island is most intense. Sacramento is already investing heavily here — see Urban Tree Canopy Expansion below.</p>
     </div>
   </div>
 
@@ -311,16 +339,16 @@ The risks are real, but so are the tools available to address them. Communities 
          style="width:100%; height:160px; object-fit:cover;">
     <div style="padding:1rem; flex:1;">
       <strong>Cool Corridors</strong>
-      <p style="margin-top:0.5rem; font-size:0.9rem;">Shaded pedestrian and transit routes connecting cooling centers, parks, and public facilities reduce heat exposure for people traveling on foot. Cool corridors are especially effective for outdoor workers, elderly residents, and those without access to personal vehicles — potions that face the greatest risk during extreme heat events.</p>
+      <p style="margin-top:0.5rem; font-size:0.9rem;">Shaded pedestrian and transit routes connecting cooling centers, parks, and public facilities reduce heat exposure for people traveling on foot. Cool corridors are especially effective for outdoor workers, elderly residents, and those without access to personal vehicles — populations that face the greatest risk during extreme heat events. Sacramento's new shaded bus shelters are a concrete example — see SacRT Heat-Resilient Bus Shelters below.</p>
     </div>
   </div>
 
   <div style="flex:1; border:1px solid #dee2e6; border-radius:0.375rem; overflow:hidden; display:flex; flex-direction:column;">
-    <img src="images/wetland_restoration.jpg" alt="Riparian and wetland restoration"
+    <img src="images/community-center.jpg" alt="Cooling center refuge space"
          style="width:100%; height:160px; object-fit:cover;">
     <div style="padding:1rem; flex:1;">
-      <strong>Riparian &amp; Wetland Restoration</strong>
-      <p style="margin-top:0.5rem; font-size:0.9rem;">Restoring native vegetation along rivers and in wetlands provides natural cooling through shading and evapotranspiration, while improving flood resilience and wildlife habitat. Greenbelts along waterways can measurably lower temperatures in adjacent neighborhoods — benefits that compound as heatwaves become more frequent and severe.</p>
+      <strong>Cooling Centers &amp; Refuge Spaces</strong>
+      <p style="margin-top:0.5rem; font-size:0.9rem;">Air-conditioned public spaces — libraries, community centers, senior facilities — give people without reliable home cooling somewhere safe to go during the most dangerous heat events. Unlike shade or vegetation, refuge spaces don't lower ambient temperature, but they're often the difference between heat illness and safety for the most vulnerable residents. Sacramento already operates a countywide network — see Cooling Centers Network below.</p>
     </div>
   </div>
 
@@ -335,29 +363,29 @@ For a broader overview of what nature-based solutions cities are deploying, [che
 <div style="display:flex; gap:1.25rem; margin:1.5rem 0; align-items:stretch;">
 
   <div style="flex:1; border:1px solid #dee2e6; border-radius:0.375rem; overflow:hidden; display:flex; flex-direction:column;">
-    <img src="test_img.jpg" alt="Sacramento cooling center"
-         style="width:100%; height:160px; object-fit:cover;">
-    <div style="padding:1rem; flex:1;">
-      <strong>Cooling Centers Network</strong>
-      <p style="margin-top:0.5rem; font-size:0.9rem;">Sacramento County operates a network of publicly accessible cooling centers — libraries, community centers, and senior facilities — that open automatically when the National Weather Service issues an Excessive Heat Warning. During the 2020 heat waves, the county activated more than 20 sites across the region. The program has since expanded its hours and outreach to reach residents without transportation.</p>
-    </div>
-  </div>
-
-  <div style="flex:1; border:1px solid #dee2e6; border-radius:0.375rem; overflow:hidden; display:flex; flex-direction:column;">
-    <img src="test_img.jpg" alt="Sacramento urban tree canopy"
+    <img src="images/urban-forest-plan.jpg" alt="Sacramento urban tree canopy"
          style="width:100%; height:160px; object-fit:cover;">
     <div style="padding:1rem; flex:1;">
       <strong>Urban Tree Canopy Expansion</strong>
-      <p style="margin-top:0.5rem; font-size:0.9rem;">The City of Sacramento's Tree Canopy Master Plan targets 25% citywide canopy cover, with priority planting in low-canopy, high heat-risk neighborhoods including Oak Park, Del Paso Heights, and Meadowview. Trees can reduce local surface temperatures by 5–10°F. The Sacramento Tree Foundation has planted over 100,000 trees since 1982 and runs free planting programs for income-qualified residents.</p>
+      <p style="margin-top:0.5rem; font-size:0.9rem;">Through NeighborWoods and the City's Urban Forest Plan, Sacramento has planted roughly 1.5 million trees county-wide over its history, including 13,000+ shade trees and 6,000+ residents engaged in FY2024 alone, working toward the city's target of 25,000 trees planted per year. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1618866723003631">Cooling-effectiveness research</a> consistently finds tree canopy cover outperforms building shading and pervious surfaces for mitigating human heat stress, with realistic air-temperature reductions of 1–3°C (more for direct surface/pavement shading) — making this the intervention with the broadest, most continuous reach county-wide.</p>
     </div>
   </div>
 
   <div style="flex:1; border:1px solid #dee2e6; border-radius:0.375rem; overflow:hidden; display:flex; flex-direction:column;">
-    <img src="test_img.jpg" alt="Sacramento hazard mitigation planning"
+    <img src="images/library.jpg" alt="Sacramento cooling center"
          style="width:100%; height:160px; object-fit:cover;">
     <div style="padding:1rem; flex:1;">
-      <strong>Hazard Mitigation Planning</strong>
-      <p style="margin-top:0.5rem; font-size:0.9rem;">Sacramento County's Local Hazard Mitigation Plan (LHMP) formally identifies extreme heat as a priority hazard and outlines mitigation actions tied to state and federal funding mechanisms. The 2020 After-Action Report from the Office of Emergency Services identified gaps in cooling center communication and transportation access — and led to updates in alert protocols and coordination with PG&amp;E during grid stress events.</p>
+      <strong>Cooling Centers Network</strong>
+      <p style="margin-top:0.5rem; font-size:0.9rem;">Sacramento County operates a network of publicly accessible <a href="https://www.saccounty.gov/news/latest-news/Pages/Keep-Cool.-Cooling-Centers.aspx">cooling centers</a> — libraries, community centers, and senior facilities — that activate in step with the National Weather Service's HeatRisk Red/Magenta forecast levels. During the 2020 heat waves, the county activated more than 20 sites across the region. Reach is narrower than canopy cover since it only serves people during an active emergency, but for unhoused residents and those without AC or transportation, it's often the difference between heat illness and safety.</p>
+    </div>
+  </div>
+
+  <div style="flex:1; border:1px solid #dee2e6; border-radius:0.375rem; overflow:hidden; display:flex; flex-direction:column;">
+    <img src="images/sacRT.jpg" alt="SacRT heat-resilient bus shelter"
+         style="width:100%; height:160px; object-fit:cover;">
+    <div style="padding:1rem; flex:1;">
+      <strong>SacRT Heat-Resilient Bus Shelters</strong>
+      <p style="margin-top:0.5rem; font-size:0.9rem;">Sacramento Regional Transit was <a href="https://www.masstransitmag.com/technology/facilities/shelters-benches-and-equipment/article/55242936/california-governors-office-of-land-use-and-climate-innovation-selects-sacrt-for-extreme-heat-and-community-resilience-program-grant">awarded $449,900</a> to build up to 20 heat-resilient shelters at bus stops serving disadvantaged and low-income communities across the county, Citrus Heights, Folsom, Rancho Cordova, and Sacramento. It's a meaningful, targeted investment for the transit-dependent riders it reaches, but 20 shelters is a small fraction of the county's full bus-stop network — high equity relevance, smaller effect on county-wide heat exposure than canopy cover.</p>
     </div>
   </div>
 
@@ -438,11 +466,9 @@ A changing climate will affect everyone, no matter where you live. The good news
 
 ### Data Sources and Tools Used
 
-**Data Sources:**
-
 - **Observed station data:** Historical Data Platform (HDP), KSAC (Sacramento Executive Airport, `ASOSAWOS_72483023232`), accessed via [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org)
 - **Future projections:** WRF dynamically-downscaled projections (UCLA, SSP3-7.0, 3 km resolution, d03 grid), accessed via Cal-Adapt Analytics Engine
-- **Equity layers:** [CalEnviroScreen / CRAI — add citation when included]
+- **Equity layers:** Ford, V., Espinoza, J., & McClenny, B. (2024). [California Climate Risk and Adaptation Index Metric Files and Metadata, v1](https://zenodo.org/records/13840187) [Data set]. Eagle Rock Analytics.
 - **Population data:** [SOURCE — add when included]
 
 **Tools:** This analysis was built using [`climakitae`](https://github.com/cal-adapt/climakitae), Cal-Adapt's open-source Python library for climate data access and analysis.

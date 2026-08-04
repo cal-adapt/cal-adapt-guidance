@@ -282,6 +282,10 @@ Figure 9. Change in CRAI heat hazard score for the consecutive-heatwave metric a
 :::
 
 
+**We can see through these CRAI layers that certain areas are expecting more difficultly to adapt than others [WIP].** The areas with the highest projected heat hazard and the lowest equity scores are likely to be the most vulnerable to future heat events, and will require targeted interventions to reduce risk.
+
+Let's take a look at what kinds of solutions communities can adapt to address a changing climate, and what Sacramento is already doing to prepare for future heat events.
+
 ---
 
 ### Solutions We Can Adapt To Address A Changing Climate
@@ -360,7 +364,8 @@ For a broader overview of what nature-based solutions cities are deploying, [che
 </div>
 ```
 
-#### **Where the Gaps Are**
+## **Where the Gaps Are**
+Now, let's take a look at where Sacramento has already invested in cooling and green infrastructure, and where gaps remain. The map below overlays existing tree canopy, cooling centers, and other green infrastructure onto the projected heat risk and equity vulnerability layers.
 
 <!-- FIGURE 7: Map overlaying current nature-based solution sites (tree canopy,
      cooling centers, green infrastructure) onto the future frequency / equity risk map.

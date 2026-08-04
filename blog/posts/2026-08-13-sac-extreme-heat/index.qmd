@@ -2,7 +2,7 @@
 title: "The 2020 Sacramento Heat Waves: What Happened, and What's Coming"
 author:
   - "Calvin Chen"
-date: "2026-[MONTH]-[DAY]"
+date: "2026-08-13"
 description: "Two back-to-back heat waves in August and September 2020 pushed Sacramento to the edge of its capacity. Here's what the data says about how bad it was, and how much worse it will get."
 categories: [Science]
 citation: true
@@ -227,8 +227,6 @@ Not everyone experiences heat equally. In Sacramento, lower-income neighborhoods
 
 Below, we've mapped the projected frequency of heat events under 2°C of global warming across the Sacramento region, overlaid with equity layers from CRAI, population density, and transmission infrastructure. This visualization highlights the areas where future heat risk is projected to be highest, and where existing vulnerabilities intersect with those risks.
 
-**[INSERT EXAMPLE CRAI METRIC MAP HERE (one of the metrics that go into aggregated calculation)]**
-
 ::: {#fig-crai-tx105}
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -241,7 +239,7 @@ Below, we've mapped the projected frequency of heat events under 2°C of global 
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/fig_tx105_75night_by_gwl_plotly.png){fig-alt="Choropleth map of the 105°F day / 75°F night heat metric across Sacramento County census tracts, comparing the 0.8°C historical baseline against 1.5°C, 2.0°C, and 3.0°C warming levels."}
 :::
-Projected number of 105°F day / 75°F night events per year across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.
+Figure 6. Projected number of 105°F day / 75°F night events per year across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.
 :::
 
 ::: {#fig-crai-tx105-delta}
@@ -256,7 +254,7 @@ Projected number of 105°F day / 75°F night events per year across Sacramento C
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/fig_tx105_75night_delta_by_gwl_plotly.png){fig-alt="Choropleth map of change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, comparing 1.5°C, 2.0°C, and 3.0°C warming levels against the 0.8°C historical baseline."}
 :::
-Change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.
+Figure 7. Change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.
 :::
 
 <!-- PNG fallback (figures/static/fig_consecutive_heatwave_by_gwl_plotly.png) not yet generated — .d-md-none/pdf fallback omitted below until it exists. -->
@@ -268,7 +266,7 @@ Change in CRAI heat hazard score for the 105°F day / 75°F night metric across 
 </div>
 ```
 :::
-Projected consecutive-heatwave-day counts across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.
+Figure 8. Projected consecutive-heatwave-day counts across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.
 :::
 
 <!-- PNG fallback (figures/static/fig_consecutive_heatwave_delta_by_gwl_plotly.png) not yet generated — .d-md-none/pdf fallback omitted below until it exists. -->
@@ -280,12 +278,8 @@ Projected consecutive-heatwave-day counts across Sacramento County census tracts
 </div>
 ```
 :::
-Change in CRAI heat hazard score for the consecutive-heatwave metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.
+Figure 9. Change in CRAI heat hazard score for the consecutive-heatwave metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.
 :::
-
-**[INSERT AGGREGATED CRAI MAP]**
-
-*Figure 6. Projected frequency of heat events under 2°C global warming across the Sacramento region. Overlays show [CalEnviroScreen / CRAI equity layers, population density, transmission infrastructure — to be added]. Data: WRF, [other sources].*
 
 
 ---
@@ -382,7 +376,7 @@ For a broader overview of what nature-based solutions cities are deploying, [che
 
 :::
 
-*Figure 7. Existing cooling and green infrastructure in the Sacramento region, overlaid on projected heat risk and equity vulnerability. Gaps indicate areas with high projected risk and limited current adaptation investment. Data: [sources].*
+*Figure 10. Existing cooling and green infrastructure in the Sacramento region, overlaid on projected heat risk and equity vulnerability. Gaps indicate areas with high projected risk and limited current adaptation investment. Data: [sources].*
 
 Looking at the distribution of existing tree canopy and cooling infrastructure against the equity and projected frequency layers, **[FILL IN FINDINGS — which areas appear most underserved? What types of interventions would be most appropriate?]**
 
@@ -437,7 +431,9 @@ A changing climate will affect everyone, no matter where you live. The good news
 
 ---
 
-### **Data sources used in this analysis:**
+### Data Sources and Tools Used
+
+**Data Sources:**
 
 - **Observed station data:** Historical Data Platform (HDP), KSAC (Sacramento Executive Airport, `ASOSAWOS_72483023232`), accessed via [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org)
 - **Future projections:** WRF dynamically-downscaled projections (UCLA, SSP3-7.0, 3 km resolution, d03 grid), accessed via Cal-Adapt Analytics Engine
@@ -446,15 +442,15 @@ A changing climate will affect everyone, no matter where you live. The good news
 
 **Tools:** This analysis was built using [`climakitae`](https://github.com/cal-adapt/climakitae), Cal-Adapt's open-source Python library for climate data access and analysis.
 
-Explore climate projections for your own area at [cal-adapt.org](https://cal-adapt.org). For tools focused specifically on extreme heat, see [X] and [Y] on cal-adapt.org.
+Explore climate projections for your own area at [cal-adapt.org](https://cal-adapt.org). For tools focused specifically on extreme heat, see [our extreme heat tool](https://cal-adapt.org/dashboard/climate-metrics-map?metric=extreme-heat) on cal-adapt.org.
 
 ---
 
 ### Note on Updates
 
-*This post reflects data available at time of publication. Extreme heat events often take weeks or months to fully characterize. Final heat-related death counts, official NOAA summaries, and attribution analyses from groups like [World Weather Attribution](https://www.worldweatherattribution.org/) are typically released after the event concludes. We'll update this post as that data becomes available.*
+This post reflects data available at time of publication. Extreme heat events often take weeks or months to fully characterize. Final heat-related death counts, official NOAA summaries, and attribution analyses from groups like [World Weather Attribution](https://www.worldweatherattribution.org/) are typically released after the event concludes. We'll update this post as that data becomes available.
 
-*If you're a researcher, planner, or agency working on this event and have data you'd like to share or discuss, [reach out to us](mailto:calvin@eaglerockanalytics.com).*
+If you're a researcher, planner, or agency working on this event and have data you'd like to share or discuss, [reach out to us](mailto:calvin@eaglerockanalytics.com).
 
 ---
 
@@ -466,8 +462,6 @@ If you're interested in sharing how you were affected, what you experienced, wha
 
 ---
 
-*This analysis is provided for informational and educational purposes only. Climate projections carry inherent uncertainty and should not be used as the sole basis for engineering, legal, financial, or emergency management decisions. Eagle Rock Analytics makes no warranties, express or implied, regarding the accuracy or completeness of the data or projections presented here. All source data is publicly available and credited above; users are encouraged to consult primary sources and qualified professionals before acting on this information.*
-
-[Get in touch →](mailto:calvin@eaglerockanalytics.com)
+[*This analysis is provided for informational and educational purposes only. Climate projections carry inherent uncertainty and should not be used as the sole basis for engineering, legal, financial, or emergency management decisions. Eagle Rock Analytics makes no warranties, express or implied, regarding the accuracy or completeness of the data or projections presented here. All source data is publicly available and credited above; users are encouraged to consult primary sources and qualified professionals before acting on this information.*]{style="font-size:0.85em;"}
 
 [**Get in touch →**](mailto:calvin@eaglerockanalytics.com)

@@ -21,7 +21,7 @@ By evening on August 14, the California Independent System Operator (CAISO) decl
 California’s extreme heat continues to climb to new heights, and we will explore how the extreme heat events that happened in Sacramento in 2020 will continue to occur in the future, to what capacity, and affect whom the most.
 
 
-![*Figure 1. News coverage from ABC 10 reporting heating across Northern California on Aug 14, 2020.*](images/forecast_high_temps.jpg){style="border-radius:5px;"}
+![*Figure 1. News coverage from ABC 10 reporting heating across Northern California on Aug 14, 2020.*](images/forecast_high_temps.png){style="border-radius:5px;"}
 
 
 <!-- ### What the News Captured -->

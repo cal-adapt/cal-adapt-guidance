@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+subtitle: "Announcements, blog posts, and updates from the Cal-Adapt: Analytics Engine team."
 aliases:
   - /about/announcements
 citation: false
@@ -8,8 +9,8 @@ format:
 listing:
   contents: posts
   sort: "date desc"
-  type: table
+  type: grid
   categories: true
   filter-ui: false
-  fields: [date, title, categories]
+  fields: [date, title, description, categories]
 ---

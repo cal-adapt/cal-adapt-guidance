@@ -2,6 +2,7 @@
 title: "Data Access Methods"
 aliases:
   - /data/access
+  - /analytics/methods/
 author:
   - name:
       literal: "Cal-Adapt"

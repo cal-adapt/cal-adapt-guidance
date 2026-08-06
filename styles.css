@@ -769,8 +769,8 @@ div[id^="fig-"] {
 }
 
 .citation-copy-button:hover {
-  color: var(--bs-primary);
-  border-color: var(--bs-primary);
+  color: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
 }
 
 .citation-copy-button-checked {

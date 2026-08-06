@@ -1,3 +1,3 @@
 [build]
-  command = "wget -qO- https://github.com/quarto-dev/quarto-cli/releases/download/v1.10.14/quarto-1.10.14-linux-amd64.tar.gz | tar -xz -C /tmp && export PATH=$PATH:/tmp/quarto-1.10.14/bin && quarto install tinytex --no-prompt && if [ \"$CONTEXT\" = \"production\" ]; then quarto install chrome-headless-shell --no-prompt && quarto render; else quarto render --to html; fi"
+  command = "wget -qO- https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quarto-1.9.37-linux-amd64.tar.gz | tar -xz -C /tmp && export PATH=$PATH:/tmp/quarto-1.9.37/bin && quarto install tinytex --no-prompt && if [ \"$CONTEXT\" = \"production\" ]; then quarto install chrome-headless-shell --no-prompt && quarto render; else quarto render --to html; fi"
   publish = "_site"

@@ -22,7 +22,11 @@ $-- styling.
 \makeatletter
 \renewcommand{\maketitle}{%
   \begin{titlebox}
-    \centering\LARGE \@title\par
+    \centering\LARGE\textbf{\@title}\\[0.4em]
+    \small
+    $pdf-author$\\
+    Published: $pdf-published$\\
+    Last modified: $pdf-modified$\par
   \end{titlebox}
   \vskip 1.75em
   \thispagestyle{plain}%

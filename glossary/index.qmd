@@ -2,7 +2,14 @@
 title: "Glossary"
 aliases:
   - /guidance/glossary
-citation: false
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-06-05"
+date-modified: &date-modified "2026-07-31"
+citation:
+  publisher: "Cal-Adapt"
+  issued: *date-modified
 format:
   html:
     toc-depth: 3

@@ -4,8 +4,10 @@ author:
   - name:
       literal: "Cal-Adapt"
 date: "2026-05-21"
-date-modified: "2026-05-21"
-citation: false
+date-modified: &date-modified "2026-05-21"
+citation:
+  publisher: "Cal-Adapt"
+  issued: *date-modified
 format:
   html: default
   pdf: default

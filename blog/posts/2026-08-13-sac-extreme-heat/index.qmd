@@ -64,7 +64,7 @@ Disclaimer: [ADD HERE]
 
 ### How Was This Event Defined?
 
-Any climate analysis needs a consistent and reproducible definition for the event of interest. For this analysis, we used the criteria applied by the [Office of Emergency Services](https://sacoes.saccounty.gov/content/dam/oes/docs/archive/after-action-reports/2020%20Severe%20Weather%20Heat%20AAR_FINAL.pdf) to formally classify extreme heat events [@sac-county-2020-severe-weather]:
+Any climate analysis needs a consistent and reproducible definition for the event of interest. For this analysis, we used the criteria applied by the Office of Emergency Services to formally classify extreme heat events [@sac-county-2020-severe-weather]:
 
 - **Duration:** Maximum temperature exceeding 105°F for **more than 3 consecutive days**
 - **Daytime threshold:** Maximum temperature at or above **105°F**

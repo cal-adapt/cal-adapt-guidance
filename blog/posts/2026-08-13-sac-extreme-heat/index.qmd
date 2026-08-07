@@ -49,7 +49,7 @@ Disclaimer: [ADD HERE]
 ### 3 Key Messages
 
 ::: {.callout-important}
-**This event was historically exceptional.** The 2020 heat waves pushed Sacramento's temperatures above 105°F, the National Weather Service extreme danger threshold, which placed these events among the most intense in the observed record at Sacramento Executive Airport weather station (KSAC) since 1980. [[1]](#ref-1)
+**This event was historically exceptional.** The 2020 heat waves pushed Sacramento's temperatures above 105°F, the National Weather Service extreme danger threshold, which placed these events among the most intense in the observed record at Sacramento Executive Airport weather station (KSAC) since 1980 [@sac-county-2020-severe-weather].
 :::
 
 ::: {.callout-warning}
@@ -64,7 +64,7 @@ Disclaimer: [ADD HERE]
 
 ### How Was This Event Defined?
 
-Any climate analysis needs a consistent and reproducible definition for the event of interest. For this analysis, we used the criteria applied by the [Office of Emergency Services](https://sacoes.saccounty.gov/content/dam/oes/docs/archive/after-action-reports/2020%20Severe%20Weather%20Heat%20AAR_FINAL.pdf) to formally classify extreme heat events: [[1]](#ref-1)
+Any climate analysis needs a consistent and reproducible definition for the event of interest. For this analysis, we used the criteria applied by the [Office of Emergency Services](https://sacoes.saccounty.gov/content/dam/oes/docs/archive/after-action-reports/2020%20Severe%20Weather%20Heat%20AAR_FINAL.pdf) to formally classify extreme heat events [@sac-county-2020-severe-weather]:
 
 - **Duration:** Maximum temperature exceeding 105°F for **more than 3 consecutive days**
 - **Daytime threshold:** Maximum temperature at or above **105°F**
@@ -188,7 +188,7 @@ Below, we explore three defining avenues of impact that extreme heat events have
 
 During extreme heat, the electrical grid is often pushed to its limits. Cooling demand drives energy demand throughout a service territory. This is further exacerbated as the high temperatures from the extreme heat reduce transmission line capacity and thermal plant efficiency, which can further lead to supply shortages.
 
-On August 14 and 15, 2020, the grid faced its limit. CAISO declared a grid emergency as demand outpaced supply, which led to rolling blackouts affecting hundreds of thousands of Californians for the first time since 2001. [[2]](#ref-2)
+On August 14 and 15, 2020, the grid faced its limit. CAISO declared a grid emergency as demand outpaced supply, which led to rolling blackouts affecting hundreds of thousands of Californians for the first time since 2001 [@cal-iso-2020-heat-wave-report].
 
 ```{=html}
 <img src="images/transmission-lines.jpeg" alt="California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave" style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:3px;">
@@ -196,11 +196,11 @@ On August 14 and 15, 2020, the grid faced its limit. CAISO declared a grid emerg
 
 *California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave. [File: Richard Vogel/Associated Press]*
 
-Over the past three years, California has strengthened its grid resilience, with the California Energy Commission (CEC) reporting that "up to 4,500 MW of contingency resources are available for summer 2026 in case of extreme events that strain the grid" [[3]](#ref-3). Still, as our climate continues to change increasing the likelihood of extreme events statewide (and countrywide), will our grid be reliable enough to withstand these stressors?
+Over the past three years, California has strengthened its grid resilience, with the California Energy Commission (CEC) reporting that "up to 4,500 MW of contingency resources are available for summer 2026 in case of extreme events that strain the grid" [@cec-grid-reliability-2026]. Still, as our climate continues to change increasing the likelihood of extreme events statewide (and countrywide), will our grid be reliable enough to withstand these stressors?
 
 #### **Public Health**
 
-Extreme heat is already the deadliest weather hazard in the United States, according to NOAA's National Weather Service, outpacing floods, tornadoes, and hurricanes. [[4]](#ref-4) A three-fold increase in event frequency translates directly into greater cumulative health risk, particularly for underserved communities including the elderly, outdoor workers, and those without access to cooling resources. As extreme heat continues to increase, researchers project California will see an additional 1.5 million heat-driven emergency department visits by 2050. [[5]](#ref-5)
+Extreme heat is already the deadliest weather hazard in the United States, according to NOAA's National Weather Service, outpacing floods, tornadoes, and hurricanes [@nws-weather-fatalities-page]. A three-fold increase in event frequency translates directly into greater cumulative health risk, particularly for underserved communities including the elderly, outdoor workers, and those without access to cooling resources. As extreme heat continues to increase, researchers project California will see an additional 1.5 million heat-driven emergency department visits by 2050 [@gouldTemperature2025].
 
 ```{=html}
 <img src="images/public-health.jpg" alt="Surge in heat-related emergency room visits during the 2020 heat wave" style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:5px;">
@@ -412,7 +412,7 @@ The county operates a network of [publicly accessible cooling centers](https://w
 ::: {.info-card-photo-body}
 **SacRT Heat-Resilient Bus Shelters**
 
-SacRT was [awarded $449,900](https://www.masstransitmag.com/technology/facilities/shelters-benches-and-equipment/article/55242936/california-governors-office-of-land-use-and-climate-innovation-selects-sacrt-for-extreme-heat-and-community-resilience-program-grant) to build up to 20 heat-resilient shelters at bus stops in disadvantaged communities across Citrus Heights, Folsom, Rancho Cordova, and Sacramento. This has been a targeted investment for transit-dependent riders, though a small fraction of the county's full bus-stop network. [[11]](#ref-11)
+SacRT was [awarded $449,900](https://www.masstransitmag.com/technology/facilities/shelters-benches-and-equipment/article/55242936/california-governors-office-of-land-use-and-climate-innovation-selects-sacrt-for-extreme-heat-and-community-resilience-program-grant) to build up to 20 heat-resilient shelters at bus stops in disadvantaged communities across Citrus Heights, Folsom, Rancho Cordova, and Sacramento. This has been a targeted investment for transit-dependent riders, though a small fraction of the county's full bus-stop network [@sac-transit-resilience-grant-2024].
 :::
 :::
 
@@ -443,14 +443,14 @@ A changing climate will affect everyone, no matter where you live. The good news
 
 1. Advocate for shade equity in parks and transit corridors, particularly in neighborhoods with low tree canopy.
 2. Support urban forestry and cool corridor planning through your local planning commission or city council.
-3. Check on your neighbors and other community members, particularly the elderly and those with limited mobility, during extreme heat events. Social isolation is a well-established risk factor for heat-related illness and death, particularly among people who live alone or lack regular social contact. [[6]](#ref-6)
+3. Check on your neighbors and other community members, particularly the elderly and those with limited mobility, during extreme heat events. Social isolation is a well-established risk factor for heat-related illness and death, particularly among people who live alone or lack regular social contact [@semenzaHeatRelated1996].
 :::
 
 ::: {.callout-note collapse="false"}
 ## For Policymakers
 
-1. Prioritize urban forestry and green infrastructure funding in high-risk, low-resource communities. These neighborhoods are often underserved by green infrastructure, and targeting them is both more equitable and more efficient. Green canopy delivers its greatest cooling return exactly where canopy is lowest and density is highest. [[8]](#ref-8)
-2. Update heat emergency plans with robust early warning systems as warming events increase in frequency over time, as they can result in a 49-73% reduction in emergency medical dispatches on heat wave days. [[7]](#ref-7)
+1. Prioritize urban forestry and green infrastructure funding in high-risk, low-resource communities. These neighborhoods are often underserved by green infrastructure, and targeting them is both more equitable and more efficient. Green canopy delivers its greatest cooling return exactly where canopy is lowest and density is highest [@mcdonaldTrees2026].
+2. Update heat emergency plans with robust early warning systems as warming events increase in frequency over time, as they can result in a 49-73% reduction in emergency medical dispatches on heat wave days [@oconnorPromoting2025].
 3. Integrate extreme heat risk into capital improvement planning across new infrastructure, ensuring public buildings, transit systems, and energy infrastructure are designed to withstand escalating heat exposure over their operational lifetime.
 :::
 
@@ -479,23 +479,3 @@ If you're interested in sharing how you were affected, what you experienced, wha
 **Are you a researcher, planner, policymaker, or an enthusiast interested in this analysis or chatting with us further?**
 
 Please [**get in touch with us**](mailto:calvin@eaglerockanalytics.com) as well! We love talking about climate data, projections, and adaptation planning, and we're always happy to connect with others working in this space.
-
----
-
-### References
-
-1. []{#ref-1} Sacramento County Office of Emergency Services, *2020 Severe Weather/Heat After-Action Report*. [https://sacoes.saccounty.gov/content/dam/oes/docs/archive/after-action-reports/2020%20Severe%20Weather%20Heat%20AAR_FINAL.pdf](https://sacoes.saccounty.gov/content/dam/oes/docs/archive/after-action-reports/2020%20Severe%20Weather%20Heat%20AAR_FINAL.pdf)
-2. []{#ref-2} California ISO, CPUC, and California Energy Commission, *Final Root Cause Analysis: Mid-August 2020 Extreme Heat Wave* (Jan. 2021). [https://www.caiso.com/Documents/Final-Root-Cause-Analysis-Mid-August-2020-Extreme-Heat-Wave.pdf](https://www.caiso.com/Documents/Final-Root-Cause-Analysis-Mid-August-2020-Extreme-Heat-Wave.pdf)
-3. []{#ref-3} California Energy Commission, "California Energy Leaders Report Progress on Grid Reliability Ahead of Summer 2026" (May 4, 2026). [https://www.energy.ca.gov/news/2026-05/california-energy-leaders-report-progress-grid-reliability-ahead-summer-2026](https://www.energy.ca.gov/news/2026-05/california-energy-leaders-report-progress-grid-reliability-ahead-summer-2026)
-4. []{#ref-4} National Weather Service, "Weather Related Fatality and Injury Statistics," NOAA. [https://www.weather.gov/hazstat/](https://www.weather.gov/hazstat/)
-5. []{#ref-5} Gould, C.F., Heft-Neal, S., Heaney, A.K., et al., "Temperature extremes impact mortality and morbidity differently," *Science Advances* (2025). DOI: [10.1126/sciadv.adr3070](https://doi.org/10.1126/sciadv.adr3070)
-6. []{#ref-6} "Social isolation and risk of heart disease," *NEJM*. [https://www.nejm.org/doi/full/10.1056/NEJM199607113350203](https://www.nejm.org/doi/full/10.1056/NEJM199607113350203)
-7. []{#ref-7} Early warning systems and heat-related emergency dispatch reduction study, PMC. [https://pmc.ncbi.nlm.nih.gov/articles/PMC7618602/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7618602/)
-8. []{#ref-8} McDonald, R.I., Chakraborty, T.C., Endreny, T.A., et al., "Trees halve urban heat island effect globally but unequal benefits only modestly mitigate climate-change warming," *Nature Communications* (2026). [https://www.nature.com/articles/s41467-026-71825-x](https://www.nature.com/articles/s41467-026-71825-x)
-9. []{#ref-9} World Resources Institute, "Cooling Potential of Urban Trees." [https://www.wri.org/insights/urban-trees-cooling-potential](https://www.wri.org/insights/urban-trees-cooling-potential); see also *Arboriculture & Urban Forestry* systematic review (2025). [https://auf.isa-arbor.com/content/early/2025/06/12/jauf.2025.023](https://auf.isa-arbor.com/content/early/2025/06/12/jauf.2025.023)
-10. []{#ref-10} Sacramento Tree Foundation / CapRadio, "Throwing shade? Why not plant it" (2026). [https://www.capradio.org/articles/2026/04/21/throwing-shade-why-not-plant-it/](https://www.capradio.org/articles/2026/04/21/throwing-shade-why-not-plant-it/)
-11. []{#ref-11} Sacramento Regional Transit District, "SacRT Awarded Extreme Heat and Community Resilience Grant." [https://www.sacrt.com/sacrt-awarded-extreme-heat-and-community-resilience-grant-to-enhance-public-health-with-heat-resilient-bus-shelters/](https://www.sacrt.com/sacrt-awarded-extreme-heat-and-community-resilience-grant-to-enhance-public-health-with-heat-resilient-bus-shelters/)
-12. []{#ref-12} PreventionWeb, nature-based solutions for urban heat (link already in draft).
-13. []{#ref-13} Ford, V., Espinoza, J., & McClenny, B. (2024). *California Climate Risk and Adaptation Index Metric Files and Metadata*, v1. Eagle Rock Analytics.
-14. []{#ref-14} Historical Data Platform (HDP), KSAC station data, accessed via Cal-Adapt Analytics Engine.
-15. []{#ref-15} WRF dynamically-downscaled projections (UCLA, SSP3-7.0, 3km), accessed via Cal-Adapt Analytics Engine.

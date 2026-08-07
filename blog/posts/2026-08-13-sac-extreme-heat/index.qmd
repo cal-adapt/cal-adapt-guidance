@@ -248,7 +248,7 @@ Below, (Figure 5) we've mapped the projected number of these extreme heat events
 *Figure 5: Projected number of 105°F day / 75°F night events per year across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.*
 :::
 
-There is a clear diagonal warming trend appearing across Sacramento County, mirroring the county's most urbanized areas (urban heat island effect). Some urban areas are excluded below, which is likely due to reprieve from the delta breeze. [[Source]](https://www.weather.gov/media/aviation/CaseStudies/SACDeltaBreezeStratus_CaseStudy.pdf)
+There is a clear diagonal warming trend appearing across Sacramento County, mirroring the county's most urbanized areas (urban heat island effect). Some urban areas are excluded below, which is likely due to reprieve from the delta breeze. [@noaa-sac-delta-breeze-2007]
 
 But **not all areas are equally vulnerable to heat.** So, let's take a look at how the projected increase in heat hazard intersects with existing equity vulnerabilities across the county.
 
@@ -302,7 +302,7 @@ CRAI hazard and equity data: Ford, V., Espinoza, J., & McClenny, B. (2024). *Cal
 :::
 --->
 
-We see clear disparities in heat vulnerability across census tracts in Sacramento, consistent with the tree canopy plan referenced above. Neighborhoods including Del Paso Heights, Meadowview, and Oak Park consistently register elevated risk scores, and the county's urban core showing an interspersed pattern of heightened risk throughout. Most notably, the division we see between the two high-risk clusters on the map (the northeast and the southwest) is due to the American River. The census tracts immediately on its banks are home to more affluent residents, and as a result have lower social vulnerability when it comes to hazardous heat. [Source: https://bestneighborhood.org/household-income-sacramento-county-ca/] This underscores how proximity to the same natural resource can produce starkly different resiliency outcomes for communities.
+We see clear disparities in heat vulnerability across census tracts in Sacramento, consistent with the tree canopy plan referenced above. Neighborhoods including Del Paso Heights, Meadowview, and Oak Park consistently register elevated risk scores, and the county's urban core showing an interspersed pattern of heightened risk throughout. Most notably, the division we see between the two high-risk clusters on the map (the northeast and the southwest) is due to the American River. The census tracts immediately on its banks are home to more affluent residents, and as a result have lower social vulnerability when it comes to hazardous heat [@best-neighborhood-sac-income-webpage]. This underscores how proximity to the same natural resource can produce starkly different resiliency outcomes for communities.
 
 While the likelihood that heat risk will continue to grow is high, there are many different solutions available to address it. Sacramento County has already begun implementing some of them. Let's take a look at what has been done and what opportunities remain to build a climate-resilient future.
 

@@ -77,7 +77,7 @@ Any climate analysis needs a consistent and reproducible definition for the even
 
 #### **Where 2020 Ranks**
 
-The figure below (@fig-annual-anomaly) shows the annual mean temperature anomaly, the deviation from what is considered normal, at KSAC (the Sacramento Executive Airport). Red bars mean the temperature was warmer than usual for that year. Blue bars mean the temperature was cooler than usual. 2020 is outlined in yellow.
+@fig-annual-anomaly shows the annual mean temperature anomaly, the deviation from what is considered normal, at KSAC (the Sacramento Executive Airport). Red bars mean the temperature was warmer than usual for that year. Blue bars mean the temperature was cooler than usual. 2020 is outlined in yellow.
 
 ::: {#fig-annual-anomaly}
 ::: {.content-visible when-format="html"}
@@ -104,7 +104,7 @@ The figure below (@fig-annual-anomaly) shows the annual mean temperature anomaly
 
 #### **A closer look at the 2020 heat wave**
 
-The figure below (@fig-daily-temp) shows daily maximum (red) and minimum (blue) temperature for every 5 years on record. The bold lines represent 2020. The two heat waves are shaded in the plot. Feel free to hover over any line to see the year, date, and recorded daily max/min temperature for that date.
+@fig-daily-temp shows daily maximum (red) and minimum (blue) temperature for every 5 years on record. The bold lines represent 2020. The two heat waves are shaded in the plot. Feel free to hover over any line to see the year, date, and recorded daily max/min temperature for that date.
 
 ::: {#fig-daily-temp}
 ::: {.content-visible when-format="html"}
@@ -227,7 +227,7 @@ How will these impacts affect communities within Sacramento County differently? 
 <br>
 We've already seen that extreme heat events are projected to become more frequent in Sacramento County, but how will that risk be distributed across the region? And how does that risk intersect with existing vulnerabilities?
 
-Below, (@fig-crai-tx105) we've mapped the projected number of these extreme heat events across Sacramento County census tracts at three planning horizons, bounded by zip codes for readability.
+In @fig-crai-tx105, we've mapped the projected number of these extreme heat events across Sacramento County census tracts at three planning horizons, bounded by zip codes for readability.
 
 
 ::: {#fig-crai-tx105}
@@ -254,7 +254,7 @@ But **not all areas are equally vulnerable to heat.** So, let's take a look at h
 
 In order to explore this intersection of datasets, we'll look at the Cal-CRAI index. The Cal-CRAI index uses a combination of climate hazard and social vulnerability metrics to assess the relative risk of climate impacts across communities. For more information about the CRAI index, check out the [Cal-CRAI documentation](https://zenodo.org/records/13840187).
 
-Below (@fig-crai-tx105-delta), we've used the Cal-CRAI index to map the change in heat hazard score across Sacramento County census tracts relative to the historical baseline. Red indicates an increase in projected heat risk for that community, blue indicates a decrease.
+In @fig-crai-tx105-delta, we've used the Cal-CRAI index to map the change in heat hazard score across Sacramento County census tracts relative to the historical baseline. Red indicates an increase in projected heat risk for that community, blue indicates a decrease.
 
 ::: {#fig-crai-tx105-delta}
 ::: {.content-visible when-format="html"}

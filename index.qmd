@@ -184,14 +184,14 @@ Led by Eagle Rock Analytics and funded by the California Energy Commission, supp
   <div class="partner-carousel-wrap">
     <button type="button" class="resource-arrow partner-arrow-prev" aria-label="Previous partner"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
     <div class="partner-carousel" role="region" aria-label="Partner logos carousel">
-      <div class="partner-logo-item"><img src="assets/logos/logo-era.png" alt="Eagle Rock Analytics"></div>
-      <div class="partner-logo-item"><img src="assets/logos/logo-cec.jpg" alt="California Energy Commission"></div>
-      <div class="partner-logo-item"><img src="assets/logos/logo-lbnl.png" alt="Lawrence Berkeley National Lab"></div>
-      <div class="partner-logo-item"><img src="assets/logos/logo-gif.jpg" alt="UC Berkeley Geospatial Innovation Facility"></div>
-      <div class="partner-logo-item"><img src="assets/logos/logo-sig.svg" alt="Spatial Informatics Group"></div>
-      <div class="partner-logo-item"><img src="assets/logos/logo-e3.png" alt="Energy and Environmental Economics"></div>
-      <div class="partner-logo-item"><img src="assets/logos/logo-ucla.jpg" alt="UCLA Center for Climate Science"></div>
-      <div class="partner-logo-item"><img src="assets/logos/logo-amazon-sustainability.jpg" alt="Amazon Sustainability"></div>
+      <a class="partner-logo-item" href="http://www.eaglerockanalytics.com/" target="_blank" rel="noopener noreferrer" aria-label="Eagle Rock Analytics"><img src="assets/logos/logo-era.png" alt="Eagle Rock Analytics"></a>
+      <a class="partner-logo-item" href="https://www.energy.ca.gov/" target="_blank" rel="noopener noreferrer" aria-label="California Energy Commission"><img src="assets/logos/logo-cec.jpg" alt="California Energy Commission"></a>
+      <a class="partner-logo-item" href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer" aria-label="Lawrence Berkeley National Lab"><img src="assets/logos/logo-lbnl.png" alt="Lawrence Berkeley National Lab"></a>
+      <a class="partner-logo-item" href="http://gif.berkeley.edu/" target="_blank" rel="noopener noreferrer" aria-label="UC Berkeley Geospatial Innovation Facility"><img src="assets/logos/logo-gif.jpg" alt="UC Berkeley Geospatial Innovation Facility"></a>
+      <a class="partner-logo-item" href="https://sig-gis.com/" target="_blank" rel="noopener noreferrer" aria-label="Spatial Informatics Group"><img src="assets/logos/logo-sig.svg" alt="Spatial Informatics Group"></a>
+      <a class="partner-logo-item" href="https://www.ethree.com/" target="_blank" rel="noopener noreferrer" aria-label="Energy and Environmental Economics"><img src="assets/logos/logo-e3.png" alt="Energy and Environmental Economics"></a>
+      <a class="partner-logo-item" href="https://www.ioes.ucla.edu/climate/" target="_blank" rel="noopener noreferrer" aria-label="UCLA Center for Climate Science"><img src="assets/logos/logo-ucla.jpg" alt="UCLA Center for Climate Science"></a>
+      <a class="partner-logo-item" href="https://sustainability.aboutamazon.com/" target="_blank" rel="noopener noreferrer" aria-label="Amazon Sustainability"><img src="assets/logos/logo-amazon-sustainability.jpg" alt="Amazon Sustainability"></a>
     </div>
     <button type="button" class="resource-arrow partner-arrow-next" aria-label="Next partner"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
   </div>

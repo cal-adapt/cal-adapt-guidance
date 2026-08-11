@@ -172,7 +172,9 @@ format:
     format-links: [pdf]
     citation: true
     appendix-cite-as: display
-    include-after-body: glossary/_glossary-tooltip-inline.html
+    include-after-body:
+      - glossary/_glossary-tooltip-inline.html
+      - text: <script src="/assets/citation-copy.js"></script>
   pdf:
     toc: false
     citation: true

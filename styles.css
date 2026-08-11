@@ -748,6 +748,37 @@ div[id^="fig-"] {
 #quarto-citation > div > :nth-child(3) { order: 1; }
 #quarto-citation > div > :nth-child(4) { order: 2; }
 
+#quarto-citation .quarto-appendix-secondary-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.citation-copy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  border-radius: 0.3rem;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.citation-copy-button:hover {
+  color: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
+}
+
+.citation-copy-button-checked {
+  color: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
+}
+
 /* Unified table styling (dark blue header, bordered cells) for all tables site-wide */
 table.table {
   border-collapse: collapse;

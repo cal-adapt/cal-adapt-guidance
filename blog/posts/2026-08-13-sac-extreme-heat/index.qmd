@@ -9,6 +9,7 @@ citation: true
 format:
   html:
     toc-depth: 3
+  pdf: default
 ---
 ---
 
@@ -147,7 +148,7 @@ Needless to say, the likelihood of a day like this is extremely low historically
 
 California has invested in developing state-of-the-art climate projections to help build towards a more resilient future, and this data is a part of the state's 5th Climate Change Assessment, hosted on Cal-Adapt. Using these climate projections, we can estimate how frequently heat events, like the 2020 heat wave, will occur as the climate warms. For more information specific to the climate projections, check out our page [about climate projections and models](https://analytics.cal-adapt.org/scientific-guidance/general-climate-guidance/about-climate-projections.html).
 
-We'll take a look at the projections data in terms of **return period**, which is a common way to express the frequency of extreme events. The return period is the average time between events of a given magnitude. For example, a 100-year flood has a return period of 100 years, meaning that on average, such a flood is expected to occur once every 100 years.
+We'll take a look at the projections data in terms of **[return period](/glossary/index.qmd#return-period)**, which is a common way to express the frequency of extreme events. The return period is the average time between events of a given magnitude. For example, a 100-year flood has a return period of 100 years, meaning that on average, such a flood is expected to occur once every 100 years.
 <br>
 
 ::: {#fig-return-period}
@@ -190,10 +191,7 @@ During extreme heat, the electrical grid is often pushed to its limits. Cooling 
 
 On August 14 and 15, 2020, the grid faced its limit. CAISO declared a grid emergency as demand outpaced supply, which led to rolling blackouts affecting hundreds of thousands of Californians for the first time since 2001 [@cal-iso-2020-heat-wave-report].
 
-```{=html}
-<img src="images/transmission-lines.jpeg" alt="California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave" style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:3px;">
-```
-
+![California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave](images/transmission-lines.jpeg){style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:3px;"}
 *California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave. [File: Richard Vogel/Associated Press]*
 
 Over the past three years, California has strengthened its grid resilience, with the California Energy Commission (CEC) reporting that "up to 4,500 MW of contingency resources are available for summer 2026 in case of extreme events that strain the grid" [@cec-grid-reliability-2026]. Still, as our climate continues to change increasing the likelihood of extreme events statewide (and countrywide), will our grid be reliable enough to withstand these stressors?
@@ -202,18 +200,14 @@ Over the past three years, California has strengthened its grid resilience, with
 
 Extreme heat is already the deadliest weather hazard in the United States, according to NOAA's National Weather Service, outpacing floods, tornadoes, and hurricanes [@nws-weather-fatalities-page]. A three-fold increase in event frequency translates directly into greater cumulative health risk, particularly for underserved communities including the elderly, outdoor workers, and those without access to cooling resources. As extreme heat continues to increase, researchers project California will see an additional 1.5 million heat-driven emergency department visits by 2050 [@gouldTemperature2025].
 
-```{=html}
-<img src="images/public-health.jpg" alt="Surge in heat-related emergency room visits during the 2020 heat wave" style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:5px;">
-```
+![Surge in heat-related emergency room visits during the 2020 heat wave](images/public-health.jpg){style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:5px;"}
 *Surge in heat-related emergency room visits during the 2020 heat wave. [Credit: Unsplash (FIND AUTHOR)]*
 
 #### **Equity and Disproportionate Impacts**
 
 Not everyone experiences heat equally. In Sacramento, lower-income neighborhoods and communities of color are often located in **urban heat islands**, areas where pavement, impervious surfaces, and low tree canopy push ambient temperatures several degrees higher than surrounding areas. Residents without air conditioning, renters unable to upgrade their housing, and people who work outdoors face a fundamentally different risk profile than those with the means to adapt.
 
-```{=html}
-<img src="images/urban-heat-island.jpg" alt="Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas" style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;">
-```
+![Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas](images/urban-heat-island.jpg){style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;"}
 *Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas. [Credit: SOURCE — update when image is added.]*
 
 :::
@@ -458,15 +452,17 @@ A changing climate will affect everyone, no matter where you live. The good news
 
 ---
 
-### Data Sources and Tools Used
+### Data & Tools Used in This Analysis
 
-- **Observed station data:** Historical Data Platform (HDP), KSAC (Sacramento Executive Airport, `ASOSAWOS_72483023232`), accessed via [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org)
-- **Future projections:** WRF dynamically-downscaled projections (UCLA, SSP3-7.0, 3 km resolution, d03 grid), accessed via Cal-Adapt Analytics Engine
-- **Equity layers:** Ford, V., Espinoza, J., & McClenny, B. (2024). [California Climate Risk and Adaptation Index Metric Files and Metadata, v1](https://zenodo.org/records/13840187) [Data set]. Eagle Rock Analytics.
+#### Data 
+- **Weather station data:** Historical Data Platform (HDP), KSAC (Sacramento Executive Airport, `ASOSAWOS_72483023232`), accessed via [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org)
+- **Climate model projections:** WRF dynamically-downscaled projections (UCLA, SSP3-7.0, 3 km resolution, d03 grid), accessed via Cal-Adapt Analytics Engine
+- **Climate risk data layers:** Ford, V., Espinoza, J., & McClenny, B. (2024). [California Climate Risk and Adaptation Index Metric Files and Metadata, v1](https://zenodo.org/records/13840187) [Data set]. Eagle Rock Analytics.
 
-**Tools:** This analysis was built using [`climakitae`](https://github.com/cal-adapt/climakitae), Cal-Adapt's open-source Python library for climate data access and analysis.
+#### Tools 
+This analysis was built using [`climakitae`](https://github.com/cal-adapt/climakitae), Cal-Adapt's open-source Python library for climate data access and analysis.
 
-Explore climate projections for your own area at [cal-adapt.org](https://cal-adapt.org). For tools focused specifically on extreme heat, see [our extreme heat tool](https://cal-adapt.org/dashboard/climate-metrics-map?metric=extreme-heat) on cal-adapt.org.
+Explore the climate projections for your own area at [cal-adapt.org](https://cal-adapt.org). For tools focused specifically on extreme heat, see [our extreme heat tool](https://cal-adapt.org/dashboard/climate-metrics-map?metric=extreme-heat) on cal-adapt.org.
 
 ---
 

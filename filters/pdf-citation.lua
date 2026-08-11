@@ -109,9 +109,6 @@ function Pandoc(doc)
 
   local meta = doc.meta
   local citation = meta.citation
-  if citation == false then
-    return doc -- page opted out, same as the HTML citation appendix
-  end
 
   local authors = {}
   for _, entry in ipairs(meta.author or {}) do
@@ -120,6 +117,15 @@ function Pandoc(doc)
   local author_str = join_authors(authors)
   if author_str == "" then
     author_str = "Cal-Adapt"
+  end
+
+  -- Byline shown in the title box, independent of the "cite as" opt-out below.
+  doc.meta["pdf-author"] = pandoc.MetaString(author_str)
+  doc.meta["pdf-published"] = pandoc.MetaString(pandoc.utils.stringify(meta.date))
+  doc.meta["pdf-modified"] = pandoc.MetaString(pandoc.utils.stringify(meta["date-modified"]))
+
+  if citation == false then
+    return doc -- page opted out, same as the HTML citation appendix
   end
 
   local date_str = citation_field(citation, "issued")

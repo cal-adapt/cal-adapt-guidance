@@ -10,6 +10,7 @@ listing:
   contents: posts
   sort: "date desc"
   type: grid
+  grid-columns: 2
   categories: true
   filter-ui: false
   fields: [date, title, description, categories]

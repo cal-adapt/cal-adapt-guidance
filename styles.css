@@ -157,10 +157,7 @@ body {
   background: var(--bs-primary-light);
 }
 
-/* Category badge on individual blog post pages: match the listing card badge.
-   Selector depth matches Quarto's built-in `.quarto-title .quarto-categories
-   .quarto-category` rule (border: solid 1px shorthand) so this actually wins
-   instead of losing to it on specificity. */
+/* Selector depth matches Quarto's built-in rule so this wins on specificity. */
 .quarto-title .quarto-categories .quarto-category {
   color: var(--color-text);
   border: 1px solid var(--bs-primary);

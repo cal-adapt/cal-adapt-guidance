@@ -9,12 +9,13 @@ citation: true
 format:
   html:
     toc-depth: 3
+  pdf: default
 ---
 ---
 
 It was mid-August 2020 in Sacramento. COVID-19 lockdowns were long in place, and the region was already deep into a stretch of summer heat. On August 14th, that heat would escalate drastically.
 
-By 6 a.m., as the city began to wake up, the temperature in Sacramento climbed past 80°F. Morning news warned of the potential of an excessively hot day (Figure 1). By 7 a.m., when the city was starting to wake up, an estimated [FILL HERE] people across the Sacramento Valley were already under an extreme heat warning. In neighborhoods like Del Paso Heights, Meadowview, and Oak Park, that are considered heat vulnerable, sparse tree canopy left streets and homes exposed to direct sun with little shade relief. As the temperatures continued to rise and residents began their day, the hot morning was only the beginning of what would end up being one of most impactful heat waves to hit Sacramento.
+By 6 a.m., as the city began to wake up, the temperature in Sacramento climbed past 80°F. Morning news warned of the potential of an excessively hot day (@fig-news-coverage). By 7 a.m., when the city was starting to wake up, an estimated [FILL HERE] people across the Sacramento Valley were already under an extreme heat warning. In neighborhoods like Del Paso Heights, Meadowview, and Oak Park, that are considered heat vulnerable, sparse tree canopy left streets and homes exposed to direct sun with little shade relief. As the temperatures continued to rise and residents began their day, the hot morning was only the beginning of what would end up being one of most impactful heat waves to hit Sacramento.
 
 These historic heat waves would dominate California's weather patterns and newsstreams throughout August and September of 2020. Typically, the delta breeze passes through the Bay Area towards the Central Valley, moderating temperatures bringing much needed relief to the population, especially during night. However, this breeze was weakened by an exceptionally strong and persistent ridge of high pressure across the Western U.S., leaving California's Central Valley without its natural nighttime cooling mechanism.
 
@@ -23,7 +24,7 @@ By the evening of August 14th, the California Independent System Operator (CAISO
 As California's extreme heat continues to climb to new heights, we will explore the intensity of the 2020 Sacramento heat wave in greater detail, examining how events like this will change in frequency under a warming climate. These two heatwaves were more than just long hot days and nights, they strained the energy grid to its limits, drove a surge in heat-related hospitalizations, and put lives at risk. Understanding the physical drivers of heat waves and the social conditions that determine who bears their impacts will be essential to building a more resilient and equitable future.
 
 
-![*Figure 1. News coverage from ABC 10 reporting heating across Northern California on Aug 14, 2020.*](images/forecast_high_temps.png){style="border-radius:5px;"}
+![News coverage from ABC 10 reporting heating across Northern California on Aug 14, 2020.](images/forecast_high_temps.png){#fig-news-coverage style="border-radius:5px;"}
 
 
 <!-- ### What the News Captured -->
@@ -49,7 +50,7 @@ Disclaimer: [ADD HERE]
 ### 3 Key Messages
 
 ::: {.callout-important}
-**This event was historically exceptional.** The 2020 heat waves pushed Sacramento's temperatures above 105°F, the National Weather Service extreme danger threshold, which placed these events among the most intense in the observed record at Sacramento Executive Airport weather station (KSAC) since 1980. [[1]](#ref-1)
+**This event was historically exceptional.** The 2020 heat waves pushed Sacramento's temperatures above 105°F, the National Weather Service extreme danger threshold, which placed these events among the most intense in the observed record at Sacramento Executive Airport weather station (KSAC) since 1980 [@sac-county-2020-severe-weather].
 :::
 
 ::: {.callout-warning}
@@ -64,7 +65,7 @@ Disclaimer: [ADD HERE]
 
 ### How Was This Event Defined?
 
-Any climate analysis needs a consistent and reproducible definition for the event of interest. For this analysis, we used the criteria applied by the [Office of Emergency Services](https://sacoes.saccounty.gov/content/dam/oes/docs/archive/after-action-reports/2020%20Severe%20Weather%20Heat%20AAR_FINAL.pdf) to formally classify extreme heat events: [[1]](#ref-1)
+Any climate analysis needs a consistent and reproducible definition for the event of interest. For this analysis, we used the criteria applied by the Office of Emergency Services to formally classify extreme heat events [@sac-county-2020-severe-weather]:
 
 - **Duration:** Maximum temperature exceeding 105°F for **more than 3 consecutive days**
 - **Daytime threshold:** Maximum temperature at or above **105°F**
@@ -77,7 +78,7 @@ Any climate analysis needs a consistent and reproducible definition for the even
 
 #### **Where 2020 Ranks**
 
-The figure below (Figure 2) shows the annual mean temperature anomaly, the deviation from what is considered normal, at KSAC (the Sacramento Executive Airport). Red bars mean the temperature was warmer than usual for that year. Blue bars mean the temperature was cooler than usual. 2020 is outlined in yellow.
+@fig-annual-anomaly shows the annual mean temperature anomaly, the deviation from what is considered normal, at KSAC (the Sacramento Executive Airport). Red bars mean the temperature was warmer than usual for that year. Blue bars mean the temperature was cooler than usual. 2020 is outlined in yellow.
 
 ::: {#fig-annual-anomaly}
 ::: {.content-visible when-format="html"}
@@ -94,7 +95,7 @@ The figure below (Figure 2) shows the annual mean temperature anomaly, the devia
 ::: {.content-visible when-format="docx"}
 ![](figures/static/fig_annual_anomaly_plotly.png){fig-alt="Bar chart of annual mean temperature anomaly at KSAC relative to the full-record mean, 2020 highlighted."}
 :::
-*Figure 2: Annual mean temperature anomaly at KSAC (Sacramento Executive Airport) relative to the full-record (1980–2020) mean. Red bars indicate warmer-than-average years; blue bars indicate cooler-than-average years. 2020 is highlighted in gold. The black line shows the 5-year rolling mean. Data: Historical Data Platform (HDP).*
+*Annual mean temperature anomaly at KSAC (Sacramento Executive Airport) relative to the full-record (1980–2020) mean. Red bars indicate warmer-than-average years; blue bars indicate cooler-than-average years. 2020 is highlighted in gold. The black line shows the 5-year rolling mean. Data: Historical Data Platform (HDP).*
 :::
 
 2020 was a hot year, but not necessarily the hottest year on record. So why was this event so impactful? Let's take a closer look at the historical record.
@@ -104,7 +105,7 @@ The figure below (Figure 2) shows the annual mean temperature anomaly, the devia
 
 #### **A closer look at the 2020 heat wave**
 
-The figure below (Figure 3) shows daily maximum (red) and minimum (blue) temperature for every 5 years on record. The bold lines represent 2020. The two heat waves are shaded in the plot. Feel free to hover over any line to see the year, date, and recorded daily max/min temperature for that date.
+@fig-daily-temp shows daily maximum (red) and minimum (blue) temperature for every 5 years on record. The bold lines represent 2020. The two heat waves are shaded in the plot. Feel free to hover over any line to see the year, date, and recorded daily max/min temperature for that date.
 
 ::: {#fig-daily-temp}
 ::: {.content-visible when-format="html"}
@@ -121,7 +122,7 @@ The figure below (Figure 3) shows daily maximum (red) and minimum (blue) tempera
 ::: {.content-visible when-format="docx"}
 ![](figures/static/fig_daily_temp_by_year_plotly.png){fig-alt="Line chart of daily maximum and minimum temperature at KSAC across all available years, with 2020 highlighted."}
 :::
-*Figure 3: Daily maximum and minimum temperature at KSAC (Sacramento Executive Airport), all available years. Dark gray lines = historical daily max; light blue lines = historical daily min; bold red = 2020 daily max; bold dark blue = 2020 daily min. Shaded regions indicate Heat Wave I (August 14–26) and Heat Wave II (September 5–8). Dashed gray line marks the approximate 65°F AC threshold. Hover a line to see year, date, and temperature. Data: Historical Data Platform (HDP).*
+*Daily maximum and minimum temperature at KSAC (Sacramento Executive Airport), all available years. Dark gray lines = historical daily max; light blue lines = historical daily min; bold red = 2020 daily max; bold dark blue = 2020 daily min. Shaded regions indicate Heat Wave I (August 14–26) and Heat Wave II (September 5–8). Dashed gray line marks the approximate 65°F AC threshold. Hover a line to see year, date, and temperature. Data: Historical Data Platform (HDP).*
 :::
 
 The data clearly shows the peak of the two heat waves, but what stands out is the nighttime temperature. There was no overnight relief resulting in continuous energy demand and creating dangerous conditions for residents of the region. But how unusual was this extreme heat event and how frequently could these events occur in the future? Let's take a look into the data and see.
@@ -147,7 +148,7 @@ Needless to say, the likelihood of a day like this is extremely low historically
 
 California has invested in developing state-of-the-art climate projections to help build towards a more resilient future, and this data is a part of the state's 5th Climate Change Assessment, hosted on Cal-Adapt. Using these climate projections, we can estimate how frequently heat events, like the 2020 heat wave, will occur as the climate warms. For more information specific to the climate projections, check out our page [about climate projections and models](https://analytics.cal-adapt.org/scientific-guidance/general-climate-guidance/about-climate-projections.html).
 
-We'll take a look at the projections data in terms of **return period**, which is a common way to express the frequency of extreme events. The return period is the average time between events of a given magnitude. For example, a 100-year flood has a return period of 100 years, meaning that on average, such a flood is expected to occur once every 100 years.
+We'll take a look at the projections data in terms of **[return period](/glossary/index.qmd#return-period)**, which is a common way to express the frequency of extreme events. The return period is the average time between events of a given magnitude. For example, a 100-year flood has a return period of 100 years, meaning that on average, such a flood is expected to occur once every 100 years.
 <br>
 
 ::: {#fig-return-period}
@@ -165,7 +166,7 @@ We'll take a look at the projections data in terms of **return period**, which i
 ::: {.content-visible when-format="docx"}
 ![](figures/static/fig_return_period_by_gwl_plotly.png){fig-alt="Bar chart of return period for extreme heat days without nighttime reprieve in Sacramento County under three warming levels."}
 :::
-*Figure 4: Return period of extreme heat days without nighttime reprieve in Sacramento County under three warming levels. A shorter return period means the event becomes more frequent. Data: WRF UCLA.*
+*Return period of extreme heat days without nighttime reprieve in Sacramento County under three warming levels. A shorter return period means the event becomes more frequent. Data: WRF UCLA.*
 :::
 
 Historically, this event could be characterized as a 1 in 30 year event. Under today's climate conditions, this type of heat wave is characterized as a 1 in 14 year event. By mid-century, this event could become a 1-in-10 year event.
@@ -188,32 +189,25 @@ Below, we explore three defining avenues of impact that extreme heat events have
 
 During extreme heat, the electrical grid is often pushed to its limits. Cooling demand drives energy demand throughout a service territory. This is further exacerbated as the high temperatures from the extreme heat reduce transmission line capacity and thermal plant efficiency, which can further lead to supply shortages.
 
-On August 14 and 15, 2020, the grid faced its limit. CAISO declared a grid emergency as demand outpaced supply, which led to rolling blackouts affecting hundreds of thousands of Californians for the first time since 2001. [[2]](#ref-2)
+On August 14 and 15, 2020, the grid faced its limit. CAISO declared a grid emergency as demand outpaced supply, which led to rolling blackouts affecting hundreds of thousands of Californians for the first time since 2001 [@cal-iso-2020-heat-wave-report].
 
-```{=html}
-<img src="images/transmission-lines.jpeg" alt="California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave" style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:3px;">
-```
-
+![California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave](images/transmission-lines.jpeg){style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:3px;"}
 *California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave. [File: Richard Vogel/Associated Press]*
 
-Over the past three years, California has strengthened its grid resilience, with the California Energy Commission (CEC) reporting that "up to 4,500 MW of contingency resources are available for summer 2026 in case of extreme events that strain the grid" [[3]](#ref-3). Still, as our climate continues to change increasing the likelihood of extreme events statewide (and countrywide), will our grid be reliable enough to withstand these stressors?
+Over the past three years, California has strengthened its grid resilience, with the California Energy Commission (CEC) reporting that "up to 4,500 MW of contingency resources are available for summer 2026 in case of extreme events that strain the grid" [@cec-grid-reliability-2026]. Still, as our climate continues to change increasing the likelihood of extreme events statewide (and countrywide), will our grid be reliable enough to withstand these stressors?
 
 #### **Public Health**
 
-Extreme heat is already the deadliest weather hazard in the United States, according to NOAA's National Weather Service, outpacing floods, tornadoes, and hurricanes. [[4]](#ref-4) A three-fold increase in event frequency translates directly into greater cumulative health risk, particularly for underserved communities including the elderly, outdoor workers, and those without access to cooling resources. As extreme heat continues to increase, researchers project California will see an additional 1.5 million heat-driven emergency department visits by 2050. [[5]](#ref-5)
+Extreme heat is already the deadliest weather hazard in the United States, according to NOAA's National Weather Service, outpacing floods, tornadoes, and hurricanes [@nws-weather-fatalities-page]. A three-fold increase in event frequency translates directly into greater cumulative health risk, particularly for underserved communities including the elderly, outdoor workers, and those without access to cooling resources. As extreme heat continues to increase, researchers project California will see an additional 1.5 million heat-driven emergency department visits by 2050 [@gouldTemperature2025].
 
-```{=html}
-<img src="images/public-health.jpg" alt="Surge in heat-related emergency room visits during the 2020 heat wave" style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:5px;">
-```
+![Surge in heat-related emergency room visits during the 2020 heat wave](images/public-health.jpg){style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:5px;"}
 *Surge in heat-related emergency room visits during the 2020 heat wave. [Credit: Unsplash (FIND AUTHOR)]*
 
 #### **Equity and Disproportionate Impacts**
 
 Not everyone experiences heat equally. In Sacramento, lower-income neighborhoods and communities of color are often located in **urban heat islands**, areas where pavement, impervious surfaces, and low tree canopy push ambient temperatures several degrees higher than surrounding areas. Residents without air conditioning, renters unable to upgrade their housing, and people who work outdoors face a fundamentally different risk profile than those with the means to adapt.
 
-```{=html}
-<img src="images/urban-heat-island.jpg" alt="Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas" style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;">
-```
+![Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas](images/urban-heat-island.jpg){style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;"}
 *Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas. [Credit: SOURCE — update when image is added.]*
 
 :::
@@ -227,7 +221,7 @@ How will these impacts affect communities within Sacramento County differently? 
 <br>
 We've already seen that extreme heat events are projected to become more frequent in Sacramento County, but how will that risk be distributed across the region? And how does that risk intersect with existing vulnerabilities?
 
-Below, (Figure 5) we've mapped the projected number of these extreme heat events across Sacramento County census tracts at three planning horizons, bounded by zip codes for readability.
+In @fig-crai-tx105, we've mapped the projected number of these extreme heat events across Sacramento County census tracts at three planning horizons, bounded by zip codes for readability.
 
 
 ::: {#fig-crai-tx105}
@@ -245,16 +239,16 @@ Below, (Figure 5) we've mapped the projected number of these extreme heat events
 ::: {.content-visible when-format="docx"}
 ![](figures/static/fig_tx105_75night_by_gwl_plotly.png){fig-alt="Choropleth map of the 105°F day / 75°F night heat metric across Sacramento County census tracts, comparing the 0.8°C historical baseline against 1.5°C, 2.0°C, and 3.0°C warming levels."}
 :::
-*Figure 5: Projected number of 105°F day / 75°F night events per year across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.*
+*Projected number of 105°F day / 75°F night events per year across Sacramento County census tracts, by warming level. Use the tabs to toggle between the 0.8°C historical baseline and the 1.5°C, 2.0°C, and 3.0°C warming levels.*
 :::
 
-There is a clear diagonal warming trend appearing across Sacramento County, mirroring the county's most urbanized areas (urban heat island effect). Some urban areas are excluded below, which is likely due to reprieve from the delta breeze. [[Source]](https://www.weather.gov/media/aviation/CaseStudies/SACDeltaBreezeStratus_CaseStudy.pdf)
+There is a clear diagonal warming trend appearing across Sacramento County, mirroring the county's most urbanized areas (urban heat island effect). Some urban areas are excluded below, which is likely due to reprieve from the delta breeze. [@noaa-sac-delta-breeze-2007]
 
 But **not all areas are equally vulnerable to heat.** So, let's take a look at how the projected increase in heat hazard intersects with existing equity vulnerabilities across the county.
 
 In order to explore this intersection of datasets, we'll look at the Cal-CRAI index. The Cal-CRAI index uses a combination of climate hazard and social vulnerability metrics to assess the relative risk of climate impacts across communities. For more information about the CRAI index, check out the [Cal-CRAI documentation](https://zenodo.org/records/13840187).
 
-Below (Figure 6), we've used the Cal-CRAI index to map the change in heat hazard score across Sacramento County census tracts relative to the historical baseline. Red indicates an increase in projected heat risk for that community, blue indicates a decrease.
+In @fig-crai-tx105-delta, we've used the Cal-CRAI index to map the change in heat hazard score across Sacramento County census tracts relative to the historical baseline. Red indicates an increase in projected heat risk for that community, blue indicates a decrease.
 
 ::: {#fig-crai-tx105-delta}
 ::: {.content-visible when-format="html"}
@@ -272,7 +266,7 @@ Below (Figure 6), we've used the Cal-CRAI index to map the change in heat hazard
 ![](figures/static/fig_tx105_75night_delta_by_gwl_plotly.png){fig-alt="Choropleth map of change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, comparing 1.5°C, 2.0°C, and 3.0°C warming levels against the 0.8°C historical baseline."}
 :::
 
-*Figure 6: Change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.*
+*Change in CRAI heat hazard score for the 105°F day / 75°F night metric across Sacramento County census tracts, by warming level, relative to the 0.8°C historical baseline. Red indicates an increase in projected heat hazard; blue indicates a decrease. Use the tabs to toggle between 1.5°C, 2.0°C, and 3.0°C warming levels.*
 :::
 
 
@@ -302,7 +296,7 @@ CRAI hazard and equity data: Ford, V., Espinoza, J., & McClenny, B. (2024). *Cal
 :::
 --->
 
-We see clear disparities in heat vulnerability across census tracts in Sacramento, consistent with the tree canopy plan referenced above. Neighborhoods including Del Paso Heights, Meadowview, and Oak Park consistently register elevated risk scores, and the county's urban core showing an interspersed pattern of heightened risk throughout. Most notably, the division we see between the two high-risk clusters on the map (the northeast and the southwest) is due to the American River. The census tracts immediately on its banks are home to more affluent residents, and as a result have lower social vulnerability when it comes to hazardous heat. [Source: https://bestneighborhood.org/household-income-sacramento-county-ca/] This underscores how proximity to the same natural resource can produce starkly different resiliency outcomes for communities.
+We see clear disparities in heat vulnerability across census tracts in Sacramento, consistent with the tree canopy plan referenced above. Neighborhoods including Del Paso Heights, Meadowview, and Oak Park consistently register elevated risk scores, and the county's urban core showing an interspersed pattern of heightened risk throughout. Most notably, the division we see between the two high-risk clusters on the map (the northeast and the southwest) is due to the American River. The census tracts immediately on its banks are home to more affluent residents, and as a result have lower social vulnerability when it comes to hazardous heat [@best-neighborhood-sac-income-webpage]. This underscores how proximity to the same natural resource can produce starkly different resiliency outcomes for communities.
 
 While the likelihood that heat risk will continue to grow is high, there are many different solutions available to address it. Sacramento County has already begun implementing some of them. Let's take a look at what has been done and what opportunities remain to build a climate-resilient future.
 
@@ -412,7 +406,7 @@ The county operates a network of [publicly accessible cooling centers](https://w
 ::: {.info-card-photo-body}
 **SacRT Heat-Resilient Bus Shelters**
 
-SacRT was [awarded $449,900](https://www.masstransitmag.com/technology/facilities/shelters-benches-and-equipment/article/55242936/california-governors-office-of-land-use-and-climate-innovation-selects-sacrt-for-extreme-heat-and-community-resilience-program-grant) to build up to 20 heat-resilient shelters at bus stops in disadvantaged communities across Citrus Heights, Folsom, Rancho Cordova, and Sacramento. This has been a targeted investment for transit-dependent riders, though a small fraction of the county's full bus-stop network. [[11]](#ref-11)
+SacRT was [awarded $449,900](https://www.masstransitmag.com/technology/facilities/shelters-benches-and-equipment/article/55242936/california-governors-office-of-land-use-and-climate-innovation-selects-sacrt-for-extreme-heat-and-community-resilience-program-grant) to build up to 20 heat-resilient shelters at bus stops in disadvantaged communities across Citrus Heights, Folsom, Rancho Cordova, and Sacramento. This has been a targeted investment for transit-dependent riders, though a small fraction of the county's full bus-stop network [@sac-transit-resilience-grant-2024].
 :::
 :::
 
@@ -443,14 +437,14 @@ A changing climate will affect everyone, no matter where you live. The good news
 
 1. Advocate for shade equity in parks and transit corridors, particularly in neighborhoods with low tree canopy.
 2. Support urban forestry and cool corridor planning through your local planning commission or city council.
-3. Check on your neighbors and other community members, particularly the elderly and those with limited mobility, during extreme heat events. Social isolation is a well-established risk factor for heat-related illness and death, particularly among people who live alone or lack regular social contact. [[6]](#ref-6)
+3. Check on your neighbors and other community members, particularly the elderly and those with limited mobility, during extreme heat events. Social isolation is a well-established risk factor for heat-related illness and death, particularly among people who live alone or lack regular social contact [@semenzaHeatRelated1996].
 :::
 
 ::: {.callout-note collapse="false"}
 ## For Policymakers
 
-1. Prioritize urban forestry and green infrastructure funding in high-risk, low-resource communities. These neighborhoods are often underserved by green infrastructure, and targeting them is both more equitable and more efficient. Green canopy delivers its greatest cooling return exactly where canopy is lowest and density is highest. [[8]](#ref-8)
-2. Update heat emergency plans with robust early warning systems as warming events increase in frequency over time, as they can result in a 49-73% reduction in emergency medical dispatches on heat wave days. [[7]](#ref-7)
+1. Prioritize urban forestry and green infrastructure funding in high-risk, low-resource communities. These neighborhoods are often underserved by green infrastructure, and targeting them is both more equitable and more efficient. Green canopy delivers its greatest cooling return exactly where canopy is lowest and density is highest [@mcdonaldTrees2026].
+2. Update heat emergency plans with robust early warning systems as warming events increase in frequency over time, as they can result in a 49-73% reduction in emergency medical dispatches on heat wave days [@oconnorPromoting2025].
 3. Integrate extreme heat risk into capital improvement planning across new infrastructure, ensuring public buildings, transit systems, and energy infrastructure are designed to withstand escalating heat exposure over their operational lifetime.
 :::
 
@@ -458,15 +452,17 @@ A changing climate will affect everyone, no matter where you live. The good news
 
 ---
 
-### Data Sources and Tools Used
+### Data & Tools Used in This Analysis
 
-- **Observed station data:** Historical Data Platform (HDP), KSAC (Sacramento Executive Airport, `ASOSAWOS_72483023232`), accessed via [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org)
-- **Future projections:** WRF dynamically-downscaled projections (UCLA, SSP3-7.0, 3 km resolution, d03 grid), accessed via Cal-Adapt Analytics Engine
-- **Equity layers:** Ford, V., Espinoza, J., & McClenny, B. (2024). [California Climate Risk and Adaptation Index Metric Files and Metadata, v1](https://zenodo.org/records/13840187) [Data set]. Eagle Rock Analytics.
+#### Data 
+- **Weather station data:** Historical Data Platform (HDP), KSAC (Sacramento Executive Airport, `ASOSAWOS_72483023232`), accessed via [Cal-Adapt Analytics Engine](https://analytics.cal-adapt.org)
+- **Climate model projections:** WRF dynamically-downscaled projections (UCLA, SSP3-7.0, 3 km resolution, d03 grid), accessed via Cal-Adapt Analytics Engine
+- **Climate risk data layers:** Ford, V., Espinoza, J., & McClenny, B. (2024). [California Climate Risk and Adaptation Index Metric Files and Metadata, v1](https://zenodo.org/records/13840187) [Data set]. Eagle Rock Analytics.
 
-**Tools:** This analysis was built using [`climakitae`](https://github.com/cal-adapt/climakitae), Cal-Adapt's open-source Python library for climate data access and analysis.
+#### Tools 
+This analysis was built using [`climakitae`](https://github.com/cal-adapt/climakitae), Cal-Adapt's open-source Python library for climate data access and analysis.
 
-Explore climate projections for your own area at [cal-adapt.org](https://cal-adapt.org). For tools focused specifically on extreme heat, see [our extreme heat tool](https://cal-adapt.org/dashboard/climate-metrics-map?metric=extreme-heat) on cal-adapt.org.
+Explore the climate projections for your own area at [cal-adapt.org](https://cal-adapt.org). For tools focused specifically on extreme heat, see [our extreme heat tool](https://cal-adapt.org/dashboard/climate-metrics-map?metric=extreme-heat) on cal-adapt.org.
 
 ---
 
@@ -479,23 +475,3 @@ If you're interested in sharing how you were affected, what you experienced, wha
 **Are you a researcher, planner, policymaker, or an enthusiast interested in this analysis or chatting with us further?**
 
 Please [**get in touch with us**](mailto:calvin@eaglerockanalytics.com) as well! We love talking about climate data, projections, and adaptation planning, and we're always happy to connect with others working in this space.
-
----
-
-### References
-
-1. []{#ref-1} Sacramento County Office of Emergency Services, *2020 Severe Weather/Heat After-Action Report*. [https://sacoes.saccounty.gov/content/dam/oes/docs/archive/after-action-reports/2020%20Severe%20Weather%20Heat%20AAR_FINAL.pdf](https://sacoes.saccounty.gov/content/dam/oes/docs/archive/after-action-reports/2020%20Severe%20Weather%20Heat%20AAR_FINAL.pdf)
-2. []{#ref-2} California ISO, CPUC, and California Energy Commission, *Final Root Cause Analysis: Mid-August 2020 Extreme Heat Wave* (Jan. 2021). [https://www.caiso.com/Documents/Final-Root-Cause-Analysis-Mid-August-2020-Extreme-Heat-Wave.pdf](https://www.caiso.com/Documents/Final-Root-Cause-Analysis-Mid-August-2020-Extreme-Heat-Wave.pdf)
-3. []{#ref-3} California Energy Commission, "California Energy Leaders Report Progress on Grid Reliability Ahead of Summer 2026" (May 4, 2026). [https://www.energy.ca.gov/news/2026-05/california-energy-leaders-report-progress-grid-reliability-ahead-summer-2026](https://www.energy.ca.gov/news/2026-05/california-energy-leaders-report-progress-grid-reliability-ahead-summer-2026)
-4. []{#ref-4} National Weather Service, "Weather Related Fatality and Injury Statistics," NOAA. [https://www.weather.gov/hazstat/](https://www.weather.gov/hazstat/)
-5. []{#ref-5} Gould, C.F., Heft-Neal, S., Heaney, A.K., et al., "Temperature extremes impact mortality and morbidity differently," *Science Advances* (2025). DOI: [10.1126/sciadv.adr3070](https://doi.org/10.1126/sciadv.adr3070)
-6. []{#ref-6} "Social isolation and risk of heart disease," *NEJM*. [https://www.nejm.org/doi/full/10.1056/NEJM199607113350203](https://www.nejm.org/doi/full/10.1056/NEJM199607113350203)
-7. []{#ref-7} Early warning systems and heat-related emergency dispatch reduction study, PMC. [https://pmc.ncbi.nlm.nih.gov/articles/PMC7618602/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7618602/)
-8. []{#ref-8} McDonald, R.I., Chakraborty, T.C., Endreny, T.A., et al., "Trees halve urban heat island effect globally but unequal benefits only modestly mitigate climate-change warming," *Nature Communications* (2026). [https://www.nature.com/articles/s41467-026-71825-x](https://www.nature.com/articles/s41467-026-71825-x)
-9. []{#ref-9} World Resources Institute, "Cooling Potential of Urban Trees." [https://www.wri.org/insights/urban-trees-cooling-potential](https://www.wri.org/insights/urban-trees-cooling-potential); see also *Arboriculture & Urban Forestry* systematic review (2025). [https://auf.isa-arbor.com/content/early/2025/06/12/jauf.2025.023](https://auf.isa-arbor.com/content/early/2025/06/12/jauf.2025.023)
-10. []{#ref-10} Sacramento Tree Foundation / CapRadio, "Throwing shade? Why not plant it" (2026). [https://www.capradio.org/articles/2026/04/21/throwing-shade-why-not-plant-it/](https://www.capradio.org/articles/2026/04/21/throwing-shade-why-not-plant-it/)
-11. []{#ref-11} Sacramento Regional Transit District, "SacRT Awarded Extreme Heat and Community Resilience Grant." [https://www.sacrt.com/sacrt-awarded-extreme-heat-and-community-resilience-grant-to-enhance-public-health-with-heat-resilient-bus-shelters/](https://www.sacrt.com/sacrt-awarded-extreme-heat-and-community-resilience-grant-to-enhance-public-health-with-heat-resilient-bus-shelters/)
-12. []{#ref-12} PreventionWeb, nature-based solutions for urban heat (link already in draft).
-13. []{#ref-13} Ford, V., Espinoza, J., & McClenny, B. (2024). *California Climate Risk and Adaptation Index Metric Files and Metadata*, v1. Eagle Rock Analytics.
-14. []{#ref-14} Historical Data Platform (HDP), KSAC station data, accessed via Cal-Adapt Analytics Engine.
-15. []{#ref-15} WRF dynamically-downscaled projections (UCLA, SSP3-7.0, 3km), accessed via Cal-Adapt Analytics Engine.

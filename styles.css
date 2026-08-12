@@ -122,7 +122,7 @@ body {
 .quarto-grid-item {
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
-  background: var(--bs-primary-light);
+  background: var(--color-white);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -153,8 +153,9 @@ body {
 
 .quarto-grid-item .listing-categories .listing-category {
   color: var(--color-text);
-  border-color: rgba(var(--bs-primary-rgb), 0.35);
-  background: var(--color-white);
+  border-width: 1px;
+  border-color: var(--bs-primary);
+  background: var(--bs-primary-light);
 }
 
 /* TOC: hide nested items by default, expand when parent section is active */

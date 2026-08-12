@@ -1,0 +1,23 @@
+---
+title: "Title here"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-08-18"
+description: "Short one-line description here"
+categories: [Announcement]
+---
+
+Please update the text below and the description and title above. 
+
+- You can download xmy data on the data download tool (link to tool)
+- Maybe some comments about updates to the notebook (https://github.com/cal-adapt/cae-notebooks/blob/main/custom_climate_profiles.ipynb)
+- Maybe a link to the XMY white paper? Although we made a separate post about both white papers.
+
+We can include a figure (or more than one figure) if we want! That might be nice. Just copy/paste it into the folder 2026-08-18-xmy-data and update the code below for path, alt text, and caption 
+
+::: {#fig-exec-summary-boxplots}
+![](exec-summary-boxplots.png){width=55% fig-alt="Boxplot comparing typical (TMY) and extreme heat (XMY) temperature distributions for Sacramento across sector-relevant planning horizons."}
+
+Caption here 
+:::

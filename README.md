@@ -4,7 +4,7 @@ Testing site for AE guidance website migration to a new framework using Quarto, 
 
 ## Local development
 
-Install [Quarto](https://quarto.org/docs/get-started/). Some pages use Mermaid diagrams which require a headless browser for PDF rendering — install it once with:
+Install [Quarto](https://quarto.org/docs/get-started/). Some pages use Mermaid diagrams which require a headless browser for PDF rendering. Install it once with:
 
 ```bash
 quarto install chrome-headless-shell

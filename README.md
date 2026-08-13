@@ -1,6 +1,6 @@
-# caladapt-guidance-test
+# Cal-Adapt Guidance Website
 
-Testing site for AE guidance website migration to a new framework using Quarto, with support for search and a blog :)
+[Quarto](https://quarto.org/) source for the Cal-Adapt: Analytics Engine guidance site, deployed at [analytics.cal-adapt.org](https://analytics.cal-adapt.org). Includes guidance pages, a blog, and a glossary, each built to both HTML and PDF.
 
 ## Local development
 
@@ -26,6 +26,6 @@ quarto render
 
 Output is written to `_site/`.
 
-## More info
+## Documentation
 
-For everything else (citations/Zotero, the glossary, figures, deployment, and writing a blog post), see the [wiki](https://github.com/cal-adapt/cal-adapt-guidance/wiki).
+For everything beyond local dev (citations/Zotero, the glossary, figures, deployment, and writing a blog post), see the [wiki](https://github.com/cal-adapt/cal-adapt-guidance/wiki). Start on its Home page if you're new to the repo.

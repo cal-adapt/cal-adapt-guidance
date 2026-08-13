@@ -27,7 +27,7 @@ The Cal-Adapt: Analytics Engine hosts a variety of climate data with varying lev
 Downscaled climate projections produced for California's Fifth Climate Change Assessment, fully integrated into the Analytics Engine's Data Catalog and `climakitae` tooling. See the [Climate Model Simulations](data-documentation/climate-model-sims.qmd) page for full details on models, downscaling methods, and scenarios.
 
 ### WRF
-![Animated map of WRF-simulated 2m air temperature at 3km resolution over California for 2030.](figures/static/wrf_t2_d03_2030.gif){.dataset-thumb}
+![](figures/static/wrf_t2_d03_2030.gif){.dataset-thumb fig-alt="Animated map of WRF-simulated 2m air temperature at 3km resolution over California for 2030."}
 
 Description
 :   8 unique models downscaled at 45 km, 9 km (WECC region), and 3 km (California) resolution. Primarily SSP3-7.0, with limited SSP2-4.5/SSP5-8.5 runs. Native hourly resolution, plus a WRF-ERA5 historical reanalysis.
@@ -45,7 +45,7 @@ Learn More
 :   [Climate Model Simulations](data-documentation/climate-model-sims.qmd)
 
 ### LOCA2
-![Animated map of LOCA2 downscaled maximum air temperature over California for 2030.](figures/static/loca2_tasmax_2030.gif){.dataset-thumb}
+![](figures/static/loca2_tasmax_2030.gif){.dataset-thumb fig-alt="Animated map of LOCA2 downscaled maximum air temperature over California for 2030."}
 
 Description
 :   15 unique models downscaled at 3 km resolution over California. Available for SSP2-4.5, SSP3-7.0, and SSP5-8.5. Bias-corrected for all models, at native daily resolution.
@@ -81,7 +81,7 @@ Learn More
 :   [Climate Model Simulations](data-documentation/climate-model-sims.qmd)
 
 ## Climate Profiles
-![Climate Profiles icon](figures/static/tmy_icon.png){.dataset-thumb}
+![](figures/static/tmy_icon.png){.dataset-thumb fig-alt="Climate Profiles icon"}
 
 Description
 :   Annualized hourly climate profiles at HadISD station locations, including Typical Meteorological Year, Standard Year, and Extreme Climate Profiles datasets.
@@ -102,7 +102,7 @@ Learn More
 :   [Climate Profiles](/scientific-guidance/climate_profiles/index.qmd)
 
 ## Historic Weather Station Data
-![Historic Weather Station Data icon](figures/static/hdp_icon.png){.dataset-thumb}
+![](figures/static/hdp_icon.png){.dataset-thumb fig-alt="Historic Weather Station Data icon"}
 
 Description
 :   Historical weather stations for the WECC region (approx. 15k stations), including the HadISD stations. Covers 1980 to 2022 and includes multiple variables.
@@ -120,7 +120,7 @@ Learn More
 :   [About Climate Projections](/scientific-guidance/general-climate-guidance/about-climate-projections.qmd)
 
 ## Sea Level Rise
-![Sea Level Rise icon](figures/static/sea_level_icon.png){.dataset-thumb}
+![](figures/static/sea_level_icon.png){.dataset-thumb fig-alt="Sea Level Rise icon"}
 
 Description
 :   Hourly sea level rise projections generated for 13 tidal stations along the California coast and San Francisco Bay, covering 1950–2100.
@@ -138,7 +138,7 @@ Learn More
 :   [CEC Hourly Sea Level Projections Data Adoption Justification Memo](https://www.energy.ca.gov/sites/default/files/2024-09/06_HourlySeaLevelProjections_DataJustificationMemo_Iacobellis_Adopted_v2_ada.pdf)
 
 ## Hydrologic Data
-![Hydrologic Data icon](figures/static/hydrologic_icon.png){.dataset-thumb}
+![](figures/static/hydrologic_icon.png){.dataset-thumb fig-alt="Hydrologic Data icon"}
 
 Description
 :   UCLA-generated daily hydrology data from VIC and NOAH-MP, forced with a subset of LOCA2-Hybrid and four non-bias-corrected WRF dynamically downscaled datasets.
@@ -157,7 +157,7 @@ Learn More
 :   [CEC Hydrology Projections Data Adoption Justification Memo](https://www.energy.ca.gov/sites/default/files/2025-04/05_HydrologyProjections_DataJustificationMemo_BassEtAl_Adopted_v3_ada.pdf)
 
 ## Renewable Energy Profiles
-![Animated map of WRF-simulated wind capacity factor at 3km resolution over California for 2030.](figures/static/wind_cf_d03_2030.gif){.dataset-thumb}
+![](figures/static/wind_cf_d03_2030.gif){.dataset-thumb fig-alt="Animated map of WRF-simulated wind capacity factor at 3km resolution over California for 2030."}
 
 Description
 :   Monthly counts of solar and wind resource drought days from CMIP6-driven WRF simulations, computed with NREL generation models under SSP3-7.0.

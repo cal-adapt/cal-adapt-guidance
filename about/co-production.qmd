@@ -19,6 +19,8 @@ Energy sector climate data users in California interested in joining structured 
 
 ## Related Resources
 
-Jagannathan, K., et al. (2021). [It's Not Too Complex: How Story-Driven Engagement Can Make Scientific Assessments More Actionable.](https://doi.org/10.1175/BAMS-D-19-0296.1) *Bulletin of the American Meteorological Society*, 102(3), E606–E624.
+Freitas, N. L., Jagannathan, K., Bui, J., Ford, V. L., Krantz, W., Buddhavarapu, S., Chen, C., Conrad-Saydah, A., Koenig, M., Doherty, O., & Jones, A. D. (2026). Co-Producing Climate Services for California's Energy Sector. *Earth's Future*, 14(7), e2025EF005959. <https://doi.org/10.1029/2025EF005959>
 
-Kolstad, E. W., et al. (2019). [Trials, Errors, and Improvements in Coproduction of Climate Services.](https://doi.org/10.1175/BAMS-D-18-0201.1) *Bulletin of the American Meteorological Society*, 100(9), 1741–1751.
+Jagannathan, K., Jones, A. D., & Ray, I. (2021). The Making of a Metric: Co-Producing Decision-Relevant Climate Science. *Bulletin of the American Meteorological Society*, 102(8), E1579–E1590. <https://doi.org/10.1175/BAMS-D-19-0296.1>
+
+Kolstad, E. W., Sofienlund, O. N., Kvamsås, H., Stiller-Reeve, M. A., Neby, S., Paasche, Ø., Pontoppidan, M., Sobolowski, S. P., Haarstad, H., Oseland, S. E., Omdahl, L., & Waage, S. (2019). Trials, Errors, and Improvements in Coproduction of Climate Services. *Bulletin of the American Meteorological Society*, 100(8), 1419–1428. <https://doi.org/10.1175/BAMS-D-18-0201.1>

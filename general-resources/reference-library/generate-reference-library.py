@@ -12,6 +12,11 @@ table's link button points to that PDF and reads "View" instead of "Link".
 Use a relative path, not a root-relative ("/assets/...") one — the site is
 served from a subpath on GitHub Pages, so a root-relative path 404s there.
 
+Otherwise, the table's link button points to the "url" (or "doi") field on
+the entry in references.bib. If a source has neither, add its url to the
+Zotero record and re-export references.bib — this script errors rather than
+falling back to a link hardcoded in the CSV.
+
 Citation text is formatted from references.bib via Quarto's bundled pandoc
 citeproc, using the site's citation-style.csl, so it matches the citation
 style used everywhere else on the site.
@@ -95,9 +100,14 @@ for row in rows:
     fields = extract_bib_fields(key)
     pdf = row.get("pdf")
     is_pdf = bool(pdf)
-    link = pdf or row.get("link") or fields.get("url") or (
+    link = pdf or fields.get("url") or (
         f"https://doi.org/{fields['doi']}" if fields.get("doi") else ""
     )
+    if not link:
+        sys.exit(
+            f"error: '{key}' has no url/doi in references.bib and no pdf in "
+            "reference-library-data.csv — add a url to the source in Zotero"
+        )
     citation = citation_by_key.get(key)
     if not citation:
         sys.exit(f"error: pandoc citeproc did not return an entry for '{key}'")

@@ -611,23 +611,28 @@ div[id^="fig-"] {
   display: none;
 }
 
-.resource-card {
-  flex: 0 0 320px;
+.resource-card,
+.partner-logo-item {
   scroll-snap-align: start;
   border: 1px solid var(--color-border);
   border-radius: 0.6rem;
-  overflow: hidden;
   background: var(--color-white);
   text-decoration: none !important;
   color: inherit;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.resource-card:hover {
+.resource-card:hover,
+.partner-logo-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   border-color: var(--bs-primary);
   color: inherit;
+}
+
+.resource-card {
+  flex: 0 0 320px;
+  overflow: hidden;
 }
 
 .resource-card-thumb {
@@ -697,16 +702,12 @@ div[id^="fig-"] {
 
 .partner-logo-item {
   flex: 0 0 auto;
-  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 220px;
   height: 140px;
   padding: 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: 0.6rem;
-  background: var(--color-white);
 }
 
 .partner-logo-item img {

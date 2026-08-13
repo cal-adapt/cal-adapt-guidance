@@ -28,7 +28,7 @@ This DOI represents all versions, and will always resolve to the latest one. Whe
 
 
 ::: {.orange-box}
-**Example citation**: 
+**Example citation for climakitae version v1.5.5**: 
 
 Nicole Keeney, Calvin Chen, Neil Schroeder, Ana Ordonez, Eric Lehmer, Victoria Ford, Naomi Goldenson, Cora Kingdon, Tianchi-Liu, Beth McClenny, Brian Galey, Will Krantz, Owen Doherty, Grace Di Cecco, Vanessa Machuca& Nabig Chaudhry. (2026). cal-adapt/climakitae: v1.5.5 (Version v1.5.5) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.18111935 
 :::
@@ -37,9 +37,9 @@ Nicole Keeney, Calvin Chen, Neil Schroeder, Ana Ordonez, Eric Lehmer, Victoria F
 The Cal-Adapt: Analytics Engine JupyterHub provides example and workflow notebooks publicly available and hosted on the cae-notebooks GitHub repository. Please cite the specific notebook used.
 
 ::: {.orange-box}
-**General format**: 
+**Format**: 
 
-Cal-Adapt. (Year). Notebook title. [Jupyter Notebook]. GitHub or JupyterHub. Retrieved Month DD, Year from [link to notebook]. 
+Cal-Adapt. (Year). Notebook title. [Jupyter Notebook]. GitHub or JupyterHub. Retrieved Month DD, Year from (link to notebook). 
 
 **Example for the Data Access Notebook:** 
 
@@ -55,11 +55,12 @@ An APA-style citation is auto-generated from structured page metadata and displa
 
 ::: {.orange-box}
 **Format:**
-Cal-Adapt. (Year). Webpage title. Cal-Adapt. [link to page]
 
-**Example for Getting Data at the Census Tract Level:**
+Cal-Adapt. (Year). Webpage title. Cal-Adapt. (Link to page)
 
-Cal-Adapt. (2026). Getting Data at the Census Tract Level. Cal-Adapt. https://analytics.cal-adapt.org/guidance/using_in_decision_making/census-tracts/ 
+**Example for Analyses at the Census Tract page:**
+
+Cal-Adapt. (2026). Analyses at the Census Tract. Cal-Adapt. https://analytics.cal-adapt.org/scientific-guidance/census-tracts.html.
 :::
 
 ### Data Explorer Web Tools 
@@ -69,9 +70,11 @@ Data Explorer tools can be cited in APA format.
 
 ::: {.orange-box}
 **Format:**
-Cal-Adapt. (Year). Webpage title. Cal-Adapt. Link
+
+Cal-Adapt. (Year). Webpage title. Cal-Adapt. (Link to page) 
 
 **Example for the Climate Metrics Map:**
+
 Cal-Adapt. (2026). Climate Metrics Map. Cal-Adapt. https://cal-adapt.org/dashboard/climate-metrics-map 
 :::
 
@@ -81,7 +84,8 @@ Cal-Adapt. (2026). Climate Metrics Map. Cal-Adapt. https://cal-adapt.org/dashboa
 Derived datasets are those that Cal-Adapt has processed, downscaled, or otherwise transformed from source data. These are always published on the Cal-Adapt Zenodo Community and should be cited using the standard Zenodo dataset format, including all contributing authors. 
 
 ::: {.orange-box}
-**Example for Climate Profiles dataset:**  
+**Example for Climate Profiles dataset:** 
+
 Ford, V., Machuca, V., Ordonez, A., Chen, C., Schroeder, N.& Keeney, N. (2025). Annual Hourly Climate Profiles: Typical Meteorological Year and Standard Year Profiles in California with Dynamically-Downscaled Climate Models (Version v1.0.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.18135273 
 :::
 
@@ -122,7 +126,7 @@ Slide decks are posted to the Analytics Engine website’s Media page.
 ::: {.orange-box}
 **Format:** 
 
-Author / Presenter. (Year). Title of presentation [Slide deck]. Cal-Adapt. [link].
+Author / Presenter. (Year). Title of presentation [Slide deck]. Cal-Adapt. (Link to slide deck).
 
 **Example for the California’s 5th Climate Assessment Authors Meeting:**
 
@@ -134,7 +138,8 @@ Video recordings are posted to the [Cal-Adapt Youtube channel](https://www.youtu
 
 ::: {.orange-box}
 **Format:**
-Presenter / Host / Cal-Adapt. (Month Day, Year). Title of video [Video]. Youtube. Link
+
+Presenter / Host / Cal-Adapt. (Month Day, Year). Title of video [Video]. Youtube. (Link to video). 
 
 **Example for the Analytics Engine’s Working Group 10 meeting:**
 
@@ -162,7 +167,7 @@ Table 1: Comparison of the dynamically downscaled (WRF) and hybrid-statistically
 
 **Format:**
 
-Cal-Adapt. (Year). Tool/page title where the figure was generated. Cal-Adapt. Link
+Cal-Adapt. (Year). Tool/page title where the figure was generated. Cal-Adapt. (Link). 
 
 **Example:**
 

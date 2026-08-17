@@ -246,7 +246,7 @@ Led by Eagle Rock Analytics and funded by the California Energy Commission, supp
     <img src="assets/cards/sustained-funding.jpg" alt="">
     <div class="info-card-photo-body">
       <strong>Open Data</strong>
-      <p>Supported by the California Energy Commission (EPC-20-007 and EPC-23-024) and Amazon Sustainability, ensuring long-term availability.</p>
+      <p>Supported by the California Energy Commission (EPC-20-007 and EPC-23-024) and Amazon Sustainability, ensuring public availability.</p>
     </div>
   </a>
 

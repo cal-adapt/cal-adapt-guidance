@@ -42,7 +42,7 @@ This analysis was produced by the Cal-Adapt Team, led by [Eagle Rock Analytics](
 
 When an extreme event like this occurs, we think it's worth going beyond the headlines: not just describing what happened but grounding it in data. The analysis draws on publicly available climate datasets, including gridded historical observations and downscaled future projections hosted by [Cal-Adapt.org](https://cal-adapt.org/).
 
-Disclaimer: [ADD HERE]
+Disclaimer: This post is intended for informational and educational purposes to illustrate historical and projected climate hazards. It is not a comprehensive assessment, or a substitute for any hazard mitigation planning. To see the site's full disclaimer on how to interpret and apply this material, please review our **[full disclaimer](/about/our-project#disclaimer) for more information.**
 
 ---
 
@@ -410,7 +410,7 @@ A changing climate will affect everyone, no matter where you live. The good news
 
 1. Advocate for shade equity in parks and transit corridors, particularly in neighborhoods with low tree canopy.
 2. Support urban forestry and cool corridor planning through your local planning commission or city council.
-3. Check on your neighbors and other community members, particularly the elderly and those with limited mobility, during extreme heat events. Social isolation is a well-established risk factor for heat-related illness and death, particularly among people who live alone or lack regular social contact [@semenzaHeatRelated1996].
+3. Check on your neighbors and other community members, particularly the elderly and those with limited mobility, during extreme heat events. **Social isolation is a well-established risk factor for heat-related illness and death, particularly among people who live alone or lack regular social contact** [@semenzaHeatRelated1996].
 :::
 
 ::: {.callout-note collapse="false"}

@@ -23,7 +23,7 @@ Ensuring that not only can our infrastructure withstand current extreme events b
 Similar to a [Typical Meteorological Year profile](typical-met-year.qmd), an **Extreme Meteorological Year** (XMY) profile provides the same weather variables, 
 but intentionally preserves or characterizes extreme weather event representation within a one-year climate profile. 
 There is currently no one recommended or accepted methodology for calculating an XMY. 
-However, the general intent of an XMY is to select more extreme months (e.g., [@crawleyRethinking2015; @crawleyShould2019; @bassFuture2020; @zengReview2025]) instead of the median conditions represented in a TMY, and to use a large set of climate model simulations to do so. 
+However, the general intent of an XMY is to select more extreme months (e.g., [@fordPreparing2026; @crawleyRethinking2015; @crawleyShould2019; @bassFuture2020; @zengReview2025]) instead of the median conditions represented in a TMY, and to use a large set of climate model simulations to do so. 
 
 Recognizing that no single “extreme year” can satisfy all planning needs, Cal-Adapt provides two standardized methodologies tailored to common use cases: 
 

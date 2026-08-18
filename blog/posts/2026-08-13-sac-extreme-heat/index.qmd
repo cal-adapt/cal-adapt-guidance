@@ -28,10 +28,9 @@ Here  we will explore the intensity of the 2020 Sacramento heat wave in greater 
 
 ![News coverage from ABC 10 reporting heating across Northern California on Aug 14, 2020.](images/forecast_high_temps.png){#fig-news-coverage style="border-radius:5px;"}
 
+---
 
 ### About This Analysis
-
----
 
 This analysis was produced by the Cal-Adapt Team, led by [Eagle Rock Analytics](https://eaglerockanalytics.com), a climate data and analytics firm based in Sacramento. Cal-Adapt builds tools and pipelines that help California utilities, planners, and public agencies understand how climate hazards are changing, and what that means for the communities they serve.
 
@@ -187,7 +186,7 @@ During extreme heat, the electrical grid comes under significant strain as risin
 On August 14 and 15, 2020, the grid faced its limit. CAISO declared a grid emergency as demand outpaced supply, which led to rolling blackouts affecting hundreds of thousands of Californians for the first time since 2001 [@cal-iso-2020-heat-wave-report].
 
 ![California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave](images/transmission-lines.jpeg){style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:3px;"}
-*California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave. [File: Richard Vogel/Associated Press]*
+*California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave.[*
 
 In response to events like the August 2020 heat waves, California has strengthened its grid resilience, with the California Energy Commission (CEC) reporting that “up to 4,500 MW of contingency resources are available for summer 2026 in case of extreme events that strain the grid” [@cec-grid-reliability-2026]. Still, as our climate continues to change, increasing the likelihood of extreme events, will our grid be reliable enough to withstand these stressors?
 
@@ -354,21 +353,24 @@ For a broader look at cooling solutions cities are using worldwide, see this [Wo
 ::: {.info-card-photo-body}
 **Urban Tree Canopy Expansion**
 
-Through NeighborWoods and the City’s Urban Forest Plan, Sacramento has planted roughly 1.5 million trees county-wide, including 13,000+ shade trees, and engaged 6,000+ residents in FY2024 (Oct ‘23 - Sept ‘ 24) alone, working toward a target of 25,000 trees/year. Cooling-effectiveness research finds canopy cover consistently outperforms building shading and pervious surfaces, with reductions of 1–3°C (1.8–5.4°F), and is the broadest, most continuous intervention available county-wide. 
+Through NeighborWoods and the City’s Urban Forest Plan, Sacramento has planted roughly 1.5 million trees county-wide, including 13,000+ shade trees, and engaged 6,000+ residents in FY2024 (Oct ‘23 - Sept ‘ 24) alone, working toward a target of 25,000 trees/year. Cooling-effectiveness research finds canopy cover consistently outperforms building shading and pervious surfaces, with reductions of 1–3°C (1.8–5.4°F), and is the broadest, most continuous intervention available county-wide [@gillerotUrban2024]. 
 
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-4 .info-card .info-card-photo .solution-card}
 ::: {.content-visible when-format="html"}
-![](images/library.jpg)
-:::
+<!-- ![](images/library.jpg) <span style="font-size: 0.75em; color: gray; margin-left: 1em; display: inline-block;">Source: <a href="https://unsplash.com/@trnavskauni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" style="color: gray;">Trnava University</a> on Unsplash</span> -->
+
+![](images/library.jpg) Source: [Trnava University](https://unsplash.com/@trnavskauni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
 
 ::: {.info-card-photo-body}
 **Cooling Centers Network**
 
 The county operates a network of [publicly accessible cooling centers](https://www.211sacramento.org/211/severe-weather-spaces/) that activate in step with the National Weather Service’s HeatRisk Red/Magenta levels. More than 20 sites were activated during the 2020 heat waves. The reach of cooling centers is narrower than canopy cover since it only serves people during an active emergency, but this network is critical infrastructure for people to take reprieve during the hottest hours of the day.
 
+:::
 :::
 :::
 

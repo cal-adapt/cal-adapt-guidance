@@ -14,23 +14,14 @@ format:
 
 It was mid-August 2020 in Sacramento. COVID-19 lockdowns were long in place, and the region was already deep into a stretch of summer heat. On August 14th, that heat would escalate drastically.
 
-<div style="height:0.4em;"></div>
 
 By 6 a.m., as the city began to wake up, the temperature in Sacramento climbed past 80°F. Morning news warned of the potential for an excessively hot day (@fig-news-coverage). By 7 a.m., an estimated 1.6 million people across Sacramento County were already under an extreme heat warning. In neighborhoods like Del Paso Heights, Meadowview, and Oak Park, which are considered heat vulnerable [@sac-urban-forest-plan-2025], sparse tree canopy left streets and homes exposed to direct sun with little shade relief. As the temperature shot past 100°F and stayed near 106°F from 2 p.m. to 9 p.m., residents had begun enduring only the beginning of what would end up being one of the most impactful heat waves to hit Sacramento.  
 
-<div style="height:0.4em;"></div>
-
 These historic heat waves dominated California’s weather patterns and news streams throughout August and September of 2020. Typically, the Delta breeze [@sac-bee-delta-breeze-2024], which is a sea breeze that passes through the Bay Area eastward towards the Central Valley, moderates temperatures and brings much needed relief to Sacramento County, especially during the night. However, this breeze was weakened by an exceptionally strong and persistent ridge of high pressure across the Western U.S., leaving California’s Central Valley without its natural nighttime cooling mechanism.
-
-<div style="height:0.4em;"></div>
 
 By the evening of August 14th, the California Independent System Operator (CAISO) declared a grid emergency as cooling demand pushed electricity load beyond what the system could supply. For the first time since 2001, CAISO implemented rolling blackouts in order to prevent catastrophic grid failures and more widespread and uncontrolled blackouts across the region. However, the impact of these rolling blackouts were substantial -- than 300,000 Californians at the precise time they needed power the most to remain safe during the heat wave.
 
-<div style="height:0.4em;"></div>
-
 We will explore the intensity of the 2020 Sacramento heat wave in greater detail, and examine how events like this are likely to change in frequency under a future warming climate. The August and September heatwaves were more than just long, hot days and nights: they strained the energy grid to its limits and put lives at risk. Understanding the physical drivers of heat waves and the socioeconomic factors that determine who experiences the worst impacts is essential for building a more resilient grid and a safer and equitable future.
-
-<div style="height:0.4em;"></div>
 
 ![News coverage from ABC 10 reporting heating across Northern California on Aug 14, 2020.](images/forecast_high_temps.png){#fig-news-coverage style="border-radius:5px;"}
 

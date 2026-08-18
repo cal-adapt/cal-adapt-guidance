@@ -11,6 +11,7 @@ project:
 website:
   title: "Cal-Adapt: Analytics Engine"
   site-url: https://analytics.cal-adapt.org
+  google-analytics: G-JPS4B24KP3
   favicon: assets/favicon.ico
   search: true
   page-navigation: true

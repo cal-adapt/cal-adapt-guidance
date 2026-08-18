@@ -2,7 +2,7 @@
 title: "The 2020 Sacramento Heat Waves: What Happened and What the Future Holds"
 author:
   - "Calvin Chen"
-date: "2026-08-13"
+date: "2026-08-18"
 description: "Back-to-back heat waves in August and September 2020 pushed Sacramento to the edge of its energy capacity. *Here’s what the data says.*"
 categories: [Science]
 citation: true

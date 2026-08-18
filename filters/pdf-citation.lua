@@ -122,7 +122,7 @@ function Pandoc(doc)
   -- Byline shown in the title box, independent of the "cite as" opt-out below.
   doc.meta["pdf-author"] = pandoc.MetaString(author_str)
   doc.meta["pdf-published"] = pandoc.MetaString(pandoc.utils.stringify(meta.date))
-  doc.meta["pdf-modified"] = pandoc.MetaString(pandoc.utils.stringify(meta["date-modified"]))
+  doc.meta["pdf-modified"] = pandoc.MetaString(meta["date-modified"] and pandoc.utils.stringify(meta["date-modified"]) or "")
 
   if citation == false then
     return doc -- page opted out, same as the HTML citation appendix

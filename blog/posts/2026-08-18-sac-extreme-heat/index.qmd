@@ -183,7 +183,7 @@ During extreme heat, the electrical grid comes under significant strain as risin
 On August 14 and 15, 2020, the grid faced its limit. CAISO declared a grid emergency as demand outpaced supply, leading to rolling blackouts which affected hundreds of thousands of Californians for the first time since 2001 [@cal-iso-2020-heat-wave-report].
 
 ![California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave](images/transmission-lines.jpeg){style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:3px;"}
-*California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave.[*
+*California grid overwhelmed and ordered rolling power outages during the August 2020 heat wave.*
 
 In response to events like the August 2020 heat waves, California has strengthened its grid resilience, with the California Energy Commission (CEC) reporting that “up to 4,500 MW of contingency resources are available for summer 2026 in case of extreme events that strain the grid” [@cec-grid-reliability-2026]. Still, as our climate continues to change, increasing the likelihood of extreme events, will our grid be reliable enough to withstand these stressors?
 
@@ -192,14 +192,14 @@ In response to events like the August 2020 heat waves, California has strengthen
 Extreme heat is already the deadliest weather hazard in the United States, outpacing floods, tornadoes, and hurricanes [@nws-weather-fatalities-page]. A three-fold increase in event frequency translates directly into greater cumulative health risk, particularly for underserved communities including the elderly, outdoor workers, and those without access to cooling resources [@calheatscore-about-heat-impacts-webpage]. As extreme heat continues to increase, researchers project California will see an additional 1.5 million heat-driven emergency department visits by 2050 [@gouldTemperature2025].
 
 ![Surge in heat-related emergency room visits during the 2020 heat wave](images/public-health.jpg){style="display:block; margin:1rem auto; height:300px; width:100%; object-fit:cover; object-position:bottom; border-radius:5px;"}
-*Surge in heat-related emergency room visits during the 2020 heat wave. [Credit: Unsplash (FIND AUTHOR)]*
+*Surge in heat-related emergency room visits during the 2020 heat wave.*
 
 #### **Equity and Disproportionate Impacts**
 
 Not everyone experiences extreme heat equally. In Sacramento, lower-income neighborhoods and communities of color are often located in **urban heat islands**, areas where pavement, impervious surfaces, and low tree canopy push ambient temperatures several degrees higher than surrounding areas. Residents without air conditioning, renters unable to improve their cooling-related infrastructure, and people who work outdoors are more vulnerable to extreme heat than those with the ability to prepare and adapt.
 
 ![Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas](images/urban-heat-island.jpg){style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;"}
-*Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas. [Credit: SOURCE — update when image is added.]*
+*Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas.*
 
 :::
 
@@ -357,7 +357,7 @@ Through NeighborWoods and the City’s Urban Forest Plan, Sacramento has planted
 ::: {.content-visible when-format="html"}
 <!-- ![](images/library.jpg) <span style="font-size: 0.75em; color: gray; margin-left: 1em; display: inline-block;">Source: <a href="https://unsplash.com/@trnavskauni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" style="color: gray;">Trnava University</a> on Unsplash</span> -->
 
-![](images/library.jpg) Source: [Trnava University](https://unsplash.com/@trnavskauni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+![](images/library.jpg)
 
 
 ::: {.info-card-photo-body}

@@ -85,7 +85,7 @@ It is important to use a consistent and reproducible definition of climate hazar
 ::: {.content-visible when-format="docx"}
 ![](figures/static/fig_annual_anomaly_plotly.png){fig-alt="Bar chart of annual mean temperature anomaly at KSAC relative to the full-record mean, 2020 highlighted."}
 :::
-*Annual mean temperature anomaly at KSAC (Sacramento Executive Airport) relative to the full-record (1980-2020) mean. Full-record average is detonated as 0 on the y-axis. Red bars indicate warmer-than-average years; blue bars indicate cooler-than-average years. 2020 is highlighted in gold. The black line shows the 5-year rolling mean. Data: Historical Data Platform (HDP).*
+*Annual mean temperature anomaly at KSAC (Sacramento Executive Airport) relative to the full-record (1980-2020) mean. Full-record average is denoted as 0 on the y-axis. Red bars indicate warmer-than-average years; blue bars indicate cooler-than-average years. 2020 is highlighted in gold. The black line shows the 5-year rolling mean. Data: Historical Data Platform (HDP).*
 :::
 
 2020 was a hot year, but not necessarily the hottest year on record. So why was this event so impactful? Let’s take a closer look at the historical record.
@@ -137,7 +137,7 @@ Across the 40-year historical period analyzed, **only 8 days** had both a daily 
 
 The data shows that the likelihood of a day like this is extremely low in the historical record, but how might that change under a warming climate?
 
-California has invested in developing state-of-the-art climate projections to help build towards a more resilient future, and these projections, hosted on Cal-Adapt, are a part of the state’s [Fifth Climate Change Assessment](https://lci.ca.gov/climate/icarp/climate-assessment/#California-s-Fifth-Climate-Change-Assessment). Using these climate projections, we can estimate how frequently heat events – like the 2020 heat wave – are likely to occur as the climate warms. For more information specific to the climate projections, check out our guidance page, [About Climate Projections and Models]((https://analytics.cal-adapt.org/scientific-guidance/general-climate-guidance/about-climate-projections.html)).
+California has invested in developing state-of-the-art climate projections to help build towards a more resilient future, and these projections, hosted on Cal-Adapt, are a part of the state’s [Fifth Climate Change Assessment](https://lci.ca.gov/climate/icarp/climate-assessment/#California-s-Fifth-Climate-Change-Assessment). Using these climate projections, we can estimate how frequently heat events – like the 2020 heat wave – are likely to occur as the climate warms. For more information specific to the climate projections, check out our guidance page, [About Climate Projections and Models](https://analytics.cal-adapt.org/scientific-guidance/general-climate-guidance/about-climate-projections.html).
 
 Next, we’ll take a look at the projections data in terms of their **[return period](/glossary/index.qmd#return-period)**, which is a common way to express the frequency of extreme events. Here, we define the return period as the average time between events of a given magnitude. For example, a 100-year flood has a return period of 100 years, meaning that on average, such a flood is expected to occur once every 100 years.
 <br>
@@ -239,7 +239,7 @@ However, **not all areas are equally vulnerable to heat.** Next, we’ll look at
 
 In order to explore this intersection of datasets, we’ll look at the California Climate Risk and Adaptation Index (Cal-CRAI). The Cal-CRAI uses a combination of climate hazard and social vulnerability metrics to assess the relative risk of climate impacts across communities. For more information, check out the [Cal-CRAI documentation](https://zenodo.org/records/13840187).
 
-Below, in @fig-crai-tx105-delta,, we’ve used the Cal-CRAI index to map the change in heat hazard score across Sacramento County census tracts relative to the historical baseline. Red indicates an increase in projected heat risk for that community, blue indicates a decrease. 
+Below, in @fig-crai-tx105-delta, we’ve used the Cal-CRAI index to map the change in heat hazard score across Sacramento County census tracts relative to the historical baseline. Red indicates an increase in projected heat risk for that community, blue indicates a decrease. 
 
 ::: {#fig-crai-tx105-delta}
 ::: {.content-visible when-format="html"}
@@ -355,17 +355,14 @@ Through NeighborWoods and the City’s Urban Forest Plan, Sacramento has planted
 
 ::: {.g-col-12 .g-col-md-4 .info-card .info-card-photo .solution-card}
 ::: {.content-visible when-format="html"}
-<!-- ![](images/library.jpg) <span style="font-size: 0.75em; color: gray; margin-left: 1em; display: inline-block;">Source: <a href="https://unsplash.com/@trnavskauni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" style="color: gray;">Trnava University</a> on Unsplash</span> -->
-
 ![](images/library.jpg)
-
+:::
 
 ::: {.info-card-photo-body}
 **Cooling Centers Network**
 
 The county operates a network of [publicly accessible cooling centers](https://www.211sacramento.org/211/severe-weather-spaces/) that activate in step with the National Weather Service’s HeatRisk Red/Magenta levels. More than 20 sites were activated during the 2020 heat waves. The reach of cooling centers is narrower than canopy cover since it only serves people during an active emergency, but this network is critical infrastructure for people to take reprieve during the hottest hours of the day.
 
-:::
 :::
 :::
 

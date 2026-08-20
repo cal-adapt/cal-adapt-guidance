@@ -86,4 +86,4 @@ Global Attributes
 : Recommended Global Attribute fields for NetCDF files, following CF Convention standard best practices. {#tbl-netcdf-global-attributes .striped}
 
 Test for Compliance
-:   Before submission of the NetCDF product, consider using an [online test](https://pumatest.nerc.ac.uk/cgi-bin/cf-checker.pl) for your data product.
+:   Before submission of the NetCDF product, consider using an [online test](https://mcc.podaac.earthdatacloud.nasa.gov/) for your data product.

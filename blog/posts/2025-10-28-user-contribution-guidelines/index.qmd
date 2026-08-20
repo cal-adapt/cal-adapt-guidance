@@ -8,4 +8,4 @@ description: "New guidelines outline how community members can contribute notebo
 categories: [Announcement]
 ---
 
-The Analytics Engine team has released new User Contribution Guidelines for the Cal-Adapt: Analytics Engine Notebooks on GitHub. These guidelines outline how community members can share their own notebooks and projects, ensuring consistency, usability, and alignment with existing Analytics Engine and _climakitae_ functionality. Explore the contribution requirements and learn how to submit your own work to the repository [here](https://github.com/cal-adapt/cae-notebooks/blob/main/user-contributions/README.md).
+The Analytics Engine team has released new User Contribution Guidelines for the Cal-Adapt: Analytics Engine Notebooks on GitHub. These guidelines outline how community members can share their own notebooks and projects, ensuring consistency, usability, and alignment with existing Analytics Engine and _climakitae_ functionality. Explore the contribution requirements and learn how to submit your own work to the repository [here](https://github.com/cal-adapt/cae-notebooks?tab=contributing-ov-file).

@@ -21,7 +21,7 @@ Readability
 :   Modern conventions are designed in a way that metadata is readable by humans and concurrently organized in a way that can be read by computers.
 
 Interoperability
-:   Data developed to support state energy-related climate research and planning should be easily accessed by research partners on California's climate assessments, national climate assessments [which utilize similar conventions](https://data.globalchange.gov/resources), and global climate modeling efforts (i.e. CMIP). The end goal is to allow a user to incorporate data from multiple data sources directly on the Analytics Engine, without the need for customization.
+:   Data developed to support state energy-related climate research and planning should be easily accessed by research partners on California's climate assessments, national climate assessments [which utilize similar conventions](https://nca5.climate.us/chapter/appendix-2), and global climate modeling efforts (i.e. CMIP). The end goal is to allow a user to incorporate data from multiple data sources directly on the Analytics Engine, without the need for customization.
 
 Public Availability
 :   In order to work within the wide range of data serving options and analytics tools on the Analytics Engine (interactive programming environments, direct downloads), input data must be in formats which can be incorporated into the Analytics Engine, and directly read in by end users who may work with the data in the cloud computing environment or download the data directly.
@@ -39,7 +39,7 @@ At a bare minimum, the title, originator contact, and citation details must be p
 
 NetCDF files should be generated so as to be easily transferred between producer and end user, and self-describing so that extensive documentation files are not needed. Metadata included with a NetCDF file should be easy to read by users but also formatted in a way that present day software can read.
 
-Data or products hosted on the platform as a NetCDF file should follow [standard best practices as established by Unidata](https://docs.unidata.ucar.edu/nug/current/best_practices.html), including using a standard convention for organizing and describing data products. [CF Conventions](https://cfconventions.org/) are preferred because they include categories of nearly all relevant topics (i.e. atmospheric, hydrology, ocean/lake, surface conditions), but for datasets outside these topics [alternative conventions](https://www.unidata.ucar.edu/software/netcdf/conventions.html) will be considered. Adoption of CF conventions assures end users can use NetCDF products developed by CEC-supported research using only information contained within the NetCDF.
+Data or products hosted on the platform as a NetCDF file should follow [standard best practices as established by Unidata](https://docs.unidata.ucar.edu/nug/current/best_practices.html), including using a standard convention for organizing and describing data products. [CF Conventions](https://cfconventions.org/) are preferred because they include categories of nearly all relevant topics (i.e. atmospheric, hydrology, ocean/lake, surface conditions), but for datasets outside these topics [alternative conventions](https://archive.unidata.ucar.edu/software/netcdf/conventions.html) will be considered. Adoption of CF conventions assures end users can use NetCDF products developed by CEC-supported research using only information contained within the NetCDF.
 
 ### Minimum specifications
 
@@ -52,7 +52,7 @@ Coordinate System
 :   Dimensions of time and space should be included as standalone variables, each self-described using a standard convention system, including a description of the units and a naming attribute (i.e. for latitude, units of "degrees_north" and a long_name of "grid latitude, positive northward"). Coordinate variables should not contain missing values.
 
 Variable Naming
-:   Whenever possible, units should be named using industry standard names for interoperability. Naming variables (and their attributes) in conformation to the [Udunits package](https://www.unidata.ucar.edu/software/udunits/index.html) will allow users of common open access software and packages to load NetCDF files directly, without extensive modification. This is critically important for data being uploaded to the Analytics Engine.
+:   Whenever possible, units should be named using industry standard names for interoperability. Naming variables (and their attributes) in conformation to the [Udunits package](https://www.unidata.ucar.edu/software/udunits) will allow users of common open access software and packages to load NetCDF files directly, without extensive modification. This is critically important for data being uploaded to the Analytics Engine.
 
 Variable Attributes
 :   At a minimum, variable attributes should contain units and a long name descriptor (e.g. descriptive enough to label plots).
@@ -61,7 +61,7 @@ Missing Data
 :   A fill value or `valid_range` attribute should be applied to any variable with missing data.
 
 Time Coordinates
-:   The time variable should represent time elapsed since a reference date. Either Gregorian or Julian calendar dates could be used, but Gregorian is preferred as it is supported by more software platforms. Storing the data as an ISO 8601 object allows for easy reading and interpretation by users, as well as a robust interface for interaction with modern software. The [Udunits package](https://www.unidata.ucar.edu/software/udunits/index.html) provides easy to use tools for encoding of dates.
+:   The time variable should represent time elapsed since a reference date. Either Gregorian or Julian calendar dates could be used, but Gregorian is preferred as it is supported by more software platforms. Storing the data as an ISO 8601 object allows for easy reading and interpretation by users, as well as a robust interface for interaction with modern software. The [Udunits package](https://www.unidata.ucar.edu/software/udunits) provides easy to use tools for encoding of dates.
 
 ### Suggested practices
 
@@ -86,4 +86,4 @@ Global Attributes
 : Recommended Global Attribute fields for NetCDF files, following CF Convention standard best practices. {#tbl-netcdf-global-attributes .striped}
 
 Test for Compliance
-:   Before submission of the NetCDF product, consider using an [online test](https://pumatest.nerc.ac.uk/cgi-bin/cf-checker.pl) for your data product.
+:   Before submission of the NetCDF product, consider using an [online test](https://mcc.podaac.earthdatacloud.nasa.gov/) for your data product.

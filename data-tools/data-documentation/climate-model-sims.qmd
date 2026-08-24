@@ -160,7 +160,7 @@ WRF data is available for 8 GCMs with 1 ensemble run per emissions scenario, dow
 Number of WRF projection simulations available by scenario and spatial resolution, colored by scenario.
 :::
 
-\* Additional simulations from CESM2 for SSP2-4.5 and SSP5-8.5 at 9 km resolution are part of the larger suite of dynamically downscaled GCMs by UCLA, of which the CEC-supported simulations are a subset; see [more information here](https://dept.atmos.ucla.edu/alexhall/downscaling-cmip6).
+\* Additional simulations from CESM2 for SSP2-4.5 and SSP5-8.5 at 9 km resolution are part of the larger suite of dynamically downscaled GCMs by UCLA, of which the CEC-supported simulations are a subset; see [more information here](https://atmos.ucla.edu/alexhall/cmip6-downscaling-using-wrf/).
 
 ## Coordinate Reference Systems and Grid Conventions
 

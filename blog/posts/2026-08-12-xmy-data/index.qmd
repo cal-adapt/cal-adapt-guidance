@@ -3,7 +3,7 @@ title: "Extreme Climate Profiles Data Now Available"
 author:
   - name:
       literal: "Cal-Adapt"
-date: "2026-08-18"
+date: "2026-08-12"
 description: "Extreme Climate Profile Data Now Available for Download through the Cal-Adapt: Data Explorer"
 categories: [Announcement]
 ---

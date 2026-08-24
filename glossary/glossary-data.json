@@ -77,7 +77,7 @@
   {
     "term": "Dynamical downscaling",
     "slug": "dynamical-downscaling",
-    "definition": "A method to generate fine scale spatial resolution data from coarse scale global climate models using a dynamical regional weather model. The regional model uses the global climate model output as the inputs to generate additional projections. The Analytics Engine hosts dynamically downscaled model output created using the [Weather Research and Forecasting](https://dept.atmos.ucla.edu/alexhall/downscaling-cmip6) (WRF) model."
+    "definition": "A method to generate fine scale spatial resolution data from coarse scale global climate models using a dynamical regional weather model. The regional model uses the global climate model output as the inputs to generate additional projections. The Analytics Engine hosts dynamically downscaled model output created using the [Weather Research and Forecasting](https://atmos.ucla.edu/alexhall/cmip6-downscaling-using-wrf/) (WRF) model."
   },
   {
     "term": "Effective sample size (ESS)",

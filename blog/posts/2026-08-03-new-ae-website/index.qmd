@@ -11,6 +11,7 @@ categories: [Announcement]
 The Cal-Adapt: Analytics Engine website has a new look! 
 
 What’s new:
+
 - A cleaner, more organized layout for guidance and documentation
 - A new Blog section to keep you posted on updates like this one
 - Reorganized navigation across scientific guidance, data & tools, and general resources

@@ -8,23 +8,19 @@ description: "Why framing regional climate projections around global warming lev
 categories: [Science]
 ---
 
-![Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas](images/urban-heat-island.jpg){style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;"}
-*Heat inequity in Sacramento: low-canopy, high-pavement neighborhoods experience significantly higher temperatures than more affluent areas.*
-
-
 This approach shows users how to reframe regional climate projections in terms of global benchmarks like 2˚C of global average warming. We’ll show why this could be worth the effort (and the Analytics Engine will make it easier).
 
 First we’ll explain how climate projection data are produced based on scenarios for the future. A climate model is usually run with a scenario for how concentrations of greenhouse gasses (GHGs) will change in the atmosphere. This change depends, principally, on how much people all over the world come together to reduce GHG emissions. Because this result is very hard to predict, there are usually multiple scenarios that range from large GHG reductions, minimal GHG reductions, and somewhere in between.
 
 ![Annual anthropogenic (human-caused) emissions over the 2015–2100 period. IPCC Sixth Assessment Report — emissions scenarios differ wildly.](images/annual-anthropogenic-emissions-ipcc.png){style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;"}
-*[Annual anthropogenic (human-caused) emissions over the 2015–2100 period.](https://www.ipcc.ch/report/ar6/wg1/figures/summary-for-policymakers/figure-spm-4) IPCC Sixth Assessment Report — emissions scenarios differ wildly.*
+*Annual anthropogenic (human-caused) emissions over the 2015–2100 period. Emissions scenarios differ wildly. (source: [IPCC Sixth Assessment Report](https://www.ipcc.ch/report/ar6/wg1/figures/summary-for-policymakers/figure-spm-4))*
 
 Traditionally, if you were interested in a particular time-frame (e.g. the 2040’s or the 2080’s) a large fraction of the uncertainty in climate projections will have to do with the scenario you believe is most likely to occur, especially later in the century.
 
 In a global warming level approach you instead consider what the regional response would be to a world that is, say 2˚C or 3˚C warmer on average. These global benchmarks for how much warming has occurred don’t mean a lot of their own. A 2˚C warmer world does not mean 2˚C warmer in California. It could be 1.5˚C warmer or 6˚C warmer. So why re-orient around these benchmarks?
 
 ![Global surface temperature changes in °C relative to 1850–1900. IPCC Sixth Assessment Report.](images/global-surface-temp-changes-ipcc.png){style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;"}
-*[Global surface temperature changes in °C relative to 1850–1900.](https://www.ipcc.ch/report/ar6/wg1/figures/summary-for-policymakers/figure-spm-8) IPCC Sixth Assessment Report.*
+*Global surface temperature changes in °C relative to 1850–1900. (source: [IPCC Sixth Assessment Report](https://www.ipcc.ch/report/ar6/wg1/figures/summary-for-policymakers/figure-spm-8))*
 
 There are three main reasons that a global warming levels approach might be worthwhile:
 
@@ -36,11 +32,12 @@ Why would you want to isolate uncertainty of the regional response? This disaggr
 3. A feature of the latest set of climate models available, also argues for this approach. In [CMIP6](https://www.carbonbrief.org/cmip6-the-next-generation-of-climate-models-explained/) some [otherwise-good models](https://doi.org/10.1175/BAMS-D-23-0100.1) have unrealistically high [climate sensitivity](https://climate.mit.edu/explainers/climate-sensitivity) to increased GHGs, causing them to project [higher-than-likely warming](https://www.carbonbrief.org/guest-post-how-climate-scientists-should-handle-hot-models/). With a warming-levels approach, the [General Circulation Models (GCMs)](https://www.ipcc-data.org/guidelines/pages/gcm_guide.html) that realistically represent atmospheric variability in the mid-latitudes (where we live), do not need to be excluded if they also warm too quickly. Indeed this is a big part of why the [Intergovernmental Panel on Climate Change (IPCC)](https://www.ipcc.ch/) adopted this approach in its [6th Assessment Report](https://www.ipcc.ch/assessment-report/ar6/).
 
 ![Simulated annual mean temperature change (°C), panel (c) precipitation change (%). IPCC Sixth Assessment Report.](images/simulated-annual-mean-temp-precip-change-ipcc.png){style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;"}
-*[Simulated annual mean temperature change (°C), panel (c) precipitation change (%).](https://www.ipcc.ch/report/ar6/wg1/figures/summary-for-policymakers/figure-spm-5/) IPCC Sixth Assessment Report.*
+*Simulated annual mean temperature change (°C), panel (c) precipitation change (%). (source: [IPCC Sixth Assessment Report](https://www.ipcc.ch/report/ar6/wg1/figures/summary-for-policymakers/figure-spm-5/))*
 
 Finally, having benefited from isolating sources of uncertainty, adaptive planning, and increased sample size, users can readily translate these projections back onto a time horizon. While the simulations may reach 2˚C or 3˚C benchmarks at different times, users can plan for the 2˚C or 3˚C world to occur at the point in time that the IPCC considers most likely for the selected emissions scenario. As the science advances and more data is gathered, this can be updated without redoing the entire analysis every time.
 
-![Global Warming Levels Process](images/warming-levels-process.png){style="display:block; margin:1rem auto; height:300px; width:100%; object-position:top; object-fit:cover; border-radius:5px;"}
+![Global Warming Levels Process](images/warming_levels_process.png){style="display:block; margin:1rem auto; width:100%; height:auto; border-radius:5px;"}
+*Global Warming Levels Process.*
 
 ### Conclusions
 

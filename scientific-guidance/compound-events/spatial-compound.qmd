@@ -1,0 +1,22 @@
+---
+title: "Spatially Compounding Events"
+aliases:
+  - /compound-events/spatial-compound
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-08-28"
+date-modified: &date-modified "2026-08-28"
+citation:
+  publisher: "Cal-Adapt"
+  issued: *date-modified
+format:
+  html: default
+  pdf: default
+resources:
+  - figures/html/
+---
+
+Spatially compounding events
+
+Example: High Wind + High Precipitation

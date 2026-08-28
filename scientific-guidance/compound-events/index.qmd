@@ -1,0 +1,39 @@
+---
+title: "Compound Events"
+aliases:
+  - /compound-events
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-08-28"
+date-modified: &date-modified "2026-08-28"
+citation:
+  publisher: "Cal-Adapt"
+  issued: *date-modified
+format:
+  html: default
+  pdf: default
+---
+
+Change this to be less about the tools, more about the purpose and overall goals to build trusted resource to identify, understand, and report on compound events. 
+
+
+TO do: description of compound events
+
+TO Do: Description of the finder notebooks; pull from WG9
+
+Finder Notebooks:
+
+- Climate Signals Finder: Identifies climate signals between GWLs for each simulation, such as wet or dry model. 
+- Climate State Finder: Identifies specific states of anomalously high or low periods within a GWL for each simulation. Example: Find 3-month periods with precipitation below the 25th percentile. 
+- Event Finder: Identifies specific events of interest. Events are defined from a percentile, return value, or actual value.  Example: Find events where the daily max temperature exceeds the 98th percentile for Los Angeles. 
+
+
+These tools allow users to: 
+
+- Assess the changes in frequency of compound events under climate change
+- Find specific sequencing of events
+- Find events within normal or extreme weather years
+- Reduce resource intensive runs through climate-informed decision making
+- Incorporate uncertainty into end-user application
+- Climate-informed aggregation of simulations

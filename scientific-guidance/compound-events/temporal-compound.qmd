@@ -1,0 +1,21 @@
+title: "Temporally Compounding"
+aliases:
+  - /compound-events/temporal-compound
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-08-28"
+date-modified: &date-modified "2026-08-28"
+citation:
+  publisher: "Cal-Adapt"
+  issued: *date-modified
+format:
+  html: default
+  pdf: default
+resources:
+  - figures/html/
+---
+
+Concurrent: High humidity + High nighttime temperatures --> heatwave
+Cascading: High wind + High temperature --> wildfire
+Pre-conditioned: High temperature + low precipitation --> drought, heatwave

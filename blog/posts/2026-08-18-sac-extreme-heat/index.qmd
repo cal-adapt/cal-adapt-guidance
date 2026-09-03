@@ -33,7 +33,7 @@ This analysis was produced by the Cal-Adapt Team, led by [Eagle Rock Analytics](
 
 When an extreme event like this occurs, we think it's worth going beyond the headlines: not just describing what happened but grounding it in data. The analysis draws on publicly available climate datasets, including gridded historical observations and downscaled future projections hosted by [Cal-Adapt.org](https://cal-adapt.org/).
 
-Disclaimer: This post is intended for informational and educational purposes to illustrate historical and projected climate hazards. It is not a comprehensive assessment, or a substitute for any hazard mitigation planning. To see the site's full disclaimer on how to interpret and apply this material, please review our **[full disclaimer](/about/our-project#disclaimer) for more information.**
+Disclaimer: This post is intended for informational and educational purposes to illustrate historical and projected climate hazards. It is not a comprehensive assessment, or a substitute for any hazard mitigation planning. To see the site's full disclaimer on how to interpret and apply this material, please review our **[full disclaimer](/about/our-project.qmd#disclaimer) for more information.**
 
 ---
 

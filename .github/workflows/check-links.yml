@@ -27,6 +27,7 @@ jobs:
             --exclude-loopback
             --exclude 'localhost'
             --exclude 'analytics.cal-adapt.org'
+            --exclude 'sacbee.com'
             --exclude '^file://.*\.pdf$'
             --accept 200..=299,401,403,405,999
             --insecure

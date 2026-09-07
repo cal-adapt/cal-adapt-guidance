@@ -19,3 +19,61 @@ resources:
 Concurrent: High humidity + High nighttime temperatures --> heatwave
 Cascading: High wind + High temperature --> wildfire
 Pre-conditioned: High temperature + low precipitation --> drought, heatwave
+
+## Intro
+one to two paragraphs on what temporally compounding events are,
+with references?
+
+## Tutorial Outline
+
+### 1. Define compound event
+Determine what the components of the compound event is, and which notebook is needed to 
+find the hits for that event.
+
+Event finder:
+Find events that exceed a threshold for a given duration
+- Frequency + duration + variable + threshold
+- Frequency: hour, day, month
+- Duration: consecutive time periods that must exceed threshold
+- Variable: climate variable to exceed threshold
+- Threshold: Choose actual value (e.g., 100°F), percentile (e.g. 90th percentile), or 1-in-X value (e.g. 1-in-10 year value)
+- Other settings: Spatial aggregation, GWL
+
+Climate state finder
+Find periods where the  smoothed variable anomaly relative to baseline exceeds a percentile
+- Frequency: month
+- Duration: consecutive time periods that must exceed anomaly threshold
+- Variable: climate variable to exceed threshold
+- Threshold: High + Low Percentile relative to baseline GWL
+- Other settings: Spatial aggregation, GWL
+
+How to choose:
+Timescales: Climate state finder for monthly data (needs too much memory for higher frequencies)
+
+- Are you looking for events that are anomalous to a baseline period (eg wetter than normal) or 
+that exceed a known threshold (eg precipitation > 1 inch)
+- Example of difference:
+-- in the event finder, identifying months that exceed the 90th percentile max temperature threshold will
+select the hottest months, which will likely predominantly be in the hot season
+-- in the climate state finder, identifying months that exceed the 90th percentile max temperature will
+select months that are especially hot relative to the median baseline temperature for that month
+
+-- in the event finder, selecting 3-month periods below the 90th percentile will likely select
+dry season months, and every month in the 3-month period must exceed the threshold
+-- in the climate state finder, selecting 3-month periods below the 90th percentile will 
+select anomalous dry periods at any time of year, using the smoothed median value of precipitation
+for the 3-month period.
+
+### 2. Use the Finders notebooks to identify compound event components
+- Set up parameters in notebooks
+- Run for each GWl desired
+-- Can set baseline and future as same GWL
+- A parquet file is saved with hits
+
+### 3. Load results and create visualizations
+- Use pandas to load parquet files
+- What's in the files
+- Load files for all GWLs
+- Find times with hits for all desired events
+- Count up hits by GWL
+- Display

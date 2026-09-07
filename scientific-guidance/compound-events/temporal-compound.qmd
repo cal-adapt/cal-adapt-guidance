@@ -16,15 +16,33 @@ resources:
   - figures/html/
 ---
 
+
+
+## What are temporally compounding events?
+In a compound event, a hazard is caused by the combined effects of multiple climate and/or weather phenomena (1).
+The phenomena contributing to the compound event may be concurrent or separated in time (pre-conditioned).
+The constituent events may or may not be extreme events in their own right (2). Compound events may also 
+be influenced by large-scale drivers such as ENSO or global warming (1). Impacts from compound events
+can affect the natural environment, infrastructure, human health, and more.
+
+### Examples
+A *concurrent compound event* features multiple events that occur simultaneously to create an impact.
+For example, the occurence of high humidity + high nighttime temperatures during a heatwave can
+combine to have a large impact on human health.
+
+In a *cascading compound event*, there is a succession of events that combine to create new hazards
+with their own downstream effects. For example, the combination of high winds and high temperatures
+can lead to a wildfire.
+
+In a *pre-conditioned compound event*, the impacts are intensified by prior conditions that underly
+further events. For example, the impacts of hot temperatures in a heat wave can be amplified by
+pre-existing drought.
+
 Concurrent: High humidity + High nighttime temperatures --> heatwave
 Cascading: High wind + High temperature --> wildfire
 Pre-conditioned: High temperature + low precipitation --> drought, heatwave
 
-## Intro
-one to two paragraphs on what temporally compounding events are,
-with references?
-
-## Tutorial Outline
+## Tutorial: Analyze an X + Y event
 
 ### 1. Define compound event
 Determine what the components of the compound event is, and which notebook is needed to 
@@ -77,3 +95,8 @@ for the 3-month period.
 - Find times with hits for all desired events
 - Count up hits by GWL
 - Display
+
+
+# References
+1. A typology of compound weather and climate events, Zscheischler et al. 2020, doi: 10.1038/s43017-020-0060-z
+2. MANAGING THE RISKS OF EXTREME EVENTS AND DISASTERS TO ADVANCE CLIMATE CHANGE ADAPTATION, IPCC 2012

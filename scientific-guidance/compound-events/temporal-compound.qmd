@@ -25,7 +25,7 @@ The constituent events may or may not be extreme events in their own right (2). 
 be influenced by large-scale drivers such as ENSO or global warming (1). Impacts from compound events
 can affect the natural environment, infrastructure, human health, and more.
 
-### Examples
+### Types of temporally compounding events
 A *concurrent compound event* features multiple events that occur simultaneously to create an impact.
 For example, the occurence of high humidity + high nighttime temperatures during a heatwave can
 combine to have a large impact on human health.

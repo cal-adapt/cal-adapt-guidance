@@ -10,7 +10,5 @@ categories: [Announcement]
 
 Analytics Engine team members will be at AGU24 in Washington D.C. on December 9-13, 2024! If you are attending, we encourage you to visit the following posters and sessions:
 
-- [Navigating practice, science, and regulation – a regional framework for climate services based on lessons from the Cal-Adapt: Analytics Engine](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1569931)
 - [Risk analysis for the energy sector via the Cal-Adapt Analytics Engine: A co-production approach for tailored climate analytics in a warming world](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1759187)
 - [Co-producing guidance on the use of climate data for scientific and decision applications](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1518947)
-- [Climate Information and Services: A Whole-of-Government Approach](https://agu.confex.com/agu/agu24/meetingapp.cgi/Session/228242)

@@ -8,7 +8,7 @@ description: "A `climakitae` bug affecting custom global warming levels has been
 categories: [Announcement]
 ---
 
-**TL;DR:** A bug in `climakitae` affected global warming level (GWL) data retrieval for custom GWLS (values other than 0.8, 1.0, 1.2, 1.5, 2.0, 2.5, 3.0, 4.0 °C). The affected code used a lookup table based on the wrong reference period, which could shift output values by 0.5°C. The bug has been fixed. Users who generated custom Climate Profiles with a non-standard GWL should upgrade their install version of `climakitae` and regenerate those profiles. Pre-generated Cal-Adapt data products, including the Climate Profiles available through the Data Download Tool, are not affected.
+**TL;DR:** A bug in `climakitae` affected global warming level (GWL) data retrieval for custom GWLS (values other than 0.8, 1.0, 1.2, 1.5, 2.0, 2.5, 3.0, 4.0 °C); profiles using the standard GWLs were not affected. The affected code used a lookup table based on the wrong reference period, which could shift output values by 0.5°C. The bug has been fixed. Users who generated custom Climate Profiles with a non-standard GWL should upgrade their install version of `climakitae` and regenerate those profiles. Pre-generated Cal-Adapt data products, including the Climate Profiles available through the Data Download Tool and profiles generated at standard GWLs on the Analytics Engine JupyterHub, are not affected.
 
 ## What happened
 

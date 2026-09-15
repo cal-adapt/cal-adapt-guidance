@@ -1,26 +1,26 @@
 ---
-title: "Important Update for Custom Climate Profiles Using Non-Standard Warming Levels"
+title: "Important Update for Data Generated Using Custom Warming Levels"
 author:
   - name:
-      literal: "Cal-Adapt"
+      literal: "Neil Schroeder"
 date: "2026-09-15"
-description: "A climakitae bug affecting custom, non-standard global warming levels has been fixed."
+description: "A `climakitae` bug affecting custom global warming levels has been fixed."
 categories: [Announcement]
 ---
 
-**TL;DR:** A bug in _climakitae_ affected custom global warming level (GWL) requests that were not among the standard precomputed values. The affected code used a lookup table based on the wrong reference period, which could shift the selected GWL window by roughly 0.5°C. The bug has been fixed. Users who generated custom Climate Profiles with a non-standard GWL should upgrade _climakitae_ and regenerate those profiles. Pre-generated Cal-Adapt data products, including the Climate Profiles available through the Data Download Tool, are not affected.
+**TL;DR:** A bug in `climakitae` affected global warming level (GWL) data retrieval for custom GWLS (values other than 0.8, 1.0, 1.2, 1.5, 2.0, 2.5, 3.0, 4.0 °C). The affected code used a lookup table based on the wrong reference period, which could shift output values by 0.5°C. The bug has been fixed. Users who generated custom Climate Profiles with a non-standard GWL should upgrade their install version of `climakitae` and regenerate those profiles. Pre-generated Cal-Adapt data products, including the Climate Profiles available through the Data Download Tool, are not affected.
 
 ## What happened
 
-The ClimateData interface used the wrong time-indexed lookup file when determining the center year for a custom GWL such as 1.7°C or 2.3°C. The lookup used a 1981–2010 reference period instead of the 1850–1900 pre-industrial reference period used to define global warming levels.
+The `ClimateData` interface used the wrong time-indexed lookup file when determining the center year for a custom GWL such as 1.7°C or 2.3°C. The lookup used a 1981–2010 reference period instead of the 1850–1900 pre-industrial reference period used to define global warming levels.
 
-This affected the fallback calculation for warming levels that are not present in the standard lookup table. The standard precomputed values are 0.8, 1.0, 1.2, 1.5, 2.0, 2.5, 3.0, and 4.0°C. For an affected custom request, _climakitae_ could select a 30-year data window corresponding to a GWL that was approximately 0.5°C different from the requested level. The resulting profile was therefore based on the wrong warming-level period, rather than simply having a small numerical rounding difference.
+This affected the fallback calculation for warming levels that are not present in the standard lookup table. The standard precomputed values are 0.8, 1.0, 1.2, 1.5, 2.0, 2.5, 3.0, and 4.0°C. For an affected custom request, `climakitae` could select a 30-year data window corresponding to a GWL that was approximately 0.5°C different from the requested level. The resulting profile was therefore based on the wrong warming-level period, rather than simply having a small numerical rounding difference.
 
 The issue affected custom profile workflows that use the `ClimateData` interface, including custom Typical Meteorological Year and Extreme Meteorological Year profiles, when a non-standard GWL was requested. It did not affect requests using the standard precomputed GWL values.
 
 ## What users should do
 
-Upgrade to the latest version of _climakitae_:
+Upgrade to the latest version of `climakitae`:
 
 ```bash
 pip install --upgrade climakitae

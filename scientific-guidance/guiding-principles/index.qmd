@@ -10,6 +10,7 @@ author:
   - name: "Andrew Jones"
 date: "2026-07-15"
 date-modified: &date-modified "2026-07-16"
+subtitle: '[<i class="bi bi-box-arrow-up-right"></i> Read this as a PDF](https://analytics.cal-adapt.org/assets/pdfs/Cal-Adapt_GuidingPrinciples.pdf){target="_blank"}'
 citation:
   publisher: "Cal-Adapt"
   issued: *date-modified

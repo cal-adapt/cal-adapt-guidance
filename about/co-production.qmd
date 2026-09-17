@@ -1,5 +1,6 @@
 ---
 title: "Our Co-Production Process"
+subtitle: '[<i class="bi bi-box-arrow-up-right"></i> Read the related scientific publication](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025EF005959){target="_blank"}'
 citation: false
 format:
   html: default

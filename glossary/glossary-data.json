@@ -120,9 +120,9 @@
     "definition": "A mathematical model that represents the physical processes in the atmosphere, ocean, cryosphere, and land surface. GCMs are used to simulate the climate system and predict future climate conditions based on different scenarios of greenhouse gas emissions and other factors."
   },
   {
-    "term": "Global warming level",
+    "term": "Global warming level (GWL)",
     "slug": "global-warming-level",
-    "definition": "A global warming level is defined as the difference in the global mean air temperature from the historical period (defined on the Analytics Engine as the pre-industrial period 1850-1900). Global warming levels are frequently used in international policy discussions (for example, goals to constrain global warming to 1.5 or 2 degrees Celsius). The standard global warming levels are 1.5°C, 2°C, 3°C, and 4°C."
+    "definition": "A global warming level (GWL) is defined as the difference in the global mean air temperature from the historical period (defined on the Analytics Engine as the pre-industrial period 1850-1900). Global warming levels are frequently used in international policy discussions (for example, goals to constrain global warming to 1.5 or 2 degrees Celsius). The standard global warming levels are 1.5°C, 2°C, 3°C, and 4°C. More details can be found in the [GWL methods white paper](https://analytics.cal-adapt.org/assets/pdfs/Cal-Adapt-GWL-White-Paper.pdf)."
   },
   {
     "term": "Goodness of fit",

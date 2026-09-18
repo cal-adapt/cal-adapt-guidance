@@ -21,9 +21,9 @@ format:
 <summary class="box-title">Important Considerations</summary>
 
 - Conducting credibility assessments is a complex scientific endeavor, so users should identify and rely on existing assessments where possible, such as:
-  - Peer-reviewed publications and/or guidance materials produced for the datasets (e.g. LOCA2 or [WRF datasets](https://www2.mmm.ucar.edu/wrf/users/wrf_users_guide/build/html/index.html))
+  - Peer-reviewed publications and/or guidance materials produced for the datasets (e.g. [LOCA2](http://doi.org/10.1175/JHM-D-22-0194.1) or [WRF datasets](https://www2.mmm.ucar.edu/wrf/users/wrf_users_guide/build/html/index.html))
   - Broader climate assessments (e.g. state assessments, National Climate Assessment, or IPCC)
-  - Credibility assessments for the region(s) of interest (e.g. [Krantz et al. 2021](https://www.energy.ca.gov/sites/default/files/2022-09/20220907_CDAWG_MemoEvaluating_GCMs_EPC-20-006_Nov2021-ADA.pdf), [CA DWR 2015](https://water.ca.gov/-/media/DWR-Website/Web-Pages/Programs/All-Programs/Climate-Change-Program/Climate-Program-Activities/Files/Reports/Perspectives-Guidance-Climate-Change-Analysis.pdf), [Pierce et al. 2016](https://loca.ucsd.edu/~pierce/IEPR_Clim_proj_using_LOCA_and_VIC_2016-06-13b.pdf), [Rupp et al. 2013](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/jgrd.50843))
+  - Credibility assessments for the region(s) of interest (e.g. [Krantz et al. 2021](https://www.energy.ca.gov/sites/default/files/2022-09/20220907_CDAWG_MemoEvaluating_GCMs_EPC-20-006_Nov2021-ADA.pdf), [CCTAG DWR, 2015](https://water.ca.gov/-/media/DWR-Website/Web-Pages/Programs/All-Programs/Climate-Change-Program/Climate-Program-Activities/Files/Reports/Perspectives-Guidance-Climate-Change-Analysis.pdf), [Pierce et al. 2016](https://loca.ucsd.edu/~pierce/IEPR_Clim_proj_using_LOCA_and_VIC_2016-06-13b.pdf), [Rupp et al. 2013](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/jgrd.50843))
 - Critically reviewing existing credibility assessments for a user context can also be a complex endeavor, so this needs to be done carefully and intentionally, and in some cases might need consultation with experts.
 - While critically reviewing credibility assessments, be aware that:
   - Credibility assessments can be at a dataset-level and/or at a model-level.

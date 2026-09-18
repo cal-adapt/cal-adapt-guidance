@@ -10,12 +10,12 @@ format:
 - Identify the people within your organization who should be involved in climate data needs assessments for each application.
 - Determine the type of analyses you would like to conduct with the climate data (e.g. exploratory analyses to examine general trends or patterns, or explanatory analyses where data needs to be used to test a hypothesis or answer specific questions), and what question you would like to answer through the analyses.
 - For each application (with the relevant people) develop a list of detailed data needs including at the minimum:
-  - Data information including climate variables or metrics (see [Box 1](#box-1))
+  - Climate variables or metrics (see [Box 1](#box-1))
   - Spatial resolution and extent (see [Box 2](#box-2))
   - Temporal resolution, sampling window, and timeframe (see [Box 2](#box-2))
-  - Historical scenarios (see [EPRI's guide to choosing climate projections](https://apps.epri.com/climate-data-user-guide/en/choosing-climate-projections.html))
-  - Future scenarios (see [EPRI's guide to choosing climate projections](https://apps.epri.com/climate-data-user-guide/en/choosing-climate-projections.html))
-  - Preference for downscaling or bias-adjustment approach, if any (see [EPRI's guide to climate model downscaling](https://apps.epri.com/climate-data-user-guide/en/climate-model-downscaling.html))
+  - [Historical](https://apps.epri.com/climate-data-user-guide/en/choosing-climate-projections.html) scenarios
+  - [Future](https://apps.epri.com/climate-data-user-guide/en/choosing-climate-projections.html) scenarios
+  - Preference for [downscaling](https://apps.epri.com/climate-data-user-guide/en/climate-model-downscaling.html) or [bias-adjustment](https://analytics.cal-adapt.org/glossary/index.html#bias-correction) approach (if any)
   - Any unknowns in the above categories that cannot be determined a-priori
 - Determine the risk and uncertainty tolerance for each application (e.g. decisions related to infrastructure resilience could be high-risk with lower uncertainty tolerance, whereas broad regional vulnerability analyses might have lower risk and higher uncertainty tolerance for the climate data).
 - Evaluate the technical capabilities of personnel to conduct climate data analyses.

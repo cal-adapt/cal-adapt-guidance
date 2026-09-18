@@ -155,6 +155,11 @@
     "definition": "The Kolmogorov-Smirnoff test for nonparametric data evaluates the equality of two different one-dimensional distributions. The KS test can be used to determine when statistical significance is achieved when two samples are sufficiently different from one another."
   },
   {
+    "term": "Land use exclusion",
+    "slug": "land-use-exclusion",
+    "definition": "A restriction that makes a location unsuitable or unavailable for development, such as protected land, steep terrain, urbanized areas, or open water."
+  },
+  {
     "term": "Localization",
     "slug": "localization",
     "definition": "Statistical method to produce time-series of future weather at a point-location where a weather station is presently in operation. Localization involves bias adjusting gridded climate model output, based on observations from the weather station."
@@ -198,6 +203,16 @@
     "term": "Projection",
     "slug": "projection",
     "definition": "A potential future evolution of a quantity or set of quantities, often associated with climate variables such as temperature or sea level. Unlike predictions, projections do not imply certainty but rather illustrate a range of possible outcomes based on different assumptions and conditions."
+  },
+  {
+    "term": "Reference production",
+    "slug": "reference-production",
+    "definition": "The baseline energy generation against which individual days are compared when identifying resource drought days."
+  },
+  {
+    "term": "Resource drought",
+    "slug": "resource-drought",
+    "definition": "A period during which the generation potential of a renewable energy source falls well below what is typical for that time of year. A solar resource drought refers to reduced photovoltaic generation; causes can include cloudiness, wildfire smoke, and/or high temperatures. A wind resource drought refers to reduced wind power generation caused by still or calm conditions. Resource droughts are identified relative to a location's reference production."
   },
   {
     "term": "Return period",
@@ -245,7 +260,7 @@
     "definition": "A Python package consisting of a set of functions [tools] for climate data operations, analyses, and visualizations."
   },
   {
-    "term": "Typical meteorological year",
+    "term": "Typical meteorological year (TMY)",
     "slug": "typical-meteorological-year",
     "definition": "A typical meteorological year ([TMY](https://nsrdb.nlr.gov/data-sets/tmy)) is a complete set of meteorological variables at a given location for every hour in a year. TMYs are used in some building and energy system modeling applications to describe typical annual weather conditions at a specific location."
   },
@@ -268,6 +283,11 @@
     "term": "Working group",
     "slug": "working-group",
     "definition": "In the context of the Analytics Engine, a working group refers to a focused discussion involving a diverse group of climate scientists, social scientists, energy sector partners, platform developers, data users, and other partners."
+  },
+  {
+    "term": "Extreme meteorological year (XMY)",
+    "slug": "extreme-meteorological-year",
+    "definition": "A one-year climate profile that provides the same set of weather variables as a Typical Meteorological Year (TMY), but intentionally preserves or characterizes extreme weather conditions rather than median ones. The Analytics Engine provides two standardized XMY approaches, a Shock XMY and a Persistence XMY, tailored to different planning use cases and detailed in the [XMY methods white paper](https://analytics.cal-adapt.org/assets/pdfs/Cal-Adapt-XMY-Methods-White-Paper.pdf)."
   },
   {
     "term": "Zarr",

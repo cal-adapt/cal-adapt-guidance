@@ -131,6 +131,8 @@ The principles are presented sequentially and in a step-by-step manner, however 
 
 Additionally, this section does not include principles on how to conduct specific analyses downstream of the climate data, i.e. how to do climate risk assessments or a health impact assessment. It is meant mainly to help users understand how to pick and choose the right data and analysis approaches for analyzing the climate hazards of interest.
 
+Outside of this website, you can also access the Guiding Principles as a formal report, published on Zenodo with a citable DOI: https://doi.org/10.5281/zenodo.22680032
+
 
 ## Acknowledgments
 

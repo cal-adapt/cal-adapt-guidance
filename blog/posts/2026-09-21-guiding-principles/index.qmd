@@ -13,12 +13,14 @@ We're excited to share that the Guiding Principles on the Use of Climate Data ha
 This document is the product of two and half years of iterative work among scientists on the Cal-Adapt: Analytics Engine project, shaped along the way by regular feedback from key climate data users, including energy utilities. It offers a practical, step-by-step process for working with climate data across a wide range of applications, from identifying data needs all the way through to reporting results. 
 
 You can access the Guiding Principles in two places:
-- On our website, as part of our Scientific Guidance section: https://analytics.cal-adapt.org/scientific-guidance/guiding-principles/
-- As a formal report, published on Zenodo with a citable DOI: https://doi.org/10.5281/zenodo.22680032
+
+- On our website, as part of our Scientific Guidance section: <https://analytics.cal-adapt.org/scientific-guidance/guiding-principles/>
+- As a formal report, published on Zenodo with a citable DOI: <https://doi.org/10.5281/zenodo.22680032>
 
 ## What's in the Guiding Principles?
 
 The document lays out seven principles, organized sequentially to walk users through the full lifecycle of a climate data analysis. Each principle includes a plain-language description of what to do, paired with an "Important Considerations" callout that goes deeper into the rationale, background, and do's and don'ts: 
+
 1. Scope and identify needs
 2. Catalog available data
 3. Screen available datasets against requirements

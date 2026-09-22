@@ -11,6 +11,7 @@ categories: [Announcement]
 "Climate Data and Analytics For California's Ambitious Climate And Energy Goals: A Virtual Workshop For Potential Users" will be occurring online on September 28th and 29th, 2021.
 
 Agenda:
+
 - Sept 29, 9-11am: Discussion on identification and prioritization of use-cases/applications for climate data
 - Sept 29, 11-2pm: Deep-dive into a select few use-cases or applications for climate data
 - Sept 30, 9-11am: Deep-dive into a select few use-cases or applications for climate data

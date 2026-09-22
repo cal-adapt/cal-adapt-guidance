@@ -17,6 +17,7 @@ You can access the Guiding Principles in two places:
 - On our website, as part of our Scientific Guidance section: <https://analytics.cal-adapt.org/scientific-guidance/guiding-principles/>
 - As a formal report, published on Zenodo with a citable DOI: <https://doi.org/10.5281/zenodo.22680032>
 
+
 ## What's in the Guiding Principles?
 
 The document lays out seven principles, organized sequentially to walk users through the full lifecycle of a climate data analysis. Each principle includes a plain-language description of what to do, paired with an "Important Considerations" callout that goes deeper into the rationale, background, and do's and don'ts: 
@@ -29,6 +30,6 @@ The document lays out seven principles, organized sequentially to walk users thr
 6. Analyze data and summarize results
 7. Evaluation and document the analysis
 
-The principles are menat to be flexible rather than prescriptive. Users can enter, exist, or reorder steps based on their own content, and the process is designed to be iterative. The guidance is broadly applicable across sectors and use cases, though it is noted that specific applications will often require deeper, more nuanced treatment of individual principles. This guidance focuses on choosing and analyzing climate data; it does not cover downstream analyses like climate risk or health impact assessments. 
+The principles are meant to be flexible rather than prescriptive. Users can enter, exit, or reorder steps based on their own content, and the process is designed to be iterative. The guidance is broadly applicable across sectors and use cases, though it is noted that specific applications will often require deeper, more nuanced treatment of individual principles. This guidance focuses on choosing and analyzing climate data; it does not cover downstream analyses like climate risk or health impact assessments. 
 
 This work was developed by Kripa Jagannathan, Nancy Freitas, Victoria Ford, Will Krantz, Justine Bui, Owen Doherty, and Andrew Jones, with support through the Electric Program Investment Charge (EPIC), administered by the California Energy Commission under the auspices of the California Public Utilities Commission. 

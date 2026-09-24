@@ -1,0 +1,137 @@
+---
+title: "Announcing the Deprecation of `get_data()`"
+author:
+  - name:
+      literal: "Neil Schroeder"
+date: "2026-09-15"
+description: "A modern, consolidated data access interface (`ClimateData`) will replace the, now legacy, `get_data()` interface for pulling data from cadcat."
+categories: [Announcement]
+---
+
+# Moving to ClimateData
+
+[`climakitae`](https://github.com/cal-adapt/climakitae) is moving to one supported
+data-access interface: [`ClimateData`](https://cal-adapt.github.io/climakitae/dev/api/climate-data/).
+The older data-access methods have served us well, but maintaining multiple interfaces
+has made it harder to improve the library, document the right patterns, and keep
+behavior consistent.
+
+We are beginning the process of retiring the legacy interface (`get_data()`). The goal is to
+remove the remaining legacy data-access methods in `2.0.0`, targeted for Q1 or Q2
+2027.
+
+## Why make this change?
+
+The newer interface gives us a clearer foundation for future work:
+
+- Queries use catalog-native names and a consistent fluent API.
+- Data transformations are explicit processors in the query pipeline.
+- Validation and data access are handled in one architecture.
+- Documentation and examples can point to one supported way to retrieve data.
+
+This is a maintenance change as much as an API change. We want the development team to
+spend their energy on innovative features and improvements, not maintenance.
+
+## What is changing?
+
+The migration work is happening in stages.
+
+Legacy entrypoints such as these are deprecated and will be removed in `2.0.0`:
+
+- [`DataParameters.retrieve()`](https://cal-adapt.github.io/climakitae/dev/legacy/data-interface/#climakitae.core.data_interface.DataParameters.retrieve)
+- [`get_data_options()`](https://cal-adapt.github.io/climakitae/dev/legacy/data-interface/#climakitae.core.data_interface.get_data_options)
+- [`get_subsetting_options()`](https://cal-adapt.github.io/climakitae/dev/legacy/data-interface/#climakitae.core.data_interface.get_subsetting_options)
+- [`get_data()`](https://cal-adapt.github.io/climakitae/dev/legacy/data-interface/#climakitae.core.data_interface.get_data)
+
+They now emit `DeprecationWarning` messages that point to the replacement
+interface and the removal timeline.
+
+Several older analysis workflows have already been removed because their
+functionality is covered by the newer architecture or because they are no
+longer maintained:
+
+- The legacy [`WarmingLevels` class](https://github.com/cal-adapt/climakitae/blob/v1.5.9/climakitae/explore/warming.py#L64) 
+- The [CmipOpt](https://github.com/cal-adapt/climakitae/blob/v1.5.9/climakitae/explore/uncertainty.py#L18) uncertainty workflow
+- The legacy [TimeSeries](https://github.com/cal-adapt/climakitae/blob/v1.5.9/climakitae/explore/timeseries.py#L14) workflow
+- The legacy [threshold data-loading wrapper](https://github.com/cal-adapt/climakitae/blob/v1.5.9/climakitae/explore/thresholds.py#L7)
+
+`ClimateData`'s underlying [processors](https://cal-adapt.github.io/climakitae/dev/api/processors/) for warming-level and threshold-processing capabilities
+remain available. Some shared internal utilities and higher-level workflows
+still need follow-up migration work and are not being removed all at once.
+
+## What does this mean for users?
+
+For users who already use [ClimateData](https://cal-adapt.github.io/climakitae/dev/api/climate-data/), there is no change. Your existing queries
+are where the project is headed, and new features will continue to target that API.
+
+For users who still use the legacy interface, migration is required before the
+`2.0.0` release in Q1 or Q2 2027. The main change is replacing the old
+GUI-shaped arguments with catalog-native query methods and processors.
+
+### Before
+
+```python
+from climakitae.core.data_interface import get_data
+
+data = get_data(
+    variable="Air Temperature at 2m",
+    resolution="9 km",
+    timescale="daily",
+    downscaling_method="Dynamical",
+    scenario=["Historical Climate", "SSP 3-7.0"],
+    area_subset="CA counties",
+    cached_area=["Los Angeles County"],
+)
+```
+
+### After
+
+```python
+from climakitae import ClimateData
+
+data = (
+    ClimateData()
+    .catalog("cadcat")
+    .activity_id("WRF")
+    .institution_id("UCLA")
+    .experiment_id(["historical", "ssp370"])
+    .table_id("day")
+    .grid_label("d02")
+    .variable_id("t2")
+    .processes({"clip": "Los Angeles County"})
+    .get()
+)
+```
+
+The migration is more than a spelling change: legacy values such as `"9 km"`
+and `"Dynamical"` become catalog values such as `"d02"` and `"WRF"`. The
+[Legacy to ClimateData migration guide](https://cal-adapt.github.io/climakitae/migration/legacy-to-climate-data/) shows the
+full mapping and more examples.
+
+## When should I migrate?
+
+Please migrate legacy data-access code during the `1.x` release line rather
+than waiting for `2.0.0`. The target removal date is Q1 or Q2 2027, and warning
+messages are intended to give applications, notebooks, and downstream tools
+time to move.
+
+A practical migration path is:
+
+1. Replace imports from `climakitae.core.data_interface` with
+   `from climakitae import ClimateData`.
+2. Replace `.variable(...)` with `.variable_id(...)` if you are using `ClimateData`.
+3. Translate legacy resolution, timescale, scenario, and downscaling values to
+   `grid_label`, `table_id`, `experiment_id`, and `activity_id`.
+4. Replace area-selection arguments with the `clip` processor.
+5. Run your existing analysis and compare a small result against the legacy
+   workflow before switching production code.
+
+## What stays the same?
+
+The climate data, catalogs, and scientific concepts are not changing. The goal is to 
+preserve the results users need while making the route to those results more consistent and maintainable.
+
+Some specialized legacy analysis workflows may need their own migration plan.
+We will document those changes separately.
+
+For current query examples, start with the [ClimateData overview](https://cal-adapt.github.io/climakitae/dev/climate-data-interface/), our [migration guide](https://cal-adapt.github.io/climakitae/dev/migration/legacy-to-climate-data/), or our [example notebooks](https://cal-adapt.github.io/climakitae/dev/notebook-gallery/)

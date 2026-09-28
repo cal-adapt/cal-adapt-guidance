@@ -359,7 +359,7 @@ Given this systematic issue, it is believed that future predictions of climate w
 - We will publicly share our findings, recommendations, and potential approaches by listing them on the Cal-Adapt: Analytics Engine Website, Guidance Materials, and where appropriate, incorporate into the Jupyter Notebooks and `climakitae` package.
 
 ### How To Get Further Help
-Energy sector partners may contact analytics@cal-adapt.org for further information and support in using these projections. Non-energy sector users should contact the Governor's Office of Land Use and Climate Innovation for climate services.
+Energy sector partners may contact support@cal-adapt.org for further information and support in using these projections. Non-energy sector users should contact the Governor's Office of Land Use and Climate Innovation for climate services.
 
 
 ## External and Private Data
@@ -368,4 +368,4 @@ Users are provided with a private directory space in the JupyterHub as a workspa
 
 ## Contributing Data
 
-The Analytics Engine team welcomes users to submit data for consideration for inclusion in the [Data Catalog](../data-catalog.qmd). Users may also request the addition of external datasets to the platform for use in the cloud computing environment. These requests will be considered on a case-by-case basis depending on size, quality, and relationship to other funded work. All datasets must comply with CF conventions, as outlined in our [Metadata Standards](metadata-standards.qmd). Please submit requests via email to analytics@cal-adapt.org.
+The Analytics Engine team welcomes users to submit data for consideration for inclusion in the [Data Catalog](../data-catalog.qmd). Users may also request the addition of external datasets to the platform for use in the cloud computing environment. These requests will be considered on a case-by-case basis depending on size, quality, and relationship to other funded work. All datasets must comply with CF conventions, as outlined in our [Metadata Standards](metadata-standards.qmd). Please submit requests via email to support@cal-adapt.org.

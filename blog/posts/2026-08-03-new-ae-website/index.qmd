@@ -20,4 +20,4 @@ Please update any bookmarks, saved links, or citations to point to the new site.
 
 Data access, the Analytics Engine JupyterHub, and climakitae workflows are unaffected. This is a website update only. 
 
-Take a look around and let us know what you think at analytics@cal-adapt.org! 
+Take a look around and let us know what you think at support@cal-adapt.org! 

@@ -3,8 +3,8 @@ title: "Announcing the Deprecation of `get_data()`"
 author:
   - name:
       literal: "Neil Schroeder"
-date: "2026-09-15"
-description: "A modern, consolidated data access interface (`ClimateData`) will replace the, now legacy, `get_data()` interface for pulling data from cadcat."
+date: "2026-09-24"
+description: "`climakitae`'s legacy data access interface (`get_data()`) is being deprecated in favor of a modern, consolidated apporach (`ClimateData`)."
 categories: [Announcement]
 ---
 
@@ -18,7 +18,7 @@ behavior consistent.
 
 We are beginning the process of retiring the legacy interface (`get_data()`). The goal is to
 remove the remaining legacy data-access methods in `2.0.0`, targeted for Q1 or Q2
-2027.
+2027. A migration guide is available to help users transition from the legacy interface to `ClimateData`: [Legacy to ClimateData migration guide](https://cal-adapt.github.io/climakitae/dev/migration/legacy-to-climate-data/).
 
 ## Why make this change?
 
@@ -105,7 +105,7 @@ data = (
 
 The migration is more than a spelling change: legacy values such as `"9 km"`
 and `"Dynamical"` become catalog values such as `"d02"` and `"WRF"`. The
-[Legacy to ClimateData migration guide](https://cal-adapt.github.io/climakitae/migration/legacy-to-climate-data/) shows the
+[Legacy to ClimateData migration guide](https://cal-adapt.github.io/climakitae/dev/migration/legacy-to-climate-data/) shows the
 full mapping and more examples.
 
 ## When should I migrate?
@@ -135,3 +135,7 @@ Some specialized legacy analysis workflows may need their own migration plan.
 We will document those changes separately.
 
 For current query examples, start with the [ClimateData overview](https://cal-adapt.github.io/climakitae/dev/climate-data-interface/), our [migration guide](https://cal-adapt.github.io/climakitae/dev/migration/legacy-to-climate-data/), or our [example notebooks](https://cal-adapt.github.io/climakitae/dev/notebook-gallery/)
+
+## More Questions?
+
+If you have more questions, please stop by the [open discussion page](https://github.com/cal-adapt/climakitae/discussions/818) and one of our maintainers will be happy to help.

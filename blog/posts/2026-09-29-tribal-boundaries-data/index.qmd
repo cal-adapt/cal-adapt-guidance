@@ -26,7 +26,7 @@ Tribal boundary data is sourced from the [U.S. Department of Interior Bureau of 
 
 ## How to Use
 
-The tribal boundaries layer can be toggled on and off like any other geographic reference layer in `climakitae`. Simply select the layer from the available boundary options to display tribal territories on your map.
+The tribal boundaries can be used for clipping like any other geographic reference layer in `climakitae`. Simply specify the boundary of choice from the available boundary options to clip your analysis area to a tribal territory.
 
 ## Important Considerations
 

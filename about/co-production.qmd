@@ -16,7 +16,7 @@ The Analytics Engine's intensive co-production engagements began in 2021 through
 Since 2021, the Analytics Engine team has held regular working group meetings to continue user engagement, present work-in-progress, and seek feedback to improve the usability of the Analytics Engine's products. These meetings also provide an avenue for the project team and users to jointly discuss overall project priorities and propose alternatives where desired. In addition to the working group meetings, select energy sector users are engaged on a 1:1 basis. This focused engagement enables technical deliberations on specific topics and usability testing of newly developed data and tools. The team also offers occasional webinars and written update reports to reach broader audiences. Overall, the goal of this co-production approach is to ensure that the Analytics Engine not only helps energy sector data users analyze climate data effectively (through data and analytics), but also guides them on the most appropriate ways to use climate data for planning and decisions (through guidance and other learning-oriented products).
 
 ## Get Involved
-Energy sector climate data users in California interested in joining structured working group discussions are encouraged to contact analytics@cal-adapt.org to learn more about the mutual responsibilities, expectations, and timelines for participation.
+Energy sector climate data users in California interested in joining structured working group discussions are encouraged to contact support@cal-adapt.org to learn more about the mutual responsibilities, expectations, and timelines for participation.
 
 ## Related Resources
 

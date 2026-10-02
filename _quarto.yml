@@ -70,7 +70,7 @@ website:
       ![](/assets/bear.png){width="24px"} &nbsp;&copy; 2026 Cal-Adapt Analytics Engine
     right:
       - icon: envelope
-        href: "mailto:analytics@cal-adapt.org"
+        href: "mailto:support@cal-adapt.org"
         aria-label: Contact Us
       - icon: github
         href: "https://github.com/cal-adapt"

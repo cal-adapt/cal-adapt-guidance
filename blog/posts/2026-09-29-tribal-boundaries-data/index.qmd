@@ -1,0 +1,42 @@
+---
+title: "Tribal Boundaries in climakitae"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-09-29"
+description: "Climakitae now includes tribal and Indigenous territorial boundaries as an option for clipping in climate analyses."
+categories: [Announcement]
+---
+
+# New Feature: Tribal Boundaries in climakitae
+
+We're excited to announce that [`climakitae`](https://github.com/cal-adapt/climakitae) now includes tribal and Indigenous territorial boundaries as an available data layer for your climate analysis.
+
+## What's New
+
+You can now visualize and analyze climate data within the geographic context of tribal lands and territories. This feature enables:
+
+- Better geographic context for climate adaptation planning relevant to tribal communities
+- Enhanced analysis by overlaying climate projections with tribal boundaries
+- Improved community engagement by centering tribal lands in climate assessment workflows
+
+## Data Source
+
+Tribal boundary data is sourced from the [U.S. Department of Interior Bureau of Indian Affairs (BIA) GeoSpatial Data Repository](https://biamaps.geoplatform.gov/), the official federal source for recognized tribal territorial information.
+
+## How to Use
+
+The tribal boundaries can be used for clipping like any other geographic reference layer in `climakitae`. Simply specify the boundary of choice from the available boundary options to clip your analysis area to a tribal territory.
+
+## Important Considerations
+
+While this data provides valuable geographic reference information, we encourage users to:
+
+- Consult directly with tribal nations for decision-making that affects their territories
+- Recognize that map data represents one source of information about tribal interests and governance
+- Understand that representation varies, with some communities having greater institutional capacity to engage with climate planning processes
+- Verify specific boundary information with official tribal documentation when needed for important decisions
+
+Please see our full guidance on [external data boundaries](https://analytics.cal-adapt.org/about/our-project.html) for more information on how to responsibly use this layer in your analysis.
+
+**Have feedback or questions about this feature?** We'd love to hear from you. Please contact us or open an issue on our [GitHub repository](https://github.com/cal-adapt/climakitae/issues).

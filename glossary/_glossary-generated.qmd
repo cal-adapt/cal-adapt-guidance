@@ -20,7 +20,7 @@ A cascading event is a type of compound event that can occur when two or more cl
 
 ## CF conventions {#cf-conventions}
 
-[Metadata conventions](https://cfconventions.org/) for formatting and documenting netCDF format data, to ensure standardized reporting and variable naming across different data sources. CF stands for "climate and forecast". Data supported on the Analytics Engine adhere to CF conventions.
+[Metadata conventions](https://cfconventions.org/) for formatting and documenting netCDF format data, to ensure standardized reporting and variable naming across different data sources. CF stands for "climate and forecast". Data supported on Cal-Adapt adhere to CF conventions.
 
 ## Change signal {#change-signal}
 
@@ -56,11 +56,11 @@ A cumulative distribution function (CDF) is a statistical tool that quantifies t
 
 ## Derived variable {#derived-variable}
 
-Derived variables are variables that are computed from one or more other variables. An example is "heating degree days" which uses the air temperature variable as an input. Derived variables expand the available variable list beyond the native variables available within the Analytics Engine data sources.
+Derived variables are variables that are computed from one or more other variables. An example is "heating degree days" which uses the air temperature variable as an input. Derived variables expand the available variable list beyond the native variables available within the Cal-Adapt data sources.
 
 ## Dynamical downscaling {#dynamical-downscaling}
 
-A method to generate fine scale spatial resolution data from coarse scale global climate models using a dynamical regional weather model. The regional model uses the global climate model output as the inputs to generate additional projections. The Analytics Engine hosts dynamically downscaled model output created using the [Weather Research and Forecasting](https://atmos.ucla.edu/alexhall/cmip6-downscaling-using-wrf/) (WRF) model.
+A method to generate fine scale spatial resolution data from coarse scale global climate models using a dynamical regional weather model. The regional model uses the global climate model output as the inputs to generate additional projections. Cal-Adapt hosts dynamically downscaled model output created using the [Weather Research and Forecasting](https://atmos.ucla.edu/alexhall/cmip6-downscaling-using-wrf/) (WRF) model.
 
 ## Effective sample size (ESS) {#effective-sample-size}
 
@@ -73,6 +73,10 @@ A heat metric that represents the cumulative influence of temperatures over mult
 ## Ensemble member {#ensemble-member}
 
 A single simulation or GCM run within a larger set of simulations (referred to as an ensemble) that are generated to assess the uncertainty and variability in climate model projections. Each ensemble member is typically produced by slightly varying the initial conditions, model parameters, or by using different models altogether.
+
+## Extreme meteorological year (XMY) {#extreme-meteorological-year}
+
+A one-year climate profile that provides the same set of weather variables as a Typical Meteorological Year (TMY), but intentionally preserves or characterizes extreme weather conditions rather than median ones. Cal-Adapt provides two standardized XMY approaches, a Shock XMY and a Persistence XMY, tailored to different planning use cases and detailed in the [XMY methods white paper](https://analytics.cal-adapt.org/assets/pdfs/Cal-Adapt-XMY-Methods-White-Paper.pdf).
 
 ## Extreme value analysis {#extreme-value-analysis}
 
@@ -94,9 +98,9 @@ A probability distribution used to model the tail behavior of a variety of data 
 
 A mathematical model that represents the physical processes in the atmosphere, ocean, cryosphere, and land surface. GCMs are used to simulate the climate system and predict future climate conditions based on different scenarios of greenhouse gas emissions and other factors.
 
-## Global warming level {#global-warming-level}
+## Global warming level (GWL) {#global-warming-level}
 
-A global warming level is defined as the difference in the global mean air temperature from the historical period (defined on the Analytics Engine as the pre-industrial period 1850-1900). Global warming levels are frequently used in international policy discussions (for example, goals to constrain global warming to 1.5 or 2 degrees Celsius). The standard global warming levels are 1.5°C, 2°C, 3°C, and 4°C.
+A global warming level (GWL) is defined as the difference in the global mean air temperature from the historical period (defined on Cal-Adapt as the pre-industrial period 1850-1900). Global warming levels are frequently used in international policy discussions (for example, goals to constrain global warming to 1.5 or 2 degrees Celsius). The standard global warming levels are 1.5°C, 2°C, 3°C, and 4°C. More details can be found in the [GWL methods white paper](https://analytics.cal-adapt.org/assets/pdfs/Cal-Adapt-GWL-White-Paper.pdf).
 
 ## Goodness of fit {#goodness-of-fit}
 
@@ -122,6 +126,10 @@ Internal variability represents the natural (stochastic) variations in the Earth
 
 The Kolmogorov-Smirnoff test for nonparametric data evaluates the equality of two different one-dimensional distributions. The KS test can be used to determine when statistical significance is achieved when two samples are sufficiently different from one another.
 
+## Land use exclusion {#land-use-exclusion}
+
+A restriction that makes a location unsuitable or unavailable for development, such as protected land, steep terrain, urbanized areas, or open water.
+
 ## Localization {#localization}
 
 Statistical method to produce time-series of future weather at a point-location where a weather station is presently in operation. Localization involves bias adjusting gridded climate model output, based on observations from the weather station.
@@ -144,7 +152,7 @@ When several hazards affect the same region at the same time; can also result fr
 
 ## Notebook {#notebook}
 
-The Analytics Engine uses Jupyter Notebooks to be a user-friendly and interactive example workflow from start to finish of an application of climate data.
+Cal-Adapt uses Jupyter Notebooks to be a user-friendly and interactive example workflow from start to finish of an application of climate data.
 
 ## Pearson Type III distribution {#pearson-type-iii}
 
@@ -157,6 +165,14 @@ The inverse of the cumulative distribution function (CDF); also known as the qua
 ## Projection {#projection}
 
 A potential future evolution of a quantity or set of quantities, often associated with climate variables such as temperature or sea level. Unlike predictions, projections do not imply certainty but rather illustrate a range of possible outcomes based on different assumptions and conditions.
+
+## Reference production {#reference-production}
+
+The baseline energy generation against which individual days are compared when identifying resource drought days.
+
+## Resource drought {#resource-drought}
+
+A period during which the generation potential of a renewable energy source falls well below what is typical for that time of year. A solar resource drought refers to reduced photovoltaic generation; causes can include cloudiness, wildfire smoke, and/or high temperatures. A wind resource drought refers to reduced wind power generation caused by still or calm conditions. Resource droughts are identified relative to a location's reference production.
 
 ## Return period {#return-period}
 
@@ -176,15 +192,15 @@ Uncertainty that arises from not knowing how people, policies, the economy, and 
 
 ## Shared socioeconomic pathways (SSPs) {#shared-socioeconomic-pathways}
 
-[Shared socioeconomic pathways](https://www.carbonbrief.org/explainer-how-shared-socioeconomic-pathways-explore-future-climate-change/) are inputs into the latest generation of IPCC reports which describe potential pathways the world could take in terms of features such as political, economic, and other societal dynamics and choices which impact greenhouse gas emissions. The Analytics Engine has multiple data sources with several SSPs, including SSP2-4.5, SSP3-7.0, and SSP5-8.5.
+[Shared socioeconomic pathways](https://www.carbonbrief.org/explainer-how-shared-socioeconomic-pathways-explore-future-climate-change/) are inputs into the latest generation of IPCC reports which describe potential pathways the world could take in terms of features such as political, economic, and other societal dynamics and choices which impact greenhouse gas emissions. Cal-Adapt has multiple data sources with several SSPs, including SSP2-4.5, SSP3-7.0, and SSP5-8.5.
 
 ## Simulation {#simulation}
 
-A computational process used to model and analyze the behavior of complex systems by representing them through mathematical models. In the context of the Analytics Engine, a simulation is a specific ensemble member from a GCM.
+A computational process used to model and analyze the behavior of complex systems by representing them through mathematical models. In the context of Cal-Adapt, a simulation is a specific ensemble member from a GCM.
 
 ## Statistical downscaling {#statistical-downscaling}
 
-A method to generate fine scale spatial resolution data outputs from coarser scale global climate models using statistical relationships between the coarse global climate model output and observed climatological conditions. The Analytics Engine hosts statistically downscaled model output from [LOCA2-Hybrid](https://loca.ucsd.edu/loca-version-2-for-california-ca-may-2023/).
+A method to generate fine scale spatial resolution data outputs from coarser scale global climate models using statistical relationships between the coarse global climate model output and observed climatological conditions. Cal-Adapt hosts statistically downscaled model output from [LOCA2-Hybrid](https://loca.ucsd.edu/loca-version-2-for-california-ca-may-2023/).
 
 ## Tool {#tool}
 
@@ -194,13 +210,13 @@ A Python function to work with climate data, analyze data, or produce visualizat
 
 A Python package consisting of a set of functions [tools] for climate data operations, analyses, and visualizations.
 
-## Typical meteorological year {#typical-meteorological-year}
+## Typical meteorological year (TMY) {#typical-meteorological-year}
 
 A typical meteorological year ([TMY](https://nsrdb.nlr.gov/data-sets/tmy)) is a complete set of meteorological variables at a given location for every hour in a year. TMYs are used in some building and energy system modeling applications to describe typical annual weather conditions at a specific location.
 
 ## Use-case {#use-case}
 
-Use-cases are written in the following format: [data product] + [application of data product]. Data products consist of the climate data itself being developed by the Analytics Engine development team. Applications of the data product are specific applications as identified by energy industry partners.
+Use-cases are written in the following format: [data product] + [application of data product]. Data products consist of the climate data itself being developed by the Cal-Adapt development team. Applications of the data product are specific applications as identified by energy industry partners.
 
 ## Weibull distribution {#weibull-distribution}
 
@@ -212,7 +228,7 @@ A heat stress metric that estimates the combined effects of air temperature, hum
 
 ## Working group {#working-group}
 
-In the context of the Analytics Engine, a working group refers to a focused discussion involving a diverse group of climate scientists, social scientists, energy sector partners, platform developers, data users, and other partners.
+In the context of Cal-Adapt, a working group refers to a focused discussion involving a diverse group of climate scientists, social scientists, energy sector partners, platform developers, data users, and other partners.
 
 ## Zarr {#zarr}
 

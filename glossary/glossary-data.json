@@ -247,7 +247,7 @@
   {
     "term": "Standard year",
     "slug": "standard-year",
-    "definition": "A Standard Year is one year of hourly data that represents a statistical percentile of meteorological conditions for a location over a set amount of time (30 years). For example, for each hour of the year, the 90th percentile is taken across the same hour of the year from each of the 30 years of data. A Standard Year can be generated for any climate variable (temperature, solar radiation, etc.), any desired percentile (median and extremes), and for any location of interest."
+    "definition": "A standard year is one year of hourly data that represents a statistical percentile of meteorological conditions for a location over a set amount of time (30 years). For example, for each hour of the year, the 90th percentile is taken across the same hour of the year from each of the 30 years of data. A standard year can be generated for any climate variable (temperature, solar radiation, etc.), any desired percentile (median and extremes), and for any location of interest."
   },
   {
     "term": "Statistical downscaling",

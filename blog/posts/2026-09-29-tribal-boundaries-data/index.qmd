@@ -8,8 +8,6 @@ description: "Climakitae now includes tribal and Indigenous territorial boundari
 categories: [Announcement]
 ---
 
-# New Feature: Tribal Boundaries in climakitae
-
 We're excited to announce that [`climakitae`](https://github.com/cal-adapt/climakitae) now includes tribal and Indigenous territorial boundaries as an available data layer for your climate analysis.
 
 ## What's New
@@ -28,15 +26,46 @@ Tribal boundary data is sourced from the [U.S. Department of Interior Bureau of 
 
 The tribal boundaries can be used for clipping like any other geographic reference layer in `climakitae`. Simply specify the boundary of choice from the available boundary options to clip your analysis area to a tribal territory.
 
+Tribal selections use qualified names so they do not collide with counties or watersheds. For example, to clip to the Colorado River tribal area:
+
+```python
+from climakitae import ClimateData
+
+cd = ClimateData(verbosity=-1)
+query_example = (
+    cd
+    .catalog("cadcat")
+    .activity_id("WRF")
+    .institution_id("UCLA")
+    .table_id("day")
+    .grid_label("d03")
+    .variable_id("t2")
+    .processes({
+        "warming_level": {
+            "warming_levels": [2.0],  # Example warming level, adjust as needed
+            "add_dummy_time": True
+        },
+        "clip": "Tribal Area: Colorado River",
+        "convert_units": "degF"
+    }).get()
+)
+```
+
+The result is climate data clipped to the Colorado River tribal area:
+
+![Climate data clipped to the Colorado River tribal area](path/to/colorado-river-tribal-area.png)
+
+Use `cd.show_boundary_options("Tribal Areas", show_n=None)` to see the exact selectors available in the current catalog. The category is available only when the optional `tribalareas` entry is present in the boundary Intake catalog.
+
 ## Important Considerations
 
-While this data provides valuable geographic reference information, we encourage users to:
+This layer comes from the U.S. Department of Interior Bureau of Indian Affairs (BIA) GeoSpatial Data Repository and is provided as a reference layer for geographic analysis and context. Some context on its limitations:
 
-- Consult directly with tribal nations for decision-making that affects their territories
-- Recognize that map data represents one source of information about tribal interests and governance
-- Understand that representation varies, with some communities having greater institutional capacity to engage with climate planning processes
-- Verify specific boundary information with official tribal documentation when needed for important decisions
+- Boundaries are one source of information and do not fully capture the complexity of tribal governance, jurisdictional authority, or community interests.
+- Equal representation of all tribal perspectives, and equal capacity for advocacy in decision-making, requires more than the availability of boundary data.
+- Source agencies update their boundaries periodically, so this data reflects information available at the time of integration and may not capture the most recent changes.
+- Climakitae does not independently verify external boundary information. For critical applications, official documentation and representatives of relevant tribal governments and communities are the primary references.
 
-Please see our full guidance on [external data boundaries](https://analytics.cal-adapt.org/about/our-project.html) for more information on how to responsibly use this layer in your analysis.
+Please see our full guidance on [external data boundaries](https://github.com/cal-adapt/climakitae#general-external-boundary-datasets-disclaimer) for more information.
 
-**Have feedback or questions about this feature?** We'd love to hear from you. Please contact us or open an issue on our [GitHub repository](https://github.com/cal-adapt/climakitae/issues).
+**Have feedback or questions about this feature?** We'd love to hear from you. Please contact us at support@cal-adapt.org or report an issue on our [GitHub repository](https://github.com/cal-adapt/climakitae/issues).

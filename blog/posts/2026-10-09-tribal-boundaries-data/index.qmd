@@ -8,11 +8,9 @@ description: "Climakitae now includes tribal and Indigenous territorial boundari
 categories: [Announcement]
 ---
 
-We're excited to announce that [`climakitae`](https://github.com/cal-adapt/climakitae) now includes tribal and Indigenous territorial boundaries as an available data layer for your climate analysis.
-
 ## What's New
 
-You can now visualize and analyze climate data within the geographic context of tribal lands and territories. This feature enables:
+You can now visualize and analyze climate data within the geographic context of tribal lands and territories using [`climakitae`](https://github.com/cal-adapt/climakitae). This feature enables:
 
 - Better geographic context for climate adaptation planning relevant to tribal communities
 - Enhanced analysis by overlaying climate projections with tribal boundaries

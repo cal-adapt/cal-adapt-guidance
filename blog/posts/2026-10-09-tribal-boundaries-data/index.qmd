@@ -3,7 +3,7 @@ title: "Tribal Boundaries in climakitae"
 author:
   - name:
       literal: "Cal-Adapt"
-date: "2026-09-29"
+date: "2026-10-09"
 description: "Climakitae now includes tribal and Indigenous territorial boundaries as an option for clipping in climate analyses."
 categories: [Announcement]
 ---
@@ -53,7 +53,7 @@ query_example = (
 
 The result is climate data clipped to the Colorado River tribal area:
 
-![Climate data clipped to the Colorado River tribal area](path/to/colorado-river-tribal-area.png)
+![Climate data clipped to the Colorado River tribal area](colorado-river-tribal-area.png){width=50% fig-align="center" fig-alt="Map of gridded 2-meter temperature, ranging from about 73 to 80 degrees Fahrenheit, clipped to the Colorado River tribal area. The tribal area boundary is outlined in green and California county lines are drawn in black over a basemap."}
 
 Use `cd.show_boundary_options("Tribal Areas", show_n=None)` to see the exact selectors available in the current catalog. The category is available only when the optional `tribalareas` entry is present in the boundary Intake catalog.
 

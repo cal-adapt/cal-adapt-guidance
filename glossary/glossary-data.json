@@ -122,7 +122,7 @@
   {
     "term": "Global warming level (GWL)",
     "slug": "global-warming-level",
-    "definition": "A global warming level (GWL) is defined as the difference in the global mean air temperature from the historical period (defined on Cal-Adapt as the pre-industrial period 1850-1900). Global warming levels are frequently used in international policy discussions (for example, goals to constrain global warming to 1.5 or 2 degrees Celsius). The standard global warming levels are 1.5°C, 2°C, 3°C, and 4°C. More details can be found in the [GWL methods white paper](https://analytics.cal-adapt.org/assets/pdfs/Cal-Adapt-GWL-White-Paper.pdf)."
+    "definition": "A global warming level (GWL) is defined as the difference in the global mean air temperature from the historical period (defined by Cal-Adapt as the pre-industrial period 1850-1900). Global warming levels are frequently used in international policy discussions (for example, goals to constrain global warming to 1.5 or 2 degrees Celsius). The standard global warming levels are 1.5°C, 2°C, 3°C, and 4°C. More details can be found in the [GWL methods white paper](https://analytics.cal-adapt.org/assets/pdfs/Cal-Adapt-GWL-White-Paper.pdf)."
   },
   {
     "term": "Goodness of fit",

@@ -64,6 +64,6 @@ This layer comes from the U.S. Department of Interior Bureau of Indian Affairs (
 - Source agencies update their boundaries periodically, so this data reflects information available at the time of integration and may not capture the most recent changes.
 - Climakitae does not independently verify external boundary information. For critical applications, official documentation and representatives of relevant tribal governments and communities are the primary references.
 
-Please see our full guidance on [external data boundaries](https://github.com/cal-adapt/climakitae#general-external-boundary-datasets-disclaimer) for more information.
+Please see our full guidance on [external data boundaries](/about/our-project.qmd#external-boundary-datasets-disclaimer) for more information.
 
 **Have feedback or questions about this feature?** We'd love to hear from you. Please contact us at support@cal-adapt.org or report an issue on our [GitHub repository](https://github.com/cal-adapt/climakitae/issues).

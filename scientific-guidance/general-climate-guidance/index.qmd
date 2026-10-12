@@ -49,7 +49,7 @@ To capture the full spectrum of potential future outcomes, it is crucial to exam
 
 For users who require a comprehensive understanding of future climate projections, utilizing a diverse set of ensemble members across multiple models is recommended. Analytics Engine notebooks are intentionally designed to enable use of multiple models and ensemble members in climate data analyses. The [Model Selection](scientific-guidance\model-selection.qmd) page provides guidance on choosing among models and ensemble members, and the [Uncertainty](scientific-guidance\uncertainty\index.qmd) pages cover internal variability and model uncertainty in more detail.
 
-# From global models to California data
+# From global models to California data {#sec-global-models-ca-data}
 
 ## What is gridded data?
 

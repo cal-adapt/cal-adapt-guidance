@@ -26,9 +26,9 @@ A cascading event is a type of compound event that can occur when two or more cl
 
 The difference between two time periods, typically projected future climate conditions and a historical reference period. Also known as a "delta signal". A change signal is used to quantify how much a climate variable (such as temperature or precipitation) is expected to change relative to past conditions.
 
-## ClimaKitAE {#climakitae}
+## Climakitae {#climakitae}
 
-An open-source Python library that contains functionality to work with cloud-optimized gridded climate data. It includes basic tools for creating data objects and visualizations, as well as more advanced tools that support various applications of climate data including analyzing extreme events, understanding regional responses at different global warming levels, and describing uncertainty across different simulations. [ClimaKitAE](https://github.com/cal-adapt/climakitae) stands for "climate toolkit Analytics Engine".
+An open-source Python library that contains functionality to work with cloud-optimized gridded climate data. It includes basic tools for creating data objects and visualizations, as well as more advanced tools that support various applications of climate data including analyzing extreme events, understanding regional responses at different global warming levels, and describing uncertainty across different simulations. [Climakitae](https://github.com/cal-adapt/climakitae) stands for "climate toolkit Analytics Engine".
 
 ## Climate sensitivity {#climate-sensitivity}
 
@@ -188,7 +188,7 @@ A method to generate fine scale spatial resolution data outputs from coarser sca
 
 ## Tool {#tool}
 
-A Python function to work with climate data, analyze data, or produce visualizations. Tools are located within ClimaKitAE.
+A Python function to work with climate data, analyze data, or produce visualizations. Tools are located within climakitae.
 
 ## Toolkit {#toolkit}
 

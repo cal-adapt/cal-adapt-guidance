@@ -15,7 +15,7 @@ format:
 
 The following sections describe the sources of uncertainty in climate projections, how they appear in CMIP6 climate projections for California, how to examine them using Analytics Engine tools, and how to interpret and communicate them responsibly in planning and decision-making contexts. The analyses presented here use near-surface air temperature (*tas*) and precipitation (*pr*) from the CMIP6 archive subsetted to California under the SSP3-7.0 scenario and accessed through the Cal-Adapt: Analytics Engine.
 
-For background on climate projections and models more broadly, and for guidance on how to apply climate data in decision-making, see General Climate Guidance.
+For background on climate projections and models more broadly, and for guidance on how to apply climate data in decision-making, see [General Climate Guidance](scientific-guidance\general-climate-guidance\index.qmd).
 
 ---
 

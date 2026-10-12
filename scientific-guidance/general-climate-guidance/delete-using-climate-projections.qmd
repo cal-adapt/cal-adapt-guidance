@@ -1,0 +1,57 @@
+---
+title: "Guidance on Using Climate Data in Decision-Making"
+aliases:
+  - /guidance/using_in_decision_making
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2024-01-01"
+date-modified: &date-modified "2026-07-10"
+citation:
+  publisher: "Cal-Adapt"
+  issued: *date-modified
+format:
+  html: default
+  pdf: default
+---
+
+This page and its sub-page [Census Tracts](/scientific-guidance/census-tracts.qmd) offer Analytics Engine data users a set of guiding materials on the most appropriate ways to use climate data for decision making. It includes an explanation of why such guidance is important and provides answers to specific data-related questions that users commonly have. These guidelines can be utilized by any technical or semi-technical data user to better understand the Do's and Don'ts of working with climate data in the Analytics Engine. By understanding how to effectively integrate climate data into sectors such as energy, municipal planning, natural resource management, and public health, data users can better anticipate and mitigate the impacts of climate change.
+
+**Topics covered in this article:**
+
+- How can climate data **inform decision making**?
+- How should **guidance on climate data** be used?
+- Acknowledgements and Citation
+
+
+## Acknowledgements and Citation
+This document was developed through many, often painstaking, deliberations and discussions with many people within and outside the Analytics Engine project team. Within the Analytics Engine team, Nancy Freitas led and managed the conceptualization and operationalization of all of the guidance-related materials that appear on the Analytics Engine website, with support from Kripa Jagannathan, Justine Bui, and Mark Koenig. Victoria Ford helped to develop the case examples and analytics that are referred to in this document. Justine Bui supported the refinement of the content. Eric Lehmer supported the development of the web-based version of the document. The rest of the Cal-Adapt: Analytics Engine team provided valuable feedback on various versions of this document, and were integral thought leaders for the design of all of the AE's guidance materials.
+
+Outside of the core Analytics Engine team, the project team members of the EPC-20-006 project ["Development of Climate Projections for California and Identification of Priority Projections"](https://www.energizeinnovation.fund/projects/development-climate-projections-california-and-identification-priority-projections) helped to edit and refine this document. Specifically, Dan Cayan (Scripps, UC San Diego), David Pierce (Scripps, UC San Diego), Stefan Rahimi (UCLA and University of Wyoming), Julie Kalansky (Scripps, UC San Diego), and Alex Hall (UCLA) provided extensive feedback on several sections of the document. Alexander Pusch (SCE), Alexandria Chwierut (SCE), Eric Kuhle (PG&E), Michael Mak (Pathways Climate), Lindsay Luchinsky (Pathways Climate), as well as other members of the Cal-Adapt: Analytics Engine stakeholder engagement team provided critical feedback on the first version of this document. Alan Rhoades (LBNL) also supported the development of a few draft answers.
+
+Finally, Kripa Jagannathan led the content development for the Guidelines Q&A, with support from Nancy Freitas. Owen Doherty, Andrew Jones and Naomi Goldenson provided technical expertise in drafting the answers.
+
+This content should be cited as: Jagannathan, K., Freitas, N., Doherty, O., Jones, A., and Goldenson, N. (2024). *Guidelines on appropriate use of climate projections in the Analytics Engine.* Cal-Adapt: Analytics Engine. <https://analytics.cal-adapt.org/guidance/using_in_decision_making>.
+
+## Using Climate Projections in the Analytics Engine
+Below are answers to some common questions about climate data that the Analytics Engine users may encounter. It is recommended that users review these answers before they use the data or tools in AE. These answers are not meant to be prescriptive but rather to provide a framework to think through some of the choices that a user may have to make. Key references have been linked throughout the section, but additional materials are also available on the [References](/general-resources/reference-library.qmd) page. Users should also review the [Glossary](/glossary/index.qmd) page for definitions of key technical terms.
+
+## How have these guidelines been developed?
+These guidelines have been developed as part of the CEC-funded project EPC-20-007 with support from Amazon Sustainability, titled ["A Co-Produced Climate Data and Analytics Platform to Support California's Electricity Resilience Investments"](https://www.energizeinnovation.fund/projects/co-produced-climate-data-and-analytics-platform-support-californias-electricity-resilience). The main aim of this project is to provide customized data, advanced analytics, and powerful cloud computing resources to support climate-informed planning and research to improve resilience in the electricity sector. The project uses a "co-production" approach, where the data, tools, analytics, and guidance documents (including these guidelines) are collaboratively developed alongside key energy sector climate data users and a diverse group of scientists.
+
+The initial set of questions that have been answered here were developed based on interviews and focus groups with energy sector climate data users. In these interviews, users identified the most common challenges that they encounter while using climate data for planning and adaptation purposes. The initial answers to these questions were drafted by three climate scientists and two social scientists who are part of the Analytics Engine project team. These preliminary answers were informed by the latest climate science literature as well as first-hand knowledge of the issues faced by climate data users. The answers were then edited and refined through a rigorous and iterative process that spanned several months, and incorporated the perspectives of a wide-range of data users (such as energy utilities, state agencies, energy consultants), scientists (including climate scientists, climate data producers, social scientists, energy sector specialists), as well as software tool developers. This process included gathering both written and verbal feedback through deliberative focus group discussions. In particular, the project team from CEC's EPC-20-006 project ["Development of Climate Projections for California and Identification of Priority Projections"](https://www.energizeinnovation.fund/projects/development-climate-projections-california-and-identification-priority-projections) provided extensive feedback on several versions of the document.
+
+## References
+
+- Cal-Adapt. *Understanding Warming Levels.* <https://analytics.cal-adapt.org/blog/posts/2023-09-25-global-warming-levels/>
+- California Energy Commission. (2024). *Bias Correction in WRF and LOCA2 Projections — Data Justification Memo.* <https://www.energy.ca.gov/sites/default/files/2024-03/01_BiasCorrectioninWRF_and_LOCA2Projections_DataJustificationMemo_Pierce_Adopted_ada.pdf>
+- California Energy Commission. (2024). *Dynamical Downscaling (WRF) — Data Justification Memo.* <https://www.energy.ca.gov/sites/default/files/2024-06/02_DynamicalDownscaling_DataJustificationMemo_Rahimi_Adopted_v2May2024_ada.pdf>
+- California Energy Commission. (2024). *General Use Projections Selection Process.* <https://www.energy.ca.gov/sites/default/files/2025-07/a_General_Use_Projections_Selection_Process_sept2024_ada.pdf>
+- California Energy Commission. (2024). *Hybrid Downscaling (LOCA2-Hybrid) — Data Justification Memo.* <https://www.energy.ca.gov/sites/default/files/2024-03/04_HybridDownscaling_DataJustificationMemo_Pierce_Adopted_ada.pdf>
+- California Public Utilities Commission. *Rulemaking 18-04-019, Agenda ID #22703.* <https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M534/K315/534315135.PDF>
+- Hausfather, Z. (2022). *Guest post: How climate scientists should handle 'hot models.'* Carbon Brief. <https://www.carbonbrief.org/guest-post-how-climate-scientists-should-handle-hot-models/>
+- Intergovernmental Panel on Climate Change (IPCC). (2023). *Sixth Assessment Report: Synthesis Report.* <https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf>
+- Intergovernmental Panel on Climate Change (IPCC). (2021). *AR6 WGI Summary for Policymakers, Figure SPM.8.* <https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_08/v20210809/panel_a>
+- Krantz, W., et al. (2021). *Evaluating Global Climate Models for California's Fifth Climate Change Assessment.* California Energy Commission. <https://www.energy.ca.gov/media/7264>
+- Fifth National Climate Assessment. (2023). <https://nca5.climate.us/>
+- Rahimi, S., et al. (2024). *Atmospheric River Precipitation in the WRF-CMIP6 Ensemble.* *Geophysical Research Letters.* <https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106264>

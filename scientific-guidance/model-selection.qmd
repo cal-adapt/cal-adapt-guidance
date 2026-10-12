@@ -13,7 +13,7 @@ format:
   pdf: default
 ---
 
-The Analytics Engine hosts multiple models and ensemble members across its two downscaled datasets. This page covers how to choose among them, how the pre-selected General Use Projections can be used, and how model validation and credibility can inform those choices. Background on ensemble members and model ensembles is in About climate projections. Guidance on choosing between the WRF and LOCA2-Hybrid datasets is on the WRF vs. LOCA2-Hybrid page. 
+The Analytics Engine hosts multiple models and ensemble members across its two downscaled datasets. This page covers how to choose among them, how the pre-selected General Use Projections can be used, and how model validation and credibility can inform those choices. Background on ensemble members and model ensembles is in About climate projections. Guidance on choosing between the WRF and LOCA2-Hybrid datasets is on the [WRF vs. LOCA2-Hybrid](scientific-guidance\WRF-vs-LOCA2-Hybrid.qmd) page. 
 
 ## How should users choose among models and ensemble members?
 The Analytics Engine [Data Catalog](/data-tools/data-catalog.qmd) shows the total number of models and ensemble members from both WRF and LOCA2-Hybrid datasets that are available to users. Broadly, both datasets include several models, and LOCA2-Hybrid has multiple ensemble members for a select few models. Both come from GCMs that have been pre-selected based on a rigorous skill evaluation of how well they capture key characteristics of California's climate ([Krantz et al., 2021](https://www.energy.ca.gov/sites/default/files/2022-09/20220907_CDAWG_MemoEvaluating_GCMs_EPC-20-006_Nov2021-ADA.pdf)).

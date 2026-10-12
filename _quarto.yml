@@ -39,16 +39,26 @@ website:
             text: General Climate Guidance
           - href: scientific-guidance/guiding-principles/index.qmd
             text: Guiding Principles
-          - href: scientific-guidance/climate_profiles/index.qmd
-            text: Climate Profiles
+          - href: scientific-guidance/WRF-vs-LOCA2-Hybrid.qmd
+            text: WRF vs. LOCA2-Hybrid
+          - href: scientific-guidance/model-selection.qmd
+            text: Model Selection
+          - href: scientific-guidance/temporal-spatial-scales.qmd
+            text: Temporal & Spatial Scales
+          - href: scientific-guidance/global-warming-levels.qmd
+            text: Global Warming Levels
+          - href: scientific-guidance/reference-periods.qmd
+            text: Reference Periods
           - href: scientific-guidance/uncertainty/index.qmd
             text: Uncertainty
+          - href: scientific-guidance/extreme-value-analysis.qmd
+            text: Extreme Value Analysis
           - href: scientific-guidance/heat-metrics.qmd
             text: Heat Metrics
+          - href: scientific-guidance/climate_profiles/index.qmd
+            text: Climate Profiles
           - href: scientific-guidance/census-tracts.qmd
             text: Census Tracts
-          - href: scientific-guidance/global-warming-levels.qmd
-          - href: scientific-guidance/extreme-value-analysis.qmd
       - text: Data & Tools
         menu:
           - href: data-tools/data-catalog.qmd
@@ -96,9 +106,6 @@ website:
       contents:
         - text: "General Climate Guidance"
           href: scientific-guidance/general-climate-guidance/index.qmd
-          contents:
-            - scientific-guidance/general-climate-guidance/about-climate-projections.qmd
-            - scientific-guidance/general-climate-guidance/using-climate-projections.qmd
         - text: "Guiding Principles"
           href: scientific-guidance/guiding-principles/index.qmd
           contents:
@@ -116,6 +123,29 @@ website:
               href: scientific-guidance/guiding-principles/principle6.qmd
             - text: "Principle 7"
               href: scientific-guidance/guiding-principles/principle7.qmd
+        - text: WRF vs. LOCA2-Hybrid
+          href: scientific-guidance/WRF-vs-LOCA2-Hybrid.qmd
+        - text: Model Selection
+          href: scientific-guidance/model-selection.qmd
+        - text: Temporal & Spatial Scales
+          href: scientific-guidance/temporal-spatial-scales.qmd
+        - text: Global Warming Levels
+          href: scientific-guidance/global-warming-levels.qmd
+        - text: Reference Periods
+          href: scientific-guidance/reference-periods.qmd
+        - text: "Uncertainty"
+          href: scientific-guidance/uncertainty/index.qmd
+          contents:
+            - text: "Model Uncertainty"
+              href: scientific-guidance/uncertainty/model_uncertainty.qmd
+            - text: "Scenario Uncertainty"
+              href: scientific-guidance/uncertainty/scenario_uncertainty.qmd
+            - text: "Internal Variability"
+              href: scientific-guidance/uncertainty/internal_variability.qmd
+        - text: Extreme Value Analysis
+          href: scientific-guidance/extreme-value-analysis.qmd
+        - text: Heat Metrics
+          href: scientific-guidance/heat-metrics.qmd
         - text: "Climate Profiles"
           href: scientific-guidance/climate_profiles/index.qmd
           contents:
@@ -123,18 +153,8 @@ website:
             - scientific-guidance/climate_profiles/standard-year.qmd
             - scientific-guidance/climate_profiles/typical-met-year.qmd
             - scientific-guidance/climate_profiles/extreme-met-year.qmd
-        - text: "Uncertainty"
-          href: scientific-guidance/uncertainty/index.qmd
-          contents:
-            - scientific-guidance/uncertainty/model_uncertainty.qmd
-            - scientific-guidance/uncertainty/scenario_uncertainty.qmd
-            - scientific-guidance/uncertainty/internal_variability.qmd
-        - text: Heat Metrics
-          href: scientific-guidance/heat-metrics.qmd
         - text: Census Tracts
           href: scientific-guidance/census-tracts.qmd
-        - scientific-guidance/global-warming-levels.qmd
-        - scientific-guidance/extreme-value-analysis.qmd
     - id: data-tools
       title: "Data & Tools"
       style: docked

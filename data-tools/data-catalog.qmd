@@ -117,7 +117,7 @@ Catalog Link
 :   [STAC Browser](https://stac-browser.cal-adapt.org/#/collections/historical-data-platform)
 
 Learn More
-:   [About Climate Projections](/scientific-guidance/general-climate-guidance/about-climate-projections.qmd)
+:   [About Climate Projections](/scientific-guidance/general-climate-guidance/index.qmd#sec-about-climate-projections)
 
 ## Sea Level Rise
 ![](figures/static/sea_level_icon.png){.dataset-thumb fig-alt="Sea Level Rise icon"}

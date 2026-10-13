@@ -16,7 +16,7 @@ format:
   pdf: default
 ---
 
-This glossary is a non-exhaustive source for definitions of key terms and concepts related to the Analytics Engine and its associated tools and applications. This page includes detailed explanations of data products, use cases, analytical tools, and methodologies used in climate data analysis to support a user's understanding and application of the information in the Analytics Engine. This glossary is designed to complement existing extensive meteorological glossaries, such as the American Meteorological Society's [Glossary of Meteorology](https://www.ametsoc.org/index.cfm/ams/publications/glossary-of-meteorology/), with specific terminologies that are focused on the Analytics Engine.
+This glossary is a non-exhaustive source for definitions of key terms and concepts related to Cal-Adapt and its associated tools and applications. This page includes detailed explanations of data products, use cases, analytical tools, and methodologies used in climate data analysis to support a user's understanding and application of the information in Cal-Adapt. This glossary is designed to complement existing extensive meteorological glossaries, such as the American Meteorological Society's [Glossary of Meteorology](https://www.ametsoc.org/index.cfm/ams/publications/glossary-of-meteorology/), with specific terminologies that are focused on Cal-Adapt.
 
 {{< include _glossary-generated.qmd >}}
 

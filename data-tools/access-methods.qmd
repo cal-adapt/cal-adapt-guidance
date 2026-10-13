@@ -360,11 +360,11 @@ LOCA2 data is loaded in WGS84 (EPSG:4326), which is automatically handled by QGI
 By default, QGIS will symbolize the Zarr as a Multiband Color raster with the first 3 GWLs as bands. Double-click on the raster layer in the Layers pane to bring up the Symbology menu, then switch Render Type to Singleband pseudocolor. Then pick the band which represents the GWL of interest and hit Ok.
 
 ## Data Access with the Data Download Tool 
-The [Cal-Adapt Data Download Tool](https://cal-adapt.org/dashboard/data-download-tool) allows users to easily download data packages of LOCA2 data. These data packages are pre-made groups or clusters of statistically downscaled LOCA2 data that are most commonly accessed on Cal-Adapt, which helps make data selection and download more intuitive and user-friendly.
+The [Cal-Adapt Data Download Tool](https://cal-adapt.org/dashboard/data-download-tool) allows users to easily download subsets of the Cal-Adapt data catalog through an easy-to-use interactive interface. A variety of pre-packaged datasets are available through the interface, including [Climate Profiles](../scientific-guidance/climate_profiles/index.qmd) and groups of statistically downscaled LOCA2 data that are frequently accessed.
 
 ### Best Use 
-Downloading LOCA2 NetCDF data in bulk with the ability to temporally aggregate (monthly) and spatially filter by county. Can download multiple scenarios, models, and metrics (variables) at once.
+Looking for a specific climate profile? You can download individual files or bulk download all available files for custom selections. Downloading LOCA2 NetCDF data in bulk with the ability to temporally aggregate (monthly) and spatially filter by county. Can download multiple scenarios, models, and metrics (variables) at once.
 
 ### Limitations 
-Currently limited to the LOCA2 NetCDF datasets only. In addition, currently users are required to spatially filter by one or more counties, so they can not easily get the entire spatial extent of the data.
+Available climate profiles are for frequent access weather stations across California. Check out the [`custom_climate_profiles.ipynb`](https://github.com/cal-adapt/cae-notebooks/blob/main/custom_climate_profiles.ipynb) notebook to generate a custom location. LOCA2 aggregated data requires user to spatially filter by one or more counties; access to the entire spatial extent requires an alternative approach (see above methods).
 

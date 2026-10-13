@@ -36,7 +36,7 @@ The climate simulations in the Analytics Engine data catalog use a 'historical' 
 :::
 
 ### Reference periods for global warming levels
-When examining future climate conditions using a [global warming levels](/scientific-guidance/global-warming-levels.qmd) approach, the selected reference period should also be defined as a global warming level. This will help prevent adding uncertainty to the calculated change signal. In essence, if a time-based reference period (e.g., 1980-2010) is used as the baseline for a warming level (e.g., 2.0°C) inconsistencies can be introduced as not every simulation warms at the same rate (see Figure 1).
+When examining future climate conditions using a [global warming levels](/scientific-guidance/global-warming-levels.qmd) approach, the selected reference period should also be defined as a global warming level. This will help prevent adding uncertainty to the calculated change signal. In essence, if a time-based reference period (e.g., 1980-2010) is used as the baseline for a warming level (e.g., 2.0°C) inconsistencies can be introduced as not every simulation warms at the same rate (see @fig-gwl-periods).
 
 Using warming levels as the future target and the reference period ensures that consistent and comparable change signals are calculated for each simulation. Because global warming levels are agnostic to SSP scenarios, you do not have to choose a scenario when using a warming level as a reference period.
 
@@ -63,7 +63,7 @@ Using warming levels as the future target and the reference period ensures that 
 
 The Analytics Engine has three global warming levels designed specifically to be used as reference periods, summarized in the table below.
 
-::: {#fig-warming-levels-table fig-cap="Global Warming Levels and Approximate 30-Year Climatology Windows. Estimated center years and associated 30-year climatologies for the standard reference GWLs in the Analytics Engine. Timing of GWLs is calculated using [data from the IPCC](https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_08/v20210809/panel_a)."}
+::: {#tbl-warming-levels}
 ::: {.content-visible when-format="html"}
 ```{=html}
 <div class="figure-container">
@@ -74,6 +74,7 @@ The Analytics Engine has three global warming levels designed specifically to be
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/warming_levels_table.png){fig-alt="Table of estimated center years and associated 30-year climatology windows for the standard reference global warming levels used in the Analytics Engine."}
 :::
+Global Warming Levels and Approximate 30-Year Climatology Windows. Estimated center years and associated 30-year climatologies for the standard reference GWLs in the Analytics Engine. Timing of GWLs is calculated using [data from the IPCC](https://data.ceda.ac.uk/badc/ar6_wg1/data/spm/spm_08/v20210809/panel_a).
 :::
 
 For each reference period, the approximate equivalent time range is determined using the IPCC's aggregation of the historical climate record and estimated timings for future warming under the SSP 3-7.0 Scenario, as shown below for the 0.8 °C warming level.

@@ -1,0 +1,55 @@
+---
+title: "Choosing Between WRF and LOCA2-Hybrid"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2024-01-01"
+date-modified: &date-modified "2026-10-11"
+citation:
+  publisher: "Cal-Adapt"
+  issued: *date-modified
+format:
+  html: default
+  pdf: default
+---
+
+The Analytics Engine hosts two types of downscaled datasets: dynamically downscaled [WRF](https://www.energy.ca.gov/sites/default/files/2024-06/02_DynamicalDownscaling_DataJustificationMemo_Rahimi_Adopted_v2May2024_ada.pdf) and hybrid downscaled [LOCA2-Hybrid](https://www.energy.ca.gov/sites/default/files/2024-03/04_HybridDownscaling_DataJustificationMemo_Pierce_Adopted_ada.pdf). Background on both downscaling methods can be found in [From global models to California data](/scientific-guidance/general-climate-guidance/index.qmd#sec-global-models-ca-data).
+
+## Which dataset is most appropriate?
+The two datasets were developed to emphasize different strengths of the two downscaling methods and provide users with distinct dataset options. However, the two datasets differ in several important ways. Therefore, before deciding which dataset to use, **users should review the data memos in the [Reference Library](/general-resources/reference-library.qmd) and the [Data Catalog](/data-tools/data-catalog.qmd), which provide fundamental information about the datasets, as well as the downscaling methods, uncertainties, and credibility of the data.** To provide one illustrative example of how these datasets can differ – although both datasets provide downscaled climate projections over California at 3-km grid spacing, WRF has hourly data and more variables but for a much smaller set of GCMs, only one SSP, and only one ensemble member. LOCA2-Hybrid data is available for fewer variables at daily resolution but provides projections from many more GCMs, multiple ensemble members, and often for three SSPs.
+
+In general, choices between these two datasets may be based on:
+
+1. **Data fit**: whether the datasets have the variables, temporal and spatial scales, and SSPs that fit the user's application context
+2. **Sampling needs**: whether the user needs to sample widely across models and ensemble members
+3. **Consistency**: whether the user needs dynamical or physical consistency among different climate variables
+4. **Bias correction**: whether the user needs a specific type of bias corrected data
+
+Broadly, users should first map the key characteristics of both datasets, and determine if one or both have the specific types of information (scales, variables, models, SSPs, etc.) that are essential for a given context or application. For most applications that need daily data within California, the LOCA2-Hybrid dataset provides a wider range of models, ensemble members, and SSPs. The WRF dataset is useful in cases where users need hourly data, WECC (Western Electricity Coordinating Council) wide data, a larger set of variables than the LOCA2-Hybrid dataset provides, or dynamically consistent variables. Dynamically consistent variables are variables within a dataset that are internally consistent and reflect the realistic physics of the climate system, because they are generated from a model that forces variables to be consistent with each other. This ensures that relationships between variables obey real-world physics.
+
+::: {.callout-tip title="Example: Variable Consistency"}
+Temperature and dew point temperature in a dynamically consistent dataset will always behave realistically - dew point will never be higher than air temperature. This consistency is important for accurate climate and weather analysis, especially when studying how different variables like wind, humidity, and precipitation interact.
+:::
+
+::: {.callout-tip title="Example: Choosing between WRF and LOCA2-Hybrid"}
+For a WECC-wide analysis that requires hourly wind data the WRF data might be the only viable option, because WRF offers hourly wind data at a 9-km resolution that covers the WECC region. For examining the return period of daily temperature or precipitation extremes (i.e. 1-in-X-events) in California, the LOCA2-Hybrid dataset might be more appropriate since it enables a wider sampling of possible outcomes. In this case, users might also choose to simultaneously examine the WRF dataset, to see if and how results look across the two datasets (see [Can both datasets be used together](/scientific-guidance/WRF-vs-LOCA2-Hybrid.qmd#sec-both-datasets)).
+:::
+
+For guidance on choosing among the models and ensemble members within each dataset, see [Model Selection](/scientific-guidance/model-selection.qmd).
+
+## Can both datasets be used together? {#sec-both-datasets}
+Both WRF and LOCA2-Hybrid are credible datasets, however they differ in how they were developed. For example, the datasets differ in how they were bias-corrected and how some of the physical variables such as wind or precipitation were computed. Therefore, there is not an easy apples to apples comparison between the two datasets, and they cannot be readily combined together. However, **it may be beneficial (and appropriate) to look at both WRF and LOCA2-Hybrid data in tandem but as separate datasets**. For instance, if a user wants to understand how certain extreme events will change in the future, they can examine the detailed dynamics of a single extreme event within the hourly WRF data while also separately examining the distribution of similar events within the much larger set of LOCA2-Hybrid projections.
+
+**Because of the differences in the two datasets, it is not advised to "combine" WRF and LOCA2-Hybrid into a super ensemble dataset without additional data processing.** If users do indeed find it necessary to combine WRF and LOCA2-Hybrid data, they should first consult with a climate science expert on the type of additional data processing that might be essential to make the two datasets comparable with one another. For example, users may need to ensure that the [bias correction](/glossary/index.qmd#bias-correction) approaches that have been applied and the computation of physical variables such as wind or precipitation are comparable across the datasets. Also, since some of the same [model runs](/glossary/index.qmd#model-run) have been downscaled using both WRF and LOCA2-Hybrid methods, the issue of double counting the same run would need to be addressed.
+
+## Which WRF bias correction option should be used?
+If users determine that the WRF dynamically downscaled dataset is most appropriate for their application, **it is recommended that they choose the a-priori bias corrected models:**
+- `MIROC6 r11i1p1f1`
+- `TaiESM1 r1i1p1f1`
+- `EC-Earth3 r1i1p1f1`
+- `MPI-ESM1-2-HR r3i1p1f1`
+- `EC-Earth3-Veg r1i1p1f1`
+
+These models will likely be the most appropriate option for energy sector applications due to their ability to produce more realistic representations of regional climate than the non-bias corrected WRF models.
+
+Detailed analyses of the non-bias corrected WRF data have shown that they generate results for precipitation, temperature and snow that do not seem to be physically plausible. These non-bias corrected models might still be useful for some advanced applications where users only want to examine the degree of change in the projected data (i.e. change between modeled future and modeled historical conditions) without using absolute values. In this case, users should consult with a climate science expert to carefully factor the implications of the biases in the data into their analyses and results. Users can also review this [bias correction memo](https://www.energy.ca.gov/sites/default/files/2024-03/01_BiasCorrectioninWRF_and_LOCA2Projections_DataJustificationMemo_Pierce_Adopted_ada.pdf) and [Rahimi et al., 2024](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106264) that describe the benefits of bias-correction in WRF data.

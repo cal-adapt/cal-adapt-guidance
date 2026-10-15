@@ -41,7 +41,7 @@ Analytics Engine notebooks are organized into three categories to help users ide
 - **Data Generation** notebooks show how to create new custom data products, profiles, or metrics by transforming and combining source data.
 - **Tool/Methods** notebooks teach specific tools, methodologies, or analytical approaches, with hands-on examples of how to apply them.
 
-Each notebook in the [AE Notebooks GitHub repository](https://github.com/cal-adapt/cae-notebooks) includes a categorical assignment in the [AE Navigation Guide](https://github.com/cal-adapt/cae-notebooks/blob/main/AE_navigation_guide.ipynb), which provides a full index of available notebooks organized by type, topic, and application.
+Each notebook in the [Analytics Engine Notebooks GitHub repository](https://github.com/cal-adapt/cae-notebooks) includes a categorical assignment in the [Analytics Engine Navigation Guide](https://github.com/cal-adapt/cae-notebooks/blob/main/AE_navigation_guide.ipynb), which provides a full index of available notebooks organized by type, topic, and application.
 
 ### Actively Maintained Notebooks
 

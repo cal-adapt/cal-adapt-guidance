@@ -29,9 +29,9 @@ Model uncertainty reflects the fact that different modeling groups make differen
 
 # What CMIP6 models are used in these analyses?
 
-All analyses on this page use monthly near-surface air temperature, `tas` and precipitation, `pr` from the CMIP6 archive for models that provide both a *historical* simulation (1850–2014) and a *future* simulation under SSP3-7.0. Data are subsetted to California and expressed as **anomalies relative to the 1850–1900 pre-industrial baseline**, placing results directly in the [global warming levels](https://analytics.cal-adapt.org/guidance/about_climate_projections_and_models#what-are-global-warming-levels) (GWL) framework used by the IPCC AR6.
+All analyses on this page use monthly near-surface air temperature, `tas` and precipitation, `pr` from the CMIP6 archive for models that provide both a *historical* simulation (1850–2014) and a *future* simulation under SSP3-7.0. Data are subsetted to California and expressed as **anomalies relative to the 1850–1900 pre-industrial baseline**, placing results directly in the [global warming levels](/scientific-guidance/global-warming-levels.qmd#what-are-global-warming-levels) (GWL) framework used by the IPCC AR6.
 
-Within the broader CMIP6 archive, the Cal-Adapt Analytics Engine uses a curated subset of eight models that meet bias-adjustment criteria and provide output at sufficient spatial resolution for California impact assessments: `FGOALS-g3`, `EC-Earth3-Veg`, `CESM2`, `CNRM-ESM2-1`, `MIROC6`, `MPI-ESM1-2-HR`, `EC-Earth3`, and `TaiESM1`. Analyses on this page show results for both the full available CMIP6 archive and this AE subset, so users can see how the curated eight compare to the broader distribution.
+Within the broader CMIP6 archive, the Cal-Adapt Analytics Engine uses a curated subset of eight models that meet bias-adjustment criteria and provide output at sufficient spatial resolution for California impact assessments: `FGOALS-g3`, `EC-Earth3-Veg`, `CESM2`, `CNRM-ESM2-1`, `MIROC6`, `MPI-ESM1-2-HR`, `EC-Earth3`, and `TaiESM1`. Analyses on this page show results for both the full available CMIP6 archive and this Analytics Engine subset, so users can see how the curated eight compare to the broader distribution.
 
 
 # How does model uncertainty change over time?
@@ -48,14 +48,14 @@ Within the broader CMIP6 archive, the Cal-Adapt Analytics Engine uses a curated 
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/temperature_projections.png){fig-alt="CMIP6 California surface temperature projection timeseries under SSP3-7.0, showing the multi-model spread and mean relative to 1850–1900."}
 :::
-**CMIP6 California surface temperature projections (SSP3-7.0).** Individual CMIP6 model timeseries of California-mean near-surface air temperature anomaly relative to 1850–1900, under SSP3-7.0. The shaded envelope spans the 10th–90th percentile of the full archive; the bold line is the multi-model mean. Blue traces are the eight Cal-Adapt AE models. The vertical grey band indicates the spread of years in which models reach the selected warming level.
+**CMIP6 California surface temperature projections (SSP3-7.0).** Individual CMIP6 model timeseries of California-mean near-surface air temperature anomaly relative to 1850–1900, under SSP3-7.0. The shaded envelope spans the 10th–90th percentile of the full archive; the bold line is the multi-model mean. Blue traces are the eight Cal-Adapt Analytics Engine models. The vertical grey band indicates the spread of years in which models reach the selected warming level.
 :::
 
 A few things are worth noting when reading @fig-plume:
 
 **The spread grows with time.** In the historical period (before 2015), model traces are tightly clustered because all models are trained on the same observed climate before 2015. After 2015, the traces fan out as both scenario and model differences compound. By end of century, the range between the warmest and coolest models for California can exceed 3–4°C, a difference that is highly consequential for planning.
 
-**The warming-level band.** The grey shaded vertical band marks the range of calendar years in which different models reach the selected global warming level (e.g., 3°C above pre-industrial). Fast-warming models reach it decades earlier than slow-warming models. This spread in timing is itself a form of model uncertainty (in the global climate sensitivity) and it means that time-based analyses (e.g., "mid-century") mix models at very different stages of their warming trajectories. The [global warming levels framework](https://analytics.cal-adapt.org/guidance/about_climate_projections_and_models#what-are-global-warming-levels) avoids this problem by anchoring comparisons to physically comparable climate states rather than calendar years.
+**The warming-level band.** The grey shaded vertical band marks the range of calendar years in which different models reach the selected global warming level (e.g., 3°C above pre-industrial). Fast-warming models reach it decades earlier than slow-warming models. This spread in timing is itself a form of model uncertainty (in the global climate sensitivity) and it means that time-based analyses (e.g., "mid-century") mix models at very different stages of their warming trajectories. The [global warming levels framework](/scientific-guidance/global-warming-levels.qmd#what-are-global-warming-levels) avoids this problem by anchoring comparisons to physically comparable climate states rather than calendar years.
 
 **The multi-model mean is not a best estimate.** The multi-model mean (MMM) is a useful summary of the ensemble's central tendency, and in hindcast evaluations it often outperforms any individual model. However, treating the MMM as a *best estimate* in a planning context is inappropriate for two reasons:
 
@@ -132,7 +132,7 @@ This amplification of regional warming relative to the global mean is a robust f
 ::: {.content-visible when-format="pdf"}
 ![](figures/static/wl_scatter.png){fig-alt="Scatter plot of global warming rate versus California end-of-century temperature anomaly for each CMIP6 model under SSP3-7.0, colored by warming level."}
 :::
-Global warming rate (x-axis: year the model reaches the selected warming level) versus California end-of-century temperature anomaly (y-axis), for each CMIP6 model under SSP3-7.0. Colors indicate warming level. Filled circles are Cal-Adapt AE models; open circles are other CMIP6 models.
+Global warming rate (x-axis: year the model reaches the selected warming level) versus California end-of-century temperature anomaly (y-axis), for each CMIP6 model under SSP3-7.0. Colors indicate warming level. Filled circles are Cal-Adapt Analytics Engine models; open circles are other CMIP6 models.
 :::
 
 As shown in @fig-wl_scatter, there is not a definite correlation between end-of-century temperature anomaly and the year a model reaches a given warming level. You might expect that a model reaching, say, 3°C in California earlier would also project higher end-of-century California temperatures, but the scatter shows this is not consistently the case. A model can warm California quickly to a threshold and then level off, or warm it slowly but continue accelerating late in the century.

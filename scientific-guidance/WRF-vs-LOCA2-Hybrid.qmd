@@ -27,11 +27,13 @@ In general, choices between these two datasets may be based on:
 
 Broadly, users should first map the key characteristics of both datasets, and determine if one or both have the specific types of information (scales, variables, models, SSPs, etc.) that are essential for a given context or application. For most applications that need daily data within California, the LOCA2-Hybrid dataset provides a wider range of models, ensemble members, and SSPs. The WRF dataset is useful in cases where users need hourly data, WECC (Western Electricity Coordinating Council) wide data, a larger set of variables than the LOCA2-Hybrid dataset provides, or dynamically consistent variables. Dynamically consistent variables are variables within a dataset that are internally consistent and reflect the realistic physics of the climate system, because they are generated from a model that forces variables to be consistent with each other. This ensures that relationships between variables obey real-world physics.
 
-### Example: Variable Consistency
+::: {.callout-tip title="Example: Variable Consistency"}
 Temperature and dew point temperature in a dynamically consistent dataset will always behave realistically - dew point will never be higher than air temperature. This consistency is important for accurate climate and weather analysis, especially when studying how different variables like wind, humidity, and precipitation interact.
+:::
 
-### Example: Choosing between WRF and LOCA2-Hybrid
+::: {.callout-tip title="Example: Choosing between WRF and LOCA2-Hybrid"}
 For a WECC-wide analysis that requires hourly wind data the WRF data might be the only viable option, because WRF offers hourly wind data at a 9-km resolution that covers the WECC region. For examining the return period of daily temperature or precipitation extremes (i.e. 1-in-X-events) in California, the LOCA2-Hybrid dataset might be more appropriate since it enables a wider sampling of possible outcomes. In this case, users might also choose to simultaneously examine the WRF dataset, to see if and how results look across the two datasets (see [Can both datasets be used together](/scientific-guidance/WRF-vs-LOCA2-Hybrid.qmd#sec-both-datasets)).
+:::
 
 For guidance on choosing among the models and ensemble members within each dataset, see [Model Selection](/scientific-guidance/model-selection.qmd).
 

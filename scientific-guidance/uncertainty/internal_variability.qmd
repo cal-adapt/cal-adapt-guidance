@@ -38,7 +38,7 @@ The analyses on this page use **monthly precipitation** because precipitation ha
 - **Downscaled WRF precipitation (Cal-Adapt models):** seven dynamically downscaled models over California at 9 km resolution, historical + SSP3-7.0. Each model here has exactly **one** ensemble member — so this dataset captures **inter-model spread**, not within-model internal variability.
 - **CMIP6 ensemble members for the same models:** for each of the seven Cal-Adapt models, raw CMIP6 provides multiple **ensemble members** — runs of the same model with slightly different initial conditions. The spread across these members captures genuine internal variability, since the model structure and forcing are identical within each model — only the starting conditions differ.
 
-Throughout, results are anchored to the [global warming levels](https://analytics.cal-adapt.org/guidance/about_climate_projections_and_models#what-are-global-warming-levels) framework, comparing a 1981–2010 baseline against a window centered on the year each simulation crosses a target warming level under SSP3-7.0.
+Throughout, results are anchored to the [global warming levels](/scientific-guidance/global-warming-levels.qmd#what-are-global-warming-levels) framework, comparing a 1981–2010 baseline against a window centered on the year each simulation crosses a target warming level under SSP3-7.0.
 
 
 # How large is internal variability within a single model?

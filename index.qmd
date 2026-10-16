@@ -185,7 +185,7 @@ Led by Eagle Rock Analytics and funded by the California Energy Commission, supp
     <button type="button" class="resource-arrow partner-arrow-prev" aria-label="Previous partner"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
     <div class="partner-carousel" role="region" aria-label="Partner logos carousel">
       <a class="partner-logo-item" href="http://www.eaglerockanalytics.com/" target="_blank" rel="noopener noreferrer" aria-label="Eagle Rock Analytics"><img src="assets/logos/logo-era.png" alt="Eagle Rock Analytics"></a>
-      <a class="partner-logo-item" href="https://www.energy.ca.gov/" target="_blank" rel="noopener noreferrer" aria-label="California Energy Commission"><img src="assets/logos/logo-cec.jpg" alt="California Energy Commission"></a>
+      <a class="partner-logo-item" href="https://www.energy.ca.gov/" target="_blank" rel="noopener noreferrer" aria-label="California Energy Commission"><img src="assets/logos/logo-cec.png" alt="California Energy Commission"></a>
       <a class="partner-logo-item" href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer" aria-label="Lawrence Berkeley National Lab"><img src="assets/logos/logo-lbnl.png" alt="Lawrence Berkeley National Lab"></a>
       <a class="partner-logo-item" href="http://gif.berkeley.edu/" target="_blank" rel="noopener noreferrer" aria-label="UC Berkeley Geospatial Innovation Facility"><img src="assets/logos/logo-gif.jpg" alt="UC Berkeley Geospatial Innovation Facility"></a>
       <a class="partner-logo-item" href="https://sig-gis.com/" target="_blank" rel="noopener noreferrer" aria-label="Spatial Informatics Group"><img src="assets/logos/logo-sig.svg" alt="Spatial Informatics Group"></a>

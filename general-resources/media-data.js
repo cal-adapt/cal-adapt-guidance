@@ -28,6 +28,20 @@ var MEDIA_DATA = [
     description: "Working Group 10 Presentation",
   },
   {
+    type: "youtube",
+    title: "(Re)Introduction to Cal-Adapt Webinar | August 2025",
+    url: "https://youtu.be/h8ySBEIAsOs",
+    thumbnail: "https://img.youtube.com/vi/h8ySBEIAsOs/hqdefault.jpg",
+    description: "Cal-Adapt 101",
+  },
+  {
+    type: "poster",
+    title: "Preparing for the Exceptional: Extreme Climate Profiles for Planning and Vulnerability Assessment",
+    url: "../assets/media/posters/pdfs/RCS_2026_XMY.pdf",
+    thumbnail: "../assets/media/posters/thumbnails/RCS_2026_XMY.png",
+    description: "Resilient California Summit 2026 Poster",
+  },
+  {
     type: "poster",
     title: "Risk Analytics in Climate Adaptation and Vulnerability Assessments",
     url: "../assets/media/posters/pdfs/AGU_2025_CAVA.pdf",

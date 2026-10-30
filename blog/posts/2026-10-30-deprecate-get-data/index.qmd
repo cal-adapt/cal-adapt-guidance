@@ -3,7 +3,7 @@ title: "Announcing the Deprecation of `get_data()`"
 author:
   - name:
       literal: "Neil Schroeder"
-date: "2026-09-24"
+date: "2026-10-30"
 description: "`climakitae`'s legacy data access interface (`get_data()`) is being deprecated in favor of a modern, consolidated apporach (`ClimateData`)."
 categories: [Announcement]
 ---
@@ -135,6 +135,6 @@ We will document those changes separately.
 
 For current query examples, start with the [ClimateData overview](https://cal-adapt.github.io/climakitae/dev/climate-data-interface/), our [migration guide](https://cal-adapt.github.io/climakitae/dev/migration/legacy-to-climate-data/), or our [example notebooks](https://cal-adapt.github.io/climakitae/dev/notebook-gallery/)
 
-## More Questions?
+## More questions?
 
 If you have more questions, please stop by the [open discussion page](https://github.com/cal-adapt/climakitae/discussions/818) and one of our maintainers will be happy to help.

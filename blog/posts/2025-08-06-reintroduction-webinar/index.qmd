@@ -8,4 +8,4 @@ description: "Watch the recording of the (Re)Introduction to Cal-Adapt webinar."
 categories: [Announcement]
 ---
 
-The Analytics Engine team hosted the (Re)Introduction to Cal-Adapt webinar to showcase the updated Cal-Adapt.org platform and its integration with the Analytics Engine. The session provided an overview of new tools and datasets developed to support climate resilience and planning efforts across California. Check out the full webinar recording [here](https://youtu.be/yI5bAZsSzPw)!
+The Analytics Engine team hosted the (Re)Introduction to Cal-Adapt webinar to showcase the updated Cal-Adapt.org platform and its integration with the Analytics Engine. The session provided an overview of new tools and datasets developed to support climate resilience and planning efforts across California. Check out the full webinar recording [here](https://youtu.be/h8ySBEIAsOs)!

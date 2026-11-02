@@ -37,8 +37,8 @@ var MEDIA_DATA = [
   {
     type: "poster",
     title: "Preparing for the Exceptional: Extreme Climate Profiles for Planning and Vulnerability Assessment",
-    url: "../assets/media/posters/pdfs/RCS_2026_XMY.pdf",
-    thumbnail: "../assets/media/posters/thumbnails/RCS_2026_XMY.png",
+    url: "../assets/media/posters/pdfs/RCS_2026_ExtremeProfiles.pdf",
+    thumbnail: "../assets/media/posters/thumbnails/RCS_2026_ExtremeProfiles.jpg",
     description: "Resilient California Summit 2026 Poster",
   },
   {

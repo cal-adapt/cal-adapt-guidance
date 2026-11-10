@@ -43,6 +43,13 @@ var MEDIA_DATA = [
   },
   {
     type: "poster",
+    title: "From Franken-code to Fluent Workflow: New infrastructure for climakitae",
+    url: "../assets/media/posters/pdfs/RCS_2026_climakitae.pdf",
+    thumbnail: "../assets/media/posters/thumbnails/RCS_2026_climakitae.png",
+    description: "Resilient California Summit 2026 Poster",
+  },
+  {
+    type: "poster",
     title: "Risk Analytics in Climate Adaptation and Vulnerability Assessments",
     url: "../assets/media/posters/pdfs/AGU_2025_CAVA.pdf",
     thumbnail: "../assets/media/posters/thumbnails/AGU_2025_CAVA.jpg",

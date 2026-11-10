@@ -1,0 +1,15 @@
+---
+title: "Explore Extreme Heat Projections with Cal-Adapt’s New Extreme Heat Days Tool"
+author:
+  - name:
+      literal: "Cal-Adapt"
+date: "2026-11-5"
+description: "Just launched: See how extreme heat days could change where you live."
+categories: [Announcement]
+---
+
+The Cal-Adapt team is pleased to announce a new tool on our platform: the Extreme Heat Days dashboard. Built on Cal-Adapt’s climate projections, the tool lets users explore how the number of extreme heat days could change across California under future climate conditions. It gives communities, planners, researchers, and decision-makers the information they need to prepare for a hotter future.
+
+[Try the Extreme Heat Days tool now →](https://cal-adapt.org/dashboard/extreme-heat-days)
+
+We welcome your feedback as we continue to refine the tool - please find our feedback form on the bottom left of the tool page. Visit [Cal-Adapt.org](https://cal-adapt.org/) to explore it and the rest of our growing toolset.
